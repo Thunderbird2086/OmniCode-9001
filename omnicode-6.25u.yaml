@@ -1,8 +1,8 @@
 meta:
   author: Allen Choi
-  version: 0.2.0
+  version: 0.3.0
   engine: 4.1.0
-  project: BBG Engineering TKL
+  project: "OmniCode: 9001"
 
 text_common:
   base_text_android: &base_text_android
@@ -32,26 +32,27 @@ text_common:
 
 units:
   # Key sizes
-  u1: U  # Base unit (1U)
-  u0_25: u1 * 0.25
-  u1_25: u1 * 1.25  # 1.25U - Used for modifiers
-  u1_5: u1 * 1.5    # 1.5U - Used for Tab and backslash
-  u1_75: u1 * 1.75  # 1.75U - Used for Caps Lock
-  u2: u1 * 2        # 2U - Used for Backspace and Left Shift
-  u2_25: u1 * 2.25  # 2.25U - Used for Enter and left space
-  u2_75: u1 * 2.75  # 2.75U - Used for right space
-  u6: u1 * 6
-  u6_25: u1 * 6.25
+  u1_00: U  # Base unit (1U)
+  u0_25: u1_00 * 0.25
+  u0_50: u1_00 * 0.5
+  u1_25: u1_00 * 1.25  # 1.25U - Used for modifiers
+  u1_50: u1_00 * 1.5    # 1.5U - Used for Tab and backslash
+  u1_75: u1_00 * 1.75  # 1.75U - Used for Caps Lock
+  u2_00: u1_00 * 2        # 2U - Used for Backspace and Left Shift
+  u2_25: u1_00 * 2.25  # 2.25U - Used for Enter and left space
+  u2_75: u1_00 * 2.75  # 2.75U - Used for right space
+  u6_00: u1_00 * 6
+  u6_25: u1_00 * 6.25
 
   # Spacing and padding
   ps: 0.0          # Base padding between switches
   dx: ps
   dy: ps + 0
   bx: 4.6
-  by: .25u1
+  by: .25u1_00
   mb: 5.5          # mouse bite
-  px: u1 + dx      # Horizontal spacing
-  py: u1 + dy      # Vertical spacing
+  px: u1_00 + dx      # Horizontal spacing
+  py: u1_00 + dy      # Vertical spacing
 
   # Pogopin placement
   pogo_x: 0.58 + bx - 5.1
@@ -64,152 +65,152 @@ points:
   zones:
     function:
       anchor:
-        shift: [110, -100]
+        shift: [75, -90]
       key:
         padding: px
         spread: px
-        tags: [gmu1]
+        tags: [gmu1_00]
       rows:
         row:    { row_net: "function"}
       columns:
-        c00:      { key: { width: u1,    column_net: "col_0" }}
+        c00:      { key: { width: u1_00, column_net: "col_0"}}
 
-        c02:      { key: { width: u1,    column_net: "col_2", shift: [u1]}}
-        c03:      { key: { width: u1,    column_net: "col_3", shift: [u1]}}
-        c04:      { key: { width: u1,    column_net: "col_4", shift: [u1]}}
-        c05:      { key: { width: u1,    column_net: "col_5", shift: [u1]}}
+        c02:      { key: { width: u1_00, column_net: "col_2", shift: [u1_00]}}
+        c03:      { key: { width: u1_00, column_net: "col_3", shift: [u1_00]}}
+        c04:      { key: { width: u1_00, column_net: "col_4", shift: [u1_00]}}
+        c05:      { key: { width: u1_00, column_net: "col_5", shift: [u1_00]}}
 
-        c06:      { key: { width: u1,    column_net: "col_6", shift: [1.5*u1]}}
-        c07:      { key: { width: u1,    column_net: "col_6", shift: [1.5*u1]}}
-        c08:      { key: { width: u1,    column_net: "col_5", shift: [1.5*u1]}}
-        c09:      { key: { width: u1,    column_net: "col_4", shift: [1.5*u1]}}
+        c06:      { key: { width: u1_00, column_net: "col_6", shift: [u1_50]}}
+        c07:      { key: { width: u1_00, column_net: "col_6", shift: [u1_50]}}
+        c08:      { key: { width: u1_00, column_net: "col_5", shift: [u1_50]}}
+        c09:      { key: { width: u1_00, column_net: "col_4", shift: [u1_50]}}
 
-        c10:      { key: { width: u1,    column_net: "col_3", shift: [2*u1]}}
-        c11:      { key: { width: u1,    column_net: "col_2", shift: [2*u1]}}
-        c12:      { key: { width: u1,    column_net: "col_1", shift: [2*u1]}}
-        c13:      { key: { width: u1,    column_net: "col_0", shift: [2*u1]}}
+        c10:      { key: { width: u1_00, column_net: "col_3", shift: [u2_00]}}
+        c11:      { key: { width: u1_00, column_net: "col_2", shift: [u2_00]}}
+        c12:      { key: { width: u1_00, column_net: "col_1", shift: [u2_00]}}
+        c13:      { key: { width: u1_00, column_net: "col_0", shift: [u2_00]}}
 
     number:
       anchor:
         ref: function_c00_row
-        shift: [0, -1.25u1]
+        shift: [0, -u1_25]
       key:
         padding: px
         spread: px
-        tags: [gmu1]
+        tags: [gmu1_00]
       rows:
         row:    { row_net: "number"}
       columns:
-        c00: { key: { width: u1,    column_net: "col_0" }}
-        c01: { key: { width: u1,    column_net: "col_1" }}
-        c02: { key: { width: u1,    column_net: "col_2" }}
-        c03: { key: { width: u1,    column_net: "col_3" }}
-        c04: { key: { width: u1,    column_net: "col_4" }}
-        c05: { key: { width: u1,    column_net: "col_5" }}
-        c06: { key: { width: u1,    column_net: "col_6" }}
-        c07: { key: { width: u1,    column_net: "col_6" }}
-        c08: { key: { width: u1,    column_net: "col_5" }}
-        c09: { key: { width: u1,    column_net: "col_4" }}
-        c10: { key: { width: u1,    column_net: "col_3" }}
-        c11: { key: { width: u1,    column_net: "col_2" }}
-        c12: { key: { width: u1,    column_net: "col_1" }}
-        c13: { key: { width: u2,    column_net: "col_0", shift: [(u2-u1)/2], tags: [gmu2]}}
+        c00: { key: { width: u1_00, column_net: "col_0" }}
+        c01: { key: { width: u1_00, column_net: "col_1" }}
+        c02: { key: { width: u1_00, column_net: "col_2" }}
+        c03: { key: { width: u1_00, column_net: "col_3" }}
+        c04: { key: { width: u1_00, column_net: "col_4" }}
+        c05: { key: { width: u1_00, column_net: "col_5" }}
+        c06: { key: { width: u1_00, column_net: "col_6" }}
+        c07: { key: { width: u1_00, column_net: "col_6" }}
+        c08: { key: { width: u1_00, column_net: "col_5" }}
+        c09: { key: { width: u1_00, column_net: "col_4" }}
+        c10: { key: { width: u1_00, column_net: "col_3" }}
+        c11: { key: { width: u1_00, column_net: "col_2" }}
+        c12: { key: { width: u1_00, column_net: "col_1" }}
+        c13: { key: { width: u2_00, column_net: "col_0", shift: [(u2_00-u1_00)/2], tags: [gmu2_00]}}
 
     top:
       anchor:
         ref: function_c00_row
-        shift: [0, -2.25u1]
+        shift: [0, -2.25u1_00]
       key:
         padding: px
         spread: px
-        tags: [gmu1]
+        tags: [gmu1_00]
       rows:
         row:    { row_net: "top"}
       columns:
         # Row 1: `~12345
-        c00: { key: { width: u1_5,  column_net: "col_0", shift: [(u1_5-u1)/2], tags: [gmu1_5]}}
-        c01: { key: { width: u1,    column_net: "col_1", shift: [(u1_5-u1)]}}
-        c02: { key: { width: u1,    column_net: "col_2", shift: [(u1_5-u1)]}}
-        c03: { key: { width: u1,    column_net: "col_3", shift: [(u1_5-u1)]}}
-        c04: { key: { width: u1,    column_net: "col_4", shift: [(u1_5-u1)]}}
-        c05: { key: { width: u1,    column_net: "col_5", shift: [(u1_5-u1)]}}
-        c06: { key: { width: u1,    column_net: "col_6", shift: [(u1_5-u1)]}}
-        c07: { key: { width: u1,    column_net: "col_6", shift: [(u1_5-u1)]}}
-        c08: { key: { width: u1,    column_net: "col_5", shift: [(u1_5-u1)]}}
-        c09: { key: { width: u1,    column_net: "col_4", shift: [(u1_5-u1)]}}
-        c10: { key: { width: u1,    column_net: "col_3", shift: [(u1_5-u1)]}}
-        c11: { key: { width: u1,    column_net: "col_2", shift: [(u1_5-u1)]}}
-        c12: { key: { width: u1,    column_net: "col_1", shift: [(u1_5-u1)]}}
-        c13: { key: { width: u1_5,  column_net: "col_0", shift: [3(u1_5-u1)/2], tags: [gmu1_5]}}
+        c00: { key: { width: u1_50, column_net: "col_0", shift: [(u1_50-u1_00)/2], tags: [gmu1_50] } }
+        c01: { key: { width: u1_00, column_net: "col_1", shift: [(u1_50-u1_00)] } }
+        c02: { key: { width: u1_00, column_net: "col_2", shift: [(u1_50-u1_00)] } }
+        c03: { key: { width: u1_00, column_net: "col_3", shift: [(u1_50-u1_00)] } }
+        c04: { key: { width: u1_00, column_net: "col_4", shift: [(u1_50-u1_00)] } }
+        c05: { key: { width: u1_00, column_net: "col_5", shift: [(u1_50-u1_00)] } }
+        c06: { key: { width: u1_00, column_net: "col_6", shift: [(u1_50-u1_00)] } }
+        c07: { key: { width: u1_00, column_net: "col_6", shift: [(u1_50-u1_00)] } }
+        c08: { key: { width: u1_00, column_net: "col_5", shift: [(u1_50-u1_00)] } }
+        c09: { key: { width: u1_00, column_net: "col_4", shift: [(u1_50-u1_00)] } }
+        c10: { key: { width: u1_00, column_net: "col_3", shift: [(u1_50-u1_00)] } }
+        c11: { key: { width: u1_00, column_net: "col_2", shift: [(u1_50-u1_00)] } }
+        c12: { key: { width: u1_00, column_net: "col_1", shift: [(u1_50-u1_00)] } }
+        c13: { key: { width: u1_50, column_net: "col_0", shift: [3(u1_50-u1_00)/2], tags: [gmu1_50] } }
 
     home:
       anchor:
         ref: function_c00_row
-        shift: [0, -3.25u1]
+        shift: [0, -3.25u1_00]
       key:
         padding: px
         spread: px
-        tags: [gmu1]
+        tags: [gmu1_00]
       rows:
         row:    { row_net: "home"}
       columns:
-        c00: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1)/2], tags: [gmu1_75]}}
-        c01: { key: { width: u1,    column_net: "col_1", shift: [(u1_75-u1)]}}
-        c02: { key: { width: u1,    column_net: "col_2", shift: [(u1_75-u1)]}}
-        c03: { key: { width: u1,    column_net: "col_3", shift: [(u1_75-u1)]}}
-        c04: { key: { width: u1,    column_net: "col_4", shift: [(u1_75-u1)]}}
-        c05: { key: { width: u1,    column_net: "col_5", shift: [(u1_75-u1)]}}
-        c06: { key: { width: u1,    column_net: "col_6", shift: [(u1_75-u1)]}}
-        c07: { key: { width: u1,    column_net: "col_6", shift: [(u1_75-u1)]}}
-        c08: { key: { width: u1,    column_net: "col_5", shift: [(u1_75-u1)]}}
-        c09: { key: { width: u1,    column_net: "col_4", shift: [(u1_75-u1)]}}
-        c10: { key: { width: u1,    column_net: "col_3", shift: [(u1_75-u1)]}}
-        c11: { key: { width: u1,    column_net: "col_2", shift: [(u1_75-u1)]}}
-        c13: { key: { width: u2_25, column_net: "col_0", shift: [(u1_75-u1)+(u2_25-u1)/2], tags: [gmu2_25]}}
+        c00: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1_00)/2], tags: [gmu1_75]}}
+        c01: { key: { width: u1_00, column_net: "col_1", shift: [(u1_75-u1_00)]}}
+        c02: { key: { width: u1_00, column_net: "col_2", shift: [(u1_75-u1_00)]}}
+        c03: { key: { width: u1_00, column_net: "col_3", shift: [(u1_75-u1_00)]}}
+        c04: { key: { width: u1_00, column_net: "col_4", shift: [(u1_75-u1_00)]}}
+        c05: { key: { width: u1_00, column_net: "col_5", shift: [(u1_75-u1_00)]}}
+        c06: { key: { width: u1_00, column_net: "col_6", shift: [(u1_75-u1_00)]}}
+        c07: { key: { width: u1_00, column_net: "col_6", shift: [(u1_75-u1_00)]}}
+        c08: { key: { width: u1_00, column_net: "col_5", shift: [(u1_75-u1_00)]}}
+        c09: { key: { width: u1_00, column_net: "col_4", shift: [(u1_75-u1_00)]}}
+        c10: { key: { width: u1_00, column_net: "col_3", shift: [(u1_75-u1_00)]}}
+        c11: { key: { width: u1_00, column_net: "col_2", shift: [(u1_75-u1_00)]}}
+        c13: { key: { width: u2_25, column_net: "col_0", shift: [(u1_75-u1_00)+(u2_25-u1_00)/2], tags: [gmu2_25]}}
 
     bottom:
       anchor:
         ref: function_c00_row
-        shift: [0, -4.25u1]
+        shift: [0, -4.25u1_00]
       key:
         padding: px
         spread: px
-        tags: [gmu1]
+        tags: [gmu1_00]
       rows:
         row:    { row_net: "bottom"}
       columns:
-        c00: { key: { width: u2_25, column_net: "col_0", shift: [(u2_25-u1)/2], tags: [gmu2_25]}}
-        c01: { key: { width: u1,    column_net: "col_1", shift: [(u2_25-u1)]}}
-        c02: { key: { width: u1,    column_net: "col_2", shift: [(u2_25-u1)]}}
-        c03: { key: { width: u1,    column_net: "col_3", shift: [(u2_25-u1)]}}
-        c04: { key: { width: u1,    column_net: "col_4", shift: [(u2_25-u1)]}}
-        c05: { key: { width: u1,    column_net: "col_5", shift: [(u2_25-u1)]}}
-        c06: { key: { width: u1,    column_net: "col_6", shift: [(u2_25-u1)]}}
-        c07: { key: { width: u1,    column_net: "col_6", shift: [(u2_25-u1)]}}
-        c08: { key: { width: u1,    column_net: "col_5", shift: [(u2_25-u1)]}}
-        c09: { key: { width: u1,    column_net: "col_4", shift: [(u2_25-u1)]}}
-        c10: { key: { width: u1,    column_net: "col_3", shift: [(u2_25-u1)]}}
-        c13: { key: { width: u2_75, column_net: "col_0", shift: [(u2_25-u1)+(u2_75-u1)/2], tags: [gmu2_75]}}
+        c00: { key: { width: u2_25, column_net: "col_0", shift: [(u2_25-u1_00)/2], tags: [gmu2_25]}}
+        c01: { key: { width: u1_00, column_net: "col_1", shift: [(u2_25-u1_00)]}}
+        c02: { key: { width: u1_00, column_net: "col_2", shift: [(u2_25-u1_00)]}}
+        c03: { key: { width: u1_00, column_net: "col_3", shift: [(u2_25-u1_00)]}}
+        c04: { key: { width: u1_00, column_net: "col_4", shift: [(u2_25-u1_00)]}}
+        c05: { key: { width: u1_00, column_net: "col_5", shift: [(u2_25-u1_00)]}}
+        c06: { key: { width: u1_00, column_net: "col_6", shift: [(u2_25-u1_00)]}}
+        c07: { key: { width: u1_00, column_net: "col_6", shift: [(u2_25-u1_00)]}}
+        c08: { key: { width: u1_00, column_net: "col_5", shift: [(u2_25-u1_00)]}}
+        c09: { key: { width: u1_00, column_net: "col_4", shift: [(u2_25-u1_00)]}}
+        c10: { key: { width: u1_00, column_net: "col_3", shift: [(u2_25-u1_00)]}}
+        c13: { key: { width: u2_75, column_net: "col_0", shift: [(u2_25-u1_00)+(u2_75-u1_00)/2], tags: [gmu2_75]}}
 
     thumb:
       anchor:
         ref: function_c00_row
-        shift: [0, -5.25u1]
+        shift: [0, -5.25u1_00]
       key:
         padding: px
         spread: px
-        tags: [gmu1]
+        tags: [gmu1_00]
       rows:
         row:    { row_net: "thumb"}
       columns:
-        c00: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1)/2], tags: [gmu1_75]}}
-        c01: { key: { width: u1,    column_net: "col_1", shift: [(u1_75-u1)]}}
-        c02: { key: { width: u1_25, column_net: "col_2", shift: [(u1_25-u1)/2+(u1_75-u1)], tags: [gmu1_25]}}
-        c05: { key: { width: u6_25, column_net: "col_5", shift: [(u6_25-u1)/2+(u1_25-u1)+(u1_75-u1)], tags: [gmu6_25]}}
-        c09: { key: { width: u1,    column_net: "col_4", shift: [(u6_25-u1)+(u1_25-u1)+(u1_75-u1)]}}
-        c10: { key: { width: u1,    column_net: "col_3", shift: [(u6_25-u1)+(u1_25-u1)+(u1_75-u1)]}}
-        c11: { key: { width: u1,    column_net: "col_2", shift: [(u6_25-u1)+(u1_25-u1)+(u1_75-u1)]}}
-        c13: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1)/2+(u6_25-u1)+(u1_25-u1)+(u1_75-u1)], tags: [gmu1_75]}}
+        c00: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1_00)/2], tags: [gmu1_75]}}
+        c01: { key: { width: u1_00, column_net: "col_1", shift: [(u1_75-u1_00)]}}
+        c02: { key: { width: u1_25, column_net: "col_2", shift: [(u1_25-u1_00)/2+(u1_75-u1_00)], tags: [gmu1_25]}}
+        c05: { key: { width: u6_25, column_net: "col_5", shift: [(u6_25-u1_00)/2+(u1_25-u1_00)+(u1_75-u1_00)], tags: [gmu6_25]}}
+        c09: { key: { width: u1_00, column_net: "col_4", shift: [(u6_25-u1_00)+(u1_25-u1_00)+(u1_75-u1_00)]}}
+        c10: { key: { width: u1_00, column_net: "col_3", shift: [(u6_25-u1_00)+(u1_25-u1_00)+(u1_75-u1_00)]}}
+        c11: { key: { width: u1_00, column_net: "col_2", shift: [(u6_25-u1_00)+(u1_25-u1_00)+(u1_75-u1_00)]}}
+        c13: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1_00)/2+(u6_25-u1_00)+(u1_25-u1_00)+(u1_75-u1_00)], tags: [gmu1_75]}}
 
     nav_block:
       anchor:
@@ -218,15 +219,15 @@ points:
       key:
         padding: px
         spread: px
-        tags: [psu1]
+        tags: [psu1_00]
       rows:
         func:    { row_net: "function"}
-        number:  { row_net: "number", shift: [0, -2.25u1] }
-        top:     { row_net: "top",    shift: [0, -2u1] }
+        number:  { row_net: "number", shift: [0, -2.25u1_00] }
+        top:     { row_net: "top",    shift: [0, -2u1_00] }
       columns:
-        c14: { key: { width: u1,    column_net: "col_1"}}
-        c15: { key: { width: u1,    column_net: "col_4"}}
-        c16: { key: { width: u1,    column_net: "col_3"}}
+        c14: { key: { width: u1_00,    column_net: "col_1"}}
+        c15: { key: { width: u1_00,    column_net: "col_4"}}
+        c16: { key: { width: u1_00,    column_net: "col_3"}}
     nav_block2:
       anchor:
         ref: function_c13_row
@@ -234,11 +235,11 @@ points:
       key:
         padding: px
         spread: px
-        tags: [psu1]
+        tags: [psu1_00]
       rows:
-        bottom: { row_net: "bottom", shift: [u1, -4.25u1] }
+        bottom: { row_net: "bottom", shift: [u1_00, -4.25u1_00] }
       columns:
-        c15: { key: { width: u1,    column_net: "col_4"}}
+        c15: { key: { width: u1_00,    column_net: "col_4"}}
     nav_block3:
       anchor:
         ref: function_c13_row
@@ -246,13 +247,13 @@ points:
       key:
         padding: px
         spread: px
-        tags: [psu1]
+        tags: [psu1_00]
       rows:
-        thumb:    { row_net: "thumb", shift: [0, -5.25u1] }
+        thumb:    { row_net: "thumb", shift: [0, -5.25u1_00] }
       columns:
-        c14: { key: { width: u1,    column_net: "col_1"}}
-        c15: { key: { width: u1,    column_net: "col_4"}}
-        c16: { key: { width: u1,    column_net: "col_3"}}
+        c14: { key: { width: u1_00,    column_net: "col_1"}}
+        c15: { key: { width: u1_00,    column_net: "col_4"}}
+        c16: { key: { width: u1_00,    column_net: "col_3"}}
 
     num_pad:
       anchor:
@@ -261,76 +262,76 @@ points:
       key:
         padding: px
         spread: px
-        tags: [psu1]
+        tags: [dfu1_00]
       rows:
         func:    { row_net: "function"}
-        number:  { row_net: "number", shift: [0, -2.25u1]}
+        number:  { row_net: "number", shift: [0, -u2_25]}
       columns:
-        c17: { key: { width: u1,    column_net: "col_1"}}
-        c18: { key: { width: u1,    column_net: "col_1"}}
-        c19: { key: { width: u1,    column_net: "col_4"}}
-        c20: { key: { width: u1,    column_net: "col_3"}}
+        c17: { key: { width: u1_00,    column_net: "col_1"}}
+        c18: { key: { width: u1_00,    column_net: "col_1"}}
+        c19: { key: { width: u1_00,    column_net: "col_4"}}
+        c20: { key: { width: u1_00,    column_net: "col_3"}}
 
     num_pad2:
       anchor:
         ref:  num_pad_c17_number
-        shift: [0, -u1]
+        shift: [0, -u1_00]
       key:
         padding: px
         spread: px
-        tags: [psu1]
+        tags: [dfu1_00]
       rows:
         top:     { row_net: "top" }
       columns:
-        c17: { key: { width: u1,  column_net: "col_1"}}
-        c18: { key: { width: u1,  column_net: "col_1"}}
-        c19: { key: { width: u1,  column_net: "col_4"}}
-        c20: { key: { width: u1,  column_net: "col_3", height: u2, shift:[0, -u1/2], tags:[psu2v]}}
+        c17: { key: { width: u1_00,  column_net: "col_1"}}
+        c18: { key: { width: u1_00,  column_net: "col_1"}}
+        c19: { key: { width: u1_00,  column_net: "col_4"}}
+        c20: { key: { width: u1_00,  column_net: "col_3", height: u2_00, shift:[0, -u1_00/2], tags:[dfv2_00]}}
 
     num_pad3:
       anchor:
         ref:  num_pad2_c17_top
-        shift: [0, -u1]
+        shift: [0, -u1_00]
       key:
         padding: px
         spread: px
-        tags: [psu1]
+        tags: [dfu1_00]
       rows:
         home:     { row_net: "home" }
       columns:
-        c17: { key: { width: u1,    column_net: "col_1"}}
-        c18: { key: { width: u1,    column_net: "col_1"}}
-        c19: { key: { width: u1,    column_net: "col_4"}}
+        c17: { key: { width: u1_00,    column_net: "col_1"}}
+        c18: { key: { width: u1_00,    column_net: "col_1"}}
+        c19: { key: { width: u1_00,    column_net: "col_4"}}
 
     num_pad4:
       anchor:
         ref:  num_pad3_c17_home
-        shift: [0, -u1]
+        shift: [0, -u1_00]
       key:
         padding: px
         spread: px
-        tags: [psu1]
+        tags: [dfu1_00]
       rows:
         bottom:     { row_net: "bottom" }
       columns:
-        c17: { key: { width: u1,  column_net: "col_1"}}
-        c18: { key: { width: u1,  column_net: "col_1"}}
-        c19: { key: { width: u1,  column_net: "col_4"}}
-        c20: { key: { width: u1,  column_net: "col_3", height: u2, shift:[0, -u1/2], tags:[psu2v]}}
+        c17: { key: { width: u1_00,  column_net: "col_1"}}
+        c18: { key: { width: u1_00,  column_net: "col_1"}}
+        c19: { key: { width: u1_00,  column_net: "col_4"}}
+        c20: { key: { width: u1_00,  column_net: "col_3", height: u2_00, shift:[0, -u1_00/2], tags: [dfv2_00]}}
 
     num_pad5:
       anchor:
         ref:  num_pad4_c17_bottom
-        shift: [0, -u1]
+        shift: [0, -u1_00]
       key:
         padding: px
         spread: px
-        tags: [psu1]
+        tags: [dfu1_00]
       rows:
         thumb:     { row_net: "thumb" }
       columns:
-        c17: { key: { width: u2,    column_net: "col_1", shift: [u1/2, 0], tags: [psu2]}}
-        c18: { key: { width: u1,    column_net: "col_1", shift: [u1, 0]}}
+        c17: { key: { width: u2_00,    column_net: "col_1", shift: [u1_00/2, 0], tags: [dfu2_00]}}
+        c18: { key: { width: u1_00,    column_net: "col_1", shift: [u1_00, 0]}}
 
 
 outlines:
@@ -343,13 +344,13 @@ outlines:
       where: true
       size: [px, py]
     - <<: *rect_base
-      where: [gmu1_5]
+      where: [gmu1_50]
       size: [1.5px, py]
     - <<: *rect_base
       where: [gmu1_75]
       size: [1.75px, py]
     - <<: *rect_base
-      where: [gmu2]
+      where: [gmu2_00]
       size: [2px, py]
     - <<: *rect_base
       where: [gmu2_25]
@@ -376,9 +377,9 @@ outlines:
        - ref: function_c13_row
          shift: [0.5px+bx, 0.5py+by]
        - ref: function_c13_row
-         shift: [0.5px+bx, -0.5py-5.25u1-by]
+         shift: [0.5px+bx, -0.5py-5.25u1_00-by]
        - ref: function_c00_row
-         shift: [-0.5px-bx, -0.5py-5.25u1-by]
+         shift: [-0.5px-bx, -0.5py-5.25u1_00-by]
       fillet: corner
 
   phase_shift:
@@ -404,9 +405,9 @@ outlines:
        - ref: num_pad_c20_func
          shift: [0.5px+bx, 0.5py+by]
        - ref: num_pad_c20_func
-         shift: [0.5px+bx, -0.5py-5.25u1-by]
+         shift: [0.5px+bx, -0.5py-5.25u1_00-by]
        - ref: num_pad_c17_func
-         shift: [-0.5px-bx, -0.5py-5.25u1-by]
+         shift: [-0.5px-bx, -0.5py-5.25u1_00-by]
       fillet: corner
 
   pcb_outline:
@@ -423,7 +424,7 @@ filled_zone: &filled_zone
     what: utility_filled_zone
     params:
       side: 'F&B'
-      points: [[0, 0], [594.5, 0], [594.5, 420], [0, 420]]
+      points: [[0, 0], [420, 0], [420, 297], [0, 297]]
 
 footprint_components:
   mx_hotswap: &mx_hotswap
@@ -459,65 +460,63 @@ footprint_components:
 #        adjust: {shift: [-9, -5], rotate: 90}
 
 pcbs:
-  OmniCode:
+  GlyphMatrix:
     template: kicad8
     outlines:
-      edge: {outline: pcb_outline, layer: Edge.Cuts}
+      edge: {outline: glyph_matrix, layer: Edge.Cuts}
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
+
       # Extended size switches with base configuration
-      hotswap1u: {<<: *mx_hotswap, what: MX_HS_1.25u, where: [ku1_25]}
-      hotswap1_25u: {<<: *mx_hotswap, what: MX_HS_1.25u, where: [ku1_25]}
-      hotswap1_5u: {<<: *mx_hotswap, what: MX_HS_1.5u, where: [ku1_5]}
-      hotswap1_75u: {<<: *mx_hotswap, what: MX_HS_1.75u, where: [ku1_75]}
-      hotswap2u: {<<: *mx_hotswap, what: MX_HS_2u, where: [ku2]}
-      hotswap2_25u: {<<: *mx_hotswap, what: MX_HS_2.25u, where: [ku2_25]}
-      hotswap2_75u: {<<: *mx_hotswap, what: MX_HS_2.75u, where: [ku2_75]}
-      hotswap6_25u: {<<: *mx_hotswap, what: MX_HS_6.25u, where: [ku6_25]}
+      hs_gm1_00u: {<<: *mx_hotswap, what: MX_HS_1u   , where: [gmu1_00]}
+      hs_gm1_25u: {<<: *mx_hotswap, what: MX_HS_1.25u, where: [gmu1_25]}
+      hs_gm1_50u: {<<: *mx_hotswap, what: MX_HS_1.5u , where: [gmu1_50]}
+      hs_gm1_75u: {<<: *mx_hotswap, what: MX_HS_1.75u, where: [gmu1_75]}
+      hs_gm2_00u: {<<: *mx_hotswap, what: MX_HS_2u   , where: [gmu2_00]}
+      hs_gm2_25u: {<<: *mx_hotswap, what: MX_HS_2.25u, where: [gmu2_25]}
+      hs_gm2_75u: {<<: *mx_hotswap, what: MX_HS_2.75u, where: [gmu2_75]}
+      hs_gm6_25u: {<<: *mx_hotswap, what: MX_HS_6.25u, where: [gmu6_25]}
 
       # Match Reference to key switches
-      led1_25u: {<<: *per_key_led, where: [ku1_25]}
-      led1_50u: {<<: *per_key_led, where: [ku1_5]}
-      led1_75u: {<<: *per_key_led, where: [ku1_75]}
-      led2_00u: {<<: *per_key_led, where: [ku2]}
-      led2_25u: {<<: *per_key_led, where: [ku2_25]}
-      led2_75u: {<<: *per_key_led, where: [ku2_75]}
-      led6_25u: {<<: *per_key_led, where: [ku6_25]}
+      led_gm1_00u: {<<: *per_key_led, where: [gmu1_00]}
+      led_gm1_25u: {<<: *per_key_led, where: [gmu1_25]}
+      led_gm1_50u: {<<: *per_key_led, where: [gmu1_50]}
+      led_gm1_75u: {<<: *per_key_led, where: [gmu1_75]}
+      led_gm2_00u: {<<: *per_key_led, where: [gmu2_00]}
+      led_gm2_25u: {<<: *per_key_led, where: [gmu2_25]}
+      led_gm2_75u: {<<: *per_key_led, where: [gmu2_75]}
+      led_gm6_25u: {<<: *per_key_led, where: [gmu6_25]}
 
 
-      diodes1_25u: {<<: *diodes, where: [ku1_25]}
-      diodes1_50u: {<<: *diodes, where: [ku1_5]}
-      diodes1_75u: {<<: *diodes, where: [ku1_75]}
-      diodes2_00u: {<<: *diodes, where: [ku2]}
-      diodes2_25u: {<<: *diodes, where: [ku2_25]}
-      diodes2_75u: {<<: *diodes, where: [ku2_75]}
-      diodes6_25u: {<<: *diodes, where: [ku6_25]}
+      diodes_gm1_00u: {<<: *diodes, where: [gmu1_00]}
+      diodes_gm1_25u: {<<: *diodes, where: [gmu1_25]}
+      diodes_gm1_50u: {<<: *diodes, where: [gmu1_50]}
+      diodes_gm1_75u: {<<: *diodes, where: [gmu1_75]}
+      diodes_gm2_00u: {<<: *diodes, where: [gmu2_00]}
+      diodes_gm2_25u: {<<: *diodes, where: [gmu2_25]}
+      diodes_gm2_75u: {<<: *diodes, where: [gmu2_75]}
+      diodes_gm6_25u: {<<: *diodes, where: [gmu6_25]}
 
       # Stabilizers for larger keys
-      stabilizer_2u:
+      stb_gmu2_00:
         what: "stabilizer_mx_2.00u"
-        where: [ku2, ku2_25, ku2_75]
-      stabilizer_2uv:
-        what: "stabilizer_mx_2.00u"
-        where: [ku2v]
-        adjust:
-          rotate: -90
-      stabilizer_6_25u:
+        where: [gmu2_00, gmu2_25, gmu2_75]
+      stb_gmu6_25:
         what: "stabilizer_mx_6.25u"
-        where: [ku6_25]
+        where: [gmu6_25]
 
       usb:
         what: usb-c-16p-midmount-1_6
         where: function_c05_row
         adjust:
           rotate: 180
-          shift: [1.5u1/2, .5u1+by-1.6]
+          shift: [u1_50 / 2, u0_50 + by- 1.6]
 
-  OmniCode_Top:
+  GlyphMatrix_Top:
     template: kicad8
     outlines:
-      edge: {outline: pcb_outline, layer: Edge.Cuts}
+      edge: {outline: glyph_matrix, layer: Edge.Cuts}
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
@@ -525,19 +524,105 @@ pcbs:
       # Switch footprints for different sizes
       plate_1u: &plate
         what: plate_mp_mx_1u
-        where: [ku1, ku1_25, ku1_5, ku1_75]
+        where: [gmu1_00, gmu1_25, gmu1_50, gmu1_75]
 
       # Extended size switches with base configuration
-      hotswap2u: {<<: *plate, what: plate_mp_mx_2u, where: [ku2]}
-      hotswap2uv: {<<: *plate, what: plate_mp_mx_2u, where: [ku2v], adjust: { rotate: -90}}
-      hotswap2_25u: {<<: *plate, what: plate_mp_mx_2.25u, where: [ku2_25]}
-      hotswap2_75u: {<<: *plate, what: plate_mp_mx_2.75u, where: [ku2_75]}
-      hotswap6u: {<<: *plate, what: plate_mp_mx_6.25u, where: [ku6_25]}
+      hs_gm2_00u: {<<: *plate, what: plate_mp_mx_2u, where: [gmu2_00]}
+      hs_gm2_25u: {<<: *plate, what: plate_mp_mx_2.25u, where: [gmu2_25]}
+      hs_gm2_75u: {<<: *plate, what: plate_mp_mx_2.75u, where: [gmu2_75]}
+      hs_gm6_25u: {<<: *plate, what: plate_mp_mx_6.25u, where: [gmu6_25]}
 
-  OmniCode_Plate:
+  GlyphMatrix_Plate:
     template: kicad8
     outlines:
-      edge: {outline: pcb_outline, layer: Edge.Cuts}
+      edge: {outline: glyph_matrix, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+  PhaseShift:
+    template: kicad8
+    outlines:
+      edge: {outline: phase_shift, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      # Extended size switches with base configuration
+      hs_ps1_00u: {<<: *mx_hotswap, what: MX_HS_1u   , where: [psu1_00]}
+
+      # Match Reference to key switches
+      led_ps1_00u: {<<: *per_key_led, where: [psu1_00]}
+
+      diodes_ps1_00u: {<<: *diodes, where: [psu1_00]}
+
+  PhaseShift_Top:
+    template: kicad8
+    outlines:
+      edge: {outline: phase_shift, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      # Switch footprints for different sizes
+      hs_ps1_00u: { <<: *plate, where: [psu1_00] }
+
+  PhaseShift_Plate:
+    template: kicad8
+    outlines:
+      edge: {outline: phase_shift, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+  DeltaForm:
+    template: kicad8
+    outlines:
+      edge: {outline: delta_form, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      # Extended size switches with base configuration
+      hs_df1_00u: {<<: *mx_hotswap, what: MX_HS_1u   , where: [dfu1_00]}
+      hs_df2_00v: {<<: *mx_hotswap, what: MX_HS_1u   , where: [dfv2_00]}
+      hs_df2_00u: {<<: *mx_hotswap, what: MX_HS_1u   , where: [dfu2_00]}
+
+      # Match Reference to key switches
+      led_df1_00u: {<<: *per_key_led, where: [dfu1_00]}
+      led_df2_00v: {<<: *per_key_led, where: [dfv2_00]}
+      led_df2_00u: {<<: *per_key_led, where: [dfu2_00]}
+
+      diodes_df1_00u: {<<: *diodes, where: [dfu1_00]}
+      diodes_df2_00v: {<<: *diodes, where: [dfv2_00]}
+      diodes_df2_00u: {<<: *diodes, where: [dfu2_00]}
+
+      stb_dfv2_00:
+        what: "stabilizer_mx_2.00u"
+        where: [dfv2_00]
+        adjust: { rotate: -90 }
+
+      stb_dfu2_00:
+        what: "stabilizer_mx_2.00u"
+        where: [dfu2_00]
+
+  DeltaForm_Top:
+    template: kicad8
+    outlines:
+      edge: {outline: delta_form, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      # Switch footprints for different sizes
+      hs_df1_00u: { <<: *plate, where: [dfu1_00] }
+      hs_df2_00v: { <<: *plate, where: [dfv2_00], what: plate_mp_mx_2u, adjust: { rotate: -90}}
+      hs_df2_00u: { <<: *plate, where: [dfu2_00], what: plate_mp_mx_2u }
+
+  DeltaForm_Plate:
+    template: kicad8
+    outlines:
+      edge: {outline: delta_form, layer: Edge.Cuts}
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
