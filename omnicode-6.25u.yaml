@@ -1,0 +1,543 @@
+meta:
+  author: Allen Choi
+  version: 0.2.0
+  engine: 4.1.0
+  project: BBG Engineering TKL
+
+text_common:
+  base_text_android: &base_text_android
+    what: utility_text
+    params: {side: 'F', reversible: false, face: 'Android Robot'}
+
+  text_base: &text_base
+    what: utility_text
+    params:
+      face: 'KiCad Font'
+      knockout: true
+
+  version_text: &version_text
+    <<: *text_base
+    params:
+      text: 'HK Split (let''s sync) 66-Key Keyboard 0.9.3'
+
+  text_bbg: &text_bbg
+    what: utility_text
+    params:
+      face: 'Avenir Next P for BBG'
+      bold: true
+      align: 'left'
+      width: 6
+      height: 6
+      side: F
+
+units:
+  # Key sizes
+  u1: U  # Base unit (1U)
+  u0_25: u1 * 0.25
+  u1_25: u1 * 1.25  # 1.25U - Used for modifiers
+  u1_5: u1 * 1.5    # 1.5U - Used for Tab and backslash
+  u1_75: u1 * 1.75  # 1.75U - Used for Caps Lock
+  u2: u1 * 2        # 2U - Used for Backspace and Left Shift
+  u2_25: u1 * 2.25  # 2.25U - Used for Enter and left space
+  u2_75: u1 * 2.75  # 2.75U - Used for right space
+  u6: u1 * 6
+  u6_25: u1 * 6.25
+
+  # Spacing and padding
+  ps: 0.0          # Base padding between switches
+  dx: ps
+  dy: ps + 0
+  bx: 4.6
+  by: .25u1
+  mb: 5.5          # mouse bite
+  px: u1 + dx      # Horizontal spacing
+  py: u1 + dy      # Vertical spacing
+
+  # Pogopin placement
+  pogo_x: 0.58 + bx - 5.1
+  pogo_y: -3.3
+  # Layout specific measurements
+  corner: 2         # Corner radius
+  distance: 2 bx + mb
+
+points:
+  zones:
+    function:
+      anchor:
+        shift: [110, -100]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1]
+      rows:
+        row:    { row_net: "function"}
+      columns:
+        c00:      { key: { width: u1,    column_net: "col_0" }}
+
+        c02:      { key: { width: u1,    column_net: "col_2", shift: [u1]}}
+        c03:      { key: { width: u1,    column_net: "col_3", shift: [u1]}}
+        c04:      { key: { width: u1,    column_net: "col_4", shift: [u1]}}
+        c05:      { key: { width: u1,    column_net: "col_5", shift: [u1]}}
+
+        c06:      { key: { width: u1,    column_net: "col_6", shift: [1.5*u1]}}
+        c07:      { key: { width: u1,    column_net: "col_6", shift: [1.5*u1]}}
+        c08:      { key: { width: u1,    column_net: "col_5", shift: [1.5*u1]}}
+        c09:      { key: { width: u1,    column_net: "col_4", shift: [1.5*u1]}}
+
+        c10:      { key: { width: u1,    column_net: "col_3", shift: [2*u1]}}
+        c11:      { key: { width: u1,    column_net: "col_2", shift: [2*u1]}}
+        c12:      { key: { width: u1,    column_net: "col_1", shift: [2*u1]}}
+        c13:      { key: { width: u1,    column_net: "col_0", shift: [2*u1]}}
+
+    number:
+      anchor:
+        ref: function_c00_row
+        shift: [0, -1.25u1]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1]
+      rows:
+        row:    { row_net: "number"}
+      columns:
+        c00: { key: { width: u1,    column_net: "col_0" }}
+        c01: { key: { width: u1,    column_net: "col_1" }}
+        c02: { key: { width: u1,    column_net: "col_2" }}
+        c03: { key: { width: u1,    column_net: "col_3" }}
+        c04: { key: { width: u1,    column_net: "col_4" }}
+        c05: { key: { width: u1,    column_net: "col_5" }}
+        c06: { key: { width: u1,    column_net: "col_6" }}
+        c07: { key: { width: u1,    column_net: "col_6" }}
+        c08: { key: { width: u1,    column_net: "col_5" }}
+        c09: { key: { width: u1,    column_net: "col_4" }}
+        c10: { key: { width: u1,    column_net: "col_3" }}
+        c11: { key: { width: u1,    column_net: "col_2" }}
+        c12: { key: { width: u1,    column_net: "col_1" }}
+        c13: { key: { width: u2,    column_net: "col_0", shift: [(u2-u1)/2], tags: [gmu2]}}
+
+    top:
+      anchor:
+        ref: function_c00_row
+        shift: [0, -2.25u1]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1]
+      rows:
+        row:    { row_net: "top"}
+      columns:
+        # Row 1: `~12345
+        c00: { key: { width: u1_5,  column_net: "col_0", shift: [(u1_5-u1)/2], tags: [gmu1_5]}}
+        c01: { key: { width: u1,    column_net: "col_1", shift: [(u1_5-u1)]}}
+        c02: { key: { width: u1,    column_net: "col_2", shift: [(u1_5-u1)]}}
+        c03: { key: { width: u1,    column_net: "col_3", shift: [(u1_5-u1)]}}
+        c04: { key: { width: u1,    column_net: "col_4", shift: [(u1_5-u1)]}}
+        c05: { key: { width: u1,    column_net: "col_5", shift: [(u1_5-u1)]}}
+        c06: { key: { width: u1,    column_net: "col_6", shift: [(u1_5-u1)]}}
+        c07: { key: { width: u1,    column_net: "col_6", shift: [(u1_5-u1)]}}
+        c08: { key: { width: u1,    column_net: "col_5", shift: [(u1_5-u1)]}}
+        c09: { key: { width: u1,    column_net: "col_4", shift: [(u1_5-u1)]}}
+        c10: { key: { width: u1,    column_net: "col_3", shift: [(u1_5-u1)]}}
+        c11: { key: { width: u1,    column_net: "col_2", shift: [(u1_5-u1)]}}
+        c12: { key: { width: u1,    column_net: "col_1", shift: [(u1_5-u1)]}}
+        c13: { key: { width: u1_5,  column_net: "col_0", shift: [3(u1_5-u1)/2], tags: [gmu1_5]}}
+
+    home:
+      anchor:
+        ref: function_c00_row
+        shift: [0, -3.25u1]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1]
+      rows:
+        row:    { row_net: "home"}
+      columns:
+        c00: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1)/2], tags: [gmu1_75]}}
+        c01: { key: { width: u1,    column_net: "col_1", shift: [(u1_75-u1)]}}
+        c02: { key: { width: u1,    column_net: "col_2", shift: [(u1_75-u1)]}}
+        c03: { key: { width: u1,    column_net: "col_3", shift: [(u1_75-u1)]}}
+        c04: { key: { width: u1,    column_net: "col_4", shift: [(u1_75-u1)]}}
+        c05: { key: { width: u1,    column_net: "col_5", shift: [(u1_75-u1)]}}
+        c06: { key: { width: u1,    column_net: "col_6", shift: [(u1_75-u1)]}}
+        c07: { key: { width: u1,    column_net: "col_6", shift: [(u1_75-u1)]}}
+        c08: { key: { width: u1,    column_net: "col_5", shift: [(u1_75-u1)]}}
+        c09: { key: { width: u1,    column_net: "col_4", shift: [(u1_75-u1)]}}
+        c10: { key: { width: u1,    column_net: "col_3", shift: [(u1_75-u1)]}}
+        c11: { key: { width: u1,    column_net: "col_2", shift: [(u1_75-u1)]}}
+        c13: { key: { width: u2_25, column_net: "col_0", shift: [(u1_75-u1)+(u2_25-u1)/2], tags: [gmu2_25]}}
+
+    bottom:
+      anchor:
+        ref: function_c00_row
+        shift: [0, -4.25u1]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1]
+      rows:
+        row:    { row_net: "bottom"}
+      columns:
+        c00: { key: { width: u2_25, column_net: "col_0", shift: [(u2_25-u1)/2], tags: [gmu2_25]}}
+        c01: { key: { width: u1,    column_net: "col_1", shift: [(u2_25-u1)]}}
+        c02: { key: { width: u1,    column_net: "col_2", shift: [(u2_25-u1)]}}
+        c03: { key: { width: u1,    column_net: "col_3", shift: [(u2_25-u1)]}}
+        c04: { key: { width: u1,    column_net: "col_4", shift: [(u2_25-u1)]}}
+        c05: { key: { width: u1,    column_net: "col_5", shift: [(u2_25-u1)]}}
+        c06: { key: { width: u1,    column_net: "col_6", shift: [(u2_25-u1)]}}
+        c07: { key: { width: u1,    column_net: "col_6", shift: [(u2_25-u1)]}}
+        c08: { key: { width: u1,    column_net: "col_5", shift: [(u2_25-u1)]}}
+        c09: { key: { width: u1,    column_net: "col_4", shift: [(u2_25-u1)]}}
+        c10: { key: { width: u1,    column_net: "col_3", shift: [(u2_25-u1)]}}
+        c13: { key: { width: u2_75, column_net: "col_0", shift: [(u2_25-u1)+(u2_75-u1)/2], tags: [gmu2_75]}}
+
+    thumb:
+      anchor:
+        ref: function_c00_row
+        shift: [0, -5.25u1]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1]
+      rows:
+        row:    { row_net: "thumb"}
+      columns:
+        c00: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1)/2], tags: [gmu1_75]}}
+        c01: { key: { width: u1,    column_net: "col_1", shift: [(u1_75-u1)]}}
+        c02: { key: { width: u1_25, column_net: "col_2", shift: [(u1_25-u1)/2+(u1_75-u1)], tags: [gmu1_25]}}
+        c05: { key: { width: u6_25, column_net: "col_5", shift: [(u6_25-u1)/2+(u1_25-u1)+(u1_75-u1)], tags: [gmu6_25]}}
+        c09: { key: { width: u1,    column_net: "col_4", shift: [(u6_25-u1)+(u1_25-u1)+(u1_75-u1)]}}
+        c10: { key: { width: u1,    column_net: "col_3", shift: [(u6_25-u1)+(u1_25-u1)+(u1_75-u1)]}}
+        c11: { key: { width: u1,    column_net: "col_2", shift: [(u6_25-u1)+(u1_25-u1)+(u1_75-u1)]}}
+        c13: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1)/2+(u6_25-u1)+(u1_25-u1)+(u1_75-u1)], tags: [gmu1_75]}}
+
+    nav_block:
+      anchor:
+        ref: function_c13_row
+        shift: [distance + px, 0]
+      key:
+        padding: px
+        spread: px
+        tags: [psu1]
+      rows:
+        func:    { row_net: "function"}
+        number:  { row_net: "number", shift: [0, -2.25u1] }
+        top:     { row_net: "top",    shift: [0, -2u1] }
+      columns:
+        c14: { key: { width: u1,    column_net: "col_1"}}
+        c15: { key: { width: u1,    column_net: "col_4"}}
+        c16: { key: { width: u1,    column_net: "col_3"}}
+    nav_block2:
+      anchor:
+        ref: function_c13_row
+        shift: [distance + px, 0]
+      key:
+        padding: px
+        spread: px
+        tags: [psu1]
+      rows:
+        bottom: { row_net: "bottom", shift: [u1, -4.25u1] }
+      columns:
+        c15: { key: { width: u1,    column_net: "col_4"}}
+    nav_block3:
+      anchor:
+        ref: function_c13_row
+        shift: [distance + px, 0]
+      key:
+        padding: px
+        spread: px
+        tags: [psu1]
+      rows:
+        thumb:    { row_net: "thumb", shift: [0, -5.25u1] }
+      columns:
+        c14: { key: { width: u1,    column_net: "col_1"}}
+        c15: { key: { width: u1,    column_net: "col_4"}}
+        c16: { key: { width: u1,    column_net: "col_3"}}
+
+    num_pad:
+      anchor:
+        ref:  nav_block_c16_func
+        shift: [distance + px, 0]
+      key:
+        padding: px
+        spread: px
+        tags: [psu1]
+      rows:
+        func:    { row_net: "function"}
+        number:  { row_net: "number", shift: [0, -2.25u1]}
+      columns:
+        c17: { key: { width: u1,    column_net: "col_1"}}
+        c18: { key: { width: u1,    column_net: "col_1"}}
+        c19: { key: { width: u1,    column_net: "col_4"}}
+        c20: { key: { width: u1,    column_net: "col_3"}}
+
+    num_pad2:
+      anchor:
+        ref:  num_pad_c17_number
+        shift: [0, -u1]
+      key:
+        padding: px
+        spread: px
+        tags: [psu1]
+      rows:
+        top:     { row_net: "top" }
+      columns:
+        c17: { key: { width: u1,  column_net: "col_1"}}
+        c18: { key: { width: u1,  column_net: "col_1"}}
+        c19: { key: { width: u1,  column_net: "col_4"}}
+        c20: { key: { width: u1,  column_net: "col_3", height: u2, shift:[0, -u1/2], tags:[psu2v]}}
+
+    num_pad3:
+      anchor:
+        ref:  num_pad2_c17_top
+        shift: [0, -u1]
+      key:
+        padding: px
+        spread: px
+        tags: [psu1]
+      rows:
+        home:     { row_net: "home" }
+      columns:
+        c17: { key: { width: u1,    column_net: "col_1"}}
+        c18: { key: { width: u1,    column_net: "col_1"}}
+        c19: { key: { width: u1,    column_net: "col_4"}}
+
+    num_pad4:
+      anchor:
+        ref:  num_pad3_c17_home
+        shift: [0, -u1]
+      key:
+        padding: px
+        spread: px
+        tags: [psu1]
+      rows:
+        bottom:     { row_net: "bottom" }
+      columns:
+        c17: { key: { width: u1,  column_net: "col_1"}}
+        c18: { key: { width: u1,  column_net: "col_1"}}
+        c19: { key: { width: u1,  column_net: "col_4"}}
+        c20: { key: { width: u1,  column_net: "col_3", height: u2, shift:[0, -u1/2], tags:[psu2v]}}
+
+    num_pad5:
+      anchor:
+        ref:  num_pad4_c17_bottom
+        shift: [0, -u1]
+      key:
+        padding: px
+        spread: px
+        tags: [psu1]
+      rows:
+        thumb:     { row_net: "thumb" }
+      columns:
+        c17: { key: { width: u2,    column_net: "col_1", shift: [u1/2, 0], tags: [psu2]}}
+        c18: { key: { width: u1,    column_net: "col_1", shift: [u1, 0]}}
+
+
+outlines:
+  raw: &raw
+    - &rect_base
+      what: rectangle
+      bound: false
+      joints: corner
+    - <<: *rect_base
+      where: true
+      size: [px, py]
+    - <<: *rect_base
+      where: [gmu1_5]
+      size: [1.5px, py]
+    - <<: *rect_base
+      where: [gmu1_75]
+      size: [1.75px, py]
+    - <<: *rect_base
+      where: [gmu2]
+      size: [2px, py]
+    - <<: *rect_base
+      where: [gmu2_25]
+      size: [2.25px, py]
+    - <<: *rect_base
+      where: [gmu2_75]
+      size: [2.75px, py]
+    - <<: *rect_base
+      where: [gmu6_25]
+      size: [6.25px, py]
+      fillet: corner
+
+  keys:
+    - what: rectangle
+      where: true
+      size: [14, 14]
+
+  glyph_matrix:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: function_c00_row
+         shift: [-0.5px-bx, 0.5py+by]
+       - ref: function_c13_row
+         shift: [0.5px+bx, 0.5py+by]
+       - ref: function_c13_row
+         shift: [0.5px+bx, -0.5py-5.25u1-by]
+       - ref: function_c00_row
+         shift: [-0.5px-bx, -0.5py-5.25u1-by]
+      fillet: corner
+
+  phase_shift:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: nav_block_c14_func
+         shift: [-0.5px-bx, 0.5py+by]
+       - ref: nav_block_c16_func
+         shift: [0.5px+bx, 0.5py+by]
+       - ref: nav_block3_c16_thumb
+         shift: [0.5px+bx, -0.5py-by]
+       - ref: nav_block3_c14_thumb
+         shift: [-0.5px-bx, -0.5py-by]
+      fillet: corner
+
+  delta_form:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx, 0.5py+by]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx, 0.5py+by]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx, -0.5py-5.25u1-by]
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx, -0.5py-5.25u1-by]
+      fillet: corner
+
+  pcb_outline:
+    - "glyph_matrix"
+    - "phase_shift"
+    - "delta_form"
+
+  look:
+    - "pcb_outline"
+    - "-keys"
+
+filled_zone: &filled_zone
+  filled_zones:
+    what: utility_filled_zone
+    params:
+      side: 'F&B'
+      points: [[0, 0], [594.5, 0], [594.5, 420], [0, 420]]
+
+footprint_components:
+  mx_hotswap: &mx_hotswap
+    what: MX_HS_1u
+    params:
+      P1: "{{colrow}}"
+      P2: "{{column_net}}"
+      side: F
+      reversible: false
+      show_3d: true
+    adjust:
+      rotate: -180
+
+  # RGB LED configuration
+  per_key_led: &per_key_led
+    what: "led_sk6812mini_e"
+    adjust:
+      shift: [0, 5.08]
+    params:
+      from: "{{key.led_next}}"
+      to: "{{key.led_prev}}"
+      show_3d: true
+      side: B
+
+  # Diodes for key matrix
+  diodes: &diodes
+    what: "d_1206_3216m"
+    params:
+      from: "{{colrow}}"
+      to: "{{row_net}}"
+      side: 'B'
+    adjust: {shift: [-3.5, -8.5], rotate: 180}
+#        adjust: {shift: [-9, -5], rotate: 90}
+
+pcbs:
+  OmniCode:
+    template: kicad8
+    outlines:
+      edge: {outline: pcb_outline, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+      # Extended size switches with base configuration
+      hotswap1u: {<<: *mx_hotswap, what: MX_HS_1.25u, where: [ku1_25]}
+      hotswap1_25u: {<<: *mx_hotswap, what: MX_HS_1.25u, where: [ku1_25]}
+      hotswap1_5u: {<<: *mx_hotswap, what: MX_HS_1.5u, where: [ku1_5]}
+      hotswap1_75u: {<<: *mx_hotswap, what: MX_HS_1.75u, where: [ku1_75]}
+      hotswap2u: {<<: *mx_hotswap, what: MX_HS_2u, where: [ku2]}
+      hotswap2_25u: {<<: *mx_hotswap, what: MX_HS_2.25u, where: [ku2_25]}
+      hotswap2_75u: {<<: *mx_hotswap, what: MX_HS_2.75u, where: [ku2_75]}
+      hotswap6_25u: {<<: *mx_hotswap, what: MX_HS_6.25u, where: [ku6_25]}
+
+      # Match Reference to key switches
+      led1_25u: {<<: *per_key_led, where: [ku1_25]}
+      led1_50u: {<<: *per_key_led, where: [ku1_5]}
+      led1_75u: {<<: *per_key_led, where: [ku1_75]}
+      led2_00u: {<<: *per_key_led, where: [ku2]}
+      led2_25u: {<<: *per_key_led, where: [ku2_25]}
+      led2_75u: {<<: *per_key_led, where: [ku2_75]}
+      led6_25u: {<<: *per_key_led, where: [ku6_25]}
+
+
+      diodes1_25u: {<<: *diodes, where: [ku1_25]}
+      diodes1_50u: {<<: *diodes, where: [ku1_5]}
+      diodes1_75u: {<<: *diodes, where: [ku1_75]}
+      diodes2_00u: {<<: *diodes, where: [ku2]}
+      diodes2_25u: {<<: *diodes, where: [ku2_25]}
+      diodes2_75u: {<<: *diodes, where: [ku2_75]}
+      diodes6_25u: {<<: *diodes, where: [ku6_25]}
+
+      # Stabilizers for larger keys
+      stabilizer_2u:
+        what: "stabilizer_mx_2.00u"
+        where: [ku2, ku2_25, ku2_75]
+      stabilizer_2uv:
+        what: "stabilizer_mx_2.00u"
+        where: [ku2v]
+        adjust:
+          rotate: -90
+      stabilizer_6_25u:
+        what: "stabilizer_mx_6.25u"
+        where: [ku6_25]
+
+      usb:
+        what: usb-c-16p-midmount-1_6
+        where: function_c05_row
+        adjust:
+          rotate: 180
+          shift: [1.5u1/2, .5u1+by-1.6]
+
+  OmniCode_Top:
+    template: kicad8
+    outlines:
+      edge: {outline: pcb_outline, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      # Switch footprints for different sizes
+      plate_1u: &plate
+        what: plate_mp_mx_1u
+        where: [ku1, ku1_25, ku1_5, ku1_75]
+
+      # Extended size switches with base configuration
+      hotswap2u: {<<: *plate, what: plate_mp_mx_2u, where: [ku2]}
+      hotswap2uv: {<<: *plate, what: plate_mp_mx_2u, where: [ku2v], adjust: { rotate: -90}}
+      hotswap2_25u: {<<: *plate, what: plate_mp_mx_2.25u, where: [ku2_25]}
+      hotswap2_75u: {<<: *plate, what: plate_mp_mx_2.75u, where: [ku2_75]}
+      hotswap6u: {<<: *plate, what: plate_mp_mx_6.25u, where: [ku6_25]}
+
+  OmniCode_Plate:
+    template: kicad8
+    outlines:
+      edge: {outline: pcb_outline, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
