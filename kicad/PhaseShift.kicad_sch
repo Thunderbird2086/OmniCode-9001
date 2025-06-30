@@ -1,0 +1,56 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "c7177d09-71a2-4de7-9a3e-bfc16a7f2797")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 76.2 165.862)
+		(size 35.814 22.352)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b6e5122b-19a7-4e32-83dd-aae5ee669f5d")
+		(property "Sheetname" "PhaseShift"
+			(at 76.2 165.1504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PhaseShift-keymatrix.kicad_sch"
+			(at 76.2 188.7986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

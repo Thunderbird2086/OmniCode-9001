@@ -1,0 +1,5231 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "01a0dd13-d047-47f8-a9df-ed56aa60f19b")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148W"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_marbastlib-mx:MX_stab"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at -5.08 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MX_stab"
+				(at -5.08 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_marbastlib-mx:STAB_MX_P_6.25u"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Cherry MX-style stabilizer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cherry mx stabilizer stab"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MX_stab_0_1"
+				(rectangle
+					(start -5.08 1.27)
+					(end -2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -5.08 -1.524)
+					(end -2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.826 2.794)
+					(end -2.794 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.064 1.27)
+					(end -3.556 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.064 -1.778)
+					(end 4.064 -2.286)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -4.064 -2.286)
+					(end -3.556 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 1.27)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 -1.524)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.794 2.794)
+					(end 4.826 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.556 1.27)
+					(end 4.064 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 4.064 -2.286)
+					(end 3.556 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TB2086_KEYSWITCH:SW_MX_HS"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "MX"
+				(at 3.048 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_MX_HS"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u_reversible"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_MX_HS_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 104.394 76.962)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00aad072-cf89-4c2a-9130-45cdde7e7aad")
+	)
+	(junction
+		(at 104.394 54.356)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0aa1348e-9ce6-4e9f-8359-7755b0b0f384")
+	)
+	(junction
+		(at 104.394 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f79ad00-6375-4e7d-bbd1-af8bbcd800fd")
+	)
+	(junction
+		(at 131.318 64.262)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "193dd7a0-3f6f-4c5d-99f1-30828fbede23")
+	)
+	(junction
+		(at 114.808 41.656)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e3cfda9-a971-42b8-908c-0057a7535269")
+	)
+	(junction
+		(at 99.314 41.656)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a5edf02-fd34-42ec-8d59-f44283c59661")
+	)
+	(junction
+		(at 119.888 54.356)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d9f4301-98b7-443b-a418-7b6779ea64cc")
+	)
+	(junction
+		(at 104.394 120.904)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44bc97e1-fe40-42f7-aff1-23882b1e14a3")
+	)
+	(junction
+		(at 136.398 54.356)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48ed018a-e026-4e78-9d71-3176804b6d27")
+	)
+	(junction
+		(at 114.808 64.262)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4eb2d039-b956-4f2d-9f3c-a294b06669a6")
+	)
+	(junction
+		(at 131.318 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "584d5ddf-de23-4d68-8060-45098ca409bc")
+	)
+	(junction
+		(at 146.558 64.262)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "649981e4-d776-4755-b396-5bc1b4e993cc")
+	)
+	(junction
+		(at 119.888 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "667757fa-46d4-4360-81db-b71fcf333daa")
+	)
+	(junction
+		(at 131.318 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66bb9b9b-fcb3-49d2-a65d-283c00164771")
+	)
+	(junction
+		(at 99.314 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ba428be-9a2b-4ecb-bff8-5e12ba06b2ac")
+	)
+	(junction
+		(at 104.394 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e6f3296-617f-4c2b-9592-cbd94ecaf193")
+	)
+	(junction
+		(at 119.888 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9178d240-f72c-4e4f-b592-3574908e5982")
+	)
+	(junction
+		(at 136.398 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "945a7019-60a2-4e90-a768-1919104a1332")
+	)
+	(junction
+		(at 131.318 108.204)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a337da92-bd4c-43b1-8708-480a00f4c28d")
+	)
+	(junction
+		(at 99.314 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a477f7b4-7f11-450b-bfe9-b9be807d7572")
+	)
+	(junction
+		(at 146.558 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a813b133-1376-457a-b523-1173ccd0dafc")
+	)
+	(junction
+		(at 136.398 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab52eace-6499-428f-adaa-f621d4b0042c")
+	)
+	(junction
+		(at 119.888 76.962)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bbc6fb0b-d9c6-4cac-a99f-0c16ff857491")
+	)
+	(junction
+		(at 99.314 64.262)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "befb50bf-9997-4699-a65a-b05dfad1c784")
+	)
+	(junction
+		(at 99.314 108.204)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c684bd50-df4c-49dc-a124-0a503e85e93e")
+	)
+	(junction
+		(at 136.398 76.962)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca1b941f-d8e2-497a-9315-4f9f985ee244")
+	)
+	(junction
+		(at 114.808 108.204)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cea38bcc-b8cd-4c5b-a3b6-eeb222580031")
+	)
+	(junction
+		(at 131.318 41.656)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfc14fbf-203e-4b87-b8a7-e55fc02f8238")
+	)
+	(junction
+		(at 136.398 120.904)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dffab166-2403-4e5c-854d-3a1b9eef2bbf")
+	)
+	(junction
+		(at 114.808 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f21abbda-fa7b-427a-bb68-1bfff3f44151")
+	)
+	(junction
+		(at 146.558 41.656)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2a97c1c-cd13-43eb-ab57-7b9eb5a5e5fe")
+	)
+	(junction
+		(at 119.888 120.904)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f374fd7f-9a7d-4c24-978c-ba4166dfe242")
+	)
+	(junction
+		(at 104.394 163.576)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4872809-1be7-4780-99ed-c6bf117e3911")
+	)
+	(wire
+		(pts
+			(xy 99.314 41.656) (xy 99.314 64.262)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "031e6b38-9c51-4d52-a7b7-c971fa30b82b")
+	)
+	(wire
+		(pts
+			(xy 119.888 54.356) (xy 136.398 54.356)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bb28fda-8bdf-4d1d-9ac5-35a7f486f5e6")
+	)
+	(wire
+		(pts
+			(xy 114.808 28.448) (xy 114.808 41.656)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "116cf379-c664-4f1d-912f-a86f1c681210")
+	)
+	(wire
+		(pts
+			(xy 136.398 99.06) (xy 151.638 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12546b02-2d64-4da5-9b0e-4d4a8a471409")
+	)
+	(wire
+		(pts
+			(xy 119.888 120.904) (xy 136.398 120.904)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17bab806-6fce-4abf-95a1-62683219d697")
+	)
+	(wire
+		(pts
+			(xy 146.558 64.262) (xy 146.558 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18e70757-e784-4141-9a09-e27a11dbd1d5")
+	)
+	(wire
+		(pts
+			(xy 99.314 86.36) (xy 99.314 108.204)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18fcd09f-f30e-4a62-9116-71ecd2550cac")
+	)
+	(wire
+		(pts
+			(xy 104.394 99.06) (xy 119.888 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ecc4cad-7eca-4df7-ba2d-cc27597b583e")
+	)
+	(wire
+		(pts
+			(xy 82.55 120.904) (xy 104.394 120.904)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "342858f0-d071-4070-8d20-89393ff4113f")
+	)
+	(wire
+		(pts
+			(xy 131.318 86.36) (xy 131.318 108.204)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36cc9cf5-3c64-4d58-82ee-f6aceb3a7a41")
+	)
+	(wire
+		(pts
+			(xy 136.398 76.962) (xy 151.638 76.962)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ab461f6-4910-49f0-8aab-a1e2e9d7c99c")
+	)
+	(wire
+		(pts
+			(xy 104.394 76.962) (xy 119.888 76.962)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bff45cc-8ad1-4cd7-bdcf-1b0886c0a828")
+	)
+	(wire
+		(pts
+			(xy 104.394 163.576) (xy 136.398 163.576)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40c77aa7-2965-466a-ab17-936c51571154")
+	)
+	(wire
+		(pts
+			(xy 146.558 28.448) (xy 146.558 41.656)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4840355c-8dd7-4d0c-ac89-708d6477094f")
+	)
+	(wire
+		(pts
+			(xy 104.394 54.356) (xy 119.888 54.356)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d4eaf9e-4b82-40f0-8e6b-ee7f4d260529")
+	)
+	(wire
+		(pts
+			(xy 114.808 41.656) (xy 114.808 64.262)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5589de68-38cc-4ed7-b455-65ceaa7c7232")
+	)
+	(wire
+		(pts
+			(xy 82.042 76.962) (xy 104.394 76.962)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fa2ebe5-dba4-452f-9090-3aeb000eeb04")
+	)
+	(wire
+		(pts
+			(xy 99.314 64.262) (xy 99.314 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61bf0548-adc0-4810-8445-00a167f2c08d")
+	)
+	(wire
+		(pts
+			(xy 82.042 99.06) (xy 104.394 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "635f0606-54d1-4e65-9530-46b1fad6a243")
+	)
+	(wire
+		(pts
+			(xy 114.808 108.204) (xy 114.808 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6aa678e7-fb17-4cd0-9451-a9ee71f86e0e")
+	)
+	(wire
+		(pts
+			(xy 114.808 64.262) (xy 114.808 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f4b608b-1af7-46a9-a529-2c964229185d")
+	)
+	(wire
+		(pts
+			(xy 99.314 108.204) (xy 99.314 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c79a3c6-f92a-4afd-9e98-4dd92958ecc0")
+	)
+	(wire
+		(pts
+			(xy 146.558 41.656) (xy 146.558 64.262)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "866a0bea-0025-45a9-81b6-d5bfd33e11bc")
+	)
+	(wire
+		(pts
+			(xy 83.312 163.576) (xy 104.394 163.576)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89dee165-6f0b-4b66-903d-722969bd031b")
+	)
+	(wire
+		(pts
+			(xy 99.314 28.448) (xy 99.314 41.656)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b875f4b-2821-464d-bff5-2f3314522dc3")
+	)
+	(wire
+		(pts
+			(xy 146.558 86.36) (xy 146.558 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5d40b3d-b9b1-478b-9f82-9247c8c7e9cf")
+	)
+	(wire
+		(pts
+			(xy 131.318 28.448) (xy 131.318 41.656)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac16a793-26f9-4a53-83c1-d4e72101f692")
+	)
+	(wire
+		(pts
+			(xy 136.398 142.24) (xy 151.638 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc0fe42e-4317-42b9-ada7-a35e0ed96848")
+	)
+	(wire
+		(pts
+			(xy 131.318 108.204) (xy 131.318 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdc9e85a-ea62-4b20-8f0d-3d84383f17c9")
+	)
+	(wire
+		(pts
+			(xy 131.318 129.54) (xy 131.318 150.876)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2a1f7d8-5435-402e-945a-f2d723b67dba")
+	)
+	(wire
+		(pts
+			(xy 119.888 142.24) (xy 136.398 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3f5f04b-9135-4e41-b9e5-585656aada91")
+	)
+	(wire
+		(pts
+			(xy 99.314 129.54) (xy 99.314 150.876)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c52e440c-27af-44bb-9726-7c403f9d803b")
+	)
+	(wire
+		(pts
+			(xy 114.808 86.36) (xy 114.808 108.204)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce06cbce-0cd8-4478-8e29-84f7b2cca231")
+	)
+	(wire
+		(pts
+			(xy 104.394 120.904) (xy 119.888 120.904)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d036864f-e95d-495d-a8d6-1b126693f2c3")
+	)
+	(wire
+		(pts
+			(xy 136.398 54.356) (xy 151.638 54.356)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d42f3d8a-2ffb-4787-a260-e646f9ddb3c8")
+	)
+	(wire
+		(pts
+			(xy 82.042 54.356) (xy 104.394 54.356)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d792b5fd-afce-4ea8-8c21-cec65593b8ad")
+	)
+	(wire
+		(pts
+			(xy 131.318 64.262) (xy 131.318 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f16f1267-5047-43f7-9f58-afd28a9f85dc")
+	)
+	(wire
+		(pts
+			(xy 104.394 142.24) (xy 119.888 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f393a63b-0e07-4a84-b147-0f1164ebdbfe")
+	)
+	(wire
+		(pts
+			(xy 119.888 76.962) (xy 136.398 76.962)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f41fa315-316e-4805-be0f-fc14a7161e3f")
+	)
+	(wire
+		(pts
+			(xy 131.318 41.656) (xy 131.318 64.262)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8099f1d-1cd1-411f-a827-2b88405b7286")
+	)
+	(wire
+		(pts
+			(xy 119.888 99.06) (xy 136.398 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f993c230-46c5-466a-9229-481b8d7342d4")
+	)
+	(wire
+		(pts
+			(xy 136.398 120.904) (xy 152.146 120.904)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc186b42-6235-4871-8302-3998d3d8dd10")
+	)
+	(wire
+		(pts
+			(xy 83.566 142.24) (xy 104.394 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd33ae17-1f0b-4ef9-84d7-9d90b5dc469c")
+	)
+	(global_label "col_3"
+		(shape input)
+		(at 99.314 28.448 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "38bda741-9a41-47f1-ba52-a84e59f0a8a2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 99.314 20.3829 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "col_6"
+		(shape input)
+		(at 146.558 28.448 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "406bd81c-5b8e-48b7-9a14-818b47965d32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 146.558 20.3829 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "row_14"
+		(shape input)
+		(at 82.042 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7395a597-d5c6-4b63-b17a-112580807fd1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.4045 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "row_15"
+		(shape input)
+		(at 82.55 120.904 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "86d1a6d5-c289-4d35-a12b-7a720baa7b6f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.9125 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "row_17"
+		(shape input)
+		(at 83.312 163.576 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "88f91f70-d11b-48af-baec-e2638bf0d43f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.6745 163.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "row_16"
+		(shape input)
+		(at 83.566 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ab505c21-b8f4-400f-b9ba-0938a2c9ff53")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.9285 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "row_12"
+		(shape input)
+		(at 82.042 54.356 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b1db7981-afe1-4bcd-bf8c-296f9a1b0144")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.4045 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "row_13"
+		(shape input)
+		(at 82.042 76.962 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b927fd5d-3878-40ab-b3b8-98f4c8498681")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.4045 76.962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "col_5"
+		(shape input)
+		(at 131.318 28.448 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ecf66914-90aa-452a-ad6a-b18a6f86bc43")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 131.318 20.3829 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "col_4"
+		(shape input)
+		(at 114.808 28.448 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f5200682-5bf7-461f-b0e8-21189cc254de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.808 20.3829 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 133.858 153.416 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "021230f1-49ef-4fc4-92dd-a64b76a53084")
+		(property "Reference" "S18"
+			(at 133.858 146.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 133.858 149.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 133.858 153.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.858 153.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 133.858 153.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 133.858 146.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "175f82ad-9480-49a8-912c-e157abf5e95e")
+		)
+		(pin "2"
+			(uuid "2df4f645-d37d-4e10-86ae-5251409b8a3b")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 104.394 73.152 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0291a80d-3d3b-47e2-8f7d-52ded705e83c")
+		(property "Reference" "D2"
+			(at 107.442 71.8819 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 107.442 74.4219 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 104.394 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.394 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 104.394 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 104.394 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.394 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 107.442 71.8819 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23033529-9026-40be-8737-f76c6016930d")
+		)
+		(pin "2"
+			(uuid "9f8501f0-e7ec-4952-b7d7-e0de0a133f19")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 104.394 117.094 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02f94ab4-94b4-4871-b7fe-3b5854e12990")
+		(property "Reference" "D12"
+			(at 107.442 115.8239 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 107.442 118.3639 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 104.394 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.394 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 104.394 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 104.394 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.394 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 107.442 115.8239 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad0de273-cd7e-4a94-926f-cefd6a0d59c2")
+		)
+		(pin "2"
+			(uuid "3c0cb6b9-9942-445e-b7f6-a0c42265ffec")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 119.888 117.094 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "087991b6-0e78-4327-bd83-99a589d72612")
+		(property "Reference" "D13"
+			(at 122.936 115.8239 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 122.936 118.3639 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 119.888 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.888 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 119.888 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.888 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.888 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 122.936 115.8239 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "049c9249-50ec-4388-86a6-458b2de61ceb")
+		)
+		(pin "2"
+			(uuid "bbba5424-bf3c-4886-884a-704f12647c52")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 133.858 110.744 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ae58f03-1687-48d6-953c-8857e761b789")
+		(property "Reference" "S14"
+			(at 133.858 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 133.858 106.426 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 133.858 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.858 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 133.858 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 133.858 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cda55a7d-5b81-4086-94c8-ffabbfef3a16")
+		)
+		(pin "2"
+			(uuid "fc51c271-317a-4a69-8f91-4fd8b005d1e5")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 101.854 44.196 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fb4f328-acac-4f96-a2be-0c72a688398d")
+		(property "Reference" "S1"
+			(at 101.854 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 101.854 39.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 101.854 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.854 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 101.854 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 101.854 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f60efed-250f-4ec4-b8f7-62e789d54dff")
+		)
+		(pin "2"
+			(uuid "bff7432f-86ec-4334-9891-dbe23a04d904")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 133.858 66.802 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a64367b-97c4-47f0-bbe4-cbce25c04d99")
+		(property "Reference" "S6"
+			(at 133.858 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 133.858 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 133.858 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.858 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 133.858 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 133.858 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7acdbfc2-40f4-487a-8b3f-049cbd0b1679")
+		)
+		(pin "2"
+			(uuid "633b1b39-ec05-4482-8303-d5225b8c285a")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 151.638 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "208817ac-e07d-4ea2-948c-cba681a62b00")
+		(property "Reference" "D20"
+			(at 154.686 137.1599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 154.686 139.6999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 151.638 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.638 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 151.638 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 151.638 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 151.638 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 154.686 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3204cf89-7b3f-41dd-97b1-a595817e33ad")
+		)
+		(pin "2"
+			(uuid "11f01dcd-be3d-4920-a6d1-edab655caa79")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 151.638 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "289c870d-1564-461d-96e8-50bf5651032d")
+		(property "Reference" "D19"
+			(at 154.686 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 154.686 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 151.638 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.638 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 151.638 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 151.638 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 151.638 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 154.686 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ead1fd93-fc96-4b41-a248-955289ed4db8")
+		)
+		(pin "2"
+			(uuid "0067e7b4-71ee-4ce4-ad42-2d9163cd7984")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 136.398 159.766 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28f92266-685b-4172-9a53-12eb8cf17475")
+		(property "Reference" "D18"
+			(at 139.446 158.4959 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 139.446 161.0359 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 136.398 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 136.398 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 136.398 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 136.398 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 136.398 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 139.446 158.4959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71386286-2aa5-4170-b4d3-895d2ad31a86")
+		)
+		(pin "2"
+			(uuid "c3cfbc94-d7fe-4b94-be25-181ae342899b")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 149.098 44.196 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d43f312-b844-4d35-883b-aad3b33f10e7")
+		(property "Reference" "S7"
+			(at 149.098 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 149.098 39.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 149.098 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.098 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 149.098 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 149.098 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0a9c794-6ea8-4d3c-a117-55d8f9db2803")
+		)
+		(pin "2"
+			(uuid "9ec1e330-d4d8-45cb-9e6e-a13924ab06ff")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 101.854 153.416 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "315eb90e-69b3-46af-9136-01ccb760106e")
+		(property "Reference" "S21"
+			(at 101.854 146.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 101.854 149.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_2u"
+			(at 101.854 153.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.854 153.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 101.854 153.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 101.854 146.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b34f1d90-cf65-4df9-91ba-6514251c35e5")
+		)
+		(pin "2"
+			(uuid "144d4dd9-b286-42de-b0b1-7f080327af86")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 151.638 50.546 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3fdfbdbc-c0e1-42d0-8d7d-e29478406a25")
+		(property "Reference" "D7"
+			(at 154.686 49.2759 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 154.686 51.8159 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 151.638 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.638 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 151.638 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 151.638 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 151.638 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 154.686 49.2759 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e3c91cb-f39f-4a49-874c-fab671b51e57")
+		)
+		(pin "2"
+			(uuid "14c5adff-580c-420f-8d52-0b57d041762f")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 168.402 133.096 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47ac5cdf-c246-4619-b60b-8626956dea9c")
+		(property "Reference" "STB2"
+			(at 172.466 131.8259 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 172.466 134.3659 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Stabilizer_Cherry_MX_2.00u"
+			(at 168.402 133.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.402 133.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cherry MX-style stabilizer"
+			(at 168.402 133.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "STB2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 117.348 44.196 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48346025-defc-47ec-a717-b990fe4908b2")
+		(property "Reference" "S3"
+			(at 117.348 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 117.348 39.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 117.348 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 117.348 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 117.348 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 117.348 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ede0728b-3ae4-4f7f-9e42-28125f15317e")
+		)
+		(pin "2"
+			(uuid "fab9d81f-ac49-43a8-bae7-62debe0e0dfd")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 101.854 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "506a86c1-5e2b-4a48-b1ed-6feed68c5365")
+		(property "Reference" "S15"
+			(at 101.854 125.222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 101.854 127.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 101.854 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.854 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 101.854 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 101.854 125.222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e87495f5-1872-45c3-bade-598b1e782af2")
+		)
+		(pin "2"
+			(uuid "34cf0115-6014-4676-8caf-c1e23abdefb9")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 133.858 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51b35154-a1fa-4f10-9477-912d1c91c3f2")
+		(property "Reference" "S11"
+			(at 133.858 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 133.858 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 133.858 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.858 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 133.858 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 133.858 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c0ef9c5-a291-4697-8ad7-77fbff641518")
+		)
+		(pin "2"
+			(uuid "722eba41-9335-41f9-a978-32539085ae5f")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 101.854 110.744 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66f7161d-0cb8-4b89-ab75-176944c47d42")
+		(property "Reference" "S12"
+			(at 101.854 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 101.854 106.426 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 101.854 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.854 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 101.854 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 101.854 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f68446e-3832-42b4-8786-9a42cff32898")
+		)
+		(pin "2"
+			(uuid "2ebee8dc-150b-4c0f-8438-081796b2c586")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 104.394 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ea5378b-d658-4f94-946d-1b42287cdd17")
+		(property "Reference" "D15"
+			(at 107.442 137.1599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 107.442 139.6999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 104.394 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.394 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 104.394 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 104.394 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.394 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 107.442 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b638ca2-04eb-4dbd-a45f-a78329c8d68a")
+		)
+		(pin "2"
+			(uuid "e2f2b160-7ed0-4319-b152-746a432e8ed1")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 119.888 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e2004ee-41d2-4b2a-9650-b7ca187ec6ad")
+		(property "Reference" "D10"
+			(at 122.936 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 122.936 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 119.888 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.888 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 119.888 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.888 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.888 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 122.936 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd640ca0-cc46-45f9-bc29-b7cd1b24f386")
+		)
+		(pin "2"
+			(uuid "26f5a428-69f2-4d2a-ac20-2accf6aaf788")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 104.394 159.766 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ac4d746-a4c1-47bd-86fe-a97231d8a78a")
+		(property "Reference" "D21"
+			(at 107.442 158.4959 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 107.442 161.0359 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 104.394 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.394 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 104.394 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 104.394 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.394 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 107.442 158.4959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3df40a36-e61f-4036-9089-eb8c196fcf87")
+		)
+		(pin "2"
+			(uuid "cc2d508f-e4a2-4d70-9e26-17585e263b0a")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 133.858 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e91a04a-6f8f-4ec9-bcd7-0bb169d98140")
+		(property "Reference" "S17"
+			(at 133.858 125.222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 133.858 127.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 133.858 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.858 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 133.858 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 133.858 125.222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df655439-aae6-4fad-90d4-3074fda1aa84")
+		)
+		(pin "2"
+			(uuid "58ed2dca-38d1-4145-a6cd-1e794719a5d5")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 151.638 73.152 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d2ed075-a280-4b64-9724-3fa4e8d77270")
+		(property "Reference" "D8"
+			(at 154.686 71.8819 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 154.686 74.4219 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 151.638 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.638 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 151.638 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 151.638 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 151.638 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 154.686 71.8819 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "950452f0-d6c3-43cf-b7f8-0bc6d5d230f7")
+		)
+		(pin "2"
+			(uuid "f2f9abee-8f9c-4780-a6e2-31f59632c77c")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 117.348 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b13c0172-1203-4553-81c8-0f07e1ae6363")
+		(property "Reference" "S16"
+			(at 117.348 125.222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 117.348 127.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 117.348 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 117.348 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 117.348 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 117.348 125.222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6587ba2-0479-410e-a039-5bf9d44bc560")
+		)
+		(pin "2"
+			(uuid "df72e08b-8bba-463c-aed7-e2c18a58a96c")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 104.394 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b437e1e6-c477-4117-9deb-92c677ef1206")
+		(property "Reference" "D9"
+			(at 107.442 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 107.442 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 104.394 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.394 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 104.394 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 104.394 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.394 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 107.442 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "814b1e17-b30c-468c-ae83-71c42d3857d2")
+		)
+		(pin "2"
+			(uuid "a1cbbce7-7d27-4f61-980a-498ce9e0602e")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 136.398 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b53fa69b-69e6-451a-80c3-e1ea28eb58eb")
+		(property "Reference" "D17"
+			(at 139.446 137.1599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 139.446 139.6999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 136.398 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 136.398 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 136.398 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 136.398 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 136.398 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 139.446 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9998d82b-257e-49fb-a574-42804fd04bc9")
+		)
+		(pin "2"
+			(uuid "4593518b-fd76-4760-b523-63e4016cbd12")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 149.098 66.802 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8262bc4-dd4c-48cf-90b4-7282fd43d29e")
+		(property "Reference" "S8"
+			(at 149.098 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 149.098 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 149.098 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.098 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 149.098 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 149.098 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "904e499d-400d-4d4b-bb21-9f4702904c4b")
+		)
+		(pin "2"
+			(uuid "aeca5623-cd74-431b-90bf-98da6d12440e")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 136.398 73.152 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9c5f7c3-9695-4707-b838-0b5782fe35b5")
+		(property "Reference" "D6"
+			(at 139.446 71.8819 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 139.446 74.4219 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 136.398 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 136.398 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 136.398 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 136.398 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 136.398 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 139.446 71.8819 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f02f4a8e-3712-4785-8daa-e22d6f86e7a3")
+		)
+		(pin "2"
+			(uuid "ac40b81f-cb35-4b37-8c45-34251361ce06")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 149.098 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9d4d624-2a1b-409e-bbda-702f8f128fe0")
+		(property "Reference" "S20"
+			(at 149.098 125.222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 149.098 127.762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 149.098 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.098 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 149.098 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 149.098 125.222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b089a5c6-2891-44d8-aa6e-1ee47e63ed35")
+		)
+		(pin "2"
+			(uuid "b960104a-cfe4-45fc-aacd-893cc60b13ae")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 119.888 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c274f024-84c8-4fb8-b2c3-2529823245ef")
+		(property "Reference" "D16"
+			(at 122.936 137.1599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 122.936 139.6999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 119.888 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.888 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 119.888 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.888 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.888 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 122.936 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e52895cb-3157-4e7e-8eb5-ae1a6a33b710")
+		)
+		(pin "2"
+			(uuid "1fb58ec8-daf8-4190-accd-bb4acbeba304")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 103.632 169.926 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9b5e0ce-1b53-474c-8f24-83d35c5ffa57")
+		(property "Reference" "STB3"
+			(at 110.236 168.5289 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 110.236 171.0689 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Stabilizer_Cherry_MX_2.00u"
+			(at 103.632 169.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 103.632 169.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 103.632 169.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "STB3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 133.858 44.196 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5a84623-61a9-46a0-946c-dbc0bfd5b7a5")
+		(property "Reference" "S5"
+			(at 133.858 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 133.858 39.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 133.858 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.858 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 133.858 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 133.858 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f05f4426-be72-493d-913b-2cd532ff2a23")
+		)
+		(pin "2"
+			(uuid "73767e65-501d-4df8-8f50-318db53b5063")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 136.398 50.546 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8bc04c4-09d5-4670-bdf1-c7114080a8d2")
+		(property "Reference" "D5"
+			(at 139.446 49.2759 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 139.446 51.8159 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 136.398 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 136.398 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 136.398 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 136.398 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 136.398 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 139.446 49.2759 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b51c015c-e48e-4403-9651-168d60348e16")
+		)
+		(pin "2"
+			(uuid "da736f7b-2d40-46bb-bc97-10789d64a0dd")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 149.098 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dab701ff-e81e-4f1a-83dc-cd73b4ccdee1")
+		(property "Reference" "S19"
+			(at 149.098 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 149.098 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 149.098 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.098 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 149.098 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 149.098 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d22aaba7-eca3-43ef-88f8-a99efac61fbf")
+		)
+		(pin "2"
+			(uuid "bacff6ee-d84e-4cbc-8494-6c1c432b412e")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 168.148 91.186 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0578c14-f562-40a6-bd4c-70ee8c8ad6f1")
+		(property "Reference" "STB1"
+			(at 172.212 89.9159 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 172.212 92.4559 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Stabilizer_Cherry_MX_2.00u"
+			(at 168.148 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.148 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 168.148 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "STB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 117.348 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e659a144-d3b5-4d8b-bf1e-82907332c249")
+		(property "Reference" "S10"
+			(at 117.348 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 117.348 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 117.348 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 117.348 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 117.348 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 117.348 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6145d5f4-f7ae-4d76-a13c-c3f94b028d7a")
+		)
+		(pin "2"
+			(uuid "130b08d9-ef1a-4803-8131-d404a1ab5683")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 117.348 110.744 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e90be237-5790-41e7-802d-3446e73c7bf2")
+		(property "Reference" "S13"
+			(at 117.348 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 117.348 106.426 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 117.348 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 117.348 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 117.348 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 117.348 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06a4061b-24de-4854-bae0-dd27605978d1")
+		)
+		(pin "2"
+			(uuid "89810dc1-ae7a-418c-afb7-679f3d1a1b65")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 136.398 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb6f44b7-e60e-41c3-bba9-6c6a1410dea5")
+		(property "Reference" "D11"
+			(at 139.446 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 139.446 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 136.398 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 136.398 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 136.398 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 136.398 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 136.398 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 139.446 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21d28273-6ae1-4808-afe6-7bd1533c2380")
+		)
+		(pin "2"
+			(uuid "edd859d6-4b8b-4895-bfeb-07db8fe05955")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 101.854 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec14d018-cfe2-45c3-ab1a-cfc8c34ceae8")
+		(property "Reference" "S9"
+			(at 101.854 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 101.854 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 101.854 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.854 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 101.854 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 101.854 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "746d3081-e374-4331-97c5-900b512502d9")
+		)
+		(pin "2"
+			(uuid "bbd2853b-3d44-41fe-914a-648adf0f9f3d")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 104.394 50.546 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec4f6385-2d8f-436b-8ef3-d5e783b5442e")
+		(property "Reference" "D1"
+			(at 107.442 49.2759 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 107.442 51.8159 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 104.394 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.394 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 104.394 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 104.394 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.394 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 107.442 49.2759 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d073e5a-54e5-483d-a6b4-73509dd211aa")
+		)
+		(pin "2"
+			(uuid "8af59a22-0945-4694-8e63-64b1cb3478ab")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 119.888 73.152 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f41dedab-bf87-4c5d-8528-fb1cb7e02366")
+		(property "Reference" "D4"
+			(at 122.936 71.8819 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 122.936 74.4219 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 119.888 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.888 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 119.888 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.888 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.888 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 122.936 71.8819 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0692a751-1326-46e8-a8cb-47ae27f176b0")
+		)
+		(pin "2"
+			(uuid "0cca25c6-7155-417a-ac3f-bb2a4a32cf53")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 117.348 66.802 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4e3d4d9-2bf8-4120-9636-8e80c3d39806")
+		(property "Reference" "S4"
+			(at 117.348 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 117.348 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 117.348 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 117.348 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 117.348 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 117.348 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "445296cc-f232-4f0a-9c84-c9d4966e2f79")
+		)
+		(pin "2"
+			(uuid "4a0ef895-50d2-4968-a954-5dcdb1175c9e")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 136.398 117.094 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8dc3570-5963-481c-9368-8f1f3b893fe4")
+		(property "Reference" "D14"
+			(at 139.446 115.8239 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 139.446 118.3639 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 136.398 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 136.398 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 136.398 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 136.398 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 136.398 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 139.446 115.8239 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "224f4955-4497-4d38-a718-b6b8a82111ea")
+		)
+		(pin "2"
+			(uuid "c9fa3411-8363-4521-9d3e-e902aee0a1b4")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 101.854 66.802 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f939fad1-ed1f-4cc7-b88d-53dee00494f2")
+		(property "Reference" "S2"
+			(at 101.854 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 101.854 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 101.854 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.854 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 101.854 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 101.854 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f126f280-6244-4da7-aecb-cbfd0c73c1ed")
+		)
+		(pin "2"
+			(uuid "e38b94ef-f3ad-4f54-a808-fc6002251cbe")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 119.888 50.546 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb26f7b2-eedc-47a5-95c5-2bc219e80439")
+		(property "Reference" "D3"
+			(at 122.936 49.2759 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 122.936 51.8159 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 119.888 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.888 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 119.888 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.888 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.888 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 122.936 49.2759 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62c53f05-7c14-47ba-b13c-6a0809acfaeb")
+		)
+		(pin "2"
+			(uuid "ffc797de-77f7-4e46-b396-23d951cc0800")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
