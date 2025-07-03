@@ -553,28 +553,28 @@
 		(uuid "0f79ad00-6375-4e7d-bbd1-af8bbcd800fd")
 	)
 	(junction
-		(at 131.318 64.262)
+		(at 146.558 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "193dd7a0-3f6f-4c5d-99f1-30828fbede23")
-	)
-	(junction
-		(at 114.808 41.656)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1e3cfda9-a971-42b8-908c-0057a7535269")
-	)
-	(junction
-		(at 99.314 41.656)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3a5edf02-fd34-42ec-8d59-f44283c59661")
+		(uuid "34a9cb45-2cb3-4449-82fd-06937c573a4a")
 	)
 	(junction
 		(at 119.888 54.356)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d9f4301-98b7-443b-a418-7b6779ea64cc")
+	)
+	(junction
+		(at 131.318 41.656)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40e1579d-3fea-4278-9292-0d394fc37327")
+	)
+	(junction
+		(at 131.318 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "436c9573-1a12-47e4-a3f3-6e095fae0317")
 	)
 	(junction
 		(at 104.394 120.904)
@@ -589,22 +589,22 @@
 		(uuid "48ed018a-e026-4e78-9d71-3176804b6d27")
 	)
 	(junction
-		(at 114.808 64.262)
+		(at 146.558 41.656)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4eb2d039-b956-4f2d-9f3c-a294b06669a6")
+		(uuid "4ec5cec9-3d00-445e-a27a-a114a2a8e4de")
 	)
 	(junction
-		(at 131.318 86.36)
+		(at 114.808 41.656)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "584d5ddf-de23-4d68-8060-45098ca409bc")
+		(uuid "593ffaf4-3e12-4cbd-95f0-0480a955cf78")
 	)
 	(junction
-		(at 146.558 64.262)
+		(at 99.314 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "649981e4-d776-4755-b396-5bc1b4e993cc")
+		(uuid "5a5014e0-6784-4528-a798-d55edabe97e8")
 	)
 	(junction
 		(at 119.888 99.06)
@@ -613,22 +613,22 @@
 		(uuid "667757fa-46d4-4360-81db-b71fcf333daa")
 	)
 	(junction
-		(at 131.318 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66bb9b9b-fcb3-49d2-a65d-283c00164771")
-	)
-	(junction
-		(at 99.314 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6ba428be-9a2b-4ecb-bff8-5e12ba06b2ac")
-	)
-	(junction
 		(at 104.394 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e6f3296-617f-4c2b-9592-cbd94ecaf193")
+	)
+	(junction
+		(at 131.318 64.262)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a7c57ed-cf80-4ec3-9ea1-420b89321306")
+	)
+	(junction
+		(at 99.314 41.656)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86ffdc6f-c9cc-405b-b213-b4f77bbef6c1")
 	)
 	(junction
 		(at 119.888 142.24)
@@ -637,28 +637,16 @@
 		(uuid "9178d240-f72c-4e4f-b592-3574908e5982")
 	)
 	(junction
+		(at 131.318 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93d967c8-5e4d-439a-aa91-8f4095e1eafa")
+	)
+	(junction
 		(at 136.398 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "945a7019-60a2-4e90-a768-1919104a1332")
-	)
-	(junction
-		(at 131.318 108.204)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a337da92-bd4c-43b1-8708-480a00f4c28d")
-	)
-	(junction
-		(at 99.314 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a477f7b4-7f11-450b-bfe9-b9be807d7572")
-	)
-	(junction
-		(at 146.558 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a813b133-1376-457a-b523-1173ccd0dafc")
 	)
 	(junction
 		(at 136.398 142.24)
@@ -673,16 +661,22 @@
 		(uuid "bbc6fb0b-d9c6-4cac-a99f-0c16ff857491")
 	)
 	(junction
-		(at 99.314 64.262)
+		(at 99.314 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "befb50bf-9997-4699-a65a-b05dfad1c784")
+		(uuid "c2593ceb-2763-4c7b-9b88-54750e4566f1")
 	)
 	(junction
-		(at 99.314 108.204)
+		(at 131.318 108.204)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c684bd50-df4c-49dc-a124-0a503e85e93e")
+		(uuid "c7ec9970-b97f-44d8-bf1a-e7be29b66444")
+	)
+	(junction
+		(at 114.808 108.204)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9604e74-8eba-4200-b1e8-b8b8cb5420bf")
 	)
 	(junction
 		(at 136.398 76.962)
@@ -691,16 +685,10 @@
 		(uuid "ca1b941f-d8e2-497a-9315-4f9f985ee244")
 	)
 	(junction
-		(at 114.808 108.204)
+		(at 99.314 108.204)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cea38bcc-b8cd-4c5b-a3b6-eeb222580031")
-	)
-	(junction
-		(at 131.318 41.656)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dfc14fbf-203e-4b87-b8a7-e55fc02f8238")
+		(uuid "dd29b40e-0b19-4ba4-b7f3-1177ce63326b")
 	)
 	(junction
 		(at 136.398 120.904)
@@ -709,16 +697,16 @@
 		(uuid "dffab166-2403-4e5c-854d-3a1b9eef2bbf")
 	)
 	(junction
+		(at 146.558 64.262)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5a377d0-ee48-49c1-af55-abc6f5f873c9")
+	)
+	(junction
 		(at 114.808 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f21abbda-fa7b-427a-bb68-1bfff3f44151")
-	)
-	(junction
-		(at 146.558 41.656)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f2a97c1c-cd13-43eb-ab57-7b9eb5a5e5fe")
+		(uuid "e9651e21-d4b9-4b04-aa6b-f31022dc4174")
 	)
 	(junction
 		(at 119.888 120.904)
@@ -732,15 +720,17 @@
 		(color 0 0 0 0)
 		(uuid "f4872809-1be7-4780-99ed-c6bf117e3911")
 	)
-	(wire
-		(pts
-			(xy 99.314 41.656) (xy 99.314 64.262)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "031e6b38-9c51-4d52-a7b7-c971fa30b82b")
+	(junction
+		(at 99.314 64.262)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4a747f9-a131-4141-9c6c-65bf3467367c")
+	)
+	(junction
+		(at 114.808 64.262)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4beee33-aec5-44ea-8751-b2574d17c184")
 	)
 	(wire
 		(pts
@@ -784,26 +774,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.558 64.262) (xy 146.558 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18e70757-e784-4141-9a09-e27a11dbd1d5")
-	)
-	(wire
-		(pts
-			(xy 99.314 86.36) (xy 99.314 108.204)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18fcd09f-f30e-4a62-9116-71ecd2550cac")
-	)
-	(wire
-		(pts
 			(xy 104.394 99.06) (xy 119.888 99.06)
 		)
 		(stroke
@@ -814,6 +784,26 @@
 	)
 	(wire
 		(pts
+			(xy 99.314 41.656) (xy 99.314 64.262)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fe90657-31c6-4c65-af46-01ec116a0fcb")
+	)
+	(wire
+		(pts
+			(xy 131.318 129.54) (xy 131.318 150.876)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "316f4e65-d0f0-4ac3-8f05-b41933c3361e")
+	)
+	(wire
+		(pts
 			(xy 82.55 120.904) (xy 104.394 120.904)
 		)
 		(stroke
@@ -821,16 +811,6 @@
 			(type default)
 		)
 		(uuid "342858f0-d071-4070-8d20-89393ff4113f")
-	)
-	(wire
-		(pts
-			(xy 131.318 86.36) (xy 131.318 108.204)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36cc9cf5-3c64-4d58-82ee-f6aceb3a7a41")
 	)
 	(wire
 		(pts
@@ -851,6 +831,16 @@
 			(type default)
 		)
 		(uuid "3bff45cc-8ad1-4cd7-bdcf-1b0886c0a828")
+	)
+	(wire
+		(pts
+			(xy 131.318 41.656) (xy 131.318 64.262)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f75c6d3-17d9-4933-ab2b-ea2654dd294c")
 	)
 	(wire
 		(pts
@@ -884,13 +874,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.808 41.656) (xy 114.808 64.262)
+			(xy 146.558 86.36) (xy 146.558 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5589de68-38cc-4ed7-b455-65ceaa7c7232")
+		(uuid "5588d3a3-ad93-42a7-a79d-492b5f6b2296")
 	)
 	(wire
 		(pts
@@ -904,16 +894,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.314 64.262) (xy 99.314 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61bf0548-adc0-4810-8445-00a167f2c08d")
-	)
-	(wire
-		(pts
 			(xy 82.042 99.06) (xy 104.394 99.06)
 		)
 		(stroke
@@ -924,43 +904,43 @@
 	)
 	(wire
 		(pts
-			(xy 114.808 108.204) (xy 114.808 129.54)
+			(xy 131.318 64.262) (xy 131.318 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6aa678e7-fb17-4cd0-9451-a9ee71f86e0e")
+		(uuid "6d6e1784-77ca-430c-9f40-e85f02f05924")
 	)
 	(wire
 		(pts
-			(xy 114.808 64.262) (xy 114.808 86.36)
+			(xy 146.558 64.262) (xy 146.558 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f4b608b-1af7-46a9-a529-2c964229185d")
+		(uuid "71487cfb-0142-4152-a406-65be1c5d966a")
 	)
 	(wire
 		(pts
-			(xy 99.314 108.204) (xy 99.314 129.54)
+			(xy 99.314 129.54) (xy 99.314 150.876)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7c79a3c6-f92a-4afd-9e98-4dd92958ecc0")
+		(uuid "7d583db7-ea89-45ff-8f34-56ae3deb0e25")
 	)
 	(wire
 		(pts
-			(xy 146.558 41.656) (xy 146.558 64.262)
+			(xy 114.808 86.36) (xy 114.808 108.204)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "866a0bea-0025-45a9-81b6-d5bfd33e11bc")
+		(uuid "81c3b87f-19df-4fe2-bd43-c66895a4fcc5")
 	)
 	(wire
 		(pts
@@ -984,23 +964,53 @@
 	)
 	(wire
 		(pts
-			(xy 146.558 86.36) (xy 146.558 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5d40b3d-b9b1-478b-9f82-9247c8c7e9cf")
-	)
-	(wire
-		(pts
 			(xy 131.318 28.448) (xy 131.318 41.656)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac16a793-26f9-4a53-83c1-d4e72101f692")
+		(uuid "9e5f9a22-c26f-4f96-a01d-dcc2036cddb2")
+	)
+	(wire
+		(pts
+			(xy 114.808 41.656) (xy 114.808 64.262)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5a4b4e9-2d34-4a08-a872-33696b02453f")
+	)
+	(wire
+		(pts
+			(xy 99.314 64.262) (xy 99.314 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a690cfe7-f6a3-4f0a-9643-fd7836b75120")
+	)
+	(wire
+		(pts
+			(xy 146.558 41.656) (xy 146.558 64.262)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b77bfc41-0049-41ef-82d5-6a630777fde8")
+	)
+	(wire
+		(pts
+			(xy 99.314 108.204) (xy 99.314 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb6facb8-bd7f-457f-b6b6-cdcbc2de1a20")
 	)
 	(wire
 		(pts
@@ -1014,26 +1024,6 @@
 	)
 	(wire
 		(pts
-			(xy 131.318 108.204) (xy 131.318 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdc9e85a-ea62-4b20-8f0d-3d84383f17c9")
-	)
-	(wire
-		(pts
-			(xy 131.318 129.54) (xy 131.318 150.876)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2a1f7d8-5435-402e-945a-f2d723b67dba")
-	)
-	(wire
-		(pts
 			(xy 119.888 142.24) (xy 136.398 142.24)
 		)
 		(stroke
@@ -1044,23 +1034,23 @@
 	)
 	(wire
 		(pts
-			(xy 99.314 129.54) (xy 99.314 150.876)
+			(xy 114.808 64.262) (xy 114.808 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c52e440c-27af-44bb-9726-7c403f9d803b")
+		(uuid "c7d573d3-50a9-4ee0-8b12-d71f3ccb9a65")
 	)
 	(wire
 		(pts
-			(xy 114.808 86.36) (xy 114.808 108.204)
+			(xy 99.314 86.36) (xy 99.314 108.204)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ce06cbce-0cd8-4478-8e29-84f7b2cca231")
+		(uuid "cc4037b0-8d3f-4972-ae1a-c557041c1263")
 	)
 	(wire
 		(pts
@@ -1071,6 +1061,16 @@
 			(type default)
 		)
 		(uuid "d036864f-e95d-495d-a8d6-1b126693f2c3")
+	)
+	(wire
+		(pts
+			(xy 114.808 108.204) (xy 114.808 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2d04a62-2fda-435f-b193-cf4fe5ae9d1f")
 	)
 	(wire
 		(pts
@@ -1094,13 +1094,23 @@
 	)
 	(wire
 		(pts
-			(xy 131.318 64.262) (xy 131.318 86.36)
+			(xy 131.318 86.36) (xy 131.318 108.204)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f16f1267-5047-43f7-9f58-afd28a9f85dc")
+		(uuid "e69e2e42-f17b-4102-8b36-f0902fa23c5a")
+	)
+	(wire
+		(pts
+			(xy 131.318 108.204) (xy 131.318 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efd4d1cd-3525-4c99-b2c7-4a0813b11afd")
 	)
 	(wire
 		(pts
@@ -1121,16 +1131,6 @@
 			(type default)
 		)
 		(uuid "f41fa315-316e-4805-be0f-fc14a7161e3f")
-	)
-	(wire
-		(pts
-			(xy 131.318 41.656) (xy 131.318 64.262)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8099f1d-1cd1-411f-a827-2b88405b7286")
 	)
 	(wire
 		(pts
@@ -1384,16 +1384,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 133.858 153.416 0)
+		(at 133.858 153.416 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "021230f1-49ef-4fc4-92dd-a64b76a53084")
 		(property "Reference" "S18"
-			(at 133.858 146.558 0)
+			(at 140.716 153.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1401,7 +1401,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 133.858 149.098 0)
+			(at 138.176 153.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1436,7 +1436,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 133.858 146.558 0)
+			(at 140.716 153.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1752,16 +1752,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 133.858 110.744 0)
+		(at 133.858 110.744 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0ae58f03-1687-48d6-953c-8857e761b789")
 		(property "Reference" "S14"
-			(at 133.858 103.886 0)
+			(at 140.716 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1769,7 +1769,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 133.858 106.426 0)
+			(at 138.176 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1804,7 +1804,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 133.858 103.886 0)
+			(at 140.716 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1829,16 +1829,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 101.854 44.196 0)
+		(at 101.854 44.196 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0fb4f328-acac-4f96-a2be-0c72a688398d")
 		(property "Reference" "S1"
-			(at 101.854 37.338 0)
+			(at 108.712 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1846,7 +1846,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 101.854 39.878 0)
+			(at 106.172 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1881,7 +1881,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 101.854 37.338 0)
+			(at 108.712 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1906,16 +1906,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 133.858 66.802 0)
+		(at 133.858 66.802 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1a64367b-97c4-47f0-bbe4-cbce25c04d99")
 		(property "Reference" "S6"
-			(at 133.858 59.944 0)
+			(at 140.716 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1923,7 +1923,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 133.858 62.484 0)
+			(at 138.176 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1958,7 +1958,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 133.858 59.944 0)
+			(at 140.716 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2274,16 +2274,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 149.098 44.196 0)
+		(at 149.098 44.196 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2d43f312-b844-4d35-883b-aad3b33f10e7")
 		(property "Reference" "S7"
-			(at 149.098 37.338 0)
+			(at 155.956 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2291,7 +2291,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 149.098 39.878 0)
+			(at 153.416 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2326,7 +2326,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 149.098 37.338 0)
+			(at 155.956 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2351,16 +2351,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 101.854 153.416 0)
+		(at 101.854 153.416 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "315eb90e-69b3-46af-9136-01ccb760106e")
 		(property "Reference" "S21"
-			(at 101.854 146.558 0)
+			(at 108.712 153.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2368,7 +2368,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 101.854 149.098 0)
+			(at 106.172 153.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2403,7 +2403,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 101.854 146.558 0)
+			(at 108.712 153.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2589,16 +2589,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 117.348 44.196 0)
+		(at 117.348 44.196 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "48346025-defc-47ec-a717-b990fe4908b2")
 		(property "Reference" "S3"
-			(at 117.348 37.338 0)
+			(at 124.206 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2606,7 +2606,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 117.348 39.878 0)
+			(at 121.666 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2641,7 +2641,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 117.348 37.338 0)
+			(at 124.206 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2666,16 +2666,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 101.854 132.08 0)
+		(at 101.854 132.08 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "506a86c1-5e2b-4a48-b1ed-6feed68c5365")
 		(property "Reference" "S15"
-			(at 101.854 125.222 0)
+			(at 108.712 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2683,7 +2683,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 101.854 127.762 0)
+			(at 106.172 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2718,7 +2718,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 101.854 125.222 0)
+			(at 108.712 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2743,16 +2743,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 133.858 88.9 0)
+		(at 133.858 88.9 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "51b35154-a1fa-4f10-9477-912d1c91c3f2")
 		(property "Reference" "S11"
-			(at 133.858 82.042 0)
+			(at 140.716 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2760,7 +2760,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 133.858 84.582 0)
+			(at 138.176 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2795,7 +2795,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 133.858 82.042 0)
+			(at 140.716 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2820,16 +2820,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 101.854 110.744 0)
+		(at 101.854 110.744 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "66f7161d-0cb8-4b89-ab75-176944c47d42")
 		(property "Reference" "S12"
-			(at 101.854 103.886 0)
+			(at 108.712 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2837,7 +2837,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 101.854 106.426 0)
+			(at 106.172 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2872,7 +2872,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 101.854 103.886 0)
+			(at 108.712 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3188,16 +3188,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 133.858 132.08 0)
+		(at 133.858 132.08 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8e91a04a-6f8f-4ec9-bcd7-0bb169d98140")
 		(property "Reference" "S17"
-			(at 133.858 125.222 0)
+			(at 140.716 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3205,7 +3205,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 133.858 127.762 0)
+			(at 138.176 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3240,7 +3240,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 133.858 125.222 0)
+			(at 140.716 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3362,16 +3362,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 117.348 132.08 0)
+		(at 117.348 132.08 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b13c0172-1203-4553-81c8-0f07e1ae6363")
 		(property "Reference" "S16"
-			(at 117.348 125.222 0)
+			(at 124.206 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3379,7 +3379,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 117.348 127.762 0)
+			(at 121.666 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3414,7 +3414,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 117.348 125.222 0)
+			(at 124.206 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3633,16 +3633,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 149.098 66.802 0)
+		(at 149.098 66.802 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b8262bc4-dd4c-48cf-90b4-7282fd43d29e")
 		(property "Reference" "S8"
-			(at 149.098 59.944 0)
+			(at 155.956 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3650,7 +3650,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 149.098 62.484 0)
+			(at 153.416 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3685,7 +3685,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 149.098 59.944 0)
+			(at 155.956 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3807,16 +3807,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 149.098 132.08 0)
+		(at 149.098 132.08 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b9d4d624-2a1b-409e-bbda-702f8f128fe0")
 		(property "Reference" "S20"
-			(at 149.098 125.222 0)
+			(at 155.956 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3824,7 +3824,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 149.098 127.762 0)
+			(at 153.416 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3859,7 +3859,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 149.098 125.222 0)
+			(at 155.956 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4045,16 +4045,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 133.858 44.196 0)
+		(at 133.858 44.196 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d5a84623-61a9-46a0-946c-dbc0bfd5b7a5")
 		(property "Reference" "S5"
-			(at 133.858 37.338 0)
+			(at 140.716 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4062,7 +4062,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 133.858 39.878 0)
+			(at 138.176 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4097,7 +4097,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 133.858 37.338 0)
+			(at 140.716 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4219,16 +4219,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 149.098 88.9 0)
+		(at 149.098 88.9 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "dab701ff-e81e-4f1a-83dc-cd73b4ccdee1")
 		(property "Reference" "S19"
-			(at 149.098 82.042 0)
+			(at 155.956 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4236,7 +4236,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 149.098 84.582 0)
+			(at 153.416 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4271,7 +4271,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 149.098 82.042 0)
+			(at 155.956 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4360,16 +4360,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 117.348 88.9 0)
+		(at 117.348 88.9 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e659a144-d3b5-4d8b-bf1e-82907332c249")
 		(property "Reference" "S10"
-			(at 117.348 82.042 0)
+			(at 124.206 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4377,7 +4377,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 117.348 84.582 0)
+			(at 121.666 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4412,7 +4412,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 117.348 82.042 0)
+			(at 124.206 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4437,16 +4437,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 117.348 110.744 0)
+		(at 117.348 110.744 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e90be237-5790-41e7-802d-3446e73c7bf2")
 		(property "Reference" "S13"
-			(at 117.348 103.886 0)
+			(at 124.206 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4454,7 +4454,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 117.348 106.426 0)
+			(at 121.666 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4489,7 +4489,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 117.348 103.886 0)
+			(at 124.206 110.744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4611,16 +4611,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 101.854 88.9 0)
+		(at 101.854 88.9 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ec14d018-cfe2-45c3-ab1a-cfc8c34ceae8")
 		(property "Reference" "S9"
-			(at 101.854 82.042 0)
+			(at 108.712 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4628,7 +4628,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 101.854 84.582 0)
+			(at 106.172 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4663,7 +4663,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 101.854 82.042 0)
+			(at 108.712 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4882,16 +4882,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 117.348 66.802 0)
+		(at 117.348 66.802 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f4e3d4d9-2bf8-4120-9636-8e80c3d39806")
 		(property "Reference" "S4"
-			(at 117.348 59.944 0)
+			(at 124.206 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4899,7 +4899,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 117.348 62.484 0)
+			(at 121.666 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4934,7 +4934,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 117.348 59.944 0)
+			(at 124.206 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5056,16 +5056,16 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 101.854 66.802 0)
+		(at 101.854 66.802 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f939fad1-ed1f-4cc7-b88d-53dee00494f2")
 		(property "Reference" "S2"
-			(at 101.854 59.944 0)
+			(at 108.712 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5073,7 +5073,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 101.854 62.484 0)
+			(at 106.172 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5108,7 +5108,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 101.854 59.944 0)
+			(at 108.712 66.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)

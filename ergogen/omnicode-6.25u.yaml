@@ -1,8 +1,8 @@
 meta:
   author: Allen Choi
-  version: 0.3.0
+  version: 0.3.3
   engine: 4.1.0
-  project: "OmniCode: 9001"
+  project: "OmniCode:9001"
 
 text_common:
   base_text_android: &base_text_android
@@ -17,8 +17,7 @@ text_common:
 
   version_text: &version_text
     <<: *text_base
-    params:
-      text: 'HK Split (let''s sync) 66-Key Keyboard 0.9.3'
+    params.text: "OminCode:9001 v0.3.1"
 
   text_bbg: &text_bbg
     what: utility_text
@@ -57,6 +56,10 @@ units:
   # Pogopin placement
   pogo_x: 0.58 + bx - 5.1
   pogo_y: -3.3
+
+  # hole offset from the edges
+  hole_offset: 5
+
   # Layout specific measurements
   corner: 2         # Corner radius
   distance: 2 bx + mb
@@ -333,6 +336,27 @@ points:
         c17: { key: { width: u2_00,    column_net: "col_1", shift: [u1_00/2, 0], tags: [dfu2_00]}}
         c18: { key: { width: u1_00,    column_net: "col_1", shift: [u1_00, 0]}}
 
+screw_holes:
+  glyph_matrix: &screw_holes_glyph_matrix
+    hole1:
+      where: [function_c00_row]
+      adjust: { shift: [-0.5px-bx+hole_offset, 0.5py+by-hole_offset] }
+    hole2:
+      where: [function_c13_row]
+      adjust: { shift: [0.5px+bx-hole_offset, 0.5py+by-hole_offset] }
+    hole3:
+      where: [function_c13_row]
+      adjust: { shift: [0.5px+bx-hole_offset, -0.5py-5.25u1_00-by+hole_offset] }
+    hole4:
+      where: [function_c00_row]
+      adjust: { shift: [-0.5px-bx+hole_offset, -0.5py-5.25u1_00-by+hole_offset] }
+    hole5:
+      where: [function_c07_row]
+      adjust: { shift: [-0.5px-bx+hole_offset, 0.5py+by-hole_offset] }
+    hole6:
+      where: [function_c07_row]
+      adjust: { shift: [-0.5px-bx+hole_offset, -0.5py-5.25u1_00-by+hole_offset] }
+
 
 outlines:
   raw: &raw
@@ -368,7 +392,7 @@ outlines:
       where: true
       size: [14, 14]
 
-  glyph_matrix:
+  glyph_matrix_raw:
     - what: polygon
       operation: stack
       points:
@@ -381,6 +405,24 @@ outlines:
        - ref: function_c00_row
          shift: [-0.5px-bx, -0.5py-5.25u1_00-by]
       fillet: corner
+
+  glyph_screw_holes:
+    <<: *screw_holes_glyph_matrix
+    hole1.what: circle
+    hole1.radius: 1.6
+    hole2.what: circle
+    hole2.radius: 1.6
+    hole3.what: circle
+    hole3.radius: 1.6
+    hole4.what: circle
+    hole4.radius: 1.6
+    hole5.what: circle
+    hole5.radius: 1.6
+    hole6.what: circle
+    hole6.radius: 1.6
+
+  glyph_matrix:
+    - "glyph_matrix_raw"
 
   phase_shift:
     - what: polygon
@@ -412,6 +454,7 @@ outlines:
 
   pcb_outline:
     - "glyph_matrix"
+    - "-glyph_screw_holes"
     - "phase_shift"
     - "delta_form"
 
@@ -513,6 +556,20 @@ pcbs:
           rotate: 180
           shift: [u1_50 / 2, u0_50 + by- 1.6]
 
+      <<: *screw_holes_glyph_matrix
+      hole1.what: hole_3.2mm
+      hole1.params.P1: GND
+      hole2.what: hole_3.2mm
+      hole2.params.P1: GND
+      hole3.what: hole_3.2mm
+      hole3.params.P1: GND
+      hole4.what: hole_3.2mm
+      hole4.params.P1: GND
+      hole5.what: hole_3.2mm
+      hole5.params.P1: GND
+      hole6.what: hole_3.2mm
+      hole6.params.P1: GND
+
   GlyphMatrix_Top:
     template: kicad8
     outlines:
@@ -539,6 +596,12 @@ pcbs:
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
+      version:
+        <<: *version_text
+        where: [gmu6_25]
+        params.side: F
+        params.width: 1.2
+        params.height: 1.2
 
   PhaseShift:
     template: kicad8
