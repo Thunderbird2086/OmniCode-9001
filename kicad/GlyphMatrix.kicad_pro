@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.1,
-          "width": 1.8
+          "height": 0.95,
+          "width": 0.8
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -566,68 +566,52 @@
         "pattern": "+5V"
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R1-Pad2)"
+        "netclass": "col",
+        "pattern": "ROW00"
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R13-Pad2)"
+        "netclass": "col",
+        "pattern": "ROW01"
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R22-Pad1)"
+        "netclass": "col",
+        "pattern": "ROW02"
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R23-Pad1)"
+        "netclass": "col",
+        "pattern": "ROW03 "
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R24-Pad1)"
+        "netclass": "col",
+        "pattern": "ROW04"
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R25-Pad1)"
+        "netclass": "col",
+        "pattern": "ROW05"
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R26-Pad1)"
+        "netclass": "col",
+        "pattern": "ROW06"
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R34-Pad1)"
+        "netclass": "col",
+        "pattern": "ROW07"
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R35-Pad1)"
+        "netclass": "col",
+        "pattern": "ROW08"
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R36-Pad1)"
+        "netclass": "col",
+        "pattern": "ROW09"
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R4-Pad2)"
+        "netclass": "col",
+        "pattern": "ROW10"
       },
       {
-        "netclass": "CS",
-        "pattern": "Net-(R43-Pad1)"
-      },
-      {
-        "netclass": "CS",
-        "pattern": "Net-(R44-Pad1)"
-      },
-      {
-        "netclass": "CS",
-        "pattern": "Net-(R45-Pad1)"
-      },
-      {
-        "netclass": "CS",
-        "pattern": "Net-(R5-Pad1)"
-      },
-      {
-        "netclass": "CS",
-        "pattern": "Net-(R8-Pad1)"
+        "netclass": "col",
+        "pattern": "ROW11"
       },
       {
         "netclass": "col",
@@ -636,34 +620,6 @@
       {
         "netclass": "col",
         "pattern": "COL1"
-      },
-      {
-        "netclass": "col",
-        "pattern": "COL10"
-      },
-      {
-        "netclass": "col",
-        "pattern": "COL11"
-      },
-      {
-        "netclass": "col",
-        "pattern": "COL12"
-      },
-      {
-        "netclass": "col",
-        "pattern": "COL13"
-      },
-      {
-        "netclass": "col",
-        "pattern": "COL14"
-      },
-      {
-        "netclass": "col",
-        "pattern": "COL15"
-      },
-      {
-        "netclass": "col",
-        "pattern": "COL16"
       },
       {
         "netclass": "col",
@@ -684,18 +640,6 @@
       {
         "netclass": "col",
         "pattern": "COL6"
-      },
-      {
-        "netclass": "col",
-        "pattern": "COL7"
-      },
-      {
-        "netclass": "col",
-        "pattern": "COL8"
-      },
-      {
-        "netclass": "col",
-        "pattern": "COL9"
       },
       {
         "netclass": "diode",
