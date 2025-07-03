@@ -11,8 +11,8 @@
   (paper "A3")
   (title_block
     (title "GlyphMatrix_Plate")
-    (date "2025-07-02")
-    (rev "0.3.3")
+    (date "2025-07-03")
+    (rev "0.3.4")
     (company "Allen Choi")
   )
 
@@ -122,7 +122,7 @@
   )
     
 
-  (gr_text "OminCode:9001 v0.3.1"
+  (gr_text "OminCode:9001 v0.3.4"
     (at 201.20625 190.0125 0)
     (layer "F.SilkS" knockout)
     (effects

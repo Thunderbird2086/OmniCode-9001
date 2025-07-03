@@ -1,6 +1,6 @@
 meta:
   author: Allen Choi
-  version: 0.3.3
+  version: 0.3.4
   engine: 4.1.0
   project: "OmniCode:9001"
 
@@ -17,7 +17,7 @@ text_common:
 
   version_text: &version_text
     <<: *text_base
-    params.text: "OminCode:9001 v0.3.1"
+    params.text: "OminCode:9001 v0.3.4"
 
   text_bbg: &text_bbg
     what: utility_text
@@ -58,7 +58,7 @@ units:
   pogo_y: -3.3
 
   # hole offset from the edges
-  hole_offset: 5
+  hole_offset: 4
 
   # Layout specific measurements
   corner: 2         # Corner radius
@@ -337,7 +337,7 @@ points:
         c18: { key: { width: u1_00,    column_net: "col_1", shift: [u1_00, 0]}}
 
 screw_holes:
-  glyph_matrix: &screw_holes_glyph_matrix
+  glyph_matrix_common: &screw_holes_glyph_matrix_common
     hole1:
       where: [function_c00_row]
       adjust: { shift: [-0.5px-bx+hole_offset, 0.5py+by-hole_offset] }
@@ -354,8 +354,16 @@ screw_holes:
       where: [function_c07_row]
       adjust: { shift: [-0.5px-bx+hole_offset, 0.5py+by-hole_offset] }
     hole6:
-      where: [function_c07_row]
-      adjust: { shift: [-0.5px-bx+hole_offset, -0.5py-5.25u1_00-by+hole_offset] }
+      where: [thumb_c05_row]
+      adjust: { shift: [ 0.5px+hole_offset, 0] }
+
+  glyph_matrix_top: &screw_holes_glyph_matrix
+    hole7:
+      where: [home_c04_row]
+      adjust: { shift: [-0.5px-bx-0.15, 0.5py+by-hole_offset] }
+    hole8:
+      where: [home_c10_row]
+      adjust: { shift: [-0.5px-bx-0.15, 0.5py+by-hole_offset] }
 
 
 outlines:
@@ -406,8 +414,8 @@ outlines:
          shift: [-0.5px-bx, -0.5py-5.25u1_00-by]
       fillet: corner
 
-  glyph_screw_holes:
-    <<: *screw_holes_glyph_matrix
+  screw_holes_glyph_matrix_common:
+    <<: *screw_holes_glyph_matrix_common
     hole1.what: circle
     hole1.radius: 1.6
     hole2.what: circle
@@ -420,6 +428,13 @@ outlines:
     hole5.radius: 1.6
     hole6.what: circle
     hole6.radius: 1.6
+
+  glyph_screw_holes:
+    <<: *screw_holes_glyph_matrix
+    hole7.what: circle
+    hole7.radius: 1.6
+    hole8.what: circle
+    hole8.radius: 1.6
 
   glyph_matrix:
     - "glyph_matrix_raw"
@@ -454,6 +469,7 @@ outlines:
 
   pcb_outline:
     - "glyph_matrix"
+    - "-screw_holes_glyph_matrix_common"
     - "-glyph_screw_holes"
     - "phase_shift"
     - "delta_form"
@@ -556,19 +572,25 @@ pcbs:
           rotate: 180
           shift: [u1_50 / 2, u0_50 + by- 1.6]
 
-      <<: *screw_holes_glyph_matrix
-      hole1.what: hole_3.2mm
+      <<: *screw_holes_glyph_matrix_common
+      hole1.what: hole_3.2mm_pad
       hole1.params.P1: GND
-      hole2.what: hole_3.2mm
+      hole2.what: hole_3.2mm_pad
       hole2.params.P1: GND
-      hole3.what: hole_3.2mm
+      hole3.what: hole_3.2mm_pad
       hole3.params.P1: GND
-      hole4.what: hole_3.2mm
+      hole4.what: hole_3.2mm_pad
       hole4.params.P1: GND
-      hole5.what: hole_3.2mm
+      hole5.what: hole_3.2mm_pad
       hole5.params.P1: GND
-      hole6.what: hole_3.2mm
+      hole6.what: hole_3.2mm_pad
       hole6.params.P1: GND
+
+      <<: *screw_holes_glyph_matrix
+      hole7.what: hole_3.2mm_pad
+      hole7.params.P1: GND
+      hole8.what: hole_3.2mm_pad
+      hole8.params.P1: GND
 
   GlyphMatrix_Top:
     template: kicad8

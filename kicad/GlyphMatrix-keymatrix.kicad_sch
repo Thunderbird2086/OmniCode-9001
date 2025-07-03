@@ -1415,6 +1415,12 @@
 		(uuid "e7747a69-7cab-4f65-a5c2-25d4abf84cc3")
 	)
 	(junction
+		(at 81.026 254.254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9444bbe-aec1-4ce0-a8b1-70843aadca52")
+	)
+	(junction
 		(at 85.344 159.766)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1437,6 +1443,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eda63ff7-c770-4a5a-9ab1-06340fa3c23b")
+	)
+	(junction
+		(at 81.026 260.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee1031d8-f703-4392-a25c-fbed2ef660ea")
 	)
 	(junction
 		(at 106.934 129.286)
@@ -1709,6 +1721,16 @@
 			(type default)
 		)
 		(uuid "2ea03830-d38c-4088-a75c-e71916a4cc22")
+	)
+	(wire
+		(pts
+			(xy 81.026 254.254) (xy 81.026 249.174)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f9a60a6-4590-4ddc-87a3-14bc91a4274a")
 	)
 	(wire
 		(pts
@@ -2152,6 +2174,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.026 260.35) (xy 81.026 254.254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69e8b1a4-f4c5-4598-ae25-dd11f87ae85f")
+	)
+	(wire
+		(pts
 			(xy 246.38 58.674) (xy 246.38 71.882)
 		)
 		(stroke
@@ -2292,7 +2324,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.026 255.016) (xy 81.026 249.174)
+			(xy 81.026 262.382) (xy 81.026 260.35)
 		)
 		(stroke
 			(width 0)
@@ -4632,6 +4664,73 @@
 		)
 	)
 	(symbol
+		(lib_id "TB2086_MISC:MountingHole_Pad")
+		(at 83.566 260.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "132b2e01-534e-4f07-a663-816a3b30278b")
+		(property "Reference" "H8"
+			(at 88.138 259.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 88.138 261.6199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TB2086_MISC:MountingHole_3.2mm_Pad"
+			(at 83.566 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.566 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 83.566 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "abdea791-b310-48d3-ac1f-4fe7144213de")
+		)
+		(instances
+			(project "GlyphMatrix"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/8e27df26-641e-47e6-a7be-c8ba38f472d4"
+					(reference "H8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
 		(at 104.394 140.97 270)
 		(mirror x)
@@ -4787,7 +4886,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 81.026 255.016 0)
+		(at 81.026 262.382 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4796,7 +4895,7 @@
 		(fields_autoplaced yes)
 		(uuid "16442701-2ad2-4d42-a581-a44594a081cf")
 		(property "Reference" "#PWR021"
-			(at 81.026 261.366 0)
+			(at 81.026 268.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4805,7 +4904,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.026 259.842 0)
+			(at 81.026 267.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4813,7 +4912,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.026 255.016 0)
+			(at 81.026 262.382 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4822,7 +4921,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.026 255.016 0)
+			(at 81.026 262.382 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4831,7 +4930,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.026 255.016 0)
+			(at 81.026 262.382 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14788,6 +14887,73 @@
 			(project "OmniCode"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/8e27df26-641e-47e6-a7be-c8ba38f472d4"
 					(reference "S53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_MISC:MountingHole_Pad")
+		(at 83.566 254.254 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecb22028-a7a8-4754-95ee-3c78cce41dc7")
+		(property "Reference" "H7"
+			(at 88.392 252.9839 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 88.392 255.5239 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TB2086_MISC:MountingHole_3.2mm_Pad"
+			(at 83.566 254.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.566 254.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 83.566 254.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90048cb0-e386-49b6-ac61-b6bc36901cd6")
+		)
+		(instances
+			(project "GlyphMatrix"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/8e27df26-641e-47e6-a7be-c8ba38f472d4"
+					(reference "H7")
 					(unit 1)
 				)
 			)
