@@ -11306,7 +11306,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "GREEN"
+		(property "Value" "WHITE"
 			(at 209.55 46.355 90)
 			(effects
 				(font

@@ -12,7 +12,7 @@
   (title_block
     (title "DeltaForm_Top")
     (date "2025-07-03")
-    (rev "0.3.4")
+    (rev "0.3.5")
     (company "Allen Choi")
   )
 
@@ -1890,6 +1890,11 @@
 (gr_arc (start 518.575 77.7125) (mid 517.9892136000001 76.29828640000001) (end 516.575 75.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 516.575 204.3) (mid 517.9892136000001 203.71421360000002) (end 518.575 202.3) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 433.17500000000007 202.3) (mid 433.7607864000001 203.71421360000002) (end 435.17500000000007 204.3) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_circle (center 437.17500000000007 79.7125) (end 439.0250000000001 79.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 514.575 79.7125) (end 516.4250000000001 79.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 514.575 200.30000000000004) (end 516.4250000000001 200.30000000000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 437.17500000000007 200.30000000000004) (end 439.0250000000001 200.30000000000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 475.87500000000006 142.38750000000002) (end 477.7250000000001 142.38750000000002) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
 
 )
 

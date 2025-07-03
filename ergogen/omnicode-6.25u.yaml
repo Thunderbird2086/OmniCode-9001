@@ -1,6 +1,6 @@
 meta:
   author: Allen Choi
-  version: 0.3.4
+  version: 0.3.5
   engine: 4.1.0
   project: "OmniCode:9001"
 
@@ -334,10 +334,10 @@ points:
         thumb:     { row_net: "thumb" }
       columns:
         c17: { key: { width: u2_00,    column_net: "col_1", shift: [u1_00/2, 0], tags: [dfu2_00]}}
-        c18: { key: { width: u1_00,    column_net: "col_1", shift: [u1_00, 0]}}
+        c19: { key: { width: u1_00,    column_net: "col_1", shift: [u1_00, 0]}}
 
 screw_holes:
-  glyph_matrix_common: &screw_holes_glyph_matrix_common
+  common: &screw_holes_common
     hole1:
       where: [function_c00_row]
       adjust: { shift: [-0.5px-bx+hole_offset, 0.5py+by-hole_offset] }
@@ -350,6 +350,9 @@ screw_holes:
     hole4:
       where: [function_c00_row]
       adjust: { shift: [-0.5px-bx+hole_offset, -0.5py-5.25u1_00-by+hole_offset] }
+
+  glyph_matrix_common: &screw_holes_glyph_matrix_common
+    <<: *screw_holes_common
     hole5:
       where: [function_c07_row]
       adjust: { shift: [-0.5px-bx+hole_offset, 0.5py+by-hole_offset] }
@@ -365,6 +368,27 @@ screw_holes:
       where: [home_c10_row]
       adjust: { shift: [-0.5px-bx-0.15, 0.5py+by-hole_offset] }
 
+  phase_shift_common: &screw_holes_phase_shift_common
+    <<: *screw_holes_common
+    hole1.where: [nav_block_c14_func]
+    hole2.where: [nav_block_c16_func]
+    hole3:
+      where: [nav_block3_c16_thumb]
+      adjust: { shift: [0.5px+bx-hole_offset, -0.5py-by+hole_offset] }
+    hole4:
+      where: [nav_block3_c14_thumb]
+      adjust: { shift: [-0.5px-bx+hole_offset, -0.5py-by+hole_offset] }
+
+  delta_form_common: &screw_holes_delta_form_common
+    <<: *screw_holes_common
+    hole1.where: [num_pad_c17_func]
+    hole2.where: [num_pad_c20_func]
+    hole3:
+      where: [num_pad5_c19_thumb]
+      adjust: { shift: [1.5px+bx-hole_offset, -0.5py-by+hole_offset] }
+    hole4:
+      where: [num_pad5_c17_thumb]
+      adjust: { shift: [-px-bx+hole_offset, -0.5py-by+hole_offset] }
 
 outlines:
   raw: &raw
@@ -436,6 +460,28 @@ outlines:
     hole8.what: circle
     hole8.radius: 1.6
 
+  screw_holes_glyph_matrix_top:
+    <<: *screw_holes_glyph_matrix_common
+    hole1.what: circle
+    hole1.radius: 1.85
+    hole2.what: circle
+    hole2.radius: 1.85
+    hole3.what: circle
+    hole3.radius: 1.85
+    hole4.what: circle
+    hole4.radius: 1.85
+    hole5.what: circle
+    hole5.radius: 1.85
+    hole6.what: circle
+    hole6.radius: 1.85
+
+  glyph_screw_holes_top:
+    <<: *screw_holes_glyph_matrix
+    hole7.what: circle
+    hole7.radius: 1.85
+    hole8.what: circle
+    hole8.radius: 1.85
+
   glyph_matrix:
     - "glyph_matrix_raw"
 
@@ -453,6 +499,17 @@ outlines:
          shift: [-0.5px-bx, -0.5py-by]
       fillet: corner
 
+  screw_holes_phase_shift_common:
+    <<: *screw_holes_phase_shift_common
+    hole1.what: circle
+    hole1.radius: 1.6
+    hole2.what: circle
+    hole2.radius: 1.6
+    hole3.what: circle
+    hole3.radius: 1.6
+    hole4.what: circle
+    hole4.radius: 1.6
+
   delta_form:
     - what: polygon
       operation: stack
@@ -467,12 +524,30 @@ outlines:
          shift: [-0.5px-bx, -0.5py-5.25u1_00-by]
       fillet: corner
 
+  screw_holes_delta_form_common:
+    <<: *screw_holes_delta_form_common
+    hole1.what: circle
+    hole1.radius: 1.6
+    hole2.what: circle
+    hole2.radius: 1.6
+    hole3.what: circle
+    hole3.radius: 1.6
+    hole4.what: circle
+    hole4.radius: 1.6
+
   pcb_outline:
     - "glyph_matrix"
     - "-screw_holes_glyph_matrix_common"
     - "-glyph_screw_holes"
     - "phase_shift"
+    - "-screw_holes_phase_shift_common"
     - "delta_form"
+    - "-screw_holes_delta_form_common"
+
+  gm_top:
+    - "glyph_matrix"
+    - "-screw_holes_glyph_matrix_top"
+    - "-glyph_screw_holes_top"
 
   look:
     - "pcb_outline"
@@ -595,7 +670,7 @@ pcbs:
   GlyphMatrix_Top:
     template: kicad8
     outlines:
-      edge: {outline: glyph_matrix, layer: Edge.Cuts}
+      edge: {outline: gm_top, layer: Edge.Cuts}
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
@@ -624,6 +699,20 @@ pcbs:
         params.side: F
         params.width: 1.2
         params.height: 1.2
+
+      <<: *screw_holes_glyph_matrix_common
+      hole1.what: hole_3.2mm_pad
+      hole1.params.P1: GND
+      hole2.what: hole_3.2mm_pad
+      hole2.params.P1: GND
+      hole3.what: hole_3.2mm_pad
+      hole3.params.P1: GND
+      hole4.what: hole_3.2mm_pad
+      hole4.params.P1: GND
+      hole5.what: hole_3.2mm_pad
+      hole5.params.P1: GND
+      hole6.what: hole_3.2mm_pad
+      hole6.params.P1: GND
 
   PhaseShift:
     template: kicad8

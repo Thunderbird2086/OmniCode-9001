@@ -2469,7 +2469,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "RGB_FOM_LEFT"
 		(shape input)
 		(at 33.02 51.816 180)
 		(fields_autoplaced yes)
@@ -2481,7 +2481,7 @@
 		)
 		(uuid "6cd3c7bb-dea1-4648-9cd6-c0c179eeeb5c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.1643 51.816 0)
+			(at 16.1858 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2491,7 +2491,7 @@
 			)
 		)
 	)
-	(global_label "RGB_FOM_LEFT"
+	(global_label "+5V"
 		(shape input)
 		(at 33.02 59.436 180)
 		(fields_autoplaced yes)
@@ -2503,7 +2503,7 @@
 		)
 		(uuid "6e1b7be8-14a8-45d1-959e-662c53127e18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.1858 59.436 0)
+			(at 26.1643 59.436 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2645,7 +2645,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "RGB_TO_RIGHT"
 		(shape input)
 		(at 195.072 49.53 0)
 		(fields_autoplaced yes)
@@ -2657,7 +2657,7 @@
 		)
 		(uuid "884102b8-ca44-4db8-bd16-8fe848b089ea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.9277 49.53 0)
+			(at 211.5434 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3019,7 +3019,7 @@
 			)
 		)
 	)
-	(global_label "RGB_TO_RIGHT"
+	(global_label "+5V"
 		(shape input)
 		(at 195.072 57.15 0)
 		(fields_autoplaced yes)
@@ -3031,7 +3031,7 @@
 		)
 		(uuid "f181386a-1d70-4cef-8617-2e2f7f96734e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 211.5434 57.15 0)
+			(at 201.9277 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3657,7 +3657,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TB2086_MISC:Pogopin_1x07_P2.54mm_Curved"
 			(at 41.656 96.774 0)
 			(effects
 				(font
@@ -3973,7 +3973,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TB2086_MISC:Pogopin_1x07_P2.54mm_Curved"
 			(at 41.91 155.956 0)
 			(effects
 				(font
@@ -4527,7 +4527,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TB2086_MISC:Pogopin_1x07_P2.54mm_Curved"
 			(at 186.182 153.67 0)
 			(effects
 				(font
@@ -4688,7 +4688,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TB2086_MISC:Pogopin_1x07_P2.54mm_Curved"
 			(at 186.436 94.488 0)
 			(effects
 				(font
@@ -4996,7 +4996,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RED"
+		(property "Value" "GREEN"
 			(at 71.374 30.099 90)
 			(effects
 				(font

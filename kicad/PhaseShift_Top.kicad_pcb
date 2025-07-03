@@ -12,7 +12,7 @@
   (title_block
     (title "PhaseShift_Top")
     (date "2025-07-03")
-    (rev "0.3.4")
+    (rev "0.3.5")
     (company "Allen Choi")
   )
 
@@ -1065,6 +1065,11 @@
 (gr_arc (start 427.67500000000007 77.7125) (mid 427.08921360000005 76.29828640000001) (end 425.67500000000007 75.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 425.67500000000007 204.29999999999998) (mid 427.08921360000005 203.7142136) (end 427.67500000000007 202.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 361.32500000000005 202.29999999999998) (mid 361.91078640000006 203.7142136) (end 363.32500000000005 204.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_circle (center 365.32500000000005 79.7125) (end 367.17500000000007 79.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 423.67500000000007 79.7125) (end 425.5250000000001 79.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 423.67500000000007 200.29999999999998) (end 425.5250000000001 200.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 365.32500000000005 200.29999999999998) (end 367.17500000000007 200.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 404.02500000000003 142.38750000000002) (end 405.87500000000006 142.38750000000002) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
 
 )
 

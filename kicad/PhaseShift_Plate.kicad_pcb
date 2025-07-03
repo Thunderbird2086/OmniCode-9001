@@ -12,7 +12,7 @@
   (title_block
     (title "PhaseShift_Plate")
     (date "2025-07-03")
-    (rev "0.3.4")
+    (rev "0.3.5")
     (company "Allen Choi")
   )
 
@@ -120,6 +120,170 @@
       )
     )
   )
+    
+(
+         footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
+        (version 20241229)
+        (generator "pcbnew")
+        (generator_version "9.0")
+        (layer "F.Cu")
+        (descr "Mounting Hole 3.2mm, no annular, M3")
+        (tags "mounting hole 3.2mm no annular m3")
+        (property "Reference" "H1" (at 0 -4.2 0) (layer "F.SilkS") hide  (effects (font (size 1 1) (thickness 0.15))))
+        (attr exclude_from_pos_files exclude_from_bom)
+        (embedded_fonts no)
+        (at 365.32500000000005 79.7125 0)
+    
+    
+    
+        (property "Value" "MountingHole_3.2mm_Pad" (at 0 4.2 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
+        (property "Datasheet" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
+        (property "Description" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
+        (fp_text user "${REFERENCE}" (at 0 0 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
+    
+    
+        (fp_circle (center 0 0) (end 3.45 0) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") )
+    
+    
+        (pad "1" thru_hole circle (at 0 0 0) (size 3.5 3.5) (drill 3.2) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (zone_connect 2)  (net 1 "GND"))
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        (fp_circle (center 0 0) (end 3.2 0) (stroke (width 0.15) (type solid)) (fill no) (layer "Cmts.User") )
+    
+    
+    
+    
+            )
+    
+(
+         footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
+        (version 20241229)
+        (generator "pcbnew")
+        (generator_version "9.0")
+        (layer "F.Cu")
+        (descr "Mounting Hole 3.2mm, no annular, M3")
+        (tags "mounting hole 3.2mm no annular m3")
+        (property "Reference" "H2" (at 0 -4.2 0) (layer "F.SilkS") hide  (effects (font (size 1 1) (thickness 0.15))))
+        (attr exclude_from_pos_files exclude_from_bom)
+        (embedded_fonts no)
+        (at 423.67500000000007 79.7125 0)
+    
+    
+    
+        (property "Value" "MountingHole_3.2mm_Pad" (at 0 4.2 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
+        (property "Datasheet" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
+        (property "Description" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
+        (fp_text user "${REFERENCE}" (at 0 0 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
+    
+    
+        (fp_circle (center 0 0) (end 3.45 0) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") )
+    
+    
+        (pad "1" thru_hole circle (at 0 0 0) (size 3.5 3.5) (drill 3.2) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (zone_connect 2)  (net 1 "GND"))
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        (fp_circle (center 0 0) (end 3.2 0) (stroke (width 0.15) (type solid)) (fill no) (layer "Cmts.User") )
+    
+    
+    
+    
+            )
+    
+(
+         footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
+        (version 20241229)
+        (generator "pcbnew")
+        (generator_version "9.0")
+        (layer "F.Cu")
+        (descr "Mounting Hole 3.2mm, no annular, M3")
+        (tags "mounting hole 3.2mm no annular m3")
+        (property "Reference" "H3" (at 0 -4.2 0) (layer "F.SilkS") hide  (effects (font (size 1 1) (thickness 0.15))))
+        (attr exclude_from_pos_files exclude_from_bom)
+        (embedded_fonts no)
+        (at 423.67500000000007 200.29999999999998 0)
+    
+    
+    
+        (property "Value" "MountingHole_3.2mm_Pad" (at 0 4.2 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
+        (property "Datasheet" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
+        (property "Description" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
+        (fp_text user "${REFERENCE}" (at 0 0 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
+    
+    
+        (fp_circle (center 0 0) (end 3.45 0) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") )
+    
+    
+        (pad "1" thru_hole circle (at 0 0 0) (size 3.5 3.5) (drill 3.2) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (zone_connect 2)  (net 1 "GND"))
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        (fp_circle (center 0 0) (end 3.2 0) (stroke (width 0.15) (type solid)) (fill no) (layer "Cmts.User") )
+    
+    
+    
+    
+            )
+    
+(
+         footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
+        (version 20241229)
+        (generator "pcbnew")
+        (generator_version "9.0")
+        (layer "F.Cu")
+        (descr "Mounting Hole 3.2mm, no annular, M3")
+        (tags "mounting hole 3.2mm no annular m3")
+        (property "Reference" "H4" (at 0 -4.2 0) (layer "F.SilkS") hide  (effects (font (size 1 1) (thickness 0.15))))
+        (attr exclude_from_pos_files exclude_from_bom)
+        (embedded_fonts no)
+        (at 365.32500000000005 200.29999999999998 0)
+    
+    
+    
+        (property "Value" "MountingHole_3.2mm_Pad" (at 0 4.2 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
+        (property "Datasheet" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
+        (property "Description" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
+        (fp_text user "${REFERENCE}" (at 0 0 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
+    
+    
+        (fp_circle (center 0 0) (end 3.45 0) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") )
+    
+    
+        (pad "1" thru_hole circle (at 0 0 0) (size 3.5 3.5) (drill 3.2) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (zone_connect 2)  (net 1 "GND"))
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        (fp_circle (center 0 0) (end 3.2 0) (stroke (width 0.15) (type solid)) (fill no) (layer "Cmts.User") )
+    
+    
+    
+    
+            )
     
   (gr_line (start 361.32500000000005 202.29999999999998) (end 361.32500000000005 77.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 363.32500000000005 75.7125) (end 425.67500000000007 75.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
