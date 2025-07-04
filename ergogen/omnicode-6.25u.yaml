@@ -1,6 +1,6 @@
 meta:
   author: Allen Choi
-  version: 0.3.5
+  version: 0.3.7
   engine: 4.1.0
   project: "OmniCode:9001"
 
@@ -54,8 +54,9 @@ units:
   py: u1_00 + dy      # Vertical spacing
 
   # Pogopin placement
-  pogo_x: 0.58 + bx - 5.1
-  pogo_y: -3.3
+  pogo_x: bx - 4.125
+  pogo_y1: 15.8
+  pogo_y3: 18.3
 
   # hole offset from the edges
   hole_offset: 4
@@ -377,7 +378,13 @@ screw_holes:
       adjust: { shift: [0.5px+bx-hole_offset, -0.5py-by+hole_offset] }
     hole4:
       where: [nav_block3_c14_thumb]
+      
       adjust: { shift: [-0.5px-bx+hole_offset, -0.5py-by+hole_offset] }
+
+  phase_shift_top: &screw_holes_phase_shift_top
+    hole5:
+      where: [nav_block_c15_top]
+      adjust: { shift: [0.5px, -0.5py] }
 
   delta_form_common: &screw_holes_delta_form_common
     <<: *screw_holes_common
@@ -389,6 +396,11 @@ screw_holes:
     hole4:
       where: [num_pad5_c17_thumb]
       adjust: { shift: [-px-bx+hole_offset, -0.5py-by+hole_offset] }
+
+  delta_form_top: &screw_holes_delta_form_top
+    hole5:
+      where: [num_pad2_c18_top]
+      adjust: { shift: [0.5px, -0.5py] }
 
 outlines:
   raw: &raw
@@ -510,6 +522,27 @@ outlines:
     hole4.what: circle
     hole4.radius: 1.6
 
+  screw_holes_phase_shift:
+    <<: *screw_holes_phase_shift_top
+    hole5.what: circle
+    hole5.radius: 1.6
+
+  screw_holes_phase_shift_top:
+    <<: *screw_holes_phase_shift_common
+    hole1.what: circle
+    hole1.radius: 1.85
+    hole2.what: circle
+    hole2.radius: 1.85
+    hole3.what: circle
+    hole3.radius: 1.85
+    hole4.what: circle
+    hole4.radius: 1.85
+
+  phase_shift_top:
+    <<: *screw_holes_phase_shift_top
+    hole5.what: circle
+    hole5.radius: 1.85
+
   delta_form:
     - what: polygon
       operation: stack
@@ -535,19 +568,52 @@ outlines:
     hole4.what: circle
     hole4.radius: 1.6
 
+  screw_holes_delta_form:
+    <<: *screw_holes_delta_form_top
+    hole5.what: circle
+    hole5.radius: 1.6
+
+  screw_holes_delta_form_top:
+    <<: *screw_holes_delta_form_common
+    hole1.what: circle
+    hole1.radius: 1.85
+    hole2.what: circle
+    hole2.radius: 1.85
+    hole3.what: circle
+    hole3.radius: 1.85
+    hole4.what: circle
+    hole4.radius: 1.85
+
+  delta_form_top:
+    <<: *screw_holes_delta_form_top
+    hole5.what: circle
+    hole5.radius: 1.85
+
   pcb_outline:
     - "glyph_matrix"
     - "-screw_holes_glyph_matrix_common"
     - "-glyph_screw_holes"
     - "phase_shift"
     - "-screw_holes_phase_shift_common"
+    - "-screw_holes_phase_shift"
     - "delta_form"
     - "-screw_holes_delta_form_common"
+    - "-screw_holes_delta_form"
 
   gm_top:
     - "glyph_matrix"
     - "-screw_holes_glyph_matrix_top"
     - "-glyph_screw_holes_top"
+
+  ps_top:
+    - "phase_shift"
+    - "-screw_holes_phase_shift_top"
+    - "-phase_shift_top"
+
+  df_top:
+    - "delta_form"
+    - "-screw_holes_delta_form_top"
+    - "-delta_form_top"
 
   look:
     - "pcb_outline"
@@ -592,6 +658,56 @@ footprint_components:
       side: 'B'
     adjust: {shift: [-3.5, -8.5], rotate: 180}
 #        adjust: {shift: [-9, -5], rotate: 90}
+
+  pogo_pins_gm: &pogo_pins_gm
+    pogo1:
+      what: "pogo_pin_1x05_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [function_c00_row]
+      adjust:
+        shift: [-pogo_x-0.5px, -pogo_y1+0.5py+by-hole_offset]
+        rotate: 90
+    pogo2:
+      what: "pogo_pin_1x05_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [function_c13_row]
+      adjust:
+        shift: [pogo_x+0.5px, -pogo_y1+0.5py+by-hole_offset]
+        rotate: -90
+    pogo3:
+      what: "pogo_pin_1x07_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [top_c00_row]
+      adjust:
+        shift: [-pogo_x-1.5px/2, -0.5py]
+        rotate: 90
+    pogo4:
+      what: "pogo_pin_1x07_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [top_c13_row]
+      adjust:
+        shift: [pogo_x+1.5px/2, -0.5py]
+        rotate: -90
+    pogo5:
+      what: "pogo_pin_1x07_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [thumb_c00_row]
+      adjust:
+        shift: [-pogo_x-1.75px/2, pogo_y3-0.5py-by+hole_offset]
+        rotate: 90
+    pogo6:
+      what: "pogo_pin_1x07_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [thumb_c13_row]
+      adjust:
+        shift: [pogo_x+1.75px/2, pogo_y3-0.5py-by+hole_offset]
+        rotate: -90
 
 pcbs:
   GlyphMatrix:
@@ -667,6 +783,8 @@ pcbs:
       hole8.what: hole_3.2mm_pad
       hole8.params.P1: GND
 
+      <<: *pogo_pins_gm
+
   GlyphMatrix_Top:
     template: kicad8
     outlines:
@@ -730,10 +848,36 @@ pcbs:
 
       diodes_ps1_00u: {<<: *diodes, where: [psu1_00]}
 
+      <<: *screw_holes_phase_shift_common
+      hole1.what: hole_3.2mm_pad
+      hole1.params.P1: GND
+      hole2.what: hole_3.2mm_pad
+      hole2.params.P1: GND
+      hole3.what: hole_3.2mm_pad
+      hole3.params.P1: GND
+      hole4.what: hole_3.2mm_pad
+      hole4.params.P1: GND
+
+      <<: *screw_holes_phase_shift_top
+      hole5.what: hole_3.2mm_pad
+      hole5.params.P1: GND
+
+      <<: *pogo_pins_gm
+      pogo1.where: [nav_block_c14_func]
+      pogo2.where: [nav_block_c16_func]
+      pogo3.where: [nav_block_c14_top]
+      pogo3.adjust.shift: [-pogo_x-0.5px, -0.5py]
+      pogo4.where: [nav_block_c16_top]
+      pogo4.adjust.shift: [pogo_x+0.5px, -0.5py]
+      pogo5.where: [nav_block3_c14_thumb]
+      pogo5.adjust.shift: [-pogo_x-.5px, pogo_y3-0.5py-by+hole_offset]
+      pogo6.where: [nav_block3_c16_thumb]
+      pogo6.adjust.shift: [pogo_x+.5px, pogo_y3-0.5py-by+hole_offset]
+
   PhaseShift_Top:
     template: kicad8
     outlines:
-      edge: {outline: phase_shift, layer: Edge.Cuts}
+      edge: {outline: ps_top, layer: Edge.Cuts}
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
@@ -748,6 +892,16 @@ pcbs:
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
+
+      <<: *screw_holes_phase_shift_common
+      hole1.what: hole_3.2mm_pad
+      hole1.params.P1: GND
+      hole2.what: hole_3.2mm_pad
+      hole2.params.P1: GND
+      hole3.what: hole_3.2mm_pad
+      hole3.params.P1: GND
+      hole4.what: hole_3.2mm_pad
+      hole4.params.P1: GND
 
   DeltaForm:
     template: kicad8
@@ -780,10 +934,36 @@ pcbs:
         what: "stabilizer_mx_2.00u"
         where: [dfu2_00]
 
+      <<: *screw_holes_delta_form_common
+      hole1.what: hole_3.2mm_pad
+      hole1.params.P1: GND
+      hole2.what: hole_3.2mm_pad
+      hole2.params.P1: GND
+      hole3.what: hole_3.2mm_pad
+      hole3.params.P1: GND
+      hole4.what: hole_3.2mm_pad
+      hole4.params.P1: GND
+  
+      <<: *screw_holes_delta_form_top
+      hole5.what: hole_3.2mm_pad
+      hole5.params.P1: GND
+
+      <<: *pogo_pins_gm
+      pogo1.where: [num_pad_c17_func]
+      pogo2.where: [num_pad_c20_func]
+      pogo3.where: [num_pad2_c17_top]
+      pogo3.adjust.shift: [-pogo_x-0.5px, -0.5py]
+      pogo4.where: [num_pad2_c19_top]
+      pogo4.adjust.shift: [pogo_x+1.5px, -0.5py]
+      pogo5.where: [num_pad5_c17_thumb]
+      pogo5.adjust.shift: [-pogo_x-px, pogo_y3-0.5py-by+hole_offset]
+      pogo6.where: [num_pad5_c19_thumb]
+      pogo6.adjust.shift: [pogo_x+1.5px, pogo_y3-0.5py-by+hole_offset]
+    
   DeltaForm_Top:
     template: kicad8
     outlines:
-      edge: {outline: delta_form, layer: Edge.Cuts}
+      edge: {outline: df_top, layer: Edge.Cuts}
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
@@ -800,3 +980,13 @@ pcbs:
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
+
+      <<: *screw_holes_delta_form_common
+      hole1.what: hole_3.2mm_pad
+      hole1.params.P1: GND
+      hole2.what: hole_3.2mm_pad
+      hole2.params.P1: GND
+      hole3.what: hole_3.2mm_pad
+      hole3.params.P1: GND
+      hole4.what: hole_3.2mm_pad
+      hole4.params.P1: GND

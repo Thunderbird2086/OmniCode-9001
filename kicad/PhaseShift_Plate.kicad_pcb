@@ -1,298 +1,598 @@
-
-
 (kicad_pcb
-  (version 20240108)
-  (generator "ergogen")
-  (generator_version "4.1.0")
-  (general
-    (thickness 1.6)
-    (legacy_teardrops no)
-  )
-  (paper "A3")
-  (title_block
-    (title "PhaseShift_Plate")
-    (date "2025-07-03")
-    (rev "0.3.5")
-    (company "Allen Choi")
-  )
-
-  (layers
-    (0 "F.Cu" signal)
-    (31 "B.Cu" signal)
-    (32 "B.Adhes" user "B.Adhesive")
-    (33 "F.Adhes" user "F.Adhesive")
-    (34 "B.Paste" user)
-    (35 "F.Paste" user)
-    (36 "B.SilkS" user "B.Silkscreen")
-    (37 "F.SilkS" user "F.Silkscreen")
-    (38 "B.Mask" user)
-    (39 "F.Mask" user)
-    (40 "Dwgs.User" user "User.Drawings")
-    (41 "Cmts.User" user "User.Comments")
-    (42 "Eco1.User" user "User.Eco1")
-    (43 "Eco2.User" user "User.Eco2")
-    (44 "Edge.Cuts" user)
-    (45 "Margin" user)
-    (46 "B.CrtYd" user "B.Courtyard")
-    (47 "F.CrtYd" user "F.Courtyard")
-    (48 "B.Fab" user)
-    (49 "F.Fab" user)
-  )
-
-  (setup
-    (pad_to_mask_clearance 0.05)
-    (allow_soldermask_bridges_in_footprints no)
-    (pcbplotparams
-      (layerselection 0x00010fc_ffffffff)
-      (plot_on_all_layers_selection 0x0000000_00000000)
-      (disableapertmacros no)
-      (usegerberextensions no)
-      (usegerberattributes yes)
-      (usegerberadvancedattributes yes)
-      (creategerberjobfile yes)
-      (dashed_line_dash_ratio 12.000000)
-      (dashed_line_gap_ratio 3.000000)
-      (svgprecision 4)
-      (plotframeref no)
-      (viasonmask no)
-      (mode 1)
-      (useauxorigin no)
-      (hpglpennumber 1)
-      (hpglpenspeed 20)
-      (hpglpendiameter 15.000000)
-      (pdf_front_fp_property_popups yes)
-      (pdf_back_fp_property_popups yes)
-      (dxfpolygonmode yes)
-      (dxfimperialunits yes)
-      (dxfusepcbnewfont yes)
-      (psnegative no)
-      (psa4output no)
-      (plotreference yes)
-      (plotvalue yes)
-      (plotfptext yes)
-      (plotinvisibletext no)
-      (sketchpadsonfab no)
-      (subtractmaskfromsilk no)
-      (outputformat 1)
-      (mirror no)
-      (drillshape 1)
-      (scaleselection 1)
-      (outputdirectory "")
-    )
-  )
-
-  (net 0 "")
-(net 1 "GND")
-
-  
-  (zone
-    (net 1)
-    (net_name "GND")
-    (locked no)
-    (layers "F&B.Cu")
-    
-    (hatch edge 0.5)
-    
-    (connect_pads 
-      (clearance 0.508)
-    )
-    (min_thickness 0.25)
-    (filled_areas_thickness no)
-    (fill 
-      yes
-      (thermal_gap 0.5)
-      (thermal_bridge_width 0.5)
-      (smoothing chamfer)
-      (radius 0.5)
-      (island_removal_mode 1)
-      (island_area_min 5)
-      
-      
-      
-      
-      
-      
-      
-    )
-    (polygon
-      (pts
-        (xy 0 0) (xy 420 0) (xy 420 297) (xy 0 297) 
-      )
-    )
-  )
-    
-(
-         footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
-        (version 20241229)
-        (generator "pcbnew")
-        (generator_version "9.0")
-        (layer "F.Cu")
-        (descr "Mounting Hole 3.2mm, no annular, M3")
-        (tags "mounting hole 3.2mm no annular m3")
-        (property "Reference" "H1" (at 0 -4.2 0) (layer "F.SilkS") hide  (effects (font (size 1 1) (thickness 0.15))))
-        (attr exclude_from_pos_files exclude_from_bom)
-        (embedded_fonts no)
-        (at 365.32500000000005 79.7125 0)
-    
-    
-    
-        (property "Value" "MountingHole_3.2mm_Pad" (at 0 4.2 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
-        (property "Datasheet" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (property "Description" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text user "${REFERENCE}" (at 0 0 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
-    
-    
-        (fp_circle (center 0 0) (end 3.45 0) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") )
-    
-    
-        (pad "1" thru_hole circle (at 0 0 0) (size 3.5 3.5) (drill 3.2) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (zone_connect 2)  (net 1 "GND"))
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        (fp_circle (center 0 0) (end 3.2 0) (stroke (width 0.15) (type solid)) (fill no) (layer "Cmts.User") )
-    
-    
-    
-    
-            )
-    
-(
-         footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
-        (version 20241229)
-        (generator "pcbnew")
-        (generator_version "9.0")
-        (layer "F.Cu")
-        (descr "Mounting Hole 3.2mm, no annular, M3")
-        (tags "mounting hole 3.2mm no annular m3")
-        (property "Reference" "H2" (at 0 -4.2 0) (layer "F.SilkS") hide  (effects (font (size 1 1) (thickness 0.15))))
-        (attr exclude_from_pos_files exclude_from_bom)
-        (embedded_fonts no)
-        (at 423.67500000000007 79.7125 0)
-    
-    
-    
-        (property "Value" "MountingHole_3.2mm_Pad" (at 0 4.2 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
-        (property "Datasheet" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (property "Description" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text user "${REFERENCE}" (at 0 0 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
-    
-    
-        (fp_circle (center 0 0) (end 3.45 0) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") )
-    
-    
-        (pad "1" thru_hole circle (at 0 0 0) (size 3.5 3.5) (drill 3.2) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (zone_connect 2)  (net 1 "GND"))
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        (fp_circle (center 0 0) (end 3.2 0) (stroke (width 0.15) (type solid)) (fill no) (layer "Cmts.User") )
-    
-    
-    
-    
-            )
-    
-(
-         footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
-        (version 20241229)
-        (generator "pcbnew")
-        (generator_version "9.0")
-        (layer "F.Cu")
-        (descr "Mounting Hole 3.2mm, no annular, M3")
-        (tags "mounting hole 3.2mm no annular m3")
-        (property "Reference" "H3" (at 0 -4.2 0) (layer "F.SilkS") hide  (effects (font (size 1 1) (thickness 0.15))))
-        (attr exclude_from_pos_files exclude_from_bom)
-        (embedded_fonts no)
-        (at 423.67500000000007 200.29999999999998 0)
-    
-    
-    
-        (property "Value" "MountingHole_3.2mm_Pad" (at 0 4.2 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
-        (property "Datasheet" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (property "Description" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text user "${REFERENCE}" (at 0 0 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
-    
-    
-        (fp_circle (center 0 0) (end 3.45 0) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") )
-    
-    
-        (pad "1" thru_hole circle (at 0 0 0) (size 3.5 3.5) (drill 3.2) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (zone_connect 2)  (net 1 "GND"))
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        (fp_circle (center 0 0) (end 3.2 0) (stroke (width 0.15) (type solid)) (fill no) (layer "Cmts.User") )
-    
-    
-    
-    
-            )
-    
-(
-         footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
-        (version 20241229)
-        (generator "pcbnew")
-        (generator_version "9.0")
-        (layer "F.Cu")
-        (descr "Mounting Hole 3.2mm, no annular, M3")
-        (tags "mounting hole 3.2mm no annular m3")
-        (property "Reference" "H4" (at 0 -4.2 0) (layer "F.SilkS") hide  (effects (font (size 1 1) (thickness 0.15))))
-        (attr exclude_from_pos_files exclude_from_bom)
-        (embedded_fonts no)
-        (at 365.32500000000005 200.29999999999998 0)
-    
-    
-    
-        (property "Value" "MountingHole_3.2mm_Pad" (at 0 4.2 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
-        (property "Datasheet" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (property "Description" "" (at 0 0 0) (unlocked yes) (layer "F.Fab") (hide yes)  (effects (font (size 1.27 1.27) (thickness 0.15))))
-        (fp_text user "${REFERENCE}" (at 0 0 0) (layer "F.Fab")  (effects (font (size 1 1) (thickness 0.15))))
-    
-    
-        (fp_circle (center 0 0) (end 3.45 0) (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd") )
-    
-    
-        (pad "1" thru_hole circle (at 0 0 0) (size 3.5 3.5) (drill 3.2) (layers "*.Cu" "*.Mask") (remove_unused_layers no) (zone_connect 2)  (net 1 "GND"))
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        (fp_circle (center 0 0) (end 3.2 0) (stroke (width 0.15) (type solid)) (fill no) (layer "Cmts.User") )
-    
-    
-    
-    
-            )
-    
-  (gr_line (start 361.32500000000005 202.29999999999998) (end 361.32500000000005 77.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 363.32500000000005 75.7125) (end 425.67500000000007 75.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 427.67500000000007 77.7125) (end 427.67500000000007 202.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 425.67500000000007 204.29999999999998) (end 363.32500000000005 204.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 363.32500000000005 75.7125) (mid 361.91078640000006 76.29828640000001) (end 361.32500000000005 77.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 427.67500000000007 77.7125) (mid 427.08921360000005 76.29828640000001) (end 425.67500000000007 75.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 425.67500000000007 204.29999999999998) (mid 427.08921360000005 203.7142136) (end 427.67500000000007 202.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 361.32500000000005 202.29999999999998) (mid 361.91078640000006 203.7142136) (end 363.32500000000005 204.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(general
+		(thickness 1.6)
+		(legacy_teardrops no)
+	)
+	(paper "A3")
+	(title_block
+		(title "PhaseShift_Plate")
+		(date "2025-07-04")
+		(rev "0.3.6")
+		(company "Allen Choi")
+	)
+	(layers
+		(0 "F.Cu" signal)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+	)
+	(setup
+		(pad_to_mask_clearance 0.05)
+		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
+		(pcbplotparams
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
+			(disableapertmacros no)
+			(usegerberextensions no)
+			(usegerberattributes yes)
+			(usegerberadvancedattributes yes)
+			(creategerberjobfile yes)
+			(dashed_line_dash_ratio 12.000000)
+			(dashed_line_gap_ratio 3.000000)
+			(svgprecision 4)
+			(plotframeref no)
+			(mode 1)
+			(useauxorigin no)
+			(hpglpennumber 1)
+			(hpglpenspeed 20)
+			(hpglpendiameter 15.000000)
+			(pdf_front_fp_property_popups yes)
+			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
+			(dxfpolygonmode yes)
+			(dxfimperialunits yes)
+			(dxfusepcbnewfont yes)
+			(psnegative no)
+			(psa4output no)
+			(plot_black_and_white yes)
+			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
+			(subtractmaskfromsilk no)
+			(outputformat 1)
+			(mirror no)
+			(drillshape 1)
+			(scaleselection 1)
+			(outputdirectory "")
+		)
+	)
+	(net 0 "")
+	(net 1 "GND")
+	(footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(layer "F.Cu")
+		(uuid "0918eb74-dcf4-448e-b861-2e498a6bd900")
+		(at 233.675 79.7125)
+		(descr "Mounting Hole 3.2mm, no annular, M3")
+		(tags "mounting hole 3.2mm no annular m3")
+		(property "Reference" "H2"
+			(at 0 -4.2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a6ba8bd4-5d84-4b7f-bfe8-518cf950884a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_Pad"
+			(at 0 4.2 0)
+			(layer "F.Fab")
+			(uuid "2a8a6ebf-cb93-4686-8cef-072ea6002728")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "183ffd7c-2fc0-4fe3-9950-bceaf833db49")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b93a141-06e2-4be2-9f0e-3e8060de2e62")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 3.2 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "d016272e-baa0-4b64-a83e-9fe0d44a865f")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.45 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "16cb28dd-5b7b-4f34-a1a7-f08f4157de86")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "42e5f536-9fb9-4716-baa5-13afddbd96aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 3.5 3.5)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "GND")
+			(zone_connect 2)
+			(uuid "f20804b8-aa57-4f20-b85d-f35bc9e8d273")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(layer "F.Cu")
+		(uuid "32e2b5ed-f13a-4384-9b8b-eacaf6a9b0ba")
+		(at 175.325 79.7125)
+		(descr "Mounting Hole 3.2mm, no annular, M3")
+		(tags "mounting hole 3.2mm no annular m3")
+		(property "Reference" "H1"
+			(at 0 -4.2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "34ab8499-f0a4-40a2-ac0b-c16dcbcca6dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_Pad"
+			(at 0 4.2 0)
+			(layer "F.Fab")
+			(uuid "1cb190d7-0fae-4e80-94ba-5665e14d3d26")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2cf9ab5-5c96-44cc-883e-d5ddb58f3f62")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cd59818-2977-48b9-b191-a2a8a3b63709")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 3.2 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "1a180692-1be0-49f2-aaeb-db8013098ed5")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.45 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "5c6e0b37-51c0-442b-8a71-0b241fd351b8")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "31a247dc-f061-4c5f-a625-df0a5843d67e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 3.5 3.5)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "GND")
+			(zone_connect 2)
+			(uuid "4e1e829c-0822-4437-b180-dcf94b913336")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(layer "F.Cu")
+		(uuid "a2aa1395-540f-4b2d-a149-3889f31f9fe8")
+		(at 175.325 200.3)
+		(descr "Mounting Hole 3.2mm, no annular, M3")
+		(tags "mounting hole 3.2mm no annular m3")
+		(property "Reference" "H4"
+			(at 0 -4.2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f9dac575-6e87-43de-94e4-c1109109ab6c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_Pad"
+			(at 0 4.2 0)
+			(layer "F.Fab")
+			(uuid "d909b5b5-a2f0-471c-a196-3c5153fea134")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d034e750-f29d-40b9-98c6-db5269d269ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ddf1bf1b-a37e-41bb-bdc0-765e8093fa59")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 3.2 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "fa682ea9-f803-49ee-8dd3-b373814b7679")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.45 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "4f2a9463-c989-49fb-87a2-96206b77199c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "be4113db-af65-478d-b77e-01a3d5f3377b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 3.5 3.5)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "GND")
+			(zone_connect 2)
+			(uuid "1f4cd716-67aa-453f-bb8f-0e72b16a985a")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(layer "F.Cu")
+		(uuid "f89de5d1-02b0-4c3a-8502-1d925dc1c1ef")
+		(at 233.675 200.3)
+		(descr "Mounting Hole 3.2mm, no annular, M3")
+		(tags "mounting hole 3.2mm no annular m3")
+		(property "Reference" "H3"
+			(at 0 -4.2 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e1977a37-0081-470e-ac58-8f5dfe60f3e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_3.2mm_Pad"
+			(at 0 4.2 0)
+			(layer "F.Fab")
+			(uuid "09a66152-f932-4a06-9abb-bdec3e42b3cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be9b5b41-ab14-41ee-a386-fb2fcd7b5225")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "776abc53-c535-4f65-bffd-c889865dd794")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 3.2 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "a47ed3cd-aaef-4011-9a9c-b4cc98249ce3")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.45 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "5b01d542-aaf9-46aa-ade6-ca85453704fb")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "590125c1-f4a0-4789-bf23-99006234dc86")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 3.5 3.5)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "GND")
+			(zone_connect 2)
+			(uuid "d600d5f6-8461-495e-8318-c522380964cc")
+		)
+		(embedded_fonts no)
+	)
+	(gr_line
+		(start 171.325 202.3)
+		(end 171.325 77.7125)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "02916097-5fd2-47d5-8fae-272de91068e1")
+	)
+	(gr_line
+		(start 173.325 75.7125)
+		(end 235.675 75.7125)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "06eca07e-b46e-47ab-bd57-8c3f922b7b61")
+	)
+	(gr_arc
+		(start 171.325 77.7125)
+		(mid 171.910786 76.298286)
+		(end 173.325 75.7125)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "250c6727-747d-434a-910a-5b852738ffe6")
+	)
+	(gr_line
+		(start 235.675 204.3)
+		(end 173.325 204.3)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "2d60ebe4-c88f-4e4d-a811-ce0eb7e0c119")
+	)
+	(gr_arc
+		(start 237.675 202.3)
+		(mid 237.089214 203.714214)
+		(end 235.675 204.3)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "52577435-6ef7-46f0-9f35-bc3f63de61c5")
+	)
+	(gr_line
+		(start 237.675 77.7125)
+		(end 237.675 202.3)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "bb684615-2c8d-4a1e-9c2b-6f5aa2a9885d")
+	)
+	(gr_arc
+		(start 235.675 75.7125)
+		(mid 237.089214 76.298286)
+		(end 237.675 77.7125)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d3dd4750-bb1b-4654-b299-aa3ce27b5f95")
+	)
+	(gr_arc
+		(start 173.325 204.3)
+		(mid 171.910786 203.714214)
+		(end 171.325 202.3)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "f36062dd-67df-45e9-ae7c-1bbc2014f0a5")
+	)
+	(zone
+		(net 1)
+		(net_name "GND")
+		(layers "F.Cu" "B.Cu")
+		(uuid "7a860e62-6ae1-4c60-bea3-f0f38c255564")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0.508)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(smoothing chamfer)
+			(radius 0.5)
+			(island_removal_mode 1)
+			(island_area_min 5)
+		)
+		(polygon
+			(pts
+				(xy 0 0) (xy 420 0) (xy 420 297) (xy 0 297)
+			)
+		)
+	)
+	(embedded_fonts no)
 )
-
