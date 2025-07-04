@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "cd5f8986-31e1-4ed2-9453-d304ff6161f8")
 	(paper "A3")
+	(title_block
+		(title "OmniCode:9001 - GlyphMatrix")
+		(date "2025-07-04")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x05"
 			(pin_names
@@ -2351,7 +2355,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 125.476) (xy 376.174 125.476)
+			(xy 379.73 131.064) (xy 376.174 131.064)
 		)
 		(stroke
 			(width 0)
@@ -2511,7 +2515,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 80.518) (xy 376.174 80.518)
+			(xy 379.73 86.106) (xy 376.174 86.106)
 		)
 		(stroke
 			(width 0)
@@ -2531,7 +2535,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 115.316) (xy 376.174 115.316)
+			(xy 379.73 120.904) (xy 376.174 120.904)
 		)
 		(stroke
 			(width 0)
@@ -2831,7 +2835,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 77.978) (xy 376.174 77.978)
+			(xy 379.73 83.566) (xy 376.174 83.566)
 		)
 		(stroke
 			(width 0)
@@ -2871,7 +2875,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 85.598) (xy 376.174 85.598)
+			(xy 379.73 91.186) (xy 376.174 91.186)
 		)
 		(stroke
 			(width 0)
@@ -3001,7 +3005,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 128.016) (xy 376.174 128.016)
+			(xy 379.73 133.604) (xy 376.174 133.604)
 		)
 		(stroke
 			(width 0)
@@ -3071,7 +3075,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 112.776) (xy 376.174 112.776)
+			(xy 379.73 118.364) (xy 376.174 118.364)
 		)
 		(stroke
 			(width 0)
@@ -3101,7 +3105,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 75.438) (xy 376.174 75.438)
+			(xy 379.73 81.026) (xy 376.174 81.026)
 		)
 		(stroke
 			(width 0)
@@ -3181,7 +3185,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 83.058) (xy 376.174 83.058)
+			(xy 379.73 88.646) (xy 376.174 88.646)
 		)
 		(stroke
 			(width 0)
@@ -3381,7 +3385,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.476 171.958) (xy 375.92 171.958)
+			(xy 379.476 177.546) (xy 375.92 177.546)
 		)
 		(stroke
 			(width 0)
@@ -3491,7 +3495,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.476 187.198) (xy 375.92 187.198)
+			(xy 379.476 192.786) (xy 375.92 192.786)
 		)
 		(stroke
 			(width 0)
@@ -3621,7 +3625,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 117.856) (xy 376.174 117.856)
+			(xy 379.73 123.444) (xy 376.174 123.444)
 		)
 		(stroke
 			(width 0)
@@ -3631,7 +3635,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.476 184.658) (xy 375.92 184.658)
+			(xy 379.476 190.246) (xy 375.92 190.246)
 		)
 		(stroke
 			(width 0)
@@ -3651,7 +3655,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.476 182.118) (xy 375.92 182.118)
+			(xy 379.476 187.706) (xy 375.92 187.706)
 		)
 		(stroke
 			(width 0)
@@ -3771,7 +3775,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.476 179.578) (xy 375.92 179.578)
+			(xy 379.476 185.166) (xy 375.92 185.166)
 		)
 		(stroke
 			(width 0)
@@ -3891,7 +3895,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 122.936) (xy 376.174 122.936)
+			(xy 379.73 128.524) (xy 376.174 128.524)
 		)
 		(stroke
 			(width 0)
@@ -3901,7 +3905,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.476 174.498) (xy 375.92 174.498)
+			(xy 379.476 180.086) (xy 375.92 180.086)
 		)
 		(stroke
 			(width 0)
@@ -3941,7 +3945,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 120.396) (xy 376.174 120.396)
+			(xy 379.73 125.984) (xy 376.174 125.984)
 		)
 		(stroke
 			(width 0)
@@ -4021,7 +4025,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.476 177.038) (xy 375.92 177.038)
+			(xy 379.476 182.626) (xy 375.92 182.626)
 		)
 		(stroke
 			(width 0)
@@ -4331,7 +4335,7 @@
 	)
 	(global_label "COL4"
 		(shape input)
-		(at 379.73 122.936 0)
+		(at 379.73 128.524 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4341,7 +4345,7 @@
 		)
 		(uuid "0493f235-bb51-487e-b795-fc59a602abd3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 387.5533 122.936 0)
+			(at 387.5533 128.524 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4375,7 +4379,7 @@
 	)
 	(global_label "COL3"
 		(shape input)
-		(at 379.73 120.396 0)
+		(at 379.73 125.984 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4385,7 +4389,7 @@
 		)
 		(uuid "10623526-41ec-47d2-87fa-bfe905820616")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 387.5533 120.396 0)
+			(at 387.5533 125.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4441,7 +4445,7 @@
 	)
 	(global_label "SCR"
 		(shape input)
-		(at 379.73 77.978 0)
+		(at 379.73 83.566 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4451,7 +4455,7 @@
 		)
 		(uuid "1376dbcf-e70f-4709-8c6e-42a0192beffe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 386.4647 77.978 0)
+			(at 386.4647 83.566 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4529,7 +4533,7 @@
 	)
 	(global_label "RGB_TO_RIGHT"
 		(shape input)
-		(at 379.73 75.438 0)
+		(at 379.73 81.026 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4539,7 +4543,7 @@
 		)
 		(uuid "21ece799-cd31-4c54-bd60-9d1ff739af7f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 396.2014 75.438 0)
+			(at 396.2014 81.026 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5057,7 +5061,7 @@
 	)
 	(global_label "COL6"
 		(shape input)
-		(at 379.73 128.016 0)
+		(at 379.73 133.604 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5067,7 +5071,7 @@
 		)
 		(uuid "7a500885-da11-4784-8823-2dd91a48ee13")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 387.5533 128.016 0)
+			(at 387.5533 133.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5123,7 +5127,7 @@
 	)
 	(global_label "COL0"
 		(shape input)
-		(at 379.73 112.776 0)
+		(at 379.73 118.364 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5133,7 +5137,7 @@
 		)
 		(uuid "8adae318-807a-4cec-9b37-929893693809")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 387.5533 112.776 0)
+			(at 387.5533 118.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5167,7 +5171,7 @@
 	)
 	(global_label "ROW14"
 		(shape input)
-		(at 379.476 177.038 0)
+		(at 379.476 182.626 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5177,7 +5181,7 @@
 		)
 		(uuid "92752288-5795-4253-886c-24108824311b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 388.9321 177.038 0)
+			(at 388.9321 182.626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5233,7 +5237,7 @@
 	)
 	(global_label "ROW15"
 		(shape input)
-		(at 379.476 179.578 0)
+		(at 379.476 185.166 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5243,7 +5247,7 @@
 		)
 		(uuid "9c849653-673f-4959-b6ea-76c2fe32f9ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 388.9321 179.578 0)
+			(at 388.9321 185.166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5255,7 +5259,7 @@
 	)
 	(global_label "ROW16"
 		(shape input)
-		(at 379.476 182.118 0)
+		(at 379.476 187.706 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5265,7 +5269,7 @@
 		)
 		(uuid "9c9d5e8a-005b-46a4-ae75-c29501e5bfa0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 388.9321 182.118 0)
+			(at 388.9321 187.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5409,7 +5413,7 @@
 	)
 	(global_label "COL2"
 		(shape input)
-		(at 379.73 117.856 0)
+		(at 379.73 123.444 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5419,7 +5423,7 @@
 		)
 		(uuid "afdf92a9-7ddb-4899-9cfe-ce24524ae1dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 387.5533 117.856 0)
+			(at 387.5533 123.444 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5431,7 +5435,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 379.73 85.598 0)
+		(at 379.73 91.186 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5441,7 +5445,7 @@
 		)
 		(uuid "b200fec6-d9f8-49d5-a0da-eb8aba329461")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 386.5857 85.598 0)
+			(at 386.5857 91.186 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5475,7 +5479,7 @@
 	)
 	(global_label "NUM"
 		(shape input)
-		(at 379.73 80.518 0)
+		(at 379.73 86.106 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5485,7 +5489,7 @@
 		)
 		(uuid "ba006bc1-8526-489f-b895-fc7ce58bf9d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 386.8276 80.518 0)
+			(at 386.8276 86.106 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5519,7 +5523,7 @@
 	)
 	(global_label "COL5"
 		(shape input)
-		(at 379.73 125.476 0)
+		(at 379.73 131.064 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5529,7 +5533,7 @@
 		)
 		(uuid "bbb9bc53-7f3a-4227-a063-9d5aa00644ad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 387.5533 125.476 0)
+			(at 387.5533 131.064 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5541,7 +5545,7 @@
 	)
 	(global_label "+5V"
 		(shape input)
-		(at 379.73 83.058 0)
+		(at 379.73 88.646 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5551,7 +5555,7 @@
 		)
 		(uuid "bd4270d4-e5aa-4fa5-bd02-21e54dd392dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 386.5857 83.058 0)
+			(at 386.5857 88.646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5585,7 +5589,7 @@
 	)
 	(global_label "RGB_FOM_RIGHT"
 		(shape input)
-		(at 379.476 187.198 0)
+		(at 379.476 192.786 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5595,7 +5599,7 @@
 		)
 		(uuid "cf86423e-15af-4b7d-b834-503b27f25cee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 397.5198 187.198 0)
+			(at 397.5198 192.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5607,7 +5611,7 @@
 	)
 	(global_label "ROW13"
 		(shape input)
-		(at 379.476 174.498 0)
+		(at 379.476 180.086 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5617,7 +5621,7 @@
 		)
 		(uuid "daf95018-6979-4225-a5c0-e5e97042542a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 388.9321 174.498 0)
+			(at 388.9321 180.086 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5629,7 +5633,7 @@
 	)
 	(global_label "ROW17"
 		(shape input)
-		(at 379.476 184.658 0)
+		(at 379.476 190.246 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5639,7 +5643,7 @@
 		)
 		(uuid "dc708a0a-a31f-4f4b-b4d1-588427f0a387")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 388.9321 184.658 0)
+			(at 388.9321 190.246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5673,7 +5677,7 @@
 	)
 	(global_label "ROW12"
 		(shape input)
-		(at 379.476 171.958 0)
+		(at 379.476 177.546 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5683,7 +5687,7 @@
 		)
 		(uuid "dfe58a35-166e-4273-b77f-8fa534df11c7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 388.9321 171.958 0)
+			(at 388.9321 177.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5695,7 +5699,7 @@
 	)
 	(global_label "COL1"
 		(shape input)
-		(at 379.73 115.316 0)
+		(at 379.73 120.904 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5705,7 +5709,7 @@
 		)
 		(uuid "e05ee3ad-1f54-489e-b9ad-61bf785cbd7a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 387.5533 115.316 0)
+			(at 387.5533 120.904 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9408,7 +9412,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b674dee-54b3-4e4b-9bea-f73066ae0710")
-		(property "Reference" "J3"
+		(property "Reference" "POGO3"
 			(at 45.212 124.7139 0)
 			(effects
 				(font
@@ -9477,7 +9481,7 @@
 		(instances
 			(project "GlyphMatrix"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/8e27df26-641e-47e6-a7be-c8ba38f472d4"
-					(reference "J3")
+					(reference "POGO3")
 					(unit 1)
 				)
 			)
@@ -10348,7 +10352,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51bf06e4-8d9a-4457-a62b-e35989fe3cb3")
-		(property "Reference" "J4"
+		(property "Reference" "POGO5"
 			(at 45.466 183.8959 0)
 			(effects
 				(font
@@ -10417,7 +10421,7 @@
 		(instances
 			(project "GlyphMatrix"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/8e27df26-641e-47e6-a7be-c8ba38f472d4"
-					(reference "J4")
+					(reference "POGO5")
 					(unit 1)
 				)
 			)
@@ -11126,15 +11130,15 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x07")
-		(at 370.84 179.578 180)
+		(at 370.84 185.166 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "6a47bcca-c725-4309-a621-b47726e63517")
-		(property "Reference" "J6"
-			(at 368.046 180.8481 0)
+		(property "Reference" "POGO6"
+			(at 368.046 186.4361 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11143,7 +11147,7 @@
 			)
 		)
 		(property "Value" "Conn_01x07"
-			(at 368.046 178.3081 0)
+			(at 368.046 183.8961 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11152,7 +11156,7 @@
 			)
 		)
 		(property "Footprint" "TB2086_MISC:Pogopin_1x07_P2.54mm_Curved"
-			(at 370.84 179.578 0)
+			(at 370.84 185.166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11161,7 +11165,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 370.84 179.578 0)
+			(at 370.84 185.166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11170,7 +11174,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 370.84 179.578 0)
+			(at 370.84 185.166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11202,7 +11206,7 @@
 		(instances
 			(project "GlyphMatrix"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/8e27df26-641e-47e6-a7be-c8ba38f472d4"
-					(reference "J6")
+					(reference "POGO6")
 					(unit 1)
 				)
 			)
@@ -11680,15 +11684,15 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x07")
-		(at 371.094 120.396 180)
+		(at 371.094 125.984 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "78d4e427-7efe-41f5-84d2-d14dc7223059")
-		(property "Reference" "J7"
-			(at 368.3 121.6661 0)
+		(property "Reference" "POGO4"
+			(at 368.3 127.2541 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11697,7 +11701,7 @@
 			)
 		)
 		(property "Value" "Conn_01x07"
-			(at 368.3 119.1261 0)
+			(at 368.3 124.7141 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11706,7 +11710,7 @@
 			)
 		)
 		(property "Footprint" "TB2086_MISC:Pogopin_1x07_P2.54mm_Curved"
-			(at 371.094 120.396 0)
+			(at 371.094 125.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11715,7 +11719,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 371.094 120.396 0)
+			(at 371.094 125.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11724,7 +11728,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 371.094 120.396 0)
+			(at 371.094 125.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11756,7 +11760,7 @@
 		(instances
 			(project "GlyphMatrix"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/8e27df26-641e-47e6-a7be-c8ba38f472d4"
-					(reference "J7")
+					(reference "POGO4")
 					(unit 1)
 				)
 			)
@@ -14889,15 +14893,15 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x05")
-		(at 371.094 80.518 180)
+		(at 371.094 86.106 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b25b229b-bf0f-47b6-912e-31b9f1553f17")
-		(property "Reference" "J5"
-			(at 368.3 81.7881 0)
+		(property "Reference" "POGO2"
+			(at 368.3 87.3761 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14906,7 +14910,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05"
-			(at 368.3 79.2481 0)
+			(at 368.3 84.8361 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14915,7 +14919,7 @@
 			)
 		)
 		(property "Footprint" "TB2086_MISC:Pogopin_1x05_P2.54mm_Curved"
-			(at 371.094 80.518 0)
+			(at 371.094 86.106 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14924,7 +14928,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 371.094 80.518 0)
+			(at 371.094 86.106 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14933,7 +14937,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 371.094 80.518 0)
+			(at 371.094 86.106 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14959,7 +14963,7 @@
 		(instances
 			(project "GlyphMatrix"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/8e27df26-641e-47e6-a7be-c8ba38f472d4"
-					(reference "J5")
+					(reference "POGO2")
 					(unit 1)
 				)
 			)
@@ -18085,7 +18089,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f42f2d4e-050a-414d-a30f-1ba388c2cadb")
-		(property "Reference" "J2"
+		(property "Reference" "POGO1"
 			(at 45.212 84.8359 0)
 			(effects
 				(font
@@ -18148,7 +18152,7 @@
 		(instances
 			(project "GlyphMatrix"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/8e27df26-641e-47e6-a7be-c8ba38f472d4"
-					(reference "J2")
+					(reference "POGO1")
 					(unit 1)
 				)
 			)

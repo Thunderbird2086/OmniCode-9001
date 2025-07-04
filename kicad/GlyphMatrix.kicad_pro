@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.95,
-          "width": 0.8
+          "height": 0.82,
+          "width": 1.9
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -1134,6 +1134,10 @@
     [
       "8e27df26-641e-47e6-a7be-c8ba38f472d4",
       "GlyphMatrix"
+    ],
+    [
+      "91c273cd-5f29-46b1-8a1d-1725d833283f",
+      "RGB"
     ]
   ],
   "text_variables": {}
