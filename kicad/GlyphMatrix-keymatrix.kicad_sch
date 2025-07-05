@@ -1786,6 +1786,12 @@
 		(uuid "55b00eec-177c-4d52-aeb6-5fa44889fec9")
 	)
 	(junction
+		(at 246.38 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5732a837-5788-49e6-8ae3-aa814565c00f")
+	)
+	(junction
 		(at 246.38 116.586)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1970,12 +1976,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a54dc9bf-fd64-41cf-9df8-4396dbf6af89")
-	)
-	(junction
-		(at 246.38 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aa3b4d78-9ddb-4c63-ac05-566fc64a5db7")
 	)
 	(junction
 		(at 251.46 151.13)
@@ -2565,6 +2565,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 116.586) (xy 246.38 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23a0f6bf-42ee-47f7-8bf0-94f8c21ee898")
+	)
+	(wire
+		(pts
 			(xy 234.95 107.188) (xy 251.46 107.188)
 		)
 		(stroke
@@ -3135,16 +3145,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 116.586) (xy 246.38 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61409ef4-5fad-42bc-9547-230cefc69c9b")
-	)
-	(wire
-		(pts
 			(xy 90.424 193.802) (xy 106.934 193.802)
 		)
 		(stroke
@@ -3452,16 +3452,6 @@
 			(type default)
 		)
 		(uuid "8abce70a-ea69-4eed-8f75-a31c7b9911f1")
-	)
-	(wire
-		(pts
-			(xy 246.38 138.43) (xy 246.38 159.766)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c9cce7e-8e41-461b-b2e0-601660a98923")
 	)
 	(wire
 		(pts
@@ -3822,6 +3812,16 @@
 			(type default)
 		)
 		(uuid "b8e784f8-054f-4a82-9e70-f0fd9a70bcf1")
+	)
+	(wire
+		(pts
+			(xy 246.38 138.43) (xy 246.38 159.766)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b99c31c5-f7f4-46a5-bd4b-bf4c826f2e30")
 	)
 	(wire
 		(pts
@@ -4333,7 +4333,7 @@
 		)
 		(uuid "ffae4f3d-a485-4d10-b46b-00aae5fde704")
 	)
-	(global_label "COL4"
+	(global_label "COL6"
 		(shape input)
 		(at 379.73 128.524 0)
 		(fields_autoplaced yes)
@@ -4575,7 +4575,7 @@
 			)
 		)
 	)
-	(global_label "COL5"
+	(global_label "COL1"
 		(shape input)
 		(at 278.384 58.674 90)
 		(fields_autoplaced yes)
@@ -4707,7 +4707,7 @@
 			)
 		)
 	)
-	(global_label "COL6"
+	(global_label "COL0"
 		(shape input)
 		(at 293.624 58.674 90)
 		(fields_autoplaced yes)
@@ -4861,7 +4861,7 @@
 			)
 		)
 	)
-	(global_label "COL4"
+	(global_label "COL6"
 		(shape input)
 		(at 33.782 128.524 180)
 		(fields_autoplaced yes)
@@ -5059,7 +5059,7 @@
 			)
 		)
 	)
-	(global_label "COL6"
+	(global_label "COL4"
 		(shape input)
 		(at 379.73 133.604 0)
 		(fields_autoplaced yes)
@@ -5103,7 +5103,7 @@
 			)
 		)
 	)
-	(global_label "COL1"
+	(global_label "COL5"
 		(shape input)
 		(at 214.63 58.674 90)
 		(fields_autoplaced yes)
@@ -5191,7 +5191,7 @@
 			)
 		)
 	)
-	(global_label "COL4"
+	(global_label "COL2"
 		(shape input)
 		(at 261.874 58.674 90)
 		(fields_autoplaced yes)
@@ -5213,7 +5213,7 @@
 			)
 		)
 	)
-	(global_label "COL6"
+	(global_label "COL4"
 		(shape input)
 		(at 33.782 133.604 180)
 		(fields_autoplaced yes)
@@ -5323,7 +5323,7 @@
 			)
 		)
 	)
-	(global_label "COL2"
+	(global_label "COL4"
 		(shape input)
 		(at 229.87 58.674 90)
 		(fields_autoplaced yes)
@@ -5389,7 +5389,7 @@
 			)
 		)
 	)
-	(global_label "COL0"
+	(global_label "COL6"
 		(shape input)
 		(at 198.12 58.674 90)
 		(fields_autoplaced yes)
@@ -15972,7 +15972,8 @@
 	)
 	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
-		(at 248.92 140.97 0)
+		(at 248.92 140.97 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15980,7 +15981,7 @@
 		(dnp no)
 		(uuid "c59c0eba-5f08-49ff-91fa-f44ca5d41f0d")
 		(property "Reference" "S48"
-			(at 248.92 134.112 0)
+			(at 255.778 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15988,7 +15989,7 @@
 			)
 		)
 		(property "Value" "SW_MX_HS"
-			(at 248.92 136.652 0)
+			(at 253.238 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16023,7 +16024,7 @@
 			)
 		)
 		(property "LCSC" "C9900021274"
-			(at 248.92 134.112 0)
+			(at 255.778 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)

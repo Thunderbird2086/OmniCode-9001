@@ -6226,7 +6226,7 @@
 			)
 		)
 	)
-	(global_label "ROW12"
+	(global_label "ROW17"
 		(shape input)
 		(at 88.392 47.498 0)
 		(fields_autoplaced yes)
@@ -6380,7 +6380,7 @@
 			)
 		)
 	)
-	(global_label "COL4"
+	(global_label "COL6"
 		(shape input)
 		(at 88.392 85.598 0)
 		(fields_autoplaced yes)
@@ -6446,7 +6446,7 @@
 			)
 		)
 	)
-	(global_label "ROW15"
+	(global_label "ROW14"
 		(shape input)
 		(at 88.392 39.878 0)
 		(fields_autoplaced yes)
@@ -6622,7 +6622,7 @@
 			)
 		)
 	)
-	(global_label "ROW16"
+	(global_label "ROW13"
 		(shape input)
 		(at 88.392 37.338 0)
 		(fields_autoplaced yes)
@@ -7304,7 +7304,7 @@
 			)
 		)
 	)
-	(global_label "ROW14"
+	(global_label "ROW15"
 		(shape input)
 		(at 88.392 42.418 0)
 		(fields_autoplaced yes)
@@ -7392,7 +7392,7 @@
 			)
 		)
 	)
-	(global_label "ROW13"
+	(global_label "ROW16"
 		(shape input)
 		(at 88.392 44.958 0)
 		(fields_autoplaced yes)
@@ -7414,7 +7414,7 @@
 			)
 		)
 	)
-	(global_label "ROW17"
+	(global_label "ROW12"
 		(shape input)
 		(at 88.392 34.798 0)
 		(fields_autoplaced yes)
@@ -7458,7 +7458,7 @@
 			)
 		)
 	)
-	(global_label "COL6"
+	(global_label "COL4"
 		(shape input)
 		(at 88.392 90.678 0)
 		(fields_autoplaced yes)
