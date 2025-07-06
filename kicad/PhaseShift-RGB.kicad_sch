@@ -1,0 +1,3039 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "92a05b2b-468e-4ae1-a110-b890b7b24f6c")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TB2086_LED:SK6812MINI-E"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at 2.54 -7.62 0)
+				(effects
+					(font
+						(size 0.7366 0.7366)
+					)
+				)
+			)
+			(property "Value" "SK6812MINI-E"
+				(at 6.35 -6.35 0)
+				(effects
+					(font
+						(size 0.7366 0.7366)
+					)
+				)
+			)
+			(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SK6812MINI-E_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SK6812MINI-E_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 0.9906 0.9906)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9906 0.9906)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9906 0.9906)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 0.9906 0.9906)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 68.326 37.846)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bfc481c-c34b-4591-8d3f-82e43417b94b")
+	)
+	(junction
+		(at 204.216 146.812)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "304ad149-0b62-4b92-b1a7-3688e60f4bc4")
+	)
+	(junction
+		(at 146.812 30.226)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3400318c-2091-4b38-853c-b6111c428796")
+	)
+	(junction
+		(at 68.326 146.812)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3fedc070-3b91-41ac-a9da-e9ddfa8bb2bf")
+	)
+	(junction
+		(at 93.726 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50c282ca-49d6-4648-bdd2-6a1787a51bd7")
+	)
+	(junction
+		(at 146.812 60.452)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "608bf6c1-dff2-4a4a-8806-d127e5a62473")
+	)
+	(junction
+		(at 93.726 119.888)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6eb853a8-c7a7-4f63-8289-a1877d66cf41")
+	)
+	(junction
+		(at 183.388 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75f81650-e2ae-4e88-9173-b871f2f3c7ed")
+	)
+	(junction
+		(at 146.812 71.374)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80b499c1-022f-47c9-9e2c-a8e44a9902c1")
+	)
+	(junction
+		(at 127.762 30.226)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85620f95-1085-40b1-ae0c-567292581a9d")
+	)
+	(junction
+		(at 93.726 71.374)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91e0cabe-05ff-44a3-9adb-4b35277aa343")
+	)
+	(junction
+		(at 146.812 37.846)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8a6a015-3783-4643-892c-6778b7e8caf9")
+	)
+	(junction
+		(at 127.762 49.022)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa237e3a-3118-40a7-836d-57609ffa1e3d")
+	)
+	(junction
+		(at 127.762 154.432)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad2ae733-7a69-4677-a7fd-ae6c9e14d909")
+	)
+	(junction
+		(at 146.812 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb907bac-6704-4b15-b148-d580d4cf4a72")
+	)
+	(junction
+		(at 127.762 71.374)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2c95450-5b22-4f57-b851-680143acca9e")
+	)
+	(junction
+		(at 127.762 139.192)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d35f194f-0dcb-4a88-a8f1-ebaae7b7c1aa")
+	)
+	(junction
+		(at 204.216 30.226)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de74862d-1c83-4b3d-a59e-0a9b06bbc8c7")
+	)
+	(junction
+		(at 93.726 49.022)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8d713e2-42ce-42cd-b598-726fee5998a6")
+	)
+	(junction
+		(at 183.388 60.452)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd19c88d-c75a-4734-b817-5983e0b1d296")
+	)
+	(wire
+		(pts
+			(xy 86.106 37.846) (xy 68.326 37.846)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00cf0215-8407-488f-ad36-abb1f628324b")
+	)
+	(wire
+		(pts
+			(xy 101.346 60.452) (xy 120.142 60.452)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07b7b5b8-d03d-4400-9c65-528c9b5275b1")
+	)
+	(wire
+		(pts
+			(xy 164.592 127.508) (xy 164.592 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08623d64-a0bf-4d4e-8c5a-4c93f78f8db4")
+	)
+	(wire
+		(pts
+			(xy 146.812 119.888) (xy 146.812 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08988037-c560-4a11-905a-7ef46e8a17ab")
+	)
+	(wire
+		(pts
+			(xy 164.592 45.466) (xy 164.592 52.832)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0987988d-fcca-4627-8ee7-a2a99652adf6")
+	)
+	(wire
+		(pts
+			(xy 209.042 30.226) (xy 204.216 30.226)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a5e5b77-e701-4e58-aa1b-3621b9581a48")
+	)
+	(wire
+		(pts
+			(xy 127.762 45.466) (xy 127.762 49.022)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ce3e60e-c0bb-4073-9105-2601caa0de02")
+	)
+	(wire
+		(pts
+			(xy 127.762 112.268) (xy 135.382 112.268)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fc12c08-280a-49db-8ec9-3da85e121631")
+	)
+	(wire
+		(pts
+			(xy 101.346 82.55) (xy 120.142 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13e47824-4a56-4f15-bc47-212a4b27a0c5")
+	)
+	(wire
+		(pts
+			(xy 172.212 146.812) (xy 204.216 146.812)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "250d6d6d-139c-4a6a-a38d-71b19202b968")
+	)
+	(wire
+		(pts
+			(xy 93.726 45.466) (xy 93.726 49.022)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "277fb512-00d2-44ac-be96-2117b3195ce4")
+	)
+	(wire
+		(pts
+			(xy 93.726 49.022) (xy 93.726 52.832)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28d74022-c78d-449a-b067-4caaafdf9d9b")
+	)
+	(wire
+		(pts
+			(xy 120.142 119.888) (xy 93.726 119.888)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29f183b4-0419-4037-8694-38f12588dc85")
+	)
+	(wire
+		(pts
+			(xy 78.232 49.022) (xy 93.726 49.022)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bcb789c-41d3-4627-bb0f-21d793cdc53c")
+	)
+	(wire
+		(pts
+			(xy 127.762 71.374) (xy 146.812 71.374)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cabac57-4070-4d14-9869-04d943610a0f")
+	)
+	(wire
+		(pts
+			(xy 127.762 127.508) (xy 164.592 127.508)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33662e63-209b-486f-ab9a-275ab32eb8e6")
+	)
+	(wire
+		(pts
+			(xy 93.726 30.226) (xy 127.762 30.226)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36fb488c-c34b-4f42-b665-41c3a6f4bc86")
+	)
+	(wire
+		(pts
+			(xy 127.762 90.17) (xy 127.762 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d4b1973-9745-444e-a241-13aa115d0979")
+	)
+	(wire
+		(pts
+			(xy 164.592 68.072) (xy 164.592 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "428501e1-9d0a-4dfc-a00a-7d6795ec56d8")
+	)
+	(wire
+		(pts
+			(xy 146.812 60.452) (xy 146.812 37.846)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "456e7fb9-cad3-4cf3-b6af-a41b1df678cc")
+	)
+	(wire
+		(pts
+			(xy 68.326 96.012) (xy 68.326 146.812)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "457415aa-ff5f-4fcd-ad61-56e5efbb80f3")
+	)
+	(wire
+		(pts
+			(xy 93.726 139.192) (xy 127.762 139.192)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "479e3d13-61a8-48be-ae3b-172ecf48a051")
+	)
+	(wire
+		(pts
+			(xy 93.726 99.06) (xy 93.726 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4884586c-5e1b-4c3f-964f-96bb3747e200")
+	)
+	(wire
+		(pts
+			(xy 127.762 154.432) (xy 164.592 154.432)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49ebc171-a674-4db8-b263-0fbc08293d13")
+	)
+	(wire
+		(pts
+			(xy 146.812 37.846) (xy 146.812 30.226)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a91573a-6094-401a-82ed-44e050e0a094")
+	)
+	(wire
+		(pts
+			(xy 164.592 30.226) (xy 204.216 30.226)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c1b158a-9bc4-4edf-b6a3-433a54cc72c6")
+	)
+	(wire
+		(pts
+			(xy 183.388 60.452) (xy 172.212 60.452)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dd49287-9f63-4c38-b6c5-4190abab801e")
+	)
+	(wire
+		(pts
+			(xy 204.216 92.71) (xy 204.216 146.812)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e42f943-ad75-4174-9915-5da99885bc0c")
+	)
+	(wire
+		(pts
+			(xy 146.812 60.452) (xy 156.972 60.452)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fcafc2b-6718-4a2b-a76e-6cff9510ca90")
+	)
+	(wire
+		(pts
+			(xy 101.346 37.846) (xy 120.142 37.846)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "636db576-dd2f-4dc1-beef-54798d333cc3")
+	)
+	(wire
+		(pts
+			(xy 93.726 154.432) (xy 127.762 154.432)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e8b0cbb-b882-4ff8-ad0f-630c57d8c1d2")
+	)
+	(wire
+		(pts
+			(xy 127.762 30.226) (xy 146.812 30.226)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7085d0df-0ba6-4693-8868-65894e065024")
+	)
+	(wire
+		(pts
+			(xy 93.726 71.374) (xy 93.726 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71d91a91-655b-4ac9-b859-59a1cf56c7e8")
+	)
+	(wire
+		(pts
+			(xy 146.812 21.59) (xy 146.812 30.226)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "722c78f5-89f1-44b6-ab18-60093f93ac09")
+	)
+	(wire
+		(pts
+			(xy 93.726 127.508) (xy 93.726 119.888)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "730db1a7-77a2-48e9-a2f9-433b036a185a")
+	)
+	(wire
+		(pts
+			(xy 127.762 71.374) (xy 127.762 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "778ed862-73ae-42ed-aa24-0072c837b4c3")
+	)
+	(wire
+		(pts
+			(xy 135.382 82.55) (xy 135.382 112.268)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7897a6d8-57fe-4208-8e98-2dad15aab2b0")
+	)
+	(wire
+		(pts
+			(xy 101.346 146.812) (xy 120.142 146.812)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b8a84d8-1511-493b-a353-a502da5194fc")
+	)
+	(wire
+		(pts
+			(xy 183.388 37.846) (xy 172.212 37.846)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eabf09d-dbeb-479d-88d6-041bfb66e3f0")
+	)
+	(wire
+		(pts
+			(xy 61.976 146.812) (xy 68.326 146.812)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8820a4f9-e9ef-453d-ab48-f78d0256443b")
+	)
+	(wire
+		(pts
+			(xy 127.762 49.022) (xy 127.762 52.832)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c45a7ef-101c-4196-b317-ba2973039d17")
+	)
+	(wire
+		(pts
+			(xy 204.216 146.812) (xy 209.042 146.812)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93f63004-7deb-4394-ad22-ab873f9f9bb1")
+	)
+	(wire
+		(pts
+			(xy 127.762 99.06) (xy 93.726 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "948e85c1-6d42-4cf8-9eeb-80dbb736688d")
+	)
+	(wire
+		(pts
+			(xy 146.812 82.55) (xy 146.812 71.374)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f923934-6849-43e3-b7ce-68d412311c24")
+	)
+	(wire
+		(pts
+			(xy 183.388 82.55) (xy 172.212 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1a7f020-f18f-4abb-9d1f-88b0cedb2579")
+	)
+	(wire
+		(pts
+			(xy 68.326 37.846) (xy 68.326 88.392)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2a6ee99-c539-4f4f-95d3-e7ea03506a0e")
+	)
+	(wire
+		(pts
+			(xy 127.762 139.192) (xy 164.592 139.192)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a585bb42-a7e5-45c3-9ee2-bf66f20c0c97")
+	)
+	(wire
+		(pts
+			(xy 93.726 68.072) (xy 93.726 71.374)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a64a990b-70ed-4c6b-bccd-1af94d683411")
+	)
+	(wire
+		(pts
+			(xy 135.382 37.846) (xy 135.382 60.452)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7b72467-460b-42a2-9688-913fe044f4a6")
+	)
+	(wire
+		(pts
+			(xy 86.106 60.452) (xy 86.106 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad02ad8b-52b8-4317-88fd-630cb8771e74")
+	)
+	(wire
+		(pts
+			(xy 146.812 71.374) (xy 146.812 60.452)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6b79cb1-7bed-4bf8-ac62-d3cabc45b930")
+	)
+	(wire
+		(pts
+			(xy 183.388 82.55) (xy 183.388 94.742)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b71584ab-5d4c-40bc-b7b4-ff3cf25f37b6")
+	)
+	(wire
+		(pts
+			(xy 146.812 37.846) (xy 156.972 37.846)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7498fde-c075-4d95-a29c-aeeb572eb7e2")
+	)
+	(wire
+		(pts
+			(xy 183.388 60.452) (xy 183.388 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baf2e26d-62cb-4de2-9f36-df0ef57fa1e6")
+	)
+	(wire
+		(pts
+			(xy 135.382 119.888) (xy 146.812 119.888)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cff467af-47c6-4b65-9dc1-9b52e233237c")
+	)
+	(wire
+		(pts
+			(xy 61.976 37.846) (xy 68.326 37.846)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6ed021a-ba5a-4f3f-98dd-c3797316d509")
+	)
+	(wire
+		(pts
+			(xy 93.726 71.374) (xy 127.762 71.374)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7050c25-af8e-48c0-89fb-d46ba7f039a8")
+	)
+	(wire
+		(pts
+			(xy 183.388 37.846) (xy 183.388 60.452)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8d40061-2f7b-4911-9233-7468a41e0f11")
+	)
+	(wire
+		(pts
+			(xy 78.232 56.642) (xy 78.232 49.022)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc7ee575-3b04-47a2-aa72-08aa921c1f63")
+	)
+	(wire
+		(pts
+			(xy 127.762 68.072) (xy 127.762 71.374)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd2cd2e2-382d-4131-a8e5-c891657eb36f")
+	)
+	(wire
+		(pts
+			(xy 135.382 146.812) (xy 156.972 146.812)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed1c2fe8-fb18-4938-b004-9b0c27e8799a")
+	)
+	(wire
+		(pts
+			(xy 93.726 119.888) (xy 93.726 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edae9551-c80e-4170-8122-ba4e46a9dc9a")
+	)
+	(wire
+		(pts
+			(xy 156.972 82.55) (xy 146.812 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e9fd2c-149a-4457-9806-f173ca5d439a")
+	)
+	(wire
+		(pts
+			(xy 68.326 146.812) (xy 86.106 146.812)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3915780-86d5-4939-919c-c3d0e0948b8e")
+	)
+	(wire
+		(pts
+			(xy 93.726 49.022) (xy 127.762 49.022)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f61c861d-56c5-42dc-9a57-84b24973ce26")
+	)
+	(wire
+		(pts
+			(xy 204.216 30.226) (xy 204.216 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f761919c-6eb0-467b-b822-05ccb18d32f1")
+	)
+	(global_label "RGB_TO_RIGHT"
+		(shape input)
+		(at 209.042 30.226 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9b928ae4-89e9-4b8c-b9e2-184faed8e419")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 225.5134 30.226 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RGB_FOM_LEFT"
+		(shape input)
+		(at 61.976 37.846 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cf9dc97d-1286-4e30-8b3b-6477b79298c2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.1418 37.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RGB_TO_LEFT"
+		(shape input)
+		(at 61.976 146.812 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cfcbd085-37ab-4be7-9c3b-5bc2e85f1a55")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 46.7142 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RGB_FOM_RIGHT"
+		(shape input)
+		(at 209.042 146.812 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "daedd5be-e208-46e3-b2c3-0fbb66d10517")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.0858 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 183.388 94.742 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02bc6af7-6b33-4eaa-b687-b1131f69cebd")
+		(property "Reference" "#PWR01"
+			(at 183.388 101.092 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 183.388 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 183.388 94.742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 183.388 94.742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 183.388 94.742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b3597f7-b867-4179-a38e-2002d6f19702")
+		)
+		(instances
+			(project ""
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 68.326 92.202 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "02c2ab7f-764a-4f35-9268-8a35f94714da")
+		(property "Reference" "JP1"
+			(at 65.532 90.9319 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 65.532 93.4719 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_MISC:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 68.326 92.202 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.326 92.202 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 68.326 92.202 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3ebea558-b056-45d1-b13e-141edd0286a4")
+		)
+		(pin "1"
+			(uuid "95948d7c-6a89-477d-8405-fee4a8fd5d79")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 146.812 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e53ef37-f8bb-4500-8553-d68b6c8648df")
+		(property "Reference" "#PWR02"
+			(at 146.812 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 146.812 17.018 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.812 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.812 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 146.812 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41ae885a-6efb-4797-9ca1-a417523115a2")
+		)
+		(instances
+			(project ""
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 164.592 82.55 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24b34b26-67fa-4b48-aed9-f27a6e8753ef")
+		(property "Reference" "L9"
+			(at 174.752 79.2019 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 174.752 80.4719 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 170.942 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.942 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 164.592 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 167.64 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b24dd677-995b-4e8f-9f70-2c5b10d112d2")
+		)
+		(pin "2"
+			(uuid "f14b3e3a-b55b-4cd3-8654-05ccae1349f1")
+		)
+		(pin "4"
+			(uuid "4eb43472-6400-448b-8621-ac78c2ba7a2a")
+		)
+		(pin "3"
+			(uuid "97143367-b7ef-4bea-83fd-25c47c64a30e")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 164.592 146.812 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43827ebe-4d68-4e51-8e76-ae8c7e55e4e9")
+		(property "Reference" "L13"
+			(at 175.26 150.1601 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 175.26 148.8901 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 162.052 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.052 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 164.592 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 163.3219 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db4e218f-4b98-4706-95ee-cb3f43b9b1c6")
+		)
+		(pin "2"
+			(uuid "28dfbbb1-6e53-4fd3-a14f-f08aee1e9f2f")
+		)
+		(pin "4"
+			(uuid "71c3d145-c2a4-4ab0-b1fc-30d431f98e56")
+		)
+		(pin "3"
+			(uuid "d6b6e84d-e270-431a-b960-9e291e74abdf")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 164.592 37.846 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5cc2b87c-4de0-415d-9440-bdaaa9b6cd07")
+		(property "Reference" "L7"
+			(at 174.752 34.4979 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 174.752 35.7679 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 170.942 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.942 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 164.592 37.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 167.64 36.5759 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b965af7a-7829-4527-aed5-363e9c3e05d2")
+		)
+		(pin "2"
+			(uuid "be0c1326-dc6f-42ae-884c-20255af83acf")
+		)
+		(pin "4"
+			(uuid "b6d09a74-036b-4dd5-8d41-97a7b479affa")
+		)
+		(pin "3"
+			(uuid "ceae4bc3-004a-450e-a181-789c01d63582")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 93.726 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6112078d-135f-414c-906b-15b4fec07eb6")
+		(property "Reference" "L3"
+			(at 97.0741 92.71 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 95.8041 92.71 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 96.266 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.266 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.726 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 94.9961 85.598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "524c44cc-446d-4b51-94a9-e74d1bf2baed")
+		)
+		(pin "2"
+			(uuid "fcc296dd-34b0-4511-ad76-4dfd9861b22b")
+		)
+		(pin "4"
+			(uuid "fd5c298e-9c9c-48f3-ac0f-6ad4b92cdd51")
+		)
+		(pin "3"
+			(uuid "bdc201f4-88b1-4fcb-8cfb-8d271b0e2a36")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 127.762 60.452 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6762af27-0ba5-4d4d-a9d6-0610cfa16326")
+		(property "Reference" "L5"
+			(at 138.43 57.1039 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 138.43 58.3739 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 125.222 54.102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.222 54.102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127.762 60.452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 126.4919 57.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "edb880bc-3dc5-4e33-aa9c-0c8b68fe146c")
+		)
+		(pin "2"
+			(uuid "60e9e9db-88de-492c-bf7a-05ba4454d9a3")
+		)
+		(pin "4"
+			(uuid "fee7138e-b5a8-4eb8-9b1c-06fbe505611f")
+		)
+		(pin "3"
+			(uuid "44f37273-d27e-47a0-8f90-54348aed40df")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 93.726 37.846 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68a9b16b-08aa-4aa7-b2ec-6429e81b6d49")
+		(property "Reference" "L1"
+			(at 97.0741 48.006 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 95.8041 48.006 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 96.266 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.266 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.726 37.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 94.9961 40.894 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8ba2873-7e67-4c31-a704-157ec8c8ae15")
+		)
+		(pin "2"
+			(uuid "adc88b2a-452f-4672-af6e-6fbcc746cf39")
+		)
+		(pin "4"
+			(uuid "cfdefca6-b3cb-461c-aa69-58fd5d81bfec")
+		)
+		(pin "3"
+			(uuid "5081a102-9026-4e4c-9564-6304289faaf8")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 164.592 60.452 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8516b0a8-491b-426d-8a92-0d5a280ff387")
+		(property "Reference" "L8"
+			(at 174.752 57.1039 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 174.752 58.3739 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 170.942 57.912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.942 57.912 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 164.592 60.452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 167.64 59.1819 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99d93f4d-4d87-49e9-9e71-80a0442361e5")
+		)
+		(pin "2"
+			(uuid "807fa764-c4aa-478f-b0cf-be9b144908ab")
+		)
+		(pin "4"
+			(uuid "dc7b5b45-fbd1-4a9c-bacb-54c52da9d374")
+		)
+		(pin "3"
+			(uuid "a32c9b8a-e4ad-4134-be94-65160fbc8d31")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127.762 154.432 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "947c6626-b397-41fa-8a80-6f2492faf11e")
+		(property "Reference" "#PWR04"
+			(at 127.762 160.782 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127.762 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127.762 154.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127.762 154.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127.762 154.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6eb1f8f8-68a6-44a9-9ab7-8a1c1ccb037c")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 127.762 139.192 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b3186ee-188a-4ed7-8e16-037b1655e65e")
+		(property "Reference" "#PWR05"
+			(at 127.762 143.002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 127.762 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127.762 139.192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127.762 139.192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 127.762 139.192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "698f5627-9a63-4501-ab08-7168e4635091")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 93.726 146.812 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a034044f-7ced-4ca6-9f64-71f2f7c11437")
+		(property "Reference" "L11"
+			(at 90.3779 156.972 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 91.6479 156.972 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 91.186 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.186 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.726 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 92.4559 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99318fb6-f18c-45c4-8e7e-df30c9b54c25")
+		)
+		(pin "2"
+			(uuid "85258e11-083e-4f10-a920-556f374c876b")
+		)
+		(pin "4"
+			(uuid "f33a2979-8899-40ea-bbf9-5f61d4cca07c")
+		)
+		(pin "3"
+			(uuid "5fbd5ada-db6f-4543-94df-bdd27a7a098f")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 127.762 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae60d26c-3c57-4e68-865a-4e532b552e71")
+		(property "Reference" "L6"
+			(at 138.43 78.0349 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 138.43 79.3049 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 130.302 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.302 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127.762 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 129.0321 85.598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e4b7da4-a4b0-4543-9a52-a6129aa8ceeb")
+		)
+		(pin "2"
+			(uuid "f74656b8-e248-4246-8110-1185ae32788c")
+		)
+		(pin "4"
+			(uuid "1e574a0d-3751-4ad5-ba92-4637f7be5320")
+		)
+		(pin "3"
+			(uuid "4919c065-f6af-4eb4-ba4c-3b2933f50bc5")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 127.762 146.812 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af81345f-dab3-4756-a298-018b761481b2")
+		(property "Reference" "L12"
+			(at 138.43 150.1601 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 138.43 148.8901 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 125.222 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.222 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127.762 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 126.4919 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d7a59aa-a885-4132-b424-afdc32127bf1")
+		)
+		(pin "2"
+			(uuid "5c3135f9-95c6-42a4-8dd8-06f1618343ce")
+		)
+		(pin "4"
+			(uuid "c9a00cf5-87b2-4c1f-9cf3-876753a861de")
+		)
+		(pin "3"
+			(uuid "a995ce16-93dd-4441-8cc0-c0c535fa84fa")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 78.232 56.642 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c50e28e5-731a-435e-a524-125329f55cf1")
+		(property "Reference" "#PWR06"
+			(at 78.232 62.992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.232 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.232 56.642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.232 56.642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 78.232 56.642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9808b665-ce95-4f17-b3cb-14044a63f735")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 93.726 60.452 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c52f4e2d-337a-4571-b84e-912e73889daf")
+		(property "Reference" "L2"
+			(at 90.3779 50.292 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 91.6479 50.292 90)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 91.186 54.102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.186 54.102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.726 60.452 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 92.4559 57.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00428810-7f00-4611-984e-a937b3cde674")
+		)
+		(pin "2"
+			(uuid "0fe72329-c3be-488d-99d4-7a7f48321dfa")
+		)
+		(pin "4"
+			(uuid "f6b700bd-0a7b-4a81-8613-4dea974fc827")
+		)
+		(pin "3"
+			(uuid "6e406855-627e-476b-a34f-4f0d910f9a4c")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 127.762 119.888 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d1e9b973-b34e-4e0d-bb5c-c6618a0d2305")
+		(property "Reference" "L10"
+			(at 124.4139 109.22 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 125.6839 109.22 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 121.412 122.428 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.412 122.428 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127.762 119.888 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 124.714 121.1581 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4587ad7e-8430-4cf8-b643-d6b4aefa383b")
+		)
+		(pin "2"
+			(uuid "e176815d-1b3c-4410-988c-3dd266187e21")
+		)
+		(pin "4"
+			(uuid "bbe466c7-ffca-42a7-b4bb-830fe449afdb")
+		)
+		(pin "3"
+			(uuid "4332a082-bcac-437b-93f6-97211629cdfc")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 204.216 88.9 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3657c34-2fc7-479d-bbd1-5114d7a4b68e")
+		(property "Reference" "JP2"
+			(at 207.01 90.1701 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 207.01 87.6301 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_MISC:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 204.216 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.216 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 204.216 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0efd3338-95b7-4c0e-acf7-6ff922af8a45")
+		)
+		(pin "1"
+			(uuid "7994a5d2-4ebe-40ed-8b40-92126d3cb315")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_LED:SK6812MINI-E")
+		(at 127.762 37.846 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1b0a6bc-53dc-41c7-abbc-8e41fdb17733")
+		(property "Reference" "L4"
+			(at 138.43 33.3309 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 138.43 34.6009 0)
+			(effects
+				(font
+					(size 0.7366 0.7366)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
+			(at 130.302 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.302 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127.762 37.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 129.0321 40.894 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "578026bc-97ff-4ea8-b86a-6879b2ac93b0")
+		)
+		(pin "2"
+			(uuid "83ce94c7-2f28-46d9-a192-4aee69a9a227")
+		)
+		(pin "4"
+			(uuid "930aecfe-0d43-484d-9ec8-75aaae11bfe6")
+		)
+		(pin "3"
+			(uuid "f46a5901-dced-4cb6-bd1f-47ea57d4fba4")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "L4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 93.726 127.508 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3140a51-d4e3-4a0f-800c-3c79448b0447")
+		(property "Reference" "#PWR03"
+			(at 93.726 133.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.726 131.826 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.726 127.508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.726 127.508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 93.726 127.508 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f250bc8-7c2f-41ff-9077-86f5b4e83a25")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/1db9d0a3-92fe-44f8-9d65-add93d49c030"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
