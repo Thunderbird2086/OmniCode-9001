@@ -3585,7 +3585,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01fd5506-a19d-482d-8444-bde57eabd071")
-		(property "Reference" "J1"
+		(property "Reference" "POGO1"
 			(at 54.102 49.5299 0)
 			(effects
 				(font
@@ -3648,7 +3648,7 @@
 		(instances
 			(project "DeltaForm"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
-					(reference "J1")
+					(reference "POGO1")
 					(unit 1)
 				)
 			)
@@ -4708,7 +4708,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b674dee-54b3-4e4b-9bea-f73066ae0710")
-		(property "Reference" "J2"
+		(property "Reference" "POGO3"
 			(at 54.102 89.4079 0)
 			(effects
 				(font
@@ -4777,7 +4777,7 @@
 		(instances
 			(project "DeltaForm"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
-					(reference "J2")
+					(reference "POGO3")
 					(unit 1)
 				)
 			)
@@ -5260,7 +5260,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51bf06e4-8d9a-4457-a62b-e35989fe3cb3")
-		(property "Reference" "J3"
+		(property "Reference" "POGO5"
 			(at 54.356 148.5899 0)
 			(effects
 				(font
@@ -5329,7 +5329,7 @@
 		(instances
 			(project "DeltaForm"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
-					(reference "J3")
+					(reference "POGO5")
 					(unit 1)
 				)
 			)
@@ -5421,7 +5421,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a47bcca-c725-4309-a621-b47726e63517")
-		(property "Reference" "J6"
+		(property "Reference" "POGO6"
 			(at 193.04 148.8441 0)
 			(effects
 				(font
@@ -5490,7 +5490,7 @@
 		(instances
 			(project "DeltaForm"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
-					(reference "J6")
+					(reference "POGO6")
 					(unit 1)
 				)
 			)
@@ -5602,7 +5602,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "78d4e427-7efe-41f5-84d2-d14dc7223059")
-		(property "Reference" "J5"
+		(property "Reference" "POGO4"
 			(at 193.294 89.6621 0)
 			(effects
 				(font
@@ -5671,7 +5671,7 @@
 		(instances
 			(project "DeltaForm"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
-					(reference "J5")
+					(reference "POGO4")
 					(unit 1)
 				)
 			)
@@ -6131,7 +6131,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b25b229b-bf0f-47b6-912e-31b9f1553f17")
-		(property "Reference" "J4"
+		(property "Reference" "POGO2"
 			(at 193.294 49.7841 0)
 			(effects
 				(font
@@ -6194,7 +6194,7 @@
 		(instances
 			(project "DeltaForm"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/07d799b8-8bd0-4b35-b9da-910e8fb4f070"
-					(reference "J4")
+					(reference "POGO2")
 					(unit 1)
 				)
 			)
