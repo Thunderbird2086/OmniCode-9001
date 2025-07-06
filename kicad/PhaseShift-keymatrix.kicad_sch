@@ -3086,6 +3086,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 130.81 50.546 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "009a0982-3189-4825-b2e0-8fbd869c1545")
+		(property "Reference" "D7"
+			(at 133.858 49.2759 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 133.858 51.8159 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 130.81 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 133.858 49.2759 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7cf7c101-e2ee-4ad7-a72a-92dbae82ac49")
+		)
+		(pin "2"
+			(uuid "953b5de9-9e4f-4e44-8c03-1d9fceadb1d3")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
 		(at 128.27 44.196 270)
 		(mirror x)
@@ -3172,7 +3251,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01fd5506-a19d-482d-8444-bde57eabd071")
-		(property "Reference" "J1"
+		(property "Reference" "POGO1"
 			(at 44.45 55.6259 0)
 			(effects
 				(font
@@ -3235,7 +3314,86 @@
 		(instances
 			(project ""
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "J1")
+					(reference "POGO1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 130.81 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09ddefd8-4db4-4c23-8fdf-e6c0eed17c51")
+		(property "Reference" "D9"
+			(at 133.858 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 133.858 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 130.81 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 133.858 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad8ea008-3327-4cff-9698-adfcace84ae7")
+		)
+		(pin "2"
+			(uuid "670ea11e-ee53-4d96-a0f4-fa8039fbfa3f")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -3474,16 +3632,16 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 130.81 95.25 90)
+		(at 115.57 138.43 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "24b34b26-67fa-4b48-aed9-f27a6e8753ef")
-		(property "Reference" "D9"
-			(at 133.858 93.9799 90)
+		(uuid "24d24acc-9a6a-4fa7-94e8-7cde0bfc1b69")
+		(property "Reference" "D10"
+			(at 118.618 137.1599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3492,7 +3650,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 133.858 96.5199 90)
+			(at 118.618 139.6999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3501,7 +3659,7 @@
 			)
 		)
 		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 130.81 95.25 0)
+			(at 115.57 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3510,7 +3668,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 95.25 0)
+			(at 115.57 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3519,7 +3677,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 95.25 0)
+			(at 115.57 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3528,7 +3686,7 @@
 			)
 		)
 		(property "LCSC" "C7420318"
-			(at 133.858 93.9799 0)
+			(at 118.618 137.1599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3537,15 +3695,94 @@
 			)
 		)
 		(pin "1"
-			(uuid "ad8ea008-3327-4cff-9698-adfcace84ae7")
+			(uuid "7738497d-6c4b-4cdf-8b9d-36a7af7f875c")
 		)
 		(pin "2"
-			(uuid "670ea11e-ee53-4d96-a0f4-fa8039fbfa3f")
+			(uuid "ee8e7e67-7fdc-48f2-92e9-193075488c2b")
 		)
 		(instances
 			(project "OmniCode"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D9")
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 99.06 95.25 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d9e8ded-8c3e-4f77-89fa-b0b305772d6d")
+		(property "Reference" "D3"
+			(at 102.108 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 102.108 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 99.06 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 102.108 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc07c4f5-651c-4f0c-9fa6-385a63f61393")
+		)
+		(pin "2"
+			(uuid "1f07826c-929d-4f64-83eb-f70c7fcf1a74")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -3639,7 +3876,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b674dee-54b3-4e4b-9bea-f73066ae0710")
-		(property "Reference" "J2"
+		(property "Reference" "POGO3"
 			(at 44.45 95.5039 0)
 			(effects
 				(font
@@ -3708,7 +3945,7 @@
 		(instances
 			(project ""
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "J2")
+					(reference "POGO3")
 					(unit 1)
 				)
 			)
@@ -3786,85 +4023,6 @@
 			(project "OmniCode"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
 					(reference "S6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 130.81 159.766 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "43827ebe-4d68-4e51-8e76-ae8c7e55e4e9")
-		(property "Reference" "D13"
-			(at 133.858 158.4959 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N4148W"
-			(at 133.858 161.0359 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 130.81 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7420318"
-			(at 133.858 158.4959 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6bbd9bd4-c582-46e2-92de-fa9aabadca0c")
-		)
-		(pin "2"
-			(uuid "23b5dacf-2e98-428b-b45c-1d06358019ef")
-		)
-		(instances
-			(project "OmniCode"
-				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -3955,7 +4113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51bf06e4-8d9a-4457-a62b-e35989fe3cb3")
-		(property "Reference" "J3"
+		(property "Reference" "POGO5"
 			(at 44.704 154.6859 0)
 			(effects
 				(font
@@ -4024,7 +4182,7 @@
 		(instances
 			(project "PhaseShift"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "J3")
+					(reference "POGO5")
 					(unit 1)
 				)
 			)
@@ -4032,16 +4190,16 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 130.81 50.546 90)
+		(at 99.06 73.152 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5cc2b87c-4de0-415d-9440-bdaaa9b6cd07")
-		(property "Reference" "D7"
-			(at 133.858 49.2759 90)
+		(uuid "52f0486a-f53c-4897-85a4-d66f24da2595")
+		(property "Reference" "D2"
+			(at 102.108 71.8819 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4050,7 +4208,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 133.858 51.8159 90)
+			(at 102.108 74.4219 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4059,7 +4217,7 @@
 			)
 		)
 		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 130.81 50.546 0)
+			(at 99.06 73.152 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4068,7 +4226,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 50.546 0)
+			(at 99.06 73.152 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4077,7 +4235,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 50.546 0)
+			(at 99.06 73.152 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4086,7 +4244,7 @@
 			)
 		)
 		(property "LCSC" "C7420318"
-			(at 133.858 49.2759 0)
+			(at 102.108 71.8819 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4095,15 +4253,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "7cf7c101-e2ee-4ad7-a72a-92dbae82ac49")
+			(uuid "05bbe7e4-0b3a-4e65-8acf-e529f0e62cd6")
 		)
 		(pin "2"
-			(uuid "953b5de9-9e4f-4e44-8c03-1d9fceadb1d3")
+			(uuid "a73c2ec1-42fa-442f-a874-c77579495e07")
 		)
 		(instances
 			(project "OmniCode"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D7")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -4188,16 +4346,16 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 99.06 95.25 90)
+		(at 99.06 50.546 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6112078d-135f-414c-906b-15b4fec07eb6")
-		(property "Reference" "D3"
-			(at 102.108 93.9799 90)
+		(uuid "66b97f36-b0f3-4f44-bd55-05058fd255df")
+		(property "Reference" "D1"
+			(at 102.108 49.2759 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4206,7 +4364,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 102.108 96.5199 90)
+			(at 102.108 51.8159 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4215,7 +4373,7 @@
 			)
 		)
 		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 99.06 95.25 0)
+			(at 99.06 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4224,7 +4382,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 99.06 95.25 0)
+			(at 99.06 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4233,7 +4391,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 99.06 95.25 0)
+			(at 99.06 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4242,7 +4400,7 @@
 			)
 		)
 		(property "LCSC" "C7420318"
-			(at 102.108 93.9799 0)
+			(at 102.108 49.2759 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4251,94 +4409,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "fc07c4f5-651c-4f0c-9fa6-385a63f61393")
+			(uuid "ed255b96-1701-4e76-8cea-16cea587e0ab")
 		)
 		(pin "2"
-			(uuid "1f07826c-929d-4f64-83eb-f70c7fcf1a74")
+			(uuid "3f6e93b7-033b-4657-b077-1a7c67205e1f")
 		)
 		(instances
 			(project "OmniCode"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 115.57 73.152 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6762af27-0ba5-4d4d-a9d6-0610cfa16326")
-		(property "Reference" "D5"
-			(at 118.618 71.8819 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N4148W"
-			(at 118.618 74.4219 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 115.57 73.152 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 115.57 73.152 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 73.152 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7420318"
-			(at 118.618 71.8819 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0cded6b3-ea98-44e2-b3c3-d1ea42fe09eb")
-		)
-		(pin "2"
-			(uuid "0ef5b0e4-a9cb-42d3-aa5e-b6074a491db7")
-		)
-		(instances
-			(project "OmniCode"
-				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D5")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4422,85 +4501,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 99.06 50.546 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "68a9b16b-08aa-4aa7-b2ec-6429e81b6d49")
-		(property "Reference" "D1"
-			(at 102.108 49.2759 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N4148W"
-			(at 102.108 51.8159 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 99.06 50.546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 99.06 50.546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 99.06 50.546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7420318"
-			(at 102.108 49.2759 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ed255b96-1701-4e76-8cea-16cea587e0ab")
-		)
-		(pin "2"
-			(uuid "3f6e93b7-033b-4657-b077-1a7c67205e1f")
-		)
-		(instances
-			(project "OmniCode"
-				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x07")
 		(at 186.182 153.67 180)
 		(unit 1)
@@ -4509,7 +4509,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a47bcca-c725-4309-a621-b47726e63517")
-		(property "Reference" "J6"
+		(property "Reference" "POGO6"
 			(at 183.388 154.9401 0)
 			(effects
 				(font
@@ -4578,7 +4578,7 @@
 		(instances
 			(project "PhaseShift"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "J6")
+					(reference "POGO6")
 					(unit 1)
 				)
 			)
@@ -4662,6 +4662,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 130.81 73.152 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74d3412b-8b2b-4872-9ff2-c51731f37f44")
+		(property "Reference" "D8"
+			(at 133.858 71.8819 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 133.858 74.4219 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 130.81 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 73.152 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 133.858 71.8819 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06276157-f826-4024-a95f-2bbdc9473c7a")
+		)
+		(pin "2"
+			(uuid "27f24da7-3dee-41e3-95b5-3566a18f8158")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x07")
 		(at 186.436 94.488 180)
 		(unit 1)
@@ -4670,7 +4749,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "78d4e427-7efe-41f5-84d2-d14dc7223059")
-		(property "Reference" "J5"
+		(property "Reference" "POGO4"
 			(at 183.642 95.7581 0)
 			(effects
 				(font
@@ -4739,7 +4818,7 @@
 		(instances
 			(project "PhaseShift"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "J5")
+					(reference "POGO4")
 					(unit 1)
 				)
 			)
@@ -4747,16 +4826,16 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 130.81 73.152 90)
+		(at 115.57 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8516b0a8-491b-426d-8a92-0d5a280ff387")
-		(property "Reference" "D8"
-			(at 133.858 71.8819 90)
+		(uuid "8927813d-d7d4-4137-a010-8ca7d920c3ee")
+		(property "Reference" "D6"
+			(at 118.618 93.9799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4765,7 +4844,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 133.858 74.4219 90)
+			(at 118.618 96.5199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4774,7 +4853,7 @@
 			)
 		)
 		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 130.81 73.152 0)
+			(at 115.57 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4783,7 +4862,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 73.152 0)
+			(at 115.57 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4792,7 +4871,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 73.152 0)
+			(at 115.57 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4801,7 +4880,7 @@
 			)
 		)
 		(property "LCSC" "C7420318"
-			(at 133.858 71.8819 0)
+			(at 118.618 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4810,15 +4889,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "06276157-f826-4024-a95f-2bbdc9473c7a")
+			(uuid "2be92282-19b4-41bd-8c5c-ddbace4fb104")
 		)
 		(pin "2"
-			(uuid "27f24da7-3dee-41e3-95b5-3566a18f8158")
+			(uuid "f74b4d01-f127-446a-bd92-3f84775eb388")
 		)
 		(instances
 			(project "OmniCode"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D8")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -5058,16 +5137,16 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 99.06 159.766 90)
+		(at 115.57 159.766 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a034044f-7ced-4ca6-9f64-71f2f7c11437")
-		(property "Reference" "D11"
-			(at 102.108 158.4959 90)
+		(uuid "98ea78e6-d235-4a0c-b26c-dd67f6829ff8")
+		(property "Reference" "D12"
+			(at 118.618 158.4959 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5076,7 +5155,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 102.108 161.0359 90)
+			(at 118.618 161.0359 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5085,7 +5164,7 @@
 			)
 		)
 		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 99.06 159.766 0)
+			(at 115.57 159.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5094,7 +5173,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 99.06 159.766 0)
+			(at 115.57 159.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5103,7 +5182,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 99.06 159.766 0)
+			(at 115.57 159.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5112,7 +5191,7 @@
 			)
 		)
 		(property "LCSC" "C7420318"
-			(at 102.108 158.4959 0)
+			(at 118.618 158.4959 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5121,15 +5200,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "e8816dd4-e1fd-4d56-a89d-ebaf1b8d6a3c")
+			(uuid "1ce64b90-70c0-4446-8c0f-e88b22b8a408")
 		)
 		(pin "2"
-			(uuid "b33cb62f-e449-4b30-ab4d-7592f2cd476f")
+			(uuid "46bcf829-c5df-42fc-bfa9-54ea5e626699")
 		)
 		(instances
 			(project "OmniCode"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D11")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -5214,16 +5293,16 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 115.57 95.25 90)
+		(at 130.81 159.766 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ae60d26c-3c57-4e68-865a-4e532b552e71")
-		(property "Reference" "D6"
-			(at 118.618 93.9799 90)
+		(uuid "acde027a-e14f-47cc-8dac-8d6715ae1002")
+		(property "Reference" "D13"
+			(at 133.858 158.4959 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5232,7 +5311,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 118.618 96.5199 90)
+			(at 133.858 161.0359 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5241,7 +5320,7 @@
 			)
 		)
 		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 115.57 95.25 0)
+			(at 130.81 159.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5250,7 +5329,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 95.25 0)
+			(at 130.81 159.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5259,7 +5338,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 95.25 0)
+			(at 130.81 159.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5268,7 +5347,7 @@
 			)
 		)
 		(property "LCSC" "C7420318"
-			(at 118.618 93.9799 0)
+			(at 133.858 158.4959 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5277,94 +5356,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2be92282-19b4-41bd-8c5c-ddbace4fb104")
+			(uuid "6bbd9bd4-c582-46e2-92de-fa9aabadca0c")
 		)
 		(pin "2"
-			(uuid "f74b4d01-f127-446a-bd92-3f84775eb388")
+			(uuid "23b5dacf-2e98-428b-b45c-1d06358019ef")
 		)
 		(instances
 			(project "OmniCode"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 115.57 159.766 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "af81345f-dab3-4756-a298-018b761481b2")
-		(property "Reference" "D12"
-			(at 118.618 158.4959 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N4148W"
-			(at 118.618 161.0359 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 115.57 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 115.57 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 159.766 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7420318"
-			(at 118.618 158.4959 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1ce64b90-70c0-4446-8c0f-e88b22b8a408")
-		)
-		(pin "2"
-			(uuid "46bcf829-c5df-42fc-bfa9-54ea5e626699")
-		)
-		(instances
-			(project "OmniCode"
-				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D12")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -5379,7 +5379,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b25b229b-bf0f-47b6-912e-31b9f1553f17")
-		(property "Reference" "J4"
+		(property "Reference" "POGO2"
 			(at 183.642 55.8801 0)
 			(effects
 				(font
@@ -5442,86 +5442,7 @@
 		(instances
 			(project "PhaseShift"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 99.06 73.152 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c52f4e2d-337a-4571-b84e-912e73889daf")
-		(property "Reference" "D2"
-			(at 102.108 71.8819 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N4148W"
-			(at 102.108 74.4219 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 99.06 73.152 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 99.06 73.152 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 99.06 73.152 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C7420318"
-			(at 102.108 71.8819 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "05bbe7e4-0b3a-4e65-8acf-e529f0e62cd6")
-		)
-		(pin "2"
-			(uuid "a73c2ec1-42fa-442f-a874-c77579495e07")
-		)
-		(instances
-			(project "OmniCode"
-				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D2")
+					(reference "POGO2")
 					(unit 1)
 				)
 			)
@@ -5671,16 +5592,16 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 115.57 138.43 90)
+		(at 115.57 73.152 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d1e9b973-b34e-4e0d-bb5c-c6618a0d2305")
-		(property "Reference" "D10"
-			(at 118.618 137.1599 90)
+		(uuid "cd9efda2-7a7f-43dc-975b-c298b118d98e")
+		(property "Reference" "D5"
+			(at 118.618 71.8819 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5689,7 +5610,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 118.618 139.6999 90)
+			(at 118.618 74.4219 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5698,7 +5619,7 @@
 			)
 		)
 		(property "Footprint" "TB2086_SMD:D3_SMD"
-			(at 115.57 138.43 0)
+			(at 115.57 73.152 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5707,7 +5628,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 138.43 0)
+			(at 115.57 73.152 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5716,7 +5637,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 115.57 138.43 0)
+			(at 115.57 73.152 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5725,7 +5646,7 @@
 			)
 		)
 		(property "LCSC" "C7420318"
-			(at 118.618 137.1599 0)
+			(at 118.618 71.8819 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5734,15 +5655,94 @@
 			)
 		)
 		(pin "1"
-			(uuid "7738497d-6c4b-4cdf-8b9d-36a7af7f875c")
+			(uuid "0cded6b3-ea98-44e2-b3c3-d1ea42fe09eb")
 		)
 		(pin "2"
-			(uuid "ee8e7e67-7fdc-48f2-92e9-193075488c2b")
+			(uuid "0ef5b0e4-a9cb-42d3-aa5e-b6074a491db7")
 		)
 		(instances
 			(project "OmniCode"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
-					(reference "D10")
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 99.06 159.766 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dda9a4f6-eb66-439b-bd36-b7ed5dde813f")
+		(property "Reference" "D11"
+			(at 102.108 158.4959 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 102.108 161.0359 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 99.06 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 102.108 158.4959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8816dd4-e1fd-4d56-a89d-ebaf1b8d6a3c")
+		)
+		(pin "2"
+			(uuid "b33cb62f-e449-4b30-ab4d-7592f2cd476f")
+		)
+		(instances
+			(project "OmniCode"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797/b6e5122b-19a7-4e32-83dd-aae5ee669f5d"
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -5757,7 +5757,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e1b0a6bc-53dc-41c7-abbc-8e41fdb17733")
+		(uuid "ecae4677-ce74-4431-8bfd-6c585a0eee5d")
 		(property "Reference" "D4"
 			(at 118.618 49.2759 90)
 			(effects

@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.9,
+          "height": 2.1,
+          "width": 2.1
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -430,7 +430,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -457,7 +457,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.18,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -469,8 +469,76 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "+5V/3V3",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.18,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "CS",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "col",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "diode",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       }
     ],
@@ -479,7 +547,444 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "+5V/3V3",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW00"
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW01"
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW02"
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW03 "
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW04"
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW05"
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW06"
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW07"
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW08"
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW09"
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW10"
+      },
+      {
+        "netclass": "col",
+        "pattern": "ROW11"
+      },
+      {
+        "netclass": "col",
+        "pattern": "COL0"
+      },
+      {
+        "netclass": "col",
+        "pattern": "COL1"
+      },
+      {
+        "netclass": "col",
+        "pattern": "COL2"
+      },
+      {
+        "netclass": "col",
+        "pattern": "COL3"
+      },
+      {
+        "netclass": "col",
+        "pattern": "COL4"
+      },
+      {
+        "netclass": "col",
+        "pattern": "COL5"
+      },
+      {
+        "netclass": "col",
+        "pattern": "COL6"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D1-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D10-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D11-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D12-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D13-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D14-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D15-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D16-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D17-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D18-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D19-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D2-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D20-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D21-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D22-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D23-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D24-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D25-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D26-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D27-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D28-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D29-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D3-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D30-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D31-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D32-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D33-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D34-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D35-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D36-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D37-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D38-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D39-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D4-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D40-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D41-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D42-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D43-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D44-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D45-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D46-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D47-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D48-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D49-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D5-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D50-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D51-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D52-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D53-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D54-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D55-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D56-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D57-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D58-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D59-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D6-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D60-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D61-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D62-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D63-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D64-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D65-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D66-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D67-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D68-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D69-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D7-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D70-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D71-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D72-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D73-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D74-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D75-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D76-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D77-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D78-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D79-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D8-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D80-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D81-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D82-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D83-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D84-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D85-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D86-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D87-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D88-Pad2)"
+      },
+      {
+        "netclass": "diode",
+        "pattern": "Net-(D9-Pad2)"
+      },
+      {
+        "netclass": "+5V/3V3",
+        "pattern": "+3V3"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -577,7 +1082,7 @@
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
-      "intersheets_ref_short": false,
+      "intersheets_ref_short": true,
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
@@ -612,6 +1117,10 @@
     [
       "c7177d09-71a2-4de7-9a3e-bfc16a7f2797",
       "Root"
+    ],
+    [
+      "1db9d0a3-92fe-44f8-9d65-add93d49c030",
+      "RGB"
     ],
     [
       "b6e5122b-19a7-4e32-83dd-aae5ee669f5d",
