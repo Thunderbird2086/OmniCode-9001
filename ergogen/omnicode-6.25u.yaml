@@ -1,6 +1,6 @@
 meta:
   author: Allen Choi
-  version: 0.3.7
+  version: 0.4.3
   engine: 4.1.0
   project: "OmniCode:9001"
 
@@ -17,7 +17,7 @@ text_common:
 
   version_text: &version_text
     <<: *text_base
-    params.text: "OminCode:9001 v0.3.4"
+    params.text: "OminCode:9001 20250709"
 
   text_bbg: &text_bbg
     what: utility_text
@@ -43,6 +43,10 @@ units:
   u6_00: u1_00 * 6
   u6_25: u1_00 * 6.25
 
+  # Screw hole sizes
+  screw_hole_radius: 1.1  # M2 screw hole size
+  support_hole_radius: 1.25  # M2 PCB support hole size
+
   # Spacing and padding
   ps: 0.0          # Base padding between switches
   dx: ps
@@ -57,7 +61,9 @@ units:
   pogo_x: bx - 4.125
   pogo_y1: 15.8
   pogo_y3: 18.3
-
+  cover_width: 1.7
+  case_width: 5.5
+  
   # hole offset from the edges
   hole_offset: 4
 
@@ -403,14 +409,17 @@ screw_holes:
       adjust: { shift: [0.5px, -0.5py] }
 
 outlines:
-  raw: &raw
+  raw_gm: &raw_gm
     - &rect_base
       what: rectangle
       bound: false
       joints: corner
     - <<: *rect_base
-      where: true
+      where: [gmu1_00]
       size: [px, py]
+    - <<: *rect_base
+      where: [gmu1_25]
+      size: [1.25px, py]
     - <<: *rect_base
       where: [gmu1_50]
       size: [1.5px, py]
@@ -431,10 +440,84 @@ outlines:
       size: [6.25px, py]
       fillet: corner
 
+  raw_ps: &raw_ps
+    - <<: *rect_base
+      where: [psu1_00]
+      size: [px, py]
+      fillet: corner
+
+  raw_df: &raw_df
+    - <<: *rect_base
+      where: [dfu1_00]
+      size: [1px, py]
+    - <<: *rect_base
+      where: [dfu2_00]
+      size: [2px, py]
+    - <<: *rect_base
+      where: [dfv2_00]
+      size: [px, 2py]
+      fillet: corner
+
   keys:
     - what: rectangle
       where: true
       size: [14, 14]
+
+  keys_gm:
+    - what: rectangle
+      where: [gmu1_00,gmu1_25,gmu1_50,gmu1_75,gmu2_00,gmu2_25,gmu2_75,gmu6_25]
+      size: [14, 14]
+  
+  keys_gm_mouse_ear:
+    - what: rectangle
+      where: [gmu1_00,gmu1_25,gmu1_50,gmu1_75,gmu2_00,gmu2_25,gmu2_75,gmu6_25]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [-6.75, -6.75]
+    - what: rectangle
+      where: [gmu1_00,gmu1_25,gmu1_50,gmu1_75,gmu2_00,gmu2_25,gmu2_75,gmu6_25]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [6.75, -6.75]
+    - what: rectangle
+      where: [gmu1_00,gmu1_25,gmu1_50,gmu1_75,gmu2_00,gmu2_25,gmu2_75,gmu6_25]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [6.75, 6.75]
+    - what: rectangle
+      where: [gmu1_00,gmu1_25,gmu1_50,gmu1_75,gmu2_00,gmu2_25,gmu2_75,gmu6_25]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [-6.75, 6.75]
+      fillet: .4
+
+  stab_2_00u_gm:
+    - what: rectangle
+      where: [gmu2_00,gmu2_25,gmu2_75]
+      size: [6.75, 12.35]
+      adjust:
+        shift: [-11.9, -0.62]
+    - what: rectangle
+      where: [gmu2_00,gmu2_25,gmu2_75]
+      size: [6.75, 12.35]
+      adjust:
+        shift: [11.9, -0.62]
+    - what: rectangle
+      where: [gmu2_00,gmu2_25,gmu2_75]
+      size: [3.1, 13.65]
+      adjust:
+        shift: [11.9, -1.27]
+    - what: rectangle
+      where: [gmu2_00,gmu2_25,gmu2_75]
+      size: [3.1, 13.65]
+      adjust:
+        shift: [-11.9, -1.27]
+    - what: rectangle
+      where: [gmu2_00,gmu2_25,gmu2_75]
+      size: [23.8+4.3*2, 3]
+      adjust:
+        shift: [0, .9]
+      fillet: .3
 
   glyph_matrix_raw:
     - what: polygon
@@ -450,49 +533,77 @@ outlines:
          shift: [-0.5px-bx, -0.5py-5.25u1_00-by]
       fillet: corner
 
+  glyph_matrix_plate:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: function_c00_row
+         shift: [-0.5px-bx-cover_width, 0.5py+by]
+       - ref: function_c13_row
+         shift: [0.5px+bx+cover_width, 0.5py+by]
+       - ref: function_c13_row
+         shift: [0.5px+bx+cover_width, -0.5py-5.25u1_00-by]
+       - ref: function_c00_row
+         shift: [-0.5px-bx-cover_width, -0.5py-5.25u1_00-by]
+      fillet: corner
+
+  glyph_matrix_case_raw:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: function_c00_row
+         shift: [-0.5px-bx-cover_width, 0.5py+by+cover_width]
+       - ref: function_c13_row
+         shift: [0.5px+bx+cover_width, 0.5py+by+cover_width]
+       - ref: function_c13_row
+         shift: [0.5px+bx+cover_width, -0.5py-5.25u1_00-by-cover_width-case_width]
+       - ref: function_c00_row
+         shift: [-0.5px-bx-cover_width, -0.5py-5.25u1_00-by-cover_width-case_width]
+      fillet: corner
+
   screw_holes_glyph_matrix_common:
     <<: *screw_holes_glyph_matrix_common
     hole1.what: circle
-    hole1.radius: 1.6
+    hole1.radius: screw_hole_radius
     hole2.what: circle
-    hole2.radius: 1.6
+    hole2.radius: screw_hole_radius
     hole3.what: circle
-    hole3.radius: 1.6
+    hole3.radius: screw_hole_radius
     hole4.what: circle
-    hole4.radius: 1.6
+    hole4.radius: screw_hole_radius
     hole5.what: circle
-    hole5.radius: 1.6
+    hole5.radius: screw_hole_radius
     hole6.what: circle
-    hole6.radius: 1.6
+    hole6.radius: screw_hole_radius
 
   glyph_screw_holes:
     <<: *screw_holes_glyph_matrix
     hole7.what: circle
-    hole7.radius: 1.6
+    hole7.radius: screw_hole_radius
     hole8.what: circle
-    hole8.radius: 1.6
+    hole8.radius: screw_hole_radius
 
   screw_holes_glyph_matrix_top:
     <<: *screw_holes_glyph_matrix_common
     hole1.what: circle
-    hole1.radius: 1.85
+    hole1.radius: support_hole_radius
     hole2.what: circle
-    hole2.radius: 1.85
+    hole2.radius: support_hole_radius
     hole3.what: circle
-    hole3.radius: 1.85
+    hole3.radius: support_hole_radius
     hole4.what: circle
-    hole4.radius: 1.85
+    hole4.radius: support_hole_radius
     hole5.what: circle
-    hole5.radius: 1.85
+    hole5.radius: support_hole_radius
     hole6.what: circle
-    hole6.radius: 1.85
+    hole6.radius: support_hole_radius
 
   glyph_screw_holes_top:
     <<: *screw_holes_glyph_matrix
     hole7.what: circle
-    hole7.radius: 1.85
+    hole7.radius: support_hole_radius
     hole8.what: circle
-    hole8.radius: 1.85
+    hole8.radius: support_hole_radius
 
   glyph_matrix:
     - "glyph_matrix_raw"
@@ -511,37 +622,65 @@ outlines:
          shift: [-0.5px-bx, -0.5py-by]
       fillet: corner
 
+  phase_shift_plate:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: nav_block_c14_func
+         shift: [-0.5px-bx-cover_width, 0.5py+by]
+       - ref: nav_block_c16_func
+         shift: [0.5px+bx+cover_width, 0.5py+by]
+       - ref: nav_block3_c16_thumb
+         shift: [0.5px+bx+cover_width, -0.5py-by]
+       - ref: nav_block3_c14_thumb
+         shift: [-0.5px-bx-cover_width, -0.5py-by]
+      fillet: corner
+
+  phase_shift_case_raw:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: nav_block_c14_func
+         shift: [-0.5px-bx-cover_width, 0.5py+by+cover_width]
+       - ref: nav_block_c16_func
+         shift: [0.5px+bx+cover_width, 0.5py+by+cover_width]
+       - ref: nav_block3_c16_thumb
+         shift: [0.5px+bx+cover_width, -0.5py-by-cover_width-case_width]
+       - ref: nav_block3_c14_thumb
+         shift: [-0.5px-bx-cover_width, -0.5py-by-case_width]
+      fillet: corner
+
   screw_holes_phase_shift_common:
     <<: *screw_holes_phase_shift_common
     hole1.what: circle
-    hole1.radius: 1.6
+    hole1.radius: screw_hole_radius
     hole2.what: circle
-    hole2.radius: 1.6
+    hole2.radius: screw_hole_radius
     hole3.what: circle
-    hole3.radius: 1.6
+    hole3.radius: screw_hole_radius
     hole4.what: circle
-    hole4.radius: 1.6
+    hole4.radius: screw_hole_radius
 
   screw_holes_phase_shift:
     <<: *screw_holes_phase_shift_top
     hole5.what: circle
-    hole5.radius: 1.6
+    hole5.radius: screw_hole_radius
 
   screw_holes_phase_shift_top:
     <<: *screw_holes_phase_shift_common
     hole1.what: circle
-    hole1.radius: 1.85
+    hole1.radius: support_hole_radius
     hole2.what: circle
-    hole2.radius: 1.85
+    hole2.radius: support_hole_radius
     hole3.what: circle
-    hole3.radius: 1.85
+    hole3.radius: support_hole_radius
     hole4.what: circle
-    hole4.radius: 1.85
+    hole4.radius: support_hole_radius
 
   phase_shift_top:
     <<: *screw_holes_phase_shift_top
     hole5.what: circle
-    hole5.radius: 1.85
+    hole5.radius: support_hole_radius
 
   delta_form:
     - what: polygon
@@ -557,37 +696,65 @@ outlines:
          shift: [-0.5px-bx, -0.5py-5.25u1_00-by]
       fillet: corner
 
+  delta_form_plate:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx-cover_width, 0.5py+by]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx+cover_width, 0.5py+by]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx+cover_width, -0.5py-5.25u1_00-by]
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx-cover_width, -0.5py-5.25u1_00-by]
+      fillet: corner
+
+  delta_form_case_raw:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx-cover_width, 0.5py+by+cover_width]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx+cover_width, 0.5py+by+cover_width]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx+cover_width, -0.5py-5.25u1_00-by-cover_width-case_width]
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx-cover_width, -0.5py-5.25u1_00-by-cover_width-case_width]
+      fillet: corner
+
   screw_holes_delta_form_common:
     <<: *screw_holes_delta_form_common
     hole1.what: circle
-    hole1.radius: 1.6
+    hole1.radius: screw_hole_radius
     hole2.what: circle
-    hole2.radius: 1.6
+    hole2.radius: screw_hole_radius
     hole3.what: circle
-    hole3.radius: 1.6
+    hole3.radius: screw_hole_radius
     hole4.what: circle
-    hole4.radius: 1.6
+    hole4.radius: screw_hole_radius
 
   screw_holes_delta_form:
     <<: *screw_holes_delta_form_top
     hole5.what: circle
-    hole5.radius: 1.6
+    hole5.radius: screw_hole_radius
 
   screw_holes_delta_form_top:
     <<: *screw_holes_delta_form_common
     hole1.what: circle
-    hole1.radius: 1.85
+    hole1.radius: support_hole_radius
     hole2.what: circle
-    hole2.radius: 1.85
+    hole2.radius: support_hole_radius
     hole3.what: circle
-    hole3.radius: 1.85
+    hole3.radius: support_hole_radius
     hole4.what: circle
-    hole4.radius: 1.85
+    hole4.radius: support_hole_radius
 
   delta_form_top:
     <<: *screw_holes_delta_form_top
     hole5.what: circle
-    hole5.radius: 1.85
+    hole5.radius: support_hole_radius
 
   pcb_outline:
     - "glyph_matrix"
@@ -601,23 +768,46 @@ outlines:
     - "-screw_holes_delta_form"
 
   gm_top:
-    - "glyph_matrix"
+    - "glyph_matrix_plate"
     - "-screw_holes_glyph_matrix_top"
     - "-glyph_screw_holes_top"
 
   ps_top:
-    - "phase_shift"
+    - "phase_shift_plate"
     - "-screw_holes_phase_shift_top"
     - "-phase_shift_top"
 
   df_top:
-    - "delta_form"
+    - "delta_form_plate"
     - "-screw_holes_delta_form_top"
     - "-delta_form_top"
 
   look:
     - "pcb_outline"
     - "-keys"
+
+  gm_case:
+    - "glyph_matrix"
+    - "-raw_gm"
+
+  gm_keyholes:
+    - "glyph_matrix"
+    - "-keys_gm"
+    - "-stab_2_00u_gm"
+    - "-keys_gm_mouse_ear"
+
+  gm_screw_holes:
+    - "glyph_matrix"
+    - "-screw_holes_glyph_matrix_common"
+    - "-glyph_screw_holes"
+
+  ps_case:
+    - "phase_shift"
+    - "-raw_ps"
+
+  df_case:
+    - "delta_form"
+    - "-raw_df"
 
 filled_zone: &filled_zone
   filled_zones:
@@ -764,23 +954,23 @@ pcbs:
           shift: [u1_50 / 2, u0_50 + by- 1.6]
 
       <<: *screw_holes_glyph_matrix_common
-      hole1.what: hole_3.2mm_pad
+      hole1.what: hole_2.2mm_M2_pad
       hole1.params.P1: GND
-      hole2.what: hole_3.2mm_pad
+      hole2.what: hole_2.2mm_M2_pad
       hole2.params.P1: GND
-      hole3.what: hole_3.2mm_pad
+      hole3.what: hole_2.2mm_M2_pad
       hole3.params.P1: GND
-      hole4.what: hole_3.2mm_pad
+      hole4.what: hole_2.2mm_M2_pad
       hole4.params.P1: GND
-      hole5.what: hole_3.2mm_pad
+      hole5.what: hole_2.2mm_M2_pad
       hole5.params.P1: GND
-      hole6.what: hole_3.2mm_pad
+      hole6.what: hole_2.2mm_M2_pad
       hole6.params.P1: GND
 
       <<: *screw_holes_glyph_matrix
-      hole7.what: hole_3.2mm_pad
+      hole7.what: hole_2.2mm_M2_pad
       hole7.params.P1: GND
-      hole8.what: hole_3.2mm_pad
+      hole8.what: hole_2.2mm_M2_pad
       hole8.params.P1: GND
 
       <<: *pogo_pins_gm
@@ -807,7 +997,7 @@ pcbs:
   GlyphMatrix_Plate:
     template: kicad8
     outlines:
-      edge: {outline: glyph_matrix, layer: Edge.Cuts}
+      edge: {outline: glyph_matrix_plate, layer: Edge.Cuts}
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
@@ -819,17 +1009,17 @@ pcbs:
         params.height: 1.2
 
       <<: *screw_holes_glyph_matrix_common
-      hole1.what: hole_3.2mm_pad
+      hole1.what: hole_2.2mm_M2_pad
       hole1.params.P1: GND
-      hole2.what: hole_3.2mm_pad
+      hole2.what: hole_2.2mm_M2_pad
       hole2.params.P1: GND
-      hole3.what: hole_3.2mm_pad
+      hole3.what: hole_2.2mm_M2_pad
       hole3.params.P1: GND
-      hole4.what: hole_3.2mm_pad
+      hole4.what: hole_2.2mm_M2_pad
       hole4.params.P1: GND
-      hole5.what: hole_3.2mm_pad
+      hole5.what: hole_2.2mm_M2_pad
       hole5.params.P1: GND
-      hole6.what: hole_3.2mm_pad
+      hole6.what: hole_2.2mm_M2_pad
       hole6.params.P1: GND
 
   PhaseShift:
@@ -849,17 +1039,17 @@ pcbs:
       diodes_ps1_00u: {<<: *diodes, where: [psu1_00]}
 
       <<: *screw_holes_phase_shift_common
-      hole1.what: hole_3.2mm_pad
+      hole1.what: hole_2.2mm_M2_pad
       hole1.params.P1: GND
-      hole2.what: hole_3.2mm_pad
+      hole2.what: hole_2.2mm_M2_pad
       hole2.params.P1: GND
-      hole3.what: hole_3.2mm_pad
+      hole3.what: hole_2.2mm_M2_pad
       hole3.params.P1: GND
-      hole4.what: hole_3.2mm_pad
+      hole4.what: hole_2.2mm_M2_pad
       hole4.params.P1: GND
 
       <<: *screw_holes_phase_shift_top
-      hole5.what: hole_3.2mm_pad
+      hole5.what: hole_2.2mm_M2_pad
       hole5.params.P1: GND
 
       <<: *pogo_pins_gm
@@ -888,19 +1078,19 @@ pcbs:
   PhaseShift_Plate:
     template: kicad8
     outlines:
-      edge: {outline: phase_shift, layer: Edge.Cuts}
+      edge: {outline: phase_shift_plate, layer: Edge.Cuts}
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
 
       <<: *screw_holes_phase_shift_common
-      hole1.what: hole_3.2mm_pad
+      hole1.what: hole_2.2mm_M2_pad
       hole1.params.P1: GND
-      hole2.what: hole_3.2mm_pad
+      hole2.what: hole_2.2mm_M2_pad
       hole2.params.P1: GND
-      hole3.what: hole_3.2mm_pad
+      hole3.what: hole_2.2mm_M2_pad
       hole3.params.P1: GND
-      hole4.what: hole_3.2mm_pad
+      hole4.what: hole_2.2mm_M2_pad
       hole4.params.P1: GND
 
   DeltaForm:
@@ -935,17 +1125,17 @@ pcbs:
         where: [dfu2_00]
 
       <<: *screw_holes_delta_form_common
-      hole1.what: hole_3.2mm_pad
+      hole1.what: hole_2.2mm_M2_pad
       hole1.params.P1: GND
-      hole2.what: hole_3.2mm_pad
+      hole2.what: hole_2.2mm_M2_pad
       hole2.params.P1: GND
-      hole3.what: hole_3.2mm_pad
+      hole3.what: hole_2.2mm_M2_pad
       hole3.params.P1: GND
-      hole4.what: hole_3.2mm_pad
+      hole4.what: hole_2.2mm_M2_pad
       hole4.params.P1: GND
   
       <<: *screw_holes_delta_form_top
-      hole5.what: hole_3.2mm_pad
+      hole5.what: hole_2.2mm_M2_pad
       hole5.params.P1: GND
 
       <<: *pogo_pins_gm
@@ -976,17 +1166,17 @@ pcbs:
   DeltaForm_Plate:
     template: kicad8
     outlines:
-      edge: {outline: delta_form, layer: Edge.Cuts}
+      edge: {outline: delta_form_plate, layer: Edge.Cuts}
     footprints:
       # Base configuration for the ground plane
       <<: *filled_zone
 
       <<: *screw_holes_delta_form_common
-      hole1.what: hole_3.2mm_pad
+      hole1.what: hole_2.2mm_M2_pad
       hole1.params.P1: GND
-      hole2.what: hole_3.2mm_pad
+      hole2.what: hole_2.2mm_M2_pad
       hole2.params.P1: GND
-      hole3.what: hole_3.2mm_pad
+      hole3.what: hole_2.2mm_M2_pad
       hole3.params.P1: GND
-      hole4.what: hole_3.2mm_pad
+      hole4.what: hole_2.2mm_M2_pad
       hole4.params.P1: GND

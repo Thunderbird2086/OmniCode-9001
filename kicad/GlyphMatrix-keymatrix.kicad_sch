@@ -5791,7 +5791,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(property "Footprint" "TB2086_MISC:MountingHole_2.2mm_M2_Pad"
 			(at 83.566 249.174 0)
 			(effects
 				(font
@@ -6790,7 +6790,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(property "Footprint" "TB2086_MISC:MountingHole_2.2mm_M2_Pad"
 			(at 83.566 260.35 0)
 			(effects
 				(font
@@ -13008,7 +13008,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(property "Footprint" "TB2086_MISC:MountingHole_2.2mm_M2_Pad"
 			(at 83.566 231.648 0)
 			(effects
 				(font
@@ -13152,7 +13152,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(property "Footprint" "TB2086_MISC:MountingHole_2.2mm_M2_Pad"
 			(at 83.566 237.744 0)
 			(effects
 				(font
@@ -16387,7 +16387,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(property "Footprint" "TB2086_MISC:MountingHole_2.2mm_M2_Pad"
 			(at 83.566 218.948 0)
 			(effects
 				(font
@@ -16612,7 +16612,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(property "Footprint" "TB2086_MISC:MountingHole_2.2mm_M2_Pad"
 			(at 83.566 243.078 0)
 			(effects
 				(font
@@ -17134,7 +17134,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(property "Footprint" "TB2086_MISC:MountingHole_2.2mm_M2_Pad"
 			(at 83.566 225.044 0)
 			(effects
 				(font
@@ -17654,7 +17654,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TB2086_MISC:MountingHole_3.2mm_Pad"
+		(property "Footprint" "TB2086_MISC:MountingHole_2.2mm_M2_Pad"
 			(at 83.566 254.254 0)
 			(effects
 				(font
