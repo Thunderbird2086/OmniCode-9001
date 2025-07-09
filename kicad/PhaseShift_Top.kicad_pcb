@@ -1,0 +1,1075 @@
+
+
+(kicad_pcb
+  (version 20240108)
+  (generator "ergogen")
+  (generator_version "4.1.0")
+  (general
+    (thickness 1.6)
+    (legacy_teardrops no)
+  )
+  (paper "A3")
+  (title_block
+    (title "PhaseShift_Top")
+    (date "2025-07-09")
+    (rev "0.4.3")
+    (company "Allen Choi")
+  )
+
+  (layers
+    (0 "F.Cu" signal)
+    (31 "B.Cu" signal)
+    (32 "B.Adhes" user "B.Adhesive")
+    (33 "F.Adhes" user "F.Adhesive")
+    (34 "B.Paste" user)
+    (35 "F.Paste" user)
+    (36 "B.SilkS" user "B.Silkscreen")
+    (37 "F.SilkS" user "F.Silkscreen")
+    (38 "B.Mask" user)
+    (39 "F.Mask" user)
+    (40 "Dwgs.User" user "User.Drawings")
+    (41 "Cmts.User" user "User.Comments")
+    (42 "Eco1.User" user "User.Eco1")
+    (43 "Eco2.User" user "User.Eco2")
+    (44 "Edge.Cuts" user)
+    (45 "Margin" user)
+    (46 "B.CrtYd" user "B.Courtyard")
+    (47 "F.CrtYd" user "F.Courtyard")
+    (48 "B.Fab" user)
+    (49 "F.Fab" user)
+  )
+
+  (setup
+    (pad_to_mask_clearance 0.05)
+    (allow_soldermask_bridges_in_footprints no)
+    (pcbplotparams
+      (layerselection 0x00010fc_ffffffff)
+      (plot_on_all_layers_selection 0x0000000_00000000)
+      (disableapertmacros no)
+      (usegerberextensions no)
+      (usegerberattributes yes)
+      (usegerberadvancedattributes yes)
+      (creategerberjobfile yes)
+      (dashed_line_dash_ratio 12.000000)
+      (dashed_line_gap_ratio 3.000000)
+      (svgprecision 4)
+      (plotframeref no)
+      (viasonmask no)
+      (mode 1)
+      (useauxorigin no)
+      (hpglpennumber 1)
+      (hpglpenspeed 20)
+      (hpglpendiameter 15.000000)
+      (pdf_front_fp_property_popups yes)
+      (pdf_back_fp_property_popups yes)
+      (dxfpolygonmode yes)
+      (dxfimperialunits yes)
+      (dxfusepcbnewfont yes)
+      (psnegative no)
+      (psa4output no)
+      (plotreference yes)
+      (plotvalue yes)
+      (plotfptext yes)
+      (plotinvisibletext no)
+      (sketchpadsonfab no)
+      (subtractmaskfromsilk no)
+      (outputformat 1)
+      (mirror no)
+      (drillshape 1)
+      (scaleselection 1)
+      (outputdirectory "")
+    )
+  )
+
+  (net 0 "")
+(net 1 "GND")
+
+  
+  (zone
+    (net 1)
+    (net_name "GND")
+    (locked no)
+    (layers "F&B.Cu")
+    
+    (hatch edge 0.5)
+    
+    (connect_pads 
+      (clearance 0.508)
+    )
+    (min_thickness 0.25)
+    (filled_areas_thickness no)
+    (fill 
+      yes
+      (thermal_gap 0.5)
+      (thermal_bridge_width 0.5)
+      (smoothing chamfer)
+      (radius 0.5)
+      (island_removal_mode 1)
+      (island_area_min 5)
+      
+      
+      
+      
+      
+      
+      
+    )
+    (polygon
+      (pts
+        (xy 0 0) (xy 420 0) (xy 420 297) (xy 0 297) 
+      )
+    )
+  )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 375.45000000000005 90 0)
+    
+        (fp_text reference "SPMP1" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 375.45000000000005 113.8125 0)
+    
+        (fp_text reference "SPMP2" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 375.45000000000005 132.8625 0)
+    
+        (fp_text reference "SPMP3" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 394.50000000000006 90 0)
+    
+        (fp_text reference "SPMP4" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 394.50000000000006 113.8125 0)
+    
+        (fp_text reference "SPMP5" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 394.50000000000006 132.8625 0)
+    
+        (fp_text reference "SPMP6" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 413.55000000000007 90 0)
+    
+        (fp_text reference "SPMP7" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 413.55000000000007 113.8125 0)
+    
+        (fp_text reference "SPMP8" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 413.55000000000007 132.8625 0)
+    
+        (fp_text reference "SPMP9" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 394.50000000000006 170.9625 0)
+    
+        (fp_text reference "SPMP10" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 375.45000000000005 190.0125 0)
+    
+        (fp_text reference "SPMP11" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 394.50000000000006 190.0125 0)
+    
+        (fp_text reference "SPMP12" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+(
+         footprint "Plate-MP_MX_1u"
+        (version 20221018)
+        (generator pcbnew)
+        (layer "F.Cu")
+        (attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (at 413.55000000000007 190.0125 0)
+    
+        (fp_text reference "SPMP13" (at 0 -0.5 0) (layer "F.SilkS") hide (effects (font (size 1 1) (thickness 0.1))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1) (type solid)) (layer "F.Cu") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1) (type solid)) (layer "F.Cu") )
+    
+        (fp_text value "Plate-MP_MX_1u" (at 0 1 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))) )
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853554 -6.853554) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.85079 6.852438) (end -6.997236 6.498884) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 1.1) (type solid)) (layer "F.Mask") )
+    
+    
+    
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1) (type solid)) (layer "B.Cu") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1) (type solid)) (layer "B.Cu") )
+    
+    
+        (fp_line (start -7 6.5) (end -7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start -6.5 -7) (end 6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 6.5 7) (end -6.5 7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_line (start 7 -6.5) (end 7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start -6.5 7) (mid -6.853553 6.853553) (end -7 6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+        (fp_arc (start 6.997236 6.498884) (mid 6.85079 6.852438) (end 6.497236 6.998884) (stroke (width 1.1) (type solid)) (layer "B.Mask") )
+    
+    
+    
+        (fp_line (start -7 -6.5) (end -7 6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start -6.5 7) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 6.5 -7) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_line (start 7 6.5) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -7 -6.5) (mid -6.853553 -6.853553) (end -6.5 -7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start -6.497236 6.998884) (mid -6.850789 6.852437) (end -6.997236 6.498884) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 6.5 -7) (mid 6.853554 -6.853554) (end 7 -6.5) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+        (fp_arc (start 7 6.5) (mid 6.853554 6.853554) (end 6.5 7) (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") )
+    
+        (fp_rect (start -9.525 -9.525) (end 9.525 9.525) (stroke (width 0.1) (type solid)) (fill none) (layer "Dwgs.User") )
+    
+    
+    
+    
+    
+            )
+    
+  (gr_line (start 359.62500000000006 202.29999999999998) (end 359.62500000000006 77.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 361.62500000000006 75.7125) (end 427.37500000000006 75.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 429.37500000000006 77.7125) (end 429.37500000000006 202.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 427.37500000000006 204.29999999999998) (end 361.62500000000006 204.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 361.62500000000006 75.7125) (mid 360.2107864000001 76.29828640000001) (end 359.62500000000006 77.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 429.37500000000006 77.7125) (mid 428.78921360000004 76.29828640000001) (end 427.37500000000006 75.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 427.37500000000006 204.29999999999998) (mid 428.78921360000004 203.7142136) (end 429.37500000000006 202.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 359.62500000000006 202.29999999999998) (mid 360.2107864000001 203.7142136) (end 361.62500000000006 204.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_circle (center 366.32500000000005 80.7125) (end 367.57500000000005 80.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 422.67500000000007 80.7125) (end 423.92500000000007 80.7125) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 422.67500000000007 199.29999999999998) (end 423.92500000000007 199.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 366.32500000000005 199.29999999999998) (end 367.57500000000005 199.29999999999998) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 404.02500000000003 142.38750000000002) (end 405.27500000000003 142.38750000000002) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+
+)
+

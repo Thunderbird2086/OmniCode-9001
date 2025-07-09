@@ -1,0 +1,1182 @@
+meta:
+  author: Allen Choi
+  version: 0.4.4
+  engine: 4.1.0
+  project: "OmniCode:9001"
+
+text_common:
+  base_text_android: &base_text_android
+    what: utility_text
+    params: {side: 'F', reversible: false, face: 'Android Robot'}
+
+  text_base: &text_base
+    what: utility_text
+    params:
+      face: 'KiCad Font'
+      knockout: true
+
+  version_text: &version_text
+    <<: *text_base
+    params.text: "OminCode:9001 20250709"
+
+  text_bbg: &text_bbg
+    what: utility_text
+    params:
+      face: 'Avenir Next P for BBG'
+      bold: true
+      align: 'left'
+      width: 6
+      height: 6
+      side: F
+
+units:
+  # Key sizes
+  u1_00: U  # Base unit (1U)
+  u0_25: u1_00 * 0.25
+  u0_50: u1_00 * 0.5
+  u1_25: u1_00 * 1.25  # 1.25U - Used for modifiers
+  u1_50: u1_00 * 1.5    # 1.5U - Used for Tab and backslash
+  u1_75: u1_00 * 1.75  # 1.75U - Used for Caps Lock
+  u2_00: u1_00 * 2        # 2U - Used for Backspace and Left Shift
+  u2_25: u1_00 * 2.25  # 2.25U - Used for Enter and left space
+  u2_75: u1_00 * 2.75  # 2.75U - Used for right space
+  u6_00: u1_00 * 6
+  u6_25: u1_00 * 6.25
+
+  # Screw hole sizes
+  screw_hole_radius: 1.1  # M2 screw hole size
+  support_hole_radius: 1.25  # M2 PCB support hole size
+
+  # Spacing and padding
+  ps: 0.0          # Base padding between switches
+  dx: ps
+  dy: ps + 0
+  bx: 4.6
+  by: .25u1_00
+  mb: 5.5          # mouse bite
+  px: u1_00 + dx      # Horizontal spacing
+  py: u1_00 + dy      # Vertical spacing
+
+  # Pogopin placement
+  pogo_x: bx - 4.125
+  pogo_y1: 15.8
+  pogo_y3: 18.3
+  cover_width: 1.7
+  case_width: 5.5
+  
+  # hole offset from the edges
+  hole_offset: 5
+
+  # Layout specific measurements
+  corner: 2         # Corner radius
+  distance: 2 bx + mb
+
+points:
+  zones:
+    function:
+      anchor:
+        shift: [75, -90]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1_00]
+      rows:
+        row:    { row_net: "function"}
+      columns:
+        c00:      { key: { width: u1_00, column_net: "col_0"}}
+
+        c02:      { key: { width: u1_00, column_net: "col_2", shift: [u1_00]}}
+        c03:      { key: { width: u1_00, column_net: "col_3", shift: [u1_00]}}
+        c04:      { key: { width: u1_00, column_net: "col_4", shift: [u1_00]}}
+        c05:      { key: { width: u1_00, column_net: "col_5", shift: [u1_00]}}
+
+        c06:      { key: { width: u1_00, column_net: "col_6", shift: [u1_50]}}
+        c07:      { key: { width: u1_00, column_net: "col_6", shift: [u1_50]}}
+        c08:      { key: { width: u1_00, column_net: "col_5", shift: [u1_50]}}
+        c09:      { key: { width: u1_00, column_net: "col_4", shift: [u1_50]}}
+
+        c10:      { key: { width: u1_00, column_net: "col_3", shift: [u2_00]}}
+        c11:      { key: { width: u1_00, column_net: "col_2", shift: [u2_00]}}
+        c12:      { key: { width: u1_00, column_net: "col_1", shift: [u2_00]}}
+        c13:      { key: { width: u1_00, column_net: "col_0", shift: [u2_00]}}
+
+    number:
+      anchor:
+        ref: function_c00_row
+        shift: [0, -u1_25]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1_00]
+      rows:
+        row:    { row_net: "number"}
+      columns:
+        c00: { key: { width: u1_00, column_net: "col_0" }}
+        c01: { key: { width: u1_00, column_net: "col_1" }}
+        c02: { key: { width: u1_00, column_net: "col_2" }}
+        c03: { key: { width: u1_00, column_net: "col_3" }}
+        c04: { key: { width: u1_00, column_net: "col_4" }}
+        c05: { key: { width: u1_00, column_net: "col_5" }}
+        c06: { key: { width: u1_00, column_net: "col_6" }}
+        c07: { key: { width: u1_00, column_net: "col_6" }}
+        c08: { key: { width: u1_00, column_net: "col_5" }}
+        c09: { key: { width: u1_00, column_net: "col_4" }}
+        c10: { key: { width: u1_00, column_net: "col_3" }}
+        c11: { key: { width: u1_00, column_net: "col_2" }}
+        c12: { key: { width: u1_00, column_net: "col_1" }}
+        c13: { key: { width: u2_00, column_net: "col_0", shift: [(u2_00-u1_00)/2], tags: [gmu2_00]}}
+
+    top:
+      anchor:
+        ref: function_c00_row
+        shift: [0, -2.25u1_00]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1_00]
+      rows:
+        row:    { row_net: "top"}
+      columns:
+        # Row 1: `~12345
+        c00: { key: { width: u1_50, column_net: "col_0", shift: [(u1_50-u1_00)/2], tags: [gmu1_50] } }
+        c01: { key: { width: u1_00, column_net: "col_1", shift: [(u1_50-u1_00)] } }
+        c02: { key: { width: u1_00, column_net: "col_2", shift: [(u1_50-u1_00)] } }
+        c03: { key: { width: u1_00, column_net: "col_3", shift: [(u1_50-u1_00)] } }
+        c04: { key: { width: u1_00, column_net: "col_4", shift: [(u1_50-u1_00)] } }
+        c05: { key: { width: u1_00, column_net: "col_5", shift: [(u1_50-u1_00)] } }
+        c06: { key: { width: u1_00, column_net: "col_6", shift: [(u1_50-u1_00)] } }
+        c07: { key: { width: u1_00, column_net: "col_6", shift: [(u1_50-u1_00)] } }
+        c08: { key: { width: u1_00, column_net: "col_5", shift: [(u1_50-u1_00)] } }
+        c09: { key: { width: u1_00, column_net: "col_4", shift: [(u1_50-u1_00)] } }
+        c10: { key: { width: u1_00, column_net: "col_3", shift: [(u1_50-u1_00)] } }
+        c11: { key: { width: u1_00, column_net: "col_2", shift: [(u1_50-u1_00)] } }
+        c12: { key: { width: u1_00, column_net: "col_1", shift: [(u1_50-u1_00)] } }
+        c13: { key: { width: u1_50, column_net: "col_0", shift: [3(u1_50-u1_00)/2], tags: [gmu1_50] } }
+
+    home:
+      anchor:
+        ref: function_c00_row
+        shift: [0, -3.25u1_00]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1_00]
+      rows:
+        row:    { row_net: "home"}
+      columns:
+        c00: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1_00)/2], tags: [gmu1_75]}}
+        c01: { key: { width: u1_00, column_net: "col_1", shift: [(u1_75-u1_00)]}}
+        c02: { key: { width: u1_00, column_net: "col_2", shift: [(u1_75-u1_00)]}}
+        c03: { key: { width: u1_00, column_net: "col_3", shift: [(u1_75-u1_00)]}}
+        c04: { key: { width: u1_00, column_net: "col_4", shift: [(u1_75-u1_00)]}}
+        c05: { key: { width: u1_00, column_net: "col_5", shift: [(u1_75-u1_00)]}}
+        c06: { key: { width: u1_00, column_net: "col_6", shift: [(u1_75-u1_00)]}}
+        c07: { key: { width: u1_00, column_net: "col_6", shift: [(u1_75-u1_00)]}}
+        c08: { key: { width: u1_00, column_net: "col_5", shift: [(u1_75-u1_00)]}}
+        c09: { key: { width: u1_00, column_net: "col_4", shift: [(u1_75-u1_00)]}}
+        c10: { key: { width: u1_00, column_net: "col_3", shift: [(u1_75-u1_00)]}}
+        c11: { key: { width: u1_00, column_net: "col_2", shift: [(u1_75-u1_00)]}}
+        c13: { key: { width: u2_25, column_net: "col_0", shift: [(u1_75-u1_00)+(u2_25-u1_00)/2], tags: [gmu2_25]}}
+
+    bottom:
+      anchor:
+        ref: function_c00_row
+        shift: [0, -4.25u1_00]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1_00]
+      rows:
+        row:    { row_net: "bottom"}
+      columns:
+        c00: { key: { width: u2_25, column_net: "col_0", shift: [(u2_25-u1_00)/2], tags: [gmu2_25]}}
+        c01: { key: { width: u1_00, column_net: "col_1", shift: [(u2_25-u1_00)]}}
+        c02: { key: { width: u1_00, column_net: "col_2", shift: [(u2_25-u1_00)]}}
+        c03: { key: { width: u1_00, column_net: "col_3", shift: [(u2_25-u1_00)]}}
+        c04: { key: { width: u1_00, column_net: "col_4", shift: [(u2_25-u1_00)]}}
+        c05: { key: { width: u1_00, column_net: "col_5", shift: [(u2_25-u1_00)]}}
+        c06: { key: { width: u1_00, column_net: "col_6", shift: [(u2_25-u1_00)]}}
+        c07: { key: { width: u1_00, column_net: "col_6", shift: [(u2_25-u1_00)]}}
+        c08: { key: { width: u1_00, column_net: "col_5", shift: [(u2_25-u1_00)]}}
+        c09: { key: { width: u1_00, column_net: "col_4", shift: [(u2_25-u1_00)]}}
+        c10: { key: { width: u1_00, column_net: "col_3", shift: [(u2_25-u1_00)]}}
+        c13: { key: { width: u2_75, column_net: "col_0", shift: [(u2_25-u1_00)+(u2_75-u1_00)/2], tags: [gmu2_75]}}
+
+    thumb:
+      anchor:
+        ref: function_c00_row
+        shift: [0, -5.25u1_00]
+      key:
+        padding: px
+        spread: px
+        tags: [gmu1_00]
+      rows:
+        row:    { row_net: "thumb"}
+      columns:
+        c00: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1_00)/2], tags: [gmu1_75]}}
+        c01: { key: { width: u1_00, column_net: "col_1", shift: [(u1_75-u1_00)]}}
+        c02: { key: { width: u1_25, column_net: "col_2", shift: [(u1_25-u1_00)/2+(u1_75-u1_00)], tags: [gmu1_25]}}
+        c05: { key: { width: u6_25, column_net: "col_5", shift: [(u6_25-u1_00)/2+(u1_25-u1_00)+(u1_75-u1_00)], tags: [gmu6_25]}}
+        c09: { key: { width: u1_00, column_net: "col_4", shift: [(u6_25-u1_00)+(u1_25-u1_00)+(u1_75-u1_00)]}}
+        c10: { key: { width: u1_00, column_net: "col_3", shift: [(u6_25-u1_00)+(u1_25-u1_00)+(u1_75-u1_00)]}}
+        c11: { key: { width: u1_00, column_net: "col_2", shift: [(u6_25-u1_00)+(u1_25-u1_00)+(u1_75-u1_00)]}}
+        c13: { key: { width: u1_75, column_net: "col_0", shift: [(u1_75-u1_00)/2+(u6_25-u1_00)+(u1_25-u1_00)+(u1_75-u1_00)], tags: [gmu1_75]}}
+
+    nav_block:
+      anchor:
+        ref: function_c13_row
+        shift: [distance + px, 0]
+      key:
+        padding: px
+        spread: px
+        tags: [psu1_00]
+      rows:
+        func:    { row_net: "function"}
+        number:  { row_net: "number", shift: [0, -2.25u1_00] }
+        top:     { row_net: "top",    shift: [0, -2u1_00] }
+      columns:
+        c14: { key: { width: u1_00,    column_net: "col_1"}}
+        c15: { key: { width: u1_00,    column_net: "col_4"}}
+        c16: { key: { width: u1_00,    column_net: "col_3"}}
+    nav_block2:
+      anchor:
+        ref: function_c13_row
+        shift: [distance + px, 0]
+      key:
+        padding: px
+        spread: px
+        tags: [psu1_00]
+      rows:
+        bottom: { row_net: "bottom", shift: [u1_00, -4.25u1_00] }
+      columns:
+        c15: { key: { width: u1_00,    column_net: "col_4"}}
+    nav_block3:
+      anchor:
+        ref: function_c13_row
+        shift: [distance + px, 0]
+      key:
+        padding: px
+        spread: px
+        tags: [psu1_00]
+      rows:
+        thumb:    { row_net: "thumb", shift: [0, -5.25u1_00] }
+      columns:
+        c14: { key: { width: u1_00,    column_net: "col_1"}}
+        c15: { key: { width: u1_00,    column_net: "col_4"}}
+        c16: { key: { width: u1_00,    column_net: "col_3"}}
+
+    num_pad:
+      anchor:
+        ref:  nav_block_c16_func
+        shift: [distance + px, 0]
+      key:
+        padding: px
+        spread: px
+        tags: [dfu1_00]
+      rows:
+        func:    { row_net: "function"}
+        number:  { row_net: "number", shift: [0, -u2_25]}
+      columns:
+        c17: { key: { width: u1_00,    column_net: "col_1"}}
+        c18: { key: { width: u1_00,    column_net: "col_1"}}
+        c19: { key: { width: u1_00,    column_net: "col_4"}}
+        c20: { key: { width: u1_00,    column_net: "col_3"}}
+
+    num_pad2:
+      anchor:
+        ref:  num_pad_c17_number
+        shift: [0, -u1_00]
+      key:
+        padding: px
+        spread: px
+        tags: [dfu1_00]
+      rows:
+        top:     { row_net: "top" }
+      columns:
+        c17: { key: { width: u1_00,  column_net: "col_1"}}
+        c18: { key: { width: u1_00,  column_net: "col_1"}}
+        c19: { key: { width: u1_00,  column_net: "col_4"}}
+        c20: { key: { width: u1_00,  column_net: "col_3", height: u2_00, shift:[0, -u1_00/2], tags:[dfv2_00]}}
+
+    num_pad3:
+      anchor:
+        ref:  num_pad2_c17_top
+        shift: [0, -u1_00]
+      key:
+        padding: px
+        spread: px
+        tags: [dfu1_00]
+      rows:
+        home:     { row_net: "home" }
+      columns:
+        c17: { key: { width: u1_00,    column_net: "col_1"}}
+        c18: { key: { width: u1_00,    column_net: "col_1"}}
+        c19: { key: { width: u1_00,    column_net: "col_4"}}
+
+    num_pad4:
+      anchor:
+        ref:  num_pad3_c17_home
+        shift: [0, -u1_00]
+      key:
+        padding: px
+        spread: px
+        tags: [dfu1_00]
+      rows:
+        bottom:     { row_net: "bottom" }
+      columns:
+        c17: { key: { width: u1_00,  column_net: "col_1"}}
+        c18: { key: { width: u1_00,  column_net: "col_1"}}
+        c19: { key: { width: u1_00,  column_net: "col_4"}}
+        c20: { key: { width: u1_00,  column_net: "col_3", height: u2_00, shift:[0, -u1_00/2], tags: [dfv2_00]}}
+
+    num_pad5:
+      anchor:
+        ref:  num_pad4_c17_bottom
+        shift: [0, -u1_00]
+      key:
+        padding: px
+        spread: px
+        tags: [dfu1_00]
+      rows:
+        thumb:     { row_net: "thumb" }
+      columns:
+        c17: { key: { width: u2_00,    column_net: "col_1", shift: [u1_00/2, 0], tags: [dfu2_00]}}
+        c19: { key: { width: u1_00,    column_net: "col_1", shift: [u1_00, 0]}}
+
+screw_holes:
+  common: &screw_holes_common
+    hole1:
+      where: [function_c00_row]
+      adjust: { shift: [-0.5px-bx+hole_offset, 0.5py+by-hole_offset] }
+    hole2:
+      where: [function_c13_row]
+      adjust: { shift: [0.5px+bx-hole_offset, 0.5py+by-hole_offset] }
+    hole3:
+      where: [function_c13_row]
+      adjust: { shift: [0.5px+bx-hole_offset, -0.5py-5.25u1_00-by+hole_offset] }
+    hole4:
+      where: [function_c00_row]
+      adjust: { shift: [-0.5px-bx+hole_offset, -0.5py-5.25u1_00-by+hole_offset] }
+
+  glyph_matrix_common: &screw_holes_glyph_matrix_common
+    <<: *screw_holes_common
+    hole5:
+      where: [function_c07_row]
+      adjust: { shift: [-0.5px-bx+hole_offset, 0.5py+by-hole_offset] }
+    hole6:
+      where: [thumb_c05_row]
+      adjust: { shift: [ 0.5px+hole_offset, 0] }
+
+  glyph_matrix_top: &screw_holes_glyph_matrix
+    hole7:
+      where: [home_c04_row]
+      adjust: { shift: [-0.5px-bx-0.15, 0.5py+by-hole_offset] }
+    hole8:
+      where: [home_c10_row]
+      adjust: { shift: [-0.5px-bx-0.15, 0.5py+by-hole_offset] }
+
+  phase_shift_common: &screw_holes_phase_shift_common
+    <<: *screw_holes_common
+    hole1.where: [nav_block_c14_func]
+    hole2.where: [nav_block_c16_func]
+    hole3:
+      where: [nav_block3_c16_thumb]
+      adjust: { shift: [0.5px+bx-hole_offset, -0.5py-by+hole_offset] }
+    hole4:
+      where: [nav_block3_c14_thumb]
+      
+      adjust: { shift: [-0.5px-bx+hole_offset, -0.5py-by+hole_offset] }
+
+  phase_shift_top: &screw_holes_phase_shift_top
+    hole5:
+      where: [nav_block_c15_top]
+      adjust: { shift: [0.5px, -0.5py] }
+
+  delta_form_common: &screw_holes_delta_form_common
+    <<: *screw_holes_common
+    hole1.where: [num_pad_c17_func]
+    hole2.where: [num_pad_c20_func]
+    hole3:
+      where: [num_pad5_c19_thumb]
+      adjust: { shift: [1.5px+bx-hole_offset, -0.5py-by+hole_offset] }
+    hole4:
+      where: [num_pad5_c17_thumb]
+      adjust: { shift: [-px-bx+hole_offset, -0.5py-by+hole_offset] }
+
+  delta_form_top: &screw_holes_delta_form_top
+    hole5:
+      where: [num_pad2_c18_top]
+      adjust: { shift: [0.5px, -0.5py] }
+
+outlines:
+  raw_gm: &raw_gm
+    - &rect_base
+      what: rectangle
+      bound: false
+      joints: corner
+    - <<: *rect_base
+      where: [gmu1_00]
+      size: [px, py]
+    - <<: *rect_base
+      where: [gmu1_25]
+      size: [1.25px, py]
+    - <<: *rect_base
+      where: [gmu1_50]
+      size: [1.5px, py]
+    - <<: *rect_base
+      where: [gmu1_75]
+      size: [1.75px, py]
+    - <<: *rect_base
+      where: [gmu2_00]
+      size: [2px, py]
+    - <<: *rect_base
+      where: [gmu2_25]
+      size: [2.25px, py]
+    - <<: *rect_base
+      where: [gmu2_75]
+      size: [2.75px, py]
+    - <<: *rect_base
+      where: [gmu6_25]
+      size: [6.25px, py]
+      fillet: corner
+
+  raw_ps: &raw_ps
+    - <<: *rect_base
+      where: [psu1_00]
+      size: [px, py]
+      fillet: corner
+
+  raw_df: &raw_df
+    - <<: *rect_base
+      where: [dfu1_00]
+      size: [1px, py]
+    - <<: *rect_base
+      where: [dfu2_00]
+      size: [2px, py]
+    - <<: *rect_base
+      where: [dfv2_00]
+      size: [px, 2py]
+      fillet: corner
+
+  keys:
+    - what: rectangle
+      where: true
+      size: [14, 14]
+
+  keys_gm:
+    - what: rectangle
+      where: [gmu1_00,gmu1_25,gmu1_50,gmu1_75,gmu2_00,gmu2_25,gmu2_75,gmu6_25]
+      size: [14, 14]
+  
+  keys_gm_mouse_ear:
+    - what: rectangle
+      where: [gmu1_00,gmu1_25,gmu1_50,gmu1_75,gmu2_00,gmu2_25,gmu2_75,gmu6_25]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [-6.75, -6.75]
+    - what: rectangle
+      where: [gmu1_00,gmu1_25,gmu1_50,gmu1_75,gmu2_00,gmu2_25,gmu2_75,gmu6_25]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [6.75, -6.75]
+    - what: rectangle
+      where: [gmu1_00,gmu1_25,gmu1_50,gmu1_75,gmu2_00,gmu2_25,gmu2_75,gmu6_25]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [6.75, 6.75]
+    - what: rectangle
+      where: [gmu1_00,gmu1_25,gmu1_50,gmu1_75,gmu2_00,gmu2_25,gmu2_75,gmu6_25]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [-6.75, 6.75]
+      fillet: .4
+
+  stab_2_00u_gm:
+    - what: rectangle
+      where: [gmu2_00,gmu2_25,gmu2_75]
+      size: [6.75, 12.35]
+      adjust:
+        shift: [-11.9, -0.62]
+    - what: rectangle
+      where: [gmu2_00,gmu2_25,gmu2_75]
+      size: [6.75, 12.35]
+      adjust:
+        shift: [11.9, -0.62]
+    - what: rectangle
+      where: [gmu2_00,gmu2_25,gmu2_75]
+      size: [3.1, 13.65]
+      adjust:
+        shift: [11.9, -1.27]
+    - what: rectangle
+      where: [gmu2_00,gmu2_25,gmu2_75]
+      size: [3.1, 13.65]
+      adjust:
+        shift: [-11.9, -1.27]
+    - what: rectangle
+      where: [gmu2_00,gmu2_25,gmu2_75]
+      size: [23.8+4.3*2, 3]
+      adjust:
+        shift: [0, .9]
+      fillet: .3
+
+  glyph_matrix_raw:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: function_c00_row
+         shift: [-0.5px-bx, 0.5py+by]
+       - ref: function_c13_row
+         shift: [0.5px+bx, 0.5py+by]
+       - ref: function_c13_row
+         shift: [0.5px+bx, -0.5py-5.25u1_00-by]
+       - ref: function_c00_row
+         shift: [-0.5px-bx, -0.5py-5.25u1_00-by]
+      fillet: corner
+
+  glyph_matrix_plate:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: function_c00_row
+         shift: [-0.5px-bx-cover_width, 0.5py+by]
+       - ref: function_c13_row
+         shift: [0.5px+bx+cover_width, 0.5py+by]
+       - ref: function_c13_row
+         shift: [0.5px+bx+cover_width, -0.5py-5.25u1_00-by]
+       - ref: function_c00_row
+         shift: [-0.5px-bx-cover_width, -0.5py-5.25u1_00-by]
+      fillet: corner
+
+  glyph_matrix_case_raw:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: function_c00_row
+         shift: [-0.5px-bx-cover_width, 0.5py+by+cover_width]
+       - ref: function_c13_row
+         shift: [0.5px+bx+cover_width, 0.5py+by+cover_width]
+       - ref: function_c13_row
+         shift: [0.5px+bx+cover_width, -0.5py-5.25u1_00-by-cover_width-case_width]
+       - ref: function_c00_row
+         shift: [-0.5px-bx-cover_width, -0.5py-5.25u1_00-by-cover_width-case_width]
+      fillet: corner
+
+  screw_holes_glyph_matrix_common:
+    <<: *screw_holes_glyph_matrix_common
+    hole1.what: circle
+    hole1.radius: screw_hole_radius
+    hole2.what: circle
+    hole2.radius: screw_hole_radius
+    hole3.what: circle
+    hole3.radius: screw_hole_radius
+    hole4.what: circle
+    hole4.radius: screw_hole_radius
+    hole5.what: circle
+    hole5.radius: screw_hole_radius
+    hole6.what: circle
+    hole6.radius: screw_hole_radius
+
+  glyph_screw_holes:
+    <<: *screw_holes_glyph_matrix
+    hole7.what: circle
+    hole7.radius: screw_hole_radius
+    hole8.what: circle
+    hole8.radius: screw_hole_radius
+
+  screw_holes_glyph_matrix_top:
+    <<: *screw_holes_glyph_matrix_common
+    hole1.what: circle
+    hole1.radius: support_hole_radius
+    hole2.what: circle
+    hole2.radius: support_hole_radius
+    hole3.what: circle
+    hole3.radius: support_hole_radius
+    hole4.what: circle
+    hole4.radius: support_hole_radius
+    hole5.what: circle
+    hole5.radius: support_hole_radius
+    hole6.what: circle
+    hole6.radius: support_hole_radius
+
+  glyph_screw_holes_top:
+    <<: *screw_holes_glyph_matrix
+    hole7.what: circle
+    hole7.radius: support_hole_radius
+    hole8.what: circle
+    hole8.radius: support_hole_radius
+
+  glyph_matrix:
+    - "glyph_matrix_raw"
+
+  phase_shift:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: nav_block_c14_func
+         shift: [-0.5px-bx, 0.5py+by]
+       - ref: nav_block_c16_func
+         shift: [0.5px+bx, 0.5py+by]
+       - ref: nav_block3_c16_thumb
+         shift: [0.5px+bx, -0.5py-by]
+       - ref: nav_block3_c14_thumb
+         shift: [-0.5px-bx, -0.5py-by]
+      fillet: corner
+
+  phase_shift_plate:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: nav_block_c14_func
+         shift: [-0.5px-bx-cover_width, 0.5py+by]
+       - ref: nav_block_c16_func
+         shift: [0.5px+bx+cover_width, 0.5py+by]
+       - ref: nav_block3_c16_thumb
+         shift: [0.5px+bx+cover_width, -0.5py-by]
+       - ref: nav_block3_c14_thumb
+         shift: [-0.5px-bx-cover_width, -0.5py-by]
+      fillet: corner
+
+  phase_shift_case_raw:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: nav_block_c14_func
+         shift: [-0.5px-bx-cover_width, 0.5py+by+cover_width]
+       - ref: nav_block_c16_func
+         shift: [0.5px+bx+cover_width, 0.5py+by+cover_width]
+       - ref: nav_block3_c16_thumb
+         shift: [0.5px+bx+cover_width, -0.5py-by-cover_width-case_width]
+       - ref: nav_block3_c14_thumb
+         shift: [-0.5px-bx-cover_width, -0.5py-by-case_width]
+      fillet: corner
+
+  screw_holes_phase_shift_common:
+    <<: *screw_holes_phase_shift_common
+    hole1.what: circle
+    hole1.radius: screw_hole_radius
+    hole2.what: circle
+    hole2.radius: screw_hole_radius
+    hole3.what: circle
+    hole3.radius: screw_hole_radius
+    hole4.what: circle
+    hole4.radius: screw_hole_radius
+
+  screw_holes_phase_shift:
+    <<: *screw_holes_phase_shift_top
+    hole5.what: circle
+    hole5.radius: screw_hole_radius
+
+  screw_holes_phase_shift_top:
+    <<: *screw_holes_phase_shift_common
+    hole1.what: circle
+    hole1.radius: support_hole_radius
+    hole2.what: circle
+    hole2.radius: support_hole_radius
+    hole3.what: circle
+    hole3.radius: support_hole_radius
+    hole4.what: circle
+    hole4.radius: support_hole_radius
+
+  phase_shift_top:
+    <<: *screw_holes_phase_shift_top
+    hole5.what: circle
+    hole5.radius: support_hole_radius
+
+  delta_form:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx, 0.5py+by]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx, 0.5py+by]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx, -0.5py-5.25u1_00-by]
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx, -0.5py-5.25u1_00-by]
+      fillet: corner
+
+  delta_form_plate:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx-cover_width, 0.5py+by]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx+cover_width, 0.5py+by]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx+cover_width, -0.5py-5.25u1_00-by]
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx-cover_width, -0.5py-5.25u1_00-by]
+      fillet: corner
+
+  delta_form_case_raw:
+    - what: polygon
+      operation: stack
+      points:
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx-cover_width, 0.5py+by+cover_width]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx+cover_width, 0.5py+by+cover_width]
+       - ref: num_pad_c20_func
+         shift: [0.5px+bx+cover_width, -0.5py-5.25u1_00-by-cover_width-case_width]
+       - ref: num_pad_c17_func
+         shift: [-0.5px-bx-cover_width, -0.5py-5.25u1_00-by-cover_width-case_width]
+      fillet: corner
+
+  screw_holes_delta_form_common:
+    <<: *screw_holes_delta_form_common
+    hole1.what: circle
+    hole1.radius: screw_hole_radius
+    hole2.what: circle
+    hole2.radius: screw_hole_radius
+    hole3.what: circle
+    hole3.radius: screw_hole_radius
+    hole4.what: circle
+    hole4.radius: screw_hole_radius
+
+  screw_holes_delta_form:
+    <<: *screw_holes_delta_form_top
+    hole5.what: circle
+    hole5.radius: screw_hole_radius
+
+  screw_holes_delta_form_top:
+    <<: *screw_holes_delta_form_common
+    hole1.what: circle
+    hole1.radius: support_hole_radius
+    hole2.what: circle
+    hole2.radius: support_hole_radius
+    hole3.what: circle
+    hole3.radius: support_hole_radius
+    hole4.what: circle
+    hole4.radius: support_hole_radius
+
+  delta_form_top:
+    <<: *screw_holes_delta_form_top
+    hole5.what: circle
+    hole5.radius: support_hole_radius
+
+  pcb_outline:
+    - "glyph_matrix"
+    - "-screw_holes_glyph_matrix_common"
+    - "-glyph_screw_holes"
+    - "phase_shift"
+    - "-screw_holes_phase_shift_common"
+    - "-screw_holes_phase_shift"
+    - "delta_form"
+    - "-screw_holes_delta_form_common"
+    - "-screw_holes_delta_form"
+
+  gm_top:
+    - "glyph_matrix_plate"
+    - "-screw_holes_glyph_matrix_top"
+    - "-glyph_screw_holes_top"
+
+  ps_top:
+    - "phase_shift_plate"
+    - "-screw_holes_phase_shift_top"
+    - "-phase_shift_top"
+
+  df_top:
+    - "delta_form_plate"
+    - "-screw_holes_delta_form_top"
+    - "-delta_form_top"
+
+  look:
+    - "pcb_outline"
+    - "-keys"
+
+  gm_case:
+    - "glyph_matrix"
+    - "-raw_gm"
+
+  gm_keyholes:
+    - "glyph_matrix"
+    - "-keys_gm"
+    - "-stab_2_00u_gm"
+    - "-keys_gm_mouse_ear"
+
+  gm_screw_holes:
+    - "glyph_matrix"
+    - "-screw_holes_glyph_matrix_common"
+    - "-glyph_screw_holes"
+
+  ps_case:
+    - "phase_shift"
+    - "-raw_ps"
+
+  df_case:
+    - "delta_form"
+    - "-raw_df"
+
+filled_zone: &filled_zone
+  filled_zones:
+    what: utility_filled_zone
+    params:
+      side: 'F&B'
+      points: [[0, 0], [420, 0], [420, 297], [0, 297]]
+
+footprint_components:
+  mx_hotswap: &mx_hotswap
+    what: MX_HS_1u
+    params:
+      P1: "{{colrow}}"
+      P2: "{{column_net}}"
+      side: F
+      reversible: false
+      show_3d: true
+    adjust:
+      rotate: -180
+
+  # RGB LED configuration
+  per_key_led: &per_key_led
+    what: "led_sk6812mini_e"
+    adjust:
+      shift: [0, 5.08]
+    params:
+      from: "{{key.led_next}}"
+      to: "{{key.led_prev}}"
+      show_3d: true
+      side: B
+
+  # Diodes for key matrix
+  diodes: &diodes
+    what: "d_1206_3216m"
+    params:
+      from: "{{colrow}}"
+      to: "{{row_net}}"
+      side: 'B'
+    adjust: {shift: [-3.5, -8.5], rotate: 180}
+#        adjust: {shift: [-9, -5], rotate: 90}
+
+  pogo_pins_gm: &pogo_pins_gm
+    pogo1:
+      what: "pogo_pin_1x05_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [function_c00_row]
+      adjust:
+        shift: [-pogo_x-0.5px, -pogo_y1+0.5py+by-hole_offset]
+        rotate: 90
+    pogo2:
+      what: "pogo_pin_1x05_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [function_c13_row]
+      adjust:
+        shift: [pogo_x+0.5px, -pogo_y1+0.5py+by-hole_offset]
+        rotate: -90
+    pogo3:
+      what: "pogo_pin_1x07_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [top_c00_row]
+      adjust:
+        shift: [-pogo_x-1.5px/2, -0.5py]
+        rotate: 90
+    pogo4:
+      what: "pogo_pin_1x07_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [top_c13_row]
+      adjust:
+        shift: [pogo_x+1.5px/2, -0.5py]
+        rotate: -90
+    pogo5:
+      what: "pogo_pin_1x07_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [thumb_c00_row]
+      adjust:
+        shift: [-pogo_x-1.75px/2, pogo_y3-0.5py-by+hole_offset]
+        rotate: 90
+    pogo6:
+      what: "pogo_pin_1x07_P2.54mm_curved"
+      params:
+        side: "B"
+      where: [thumb_c13_row]
+      adjust:
+        shift: [pogo_x+1.75px/2, pogo_y3-0.5py-by+hole_offset]
+        rotate: -90
+
+pcbs:
+  GlyphMatrix:
+    template: kicad8
+    outlines:
+      edge: {outline: glyph_matrix, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      # Extended size switches with base configuration
+      hs_gm1_00u: {<<: *mx_hotswap, what: MX_HS_1u   , where: [gmu1_00]}
+      hs_gm1_25u: {<<: *mx_hotswap, what: MX_HS_1.25u, where: [gmu1_25]}
+      hs_gm1_50u: {<<: *mx_hotswap, what: MX_HS_1.5u , where: [gmu1_50]}
+      hs_gm1_75u: {<<: *mx_hotswap, what: MX_HS_1.75u, where: [gmu1_75]}
+      hs_gm2_00u: {<<: *mx_hotswap, what: MX_HS_2u   , where: [gmu2_00]}
+      hs_gm2_25u: {<<: *mx_hotswap, what: MX_HS_2.25u, where: [gmu2_25]}
+      hs_gm2_75u: {<<: *mx_hotswap, what: MX_HS_2.75u, where: [gmu2_75]}
+      hs_gm6_25u: {<<: *mx_hotswap, what: MX_HS_6.25u, where: [gmu6_25]}
+
+      # Match Reference to key switches
+      led_gm1_00u: {<<: *per_key_led, where: [gmu1_00]}
+      led_gm1_25u: {<<: *per_key_led, where: [gmu1_25]}
+      led_gm1_50u: {<<: *per_key_led, where: [gmu1_50]}
+      led_gm1_75u: {<<: *per_key_led, where: [gmu1_75]}
+      led_gm2_00u: {<<: *per_key_led, where: [gmu2_00]}
+      led_gm2_25u: {<<: *per_key_led, where: [gmu2_25]}
+      led_gm2_75u: {<<: *per_key_led, where: [gmu2_75]}
+      led_gm6_25u: {<<: *per_key_led, where: [gmu6_25]}
+
+
+      diodes_gm1_00u: {<<: *diodes, where: [gmu1_00]}
+      diodes_gm1_25u: {<<: *diodes, where: [gmu1_25]}
+      diodes_gm1_50u: {<<: *diodes, where: [gmu1_50]}
+      diodes_gm1_75u: {<<: *diodes, where: [gmu1_75]}
+      diodes_gm2_00u: {<<: *diodes, where: [gmu2_00]}
+      diodes_gm2_25u: {<<: *diodes, where: [gmu2_25]}
+      diodes_gm2_75u: {<<: *diodes, where: [gmu2_75]}
+      diodes_gm6_25u: {<<: *diodes, where: [gmu6_25]}
+
+      # Stabilizers for larger keys
+      stb_gmu2_00:
+        what: "stabilizer_mx_2.00u"
+        where: [gmu2_00, gmu2_25, gmu2_75]
+      stb_gmu6_25:
+        what: "stabilizer_mx_6.25u"
+        where: [gmu6_25]
+
+      usb:
+        what: usb-c-16p-midmount-1_6
+        where: function_c05_row
+        adjust:
+          rotate: 180
+          shift: [u1_50 / 2, u0_50 + by- 1.6]
+
+      <<: *screw_holes_glyph_matrix_common
+      hole1.what: hole_2.2mm_M2_pad
+      hole1.params.P1: GND
+      hole2.what: hole_2.2mm_M2_pad
+      hole2.params.P1: GND
+      hole3.what: hole_2.2mm_M2_pad
+      hole3.params.P1: GND
+      hole4.what: hole_2.2mm_M2_pad
+      hole4.params.P1: GND
+      hole5.what: hole_2.2mm_M2_pad
+      hole5.params.P1: GND
+      hole6.what: hole_2.2mm_M2_pad
+      hole6.params.P1: GND
+
+      <<: *screw_holes_glyph_matrix
+      hole7.what: hole_2.2mm_M2_pad
+      hole7.params.P1: GND
+      hole8.what: hole_2.2mm_M2_pad
+      hole8.params.P1: GND
+
+      <<: *pogo_pins_gm
+
+  GlyphMatrix_Top:
+    template: kicad8
+    outlines:
+      edge: {outline: gm_top, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      # Switch footprints for different sizes
+      plate_1u: &plate
+        what: plate_mp_mx_1u
+        where: [gmu1_00, gmu1_25, gmu1_50, gmu1_75]
+
+      # Extended size switches with base configuration
+      hs_gm2_00u: {<<: *plate, what: plate_mp_mx_2u, where: [gmu2_00]}
+      hs_gm2_25u: {<<: *plate, what: plate_mp_mx_2.25u, where: [gmu2_25]}
+      hs_gm2_75u: {<<: *plate, what: plate_mp_mx_2.75u, where: [gmu2_75]}
+      hs_gm6_25u: {<<: *plate, what: plate_mp_mx_6.25u, where: [gmu6_25]}
+
+  GlyphMatrix_Plate:
+    template: kicad8
+    outlines:
+      edge: {outline: glyph_matrix_plate, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+      version:
+        <<: *version_text
+        where: [gmu6_25]
+        params.side: F
+        params.width: 1.2
+        params.height: 1.2
+
+      <<: *screw_holes_glyph_matrix_common
+      hole1.what: hole_2.2mm_M2_pad
+      hole1.params.P1: GND
+      hole2.what: hole_2.2mm_M2_pad
+      hole2.params.P1: GND
+      hole3.what: hole_2.2mm_M2_pad
+      hole3.params.P1: GND
+      hole4.what: hole_2.2mm_M2_pad
+      hole4.params.P1: GND
+      hole5.what: hole_2.2mm_M2_pad
+      hole5.params.P1: GND
+      hole6.what: hole_2.2mm_M2_pad
+      hole6.params.P1: GND
+
+  PhaseShift:
+    template: kicad8
+    outlines:
+      edge: {outline: phase_shift, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      # Extended size switches with base configuration
+      hs_ps1_00u: {<<: *mx_hotswap, what: MX_HS_1u   , where: [psu1_00]}
+
+      # Match Reference to key switches
+      led_ps1_00u: {<<: *per_key_led, where: [psu1_00]}
+
+      diodes_ps1_00u: {<<: *diodes, where: [psu1_00]}
+
+      <<: *screw_holes_phase_shift_common
+      hole1.what: hole_2.2mm_M2_pad
+      hole1.params.P1: GND
+      hole2.what: hole_2.2mm_M2_pad
+      hole2.params.P1: GND
+      hole3.what: hole_2.2mm_M2_pad
+      hole3.params.P1: GND
+      hole4.what: hole_2.2mm_M2_pad
+      hole4.params.P1: GND
+
+      <<: *screw_holes_phase_shift_top
+      hole5.what: hole_2.2mm_M2_pad
+      hole5.params.P1: GND
+
+      <<: *pogo_pins_gm
+      pogo1.where: [nav_block_c14_func]
+      pogo2.where: [nav_block_c16_func]
+      pogo3.where: [nav_block_c14_top]
+      pogo3.adjust.shift: [-pogo_x-0.5px, -0.5py]
+      pogo4.where: [nav_block_c16_top]
+      pogo4.adjust.shift: [pogo_x+0.5px, -0.5py]
+      pogo5.where: [nav_block3_c14_thumb]
+      pogo5.adjust.shift: [-pogo_x-.5px, pogo_y3-0.5py-by+hole_offset]
+      pogo6.where: [nav_block3_c16_thumb]
+      pogo6.adjust.shift: [pogo_x+.5px, pogo_y3-0.5py-by+hole_offset]
+
+  PhaseShift_Top:
+    template: kicad8
+    outlines:
+      edge: {outline: ps_top, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      # Switch footprints for different sizes
+      hs_ps1_00u: { <<: *plate, where: [psu1_00] }
+
+  PhaseShift_Plate:
+    template: kicad8
+    outlines:
+      edge: {outline: phase_shift_plate, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      <<: *screw_holes_phase_shift_common
+      hole1.what: hole_2.2mm_M2_pad
+      hole1.params.P1: GND
+      hole2.what: hole_2.2mm_M2_pad
+      hole2.params.P1: GND
+      hole3.what: hole_2.2mm_M2_pad
+      hole3.params.P1: GND
+      hole4.what: hole_2.2mm_M2_pad
+      hole4.params.P1: GND
+
+  DeltaForm:
+    template: kicad8
+    outlines:
+      edge: {outline: delta_form, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      # Extended size switches with base configuration
+      hs_df1_00u: {<<: *mx_hotswap, what: MX_HS_1u   , where: [dfu1_00]}
+      hs_df2_00v: {<<: *mx_hotswap, what: MX_HS_1u   , where: [dfv2_00]}
+      hs_df2_00u: {<<: *mx_hotswap, what: MX_HS_1u   , where: [dfu2_00]}
+
+      # Match Reference to key switches
+      led_df1_00u: {<<: *per_key_led, where: [dfu1_00]}
+      led_df2_00v: {<<: *per_key_led, where: [dfv2_00]}
+      led_df2_00u: {<<: *per_key_led, where: [dfu2_00]}
+
+      diodes_df1_00u: {<<: *diodes, where: [dfu1_00]}
+      diodes_df2_00v: {<<: *diodes, where: [dfv2_00]}
+      diodes_df2_00u: {<<: *diodes, where: [dfu2_00]}
+
+      stb_dfv2_00:
+        what: "stabilizer_mx_2.00u"
+        where: [dfv2_00]
+        adjust: { rotate: -90 }
+
+      stb_dfu2_00:
+        what: "stabilizer_mx_2.00u"
+        where: [dfu2_00]
+
+      <<: *screw_holes_delta_form_common
+      hole1.what: hole_2.2mm_M2_pad
+      hole1.params.P1: GND
+      hole2.what: hole_2.2mm_M2_pad
+      hole2.params.P1: GND
+      hole3.what: hole_2.2mm_M2_pad
+      hole3.params.P1: GND
+      hole4.what: hole_2.2mm_M2_pad
+      hole4.params.P1: GND
+  
+      <<: *screw_holes_delta_form_top
+      hole5.what: hole_2.2mm_M2_pad
+      hole5.params.P1: GND
+
+      <<: *pogo_pins_gm
+      pogo1.where: [num_pad_c17_func]
+      pogo2.where: [num_pad_c20_func]
+      pogo3.where: [num_pad2_c17_top]
+      pogo3.adjust.shift: [-pogo_x-0.5px, -0.5py]
+      pogo4.where: [num_pad2_c19_top]
+      pogo4.adjust.shift: [pogo_x+1.5px, -0.5py]
+      pogo5.where: [num_pad5_c17_thumb]
+      pogo5.adjust.shift: [-pogo_x-px, pogo_y3-0.5py-by+hole_offset]
+      pogo6.where: [num_pad5_c19_thumb]
+      pogo6.adjust.shift: [pogo_x+1.5px, pogo_y3-0.5py-by+hole_offset]
+    
+  DeltaForm_Top:
+    template: kicad8
+    outlines:
+      edge: {outline: df_top, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      # Switch footprints for different sizes
+      hs_df1_00u: { <<: *plate, where: [dfu1_00] }
+      hs_df2_00v: { <<: *plate, where: [dfv2_00], what: plate_mp_mx_2u, adjust: { rotate: -90}}
+      hs_df2_00u: { <<: *plate, where: [dfu2_00], what: plate_mp_mx_2u }
+
+  DeltaForm_Plate:
+    template: kicad8
+    outlines:
+      edge: {outline: delta_form_plate, layer: Edge.Cuts}
+    footprints:
+      # Base configuration for the ground plane
+      <<: *filled_zone
+
+      <<: *screw_holes_delta_form_common
+      hole1.what: hole_2.2mm_M2_pad
+      hole1.params.P1: GND
+      hole2.what: hole_2.2mm_M2_pad
+      hole2.params.P1: GND
+      hole3.what: hole_2.2mm_M2_pad
+      hole3.params.P1: GND
+      hole4.what: hole_2.2mm_M2_pad
+      hole4.params.P1: GND

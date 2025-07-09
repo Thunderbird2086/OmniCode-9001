@@ -1,0 +1,98 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "c7177d09-71a2-4de7-9a3e-bfc16a7f2797")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 37.846 164.084)
+		(size 35.306 22.352)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "07d799b8-8bd0-4b35-b9da-910e8fb4f070")
+		(property "Sheetname" "DeltaForm"
+			(at 37.846 163.3724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DeltaForm-keymatrix.kicad_sch"
+			(at 37.846 187.0206 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DeltaForm"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 102.87 164.084)
+		(size 35.306 22.352)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5cc1758f-8c3a-4c8d-9768-40833fbebdc2")
+		(property "Sheetname" "RGB"
+			(at 102.87 163.3724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DeltaForm-RGB.kicad_sch"
+			(at 102.87 187.0206 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DeltaForm"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
