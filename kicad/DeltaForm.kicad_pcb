@@ -3411,7 +3411,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Keycaps/DSA_1u.step"
+		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Keycaps/DSA_2u.step"
 			(offset
 				(xyz 0 0 12)
 			)
@@ -3419,7 +3419,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz -90 -0 -90)
 			)
 		)
 	)
@@ -4039,10 +4039,10 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
-		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Keycaps/DSA_1u.step"
+		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Keycaps/DSA_2u.step"
 			(offset
 				(xyz 0 0 12)
 			)
@@ -4050,7 +4050,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -90 0 0)
+				(xyz -90 -0 -90)
 			)
 		)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Key Switch/Cherry-MX-silent_alpaca.step"
@@ -4061,7 +4061,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -90)
 			)
 		)
 	)

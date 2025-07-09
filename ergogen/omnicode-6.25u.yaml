@@ -1,6 +1,6 @@
 meta:
   author: Allen Choi
-  version: 0.4.3
+  version: 0.4.4
   engine: 4.1.0
   project: "OmniCode:9001"
 
@@ -65,7 +65,7 @@ units:
   case_width: 5.5
   
   # hole offset from the edges
-  hole_offset: 4
+  hole_offset: 5
 
   # Layout specific measurements
   corner: 2         # Corner radius
