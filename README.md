@@ -1,5 +1,6 @@
 # OmniCode:9001
 A modular keyboard made up of three detachable untis.
+![](img/OmniCode9001_3D_model.png)
 
 ## Overview
 OmniCode:9001 is the ultimate evolution of modular keyboards—born in Hong Kong, engineered for control beyond limits. This highly customizable, open-source keyboard is designed for ergonomic comfort, maximum flexibility, and creative power. With magnetic, hot-swappable blocks like GlyphMatrix, PhaseShift, and DeltaForm, OmniCode:9001 adapts to every workflow—from deep code to macro magic. Sleek, stylish, and laced with anime-level energy, it's more than a keyboard—it’s a power interface for those who type like they're piloting a mecha.
