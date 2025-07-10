@@ -14,3 +14,5 @@ Inspired by the best features of split and compact layouts, OmniCode:9001 is sui
 
 - **Num Block:** DeltaForm Already perfect. This name suggests modular transformation. Zoom, macros, data entry—all reborn in a shapeshifting format.
 
+## Builds
+* [BOM](bom/README.md)
