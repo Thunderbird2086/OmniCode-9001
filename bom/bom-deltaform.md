@@ -24,3 +24,8 @@ DeltaForm Already perfect. This name suggests modular transformation. Zoom, macr
 | Parts          | Packeage    | Designator(s)                        | Quantity |
 |----------------|-------------|--------------------------------------|----------|
 | SK6812MINI-E   | SK6812MINI-E| L1-L21                               | 21       |
+
+# Other blocks
+
+* [GlyphMatrix](README.md)
+* [PhaseShift](bom-phaseshift.md)

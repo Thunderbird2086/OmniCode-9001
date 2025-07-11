@@ -52,5 +52,7 @@ GlyphMatrix taps into the visual power of language—glyphs as symbols, matrix a
 | POGO 7 pin-male   | Curved      | POGO3, POGO5                                                                                                          | 2        |
 | POGO 7 pin-female | Curved      | POGO4, POGO6                                                                                                          | 2        |
 
+# Other blocks
+
 * [PhaseShift](bom-phaseshift.md)
 * [DeltaForm](bom-deltaform.md)

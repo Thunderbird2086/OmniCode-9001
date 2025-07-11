@@ -24,3 +24,8 @@ PhaseShift suggests rapid movement, shifting through modes or layers like telepo
 | Parts          | Packeage    | Designator(s)                        | Quantity |
 |----------------|-------------|--------------------------------------|----------|
 | SK6812MINI-E   | SK6812MINI-E| L1-L13                               | 13       |
+
+# Other blocks
+
+* [GlyphMatrix](README.md)
+* [DeltaForm](bom-deltaform.md)

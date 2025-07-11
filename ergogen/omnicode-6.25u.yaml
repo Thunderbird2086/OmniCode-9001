@@ -1,6 +1,6 @@
 meta:
   author: Allen Choi
-  version: 0.4.4
+  version: 0.4.9
   engine: 4.1.0
   project: "OmniCode:9001"
 
@@ -17,7 +17,7 @@ text_common:
 
   version_text: &version_text
     <<: *text_base
-    params.text: "OminCode:9001 20250709"
+    params.text: "OminCode:9001 202507.10"
 
   text_bbg: &text_bbg
     what: utility_text
@@ -44,8 +44,8 @@ units:
   u6_25: u1_00 * 6.25
 
   # Screw hole sizes
-  screw_hole_radius: 1.1  # M2 screw hole size
-  support_hole_radius: 1.25  # M2 PCB support hole size
+  screw_hole_radius: 1.6    # M6 screw hole size
+  support_hole_radius: 1.6  # M2 PCB support hole size
 
   # Spacing and padding
   ps: 0.0          # Base padding between switches
@@ -65,7 +65,7 @@ units:
   case_width: 5.5
   
   # hole offset from the edges
-  hole_offset: 5
+  hole_offset: 4.5
 
   # Layout specific measurements
   corner: 2         # Corner radius
@@ -362,7 +362,7 @@ screw_holes:
     <<: *screw_holes_common
     hole5:
       where: [function_c07_row]
-      adjust: { shift: [-0.5px-bx+hole_offset, 0.5py+by-hole_offset] }
+      adjust: { shift: [-0.5px, 0.5py+by-hole_offset] }
     hole6:
       where: [thumb_c05_row]
       adjust: { shift: [ 0.5px+hole_offset, 0] }
@@ -370,10 +370,10 @@ screw_holes:
   glyph_matrix_top: &screw_holes_glyph_matrix
     hole7:
       where: [home_c04_row]
-      adjust: { shift: [-0.5px-bx-0.15, 0.5py+by-hole_offset] }
+      adjust: { shift: [-0.5px-bx-0.15, 0.5py+by-hole_offset+0.5] }
     hole8:
       where: [home_c10_row]
-      adjust: { shift: [-0.5px-bx-0.15, 0.5py+by-hole_offset] }
+      adjust: { shift: [-0.5px-bx-0.15, 0.5py+by-hole_offset+0.5] }
 
   phase_shift_common: &screw_holes_phase_shift_common
     <<: *screw_holes_common
@@ -772,10 +772,18 @@ outlines:
     - "-screw_holes_glyph_matrix_top"
     - "-glyph_screw_holes_top"
 
+  led_hole: &led_hole
+    - what: circle
+      radius: 1
+      where: [nav_block_c15_func]
+      adjust:
+        shift: [0, -0.5py-py/8]
+
   ps_top:
     - "phase_shift_plate"
     - "-screw_holes_phase_shift_top"
     - "-phase_shift_top"
+    - "-led_hole"
 
   df_top:
     - "delta_form_plate"
@@ -954,23 +962,23 @@ pcbs:
           shift: [u1_50 / 2, u0_50 + by- 1.6]
 
       <<: *screw_holes_glyph_matrix_common
-      hole1.what: hole_2.2mm_M2_pad
+      hole1.what: hole_3.2mm_pad
       hole1.params.P1: GND
-      hole2.what: hole_2.2mm_M2_pad
+      hole2.what: hole_3.2mm_pad
       hole2.params.P1: GND
-      hole3.what: hole_2.2mm_M2_pad
+      hole3.what: hole_3.2mm_pad
       hole3.params.P1: GND
-      hole4.what: hole_2.2mm_M2_pad
+      hole4.what: hole_3.2mm_pad
       hole4.params.P1: GND
-      hole5.what: hole_2.2mm_M2_pad
+      hole5.what: hole_3.2mm_pad
       hole5.params.P1: GND
-      hole6.what: hole_2.2mm_M2_pad
+      hole6.what: hole_3.2mm_pad
       hole6.params.P1: GND
 
       <<: *screw_holes_glyph_matrix
-      hole7.what: hole_2.2mm_M2_pad
+      hole7.what: hole_3.2mm_pad
       hole7.params.P1: GND
-      hole8.what: hole_2.2mm_M2_pad
+      hole8.what: hole_3.2mm_pad
       hole8.params.P1: GND
 
       <<: *pogo_pins_gm
@@ -1004,22 +1012,23 @@ pcbs:
       version:
         <<: *version_text
         where: [gmu6_25]
+        adjust: { shift: [ 0.5px+hole_offset, 5] }
         params.side: F
         params.width: 1.2
         params.height: 1.2
 
       <<: *screw_holes_glyph_matrix_common
-      hole1.what: hole_2.2mm_M2_pad
+      hole1.what: hole_3.2mm_pad
       hole1.params.P1: GND
-      hole2.what: hole_2.2mm_M2_pad
+      hole2.what: hole_3.2mm_pad
       hole2.params.P1: GND
-      hole3.what: hole_2.2mm_M2_pad
+      hole3.what: hole_3.2mm_pad
       hole3.params.P1: GND
-      hole4.what: hole_2.2mm_M2_pad
+      hole4.what: hole_3.2mm_pad
       hole4.params.P1: GND
-      hole5.what: hole_2.2mm_M2_pad
+      hole5.what: hole_3.2mm_pad
       hole5.params.P1: GND
-      hole6.what: hole_2.2mm_M2_pad
+      hole6.what: hole_3.2mm_pad
       hole6.params.P1: GND
 
   PhaseShift:
@@ -1039,17 +1048,17 @@ pcbs:
       diodes_ps1_00u: {<<: *diodes, where: [psu1_00]}
 
       <<: *screw_holes_phase_shift_common
-      hole1.what: hole_2.2mm_M2_pad
+      hole1.what: hole_3.2mm_pad
       hole1.params.P1: GND
-      hole2.what: hole_2.2mm_M2_pad
+      hole2.what: hole_3.2mm_pad
       hole2.params.P1: GND
-      hole3.what: hole_2.2mm_M2_pad
+      hole3.what: hole_3.2mm_pad
       hole3.params.P1: GND
-      hole4.what: hole_2.2mm_M2_pad
+      hole4.what: hole_3.2mm_pad
       hole4.params.P1: GND
 
       <<: *screw_holes_phase_shift_top
-      hole5.what: hole_2.2mm_M2_pad
+      hole5.what: hole_3.2mm_pad
       hole5.params.P1: GND
 
       <<: *pogo_pins_gm
@@ -1084,13 +1093,13 @@ pcbs:
       <<: *filled_zone
 
       <<: *screw_holes_phase_shift_common
-      hole1.what: hole_2.2mm_M2_pad
+      hole1.what: hole_3.2mm_pad
       hole1.params.P1: GND
-      hole2.what: hole_2.2mm_M2_pad
+      hole2.what: hole_3.2mm_pad
       hole2.params.P1: GND
-      hole3.what: hole_2.2mm_M2_pad
+      hole3.what: hole_3.2mm_pad
       hole3.params.P1: GND
-      hole4.what: hole_2.2mm_M2_pad
+      hole4.what: hole_3.2mm_pad
       hole4.params.P1: GND
 
   DeltaForm:
@@ -1125,17 +1134,17 @@ pcbs:
         where: [dfu2_00]
 
       <<: *screw_holes_delta_form_common
-      hole1.what: hole_2.2mm_M2_pad
+      hole1.what: hole_3.2mm_pad
       hole1.params.P1: GND
-      hole2.what: hole_2.2mm_M2_pad
+      hole2.what: hole_3.2mm_pad
       hole2.params.P1: GND
-      hole3.what: hole_2.2mm_M2_pad
+      hole3.what: hole_3.2mm_pad
       hole3.params.P1: GND
-      hole4.what: hole_2.2mm_M2_pad
+      hole4.what: hole_3.2mm_pad
       hole4.params.P1: GND
   
       <<: *screw_holes_delta_form_top
-      hole5.what: hole_2.2mm_M2_pad
+      hole5.what: hole_3.2mm_pad
       hole5.params.P1: GND
 
       <<: *pogo_pins_gm
@@ -1172,11 +1181,11 @@ pcbs:
       <<: *filled_zone
 
       <<: *screw_holes_delta_form_common
-      hole1.what: hole_2.2mm_M2_pad
+      hole1.what: hole_3.2mm_pad
       hole1.params.P1: GND
-      hole2.what: hole_2.2mm_M2_pad
+      hole2.what: hole_3.2mm_pad
       hole2.params.P1: GND
-      hole3.what: hole_2.2mm_M2_pad
+      hole3.what: hole_3.2mm_pad
       hole3.params.P1: GND
-      hole4.what: hole_2.2mm_M2_pad
+      hole4.what: hole_3.2mm_pad
       hole4.params.P1: GND
