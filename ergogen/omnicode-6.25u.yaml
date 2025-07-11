@@ -1,6 +1,6 @@
 meta:
   author: Allen Choi
-  version: 0.4.7
+  version: 0.4.9
   engine: 4.1.0
   project: "OmniCode:9001"
 
@@ -44,8 +44,8 @@ units:
   u6_25: u1_00 * 6.25
 
   # Screw hole sizes
-  screw_hole_radius: 1.1  # M2 screw hole size
-  support_hole_radius: 1.25  # M2 PCB support hole size
+  screw_hole_radius: 1.6    # M6 screw hole size
+  support_hole_radius: 1.6  # M2 PCB support hole size
 
   # Spacing and padding
   ps: 0.0          # Base padding between switches
