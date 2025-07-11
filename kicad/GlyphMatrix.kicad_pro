@@ -1007,7 +1007,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../3D Models/GlyphMatrix.step",
+      "step": "../3D Models/GlyphMatrix_PCB.step",
       "svg": "",
       "vrml": ""
     },
