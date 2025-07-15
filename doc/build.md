@@ -41,6 +41,7 @@
 
 
 1. **Install Key Switches**
+   ![](../img/keyswitch.png)
    - Insert the 74 MX key switches into the hot swap sockets.<br>**Be careful:** The switch pins are easy to bend.<br>Align each switch carefully and press straight down to avoid damaging the pins. Ensure each switch is fully seated and the pins make good contact.
 
 1. **Add Keycaps**
