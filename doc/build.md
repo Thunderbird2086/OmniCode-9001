@@ -44,20 +44,26 @@
    - Place the top plate onto the PCB.
    - Position the 6 spacers (3mm) at the designated mounting points.
    - Add M3 gaskets (0.5mm thick) between the PCB and spacers.
-   - Add 6 spacers (5mm) at the bottom side of the PCB.
-   - Use 6 M3x8mm screws with the 5mm spacers to loosely fasten the PCB and plates together, keeping spacers and gaskets in place.
+   - Add 6 standoff (5mm) at the bottom side of the PCB.
+   - Insert 6 M3x8mm screws through the top plate, spacers, gaskets and PCB, then loosely fasten them with 5mm standoffs.
    - **Do not fully tighten the screws yet. This is a pre-assembly step.** Final tightening should be done after all key switches are installed to ensure proper fit and alignment.
 
 1. **Install Key Switches**
    ![](../img/keyswitch.png)
-   - Insert the 74 MX key switches into the hot swap sockets.<br>**Be careful:** The switch pins are easy to bend.<br>Align each switch carefully and press straight down to avoid damaging the pins. Ensure each switch is fully seated and the pins make good contact.
+   - Carefully align each MX key switch with the hot swap socket and plate cutout.
+   - Gently press the switch straight down into the socket. **Be careful:** The switch pins are easy to bend, so make sure that they are straight and enter the socket holes cleanly.
+   - Double-check that each switch is fully seated and flush with the plate.
+   - After installing a few switches, check that the PCB and plate remain properly aligned. Adjust if needed before continuing.
+   - Once all switches are installed, you can flash the firmware and test each key to confirm proper installation and electrical contact.
+
+1. **Secure with Screws**
+   ![](../img/assemble-bottom-plate.png)
+   - Place the bottom plate onto the assembled stack.
+   - Use 6 M3x4mm screws for any additional mounting points as needed.
+   - Tighten all screws evenly, but do not overtighten—just enough to hold everything securely and avoid damaging the PCB or plates.
 
 1. **Add Keycaps**
    - Press the keycaps onto each switch stem. Double-check orientation and fit.
-
-1. **Secure with Screws**
-   - Use 6 M3x8 screws and 6 M3x4 screws to fasten the PCB and plates together, with spacers and gaskets in place.
-   - Tighten screws evenly, but do not overtighten to avoid damaging the PCB.
 
 1. **Final Check**
    - Inspect all keys for proper fit and alignment.
