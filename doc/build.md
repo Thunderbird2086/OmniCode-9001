@@ -13,13 +13,14 @@
 | Spacers (3mm)       | 6        |                      |
 | M3 gaskets (0.5mm)  | 6        |                      |
 | M3x4 screws         | 6        |                      |
+| M3 Standoffs (5mm)  | 6        |                      |
 
 ### Optonal
 | Part                | Quantity | Notes                |
 |---------------------|----------|----------------------|
 | RGB LEDs            | 74       | SK6812 mini-e        |
 | POGO Pin 5P (curved)| 1 Set    | male and female      |
-| POGO Pin 7P (curved)| 1 Set    | male and female      |
+| POGO Pin 7P (curved)| 2 Set    | male and female      |
 
 ## Steps
 
@@ -73,4 +74,7 @@
 - Take your time with switch and socket installation for best results.
 
 Enjoy your custom GlyphMatrix build!
-
+    
+## One more thing!
+- If you seek to unlock the true potential of your GlyphMatrix, legends speak of two mysterious modules: [**PhaseShift**](./build_phaseshift.md) and [**DeltaForm**](./build_deltaform.md).
+- When all three blocks are combined, the GlyphMatrix transcends its limits and evolves into **OmniCode:9001**, the ultimate keyboard fusion, worthy of the most legendary coders. Unleash your final form!
