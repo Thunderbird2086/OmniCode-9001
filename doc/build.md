@@ -45,7 +45,8 @@
    - Position the 6 spacers (3mm) at the designated mounting points.
    - Add M3 gaskets (0.5mm thick) between the PCB and spacers.
    - Add 6 spacers (5mm) at the bottom side of the PCB.
-
+   - Use 6 M3x8mm screws with the 5mm spacers to loosely fasten the PCB and plates together, keeping spacers and gaskets in place.
+   - **Do not fully tighten the screws yet. This is a pre-assembly step.** Final tightening should be done after all key switches are installed to ensure proper fit and alignment.
 
 1. **Install Key Switches**
    ![](../img/keyswitch.png)
