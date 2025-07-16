@@ -18,6 +18,8 @@
 | Part                | Quantity | Notes                |
 |---------------------|----------|----------------------|
 | RGB LEDs            | 74       | SK6812 mini-e        |
+| POGO Pin 5P (curved)| 1 Set    | male and female      |
+| POGO Pin 7P (curved)| 1 Set    | male and female      |
 
 ## Steps
 
@@ -27,6 +29,11 @@
    - **Per-key LED (optional):** Solder per-key LEDs onto the PCB, making sure their orientation matches the footprint.
      ![](../img/led-footprint.png)
      ![](../img/led.png)
+   - **POGO Pin (optional):**
+     - Insert the POGO pins from the bottom side of the PCB, ensuring the correct orientation (male part on the left side, female part on the right for instance).
+     - Hold the pins firmly in place and solder from the top side.
+     - Double-check alignment before soldering all pins, as POGO pins must be straight for reliable contact.
+     - After soldering, inspect for excess solder and clean up any bridges or cold joints.
 
 1. **Install Stabilizers**
      ![](../img/stabilizers.png)
@@ -37,7 +44,7 @@
    - Place the top plate onto the PCB.
    - Position the 6 spacers (3mm) at the designated mounting points.
    - Add M3 gaskets (0.5mm thick) between the PCB and spacers.
-   - Add 6 spacers (6mm) at the bottom side of the PCB.
+   - Add 6 spacers (5mm) at the bottom side of the PCB.
 
 
 1. **Install Key Switches**
