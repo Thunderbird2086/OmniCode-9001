@@ -18,4 +18,4 @@ OmniCode:9001 is the modular keyboards born in Hong Kong, engineered for control
 
 ## Builds
 * [BOM](bom/README.md)
-* [Build guides](doc/build.md) - WIP
+* [Build guides](doc/build.md)
