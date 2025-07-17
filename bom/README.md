@@ -22,7 +22,7 @@ GlyphMatrix taps into the visual power of language—glyphs as symbols, matrix a
 | 10uF             | 0402        | C7                                                                                                                    | 1        |
 | 22pF             | 0402        | C2, C3                                                                                                                | 2        |
 | 12MHz            | 3225        | Y1                                                                                                                    | 1        |
-| SW_Push          | SKQG        | SW1, SW2                                                                                                              | 2        |
+| Push Switch      | SKQG        | SW1, SW2                                                                                                              | 2        |
 
 ### USB
 
@@ -30,7 +30,7 @@ GlyphMatrix taps into the visual power of language—glyphs as symbols, matrix a
 |------------------|-----------------------|-------------------------------------------------------------------------------------------------------------|----------|
 | USB-C Receptacle | USB4520-03-0-A Rev. A | USB1                                                                                                        | 1        |
 | USBLC6-2SC6      | SOT-23-6              | U2                                                                                                          | 1        |
-| 5k1              | 0402                  | R2, R3                                                                                                      | 2        |
+| 5.1k             | 0402                  | R2, R3                                                                                                      | 2        |
 | 500mA            | 1206                  | F1                                                                                                          | 1        |
 
 ### Key Switches

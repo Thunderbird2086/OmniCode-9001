@@ -1,6 +1,6 @@
 meta:
   author: Allen Choi
-  version: 0.6.1
+  version: 0.6.2
   engine: 4.1.0
   project: "OmniCode:9001"
 
@@ -56,7 +56,7 @@ units:
   stabilizer_width: 7
   stabilizer_height: 14
   stabilizer_offset: -1 # This means south stabs, use `orient` to rotate them for north facing scenarios
-  stabilizer_spacing_u2_00: u1_00 / 2 + stabilizer_width / 2 + ((23.8 / 2) - (14 / 2) - (stabilizer_width / 2)) # The complex formula has two magic numbers. 14 is the size of a switch cutout for a plate. 23.8 is the distance between each stabilizer on a 2-2.75u stabilizer, as specified by Cherry
+  stabilizer_spacing_u2_00: 11.938 # Spacing for 2U stabilizers
   stabilizer_spacing_u6_25: (u6_25 - u1_00) / 2
 
   # Screw hole sizes
@@ -542,19 +542,16 @@ outlines:
       size: [stabilizer_width, stabilizer_height]
       adjust:
         shift: [stabilizer_spacing_u2_00, stabilizer_offset]
+      fillet: .3
     - operation: stack
       where: [gmu2_00,gmu2_25,gmu2_75]
       what: rectangle
       size: [stabilizer_width, stabilizer_height]
       adjust:
         shift: [-stabilizer_spacing_u2_00, stabilizer_offset]
+      fillet: .3
 
   stab_2_00u_mouse_ear:
-    - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [1.5, 1.5]
-      adjust:
-        shift: [-3.25+stabilizer_spacing_u2_00, -6.75+stabilizer_offset]
     - what: rectangle
       where: [gmu2_00,gmu2_25,gmu2_75]
       size: [1.5, 1.5]
@@ -569,22 +566,7 @@ outlines:
       where: [gmu2_00,gmu2_25,gmu2_75]
       size: [1.5, 1.5]
       adjust:
-        shift: [-3.25+stabilizer_spacing_u2_00, 6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [1.5, 1.5]
-      adjust:
         shift: [-3.25-stabilizer_spacing_u2_00, -6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [1.5, 1.5]
-      adjust:
-        shift: [3.25-stabilizer_spacing_u2_00, -6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [1.5, 1.5]
-      adjust:
-        shift: [3.25-stabilizer_spacing_u2_00, 6.75+stabilizer_offset]
     - what: rectangle
       where: [gmu2_00,gmu2_25,gmu2_75]
       size: [1.5, 1.5]
@@ -981,9 +963,9 @@ outlines:
     - "-stab_2_00u_gm"
     - "-stab_6_25u_gm"
     - "-keys_gm_mouse_ear"
-    - "-stab_2_00u_mouse_ear"
+#    - "-stab_2_00u_mouse_ear"
     - "-stab_6_00u_mouse_ear"
-    - "-stab_2_00u_gm_plate"
+#    - "-stab_2_00u_gm_plate"
 
   gm_screw_holes:
     - "glyph_matrix"
