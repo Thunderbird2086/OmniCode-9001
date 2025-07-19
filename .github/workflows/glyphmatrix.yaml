@@ -33,6 +33,7 @@ jobs:
       run: |
         zip -r --junk-paths glyphmatrix-gerber.zip kicad/glyphmatrix/gerber -x '*bom*' '*cpl*'
         zip -r --junk-paths glyphmatrix-bom.zip . -i kicad/glyphmatrix/gerber/*bom*.csv
+        zip -r --junk-paths glyphmatrix-cpl.zip . -i kicad/glyphmatrix/gerber/*cpl*.csv
 
     - name: GH Release
       uses: softprops/action-gh-release@v0.1.15

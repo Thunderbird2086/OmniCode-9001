@@ -77,8 +77,23 @@ outputs:
     options:
       format: 'CSV'
       columns:
-        - 'Description'
+        - 'Value'
         - 'Reference'
         - 'Footprint'
         - 'LCSC'
         - 'Quantity Per PCB'
+
+  - name: 'position'
+    comment: "Position file (CPL) for pick and place"
+    type: 'position'
+    dir: 'gerberdir'
+    options:
+      format: 'CSV'
+      columns:
+        - 'Reference'
+        - 'Value'
+        - 'Package'
+        - 'PosX'
+        - 'PosY'
+        - 'Rotation'
+        - 'Side'
