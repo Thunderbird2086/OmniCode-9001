@@ -20,7 +20,7 @@ jobs:
       uses: INTI-CMNB/KiBot@v1.8.4
       with:
         config: .kibot.yaml
-        dir: kicad/glyphmatrix/gerber
+        dir: kicad/production/glyphmatrix
         board: kicad/GlyphMatrix.kicad_pcb
         schema: kicad/GlyphMatrix.kicad_sch
 
@@ -31,8 +31,8 @@ jobs:
 
     - name: Zip output files
       run: |
-        zip -r --junk-paths glyphmatrix-gerber.zip kicad/glyphmatrix/gerber -x '*bom*' '*cpl*'
-        zip -r --junk-paths glyphmatrix-bom.zip . -i kicad/glyphmatrix/gerber/*bom*.csv
+        zip -r --junk-paths glyphmatrix-gerber.zip kicad/production/glyphmatrix/gerber/*
+        zip -r --junk-paths glyphmatrix-pcba.zip kicad/production/glyphmatrix/misc/*
 
     - name: GH Release
       uses: softprops/action-gh-release@v0.1.15
