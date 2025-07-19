@@ -1,0 +1,43 @@
+name: GlyphMatrix PCB
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+*'
+  workflow_dispatch:
+
+jobs:
+  KiBot-Generation:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Run offset_midy_layer.py for CPL-GlyphMatrix.csv
+      run: |
+        python tools/offset_midy_layer.py --filter_value SW_MX_HS --offset -1.27 --new_layer bottom --input_file glyphmatrix/CPL-GlyphMatrix.csv
+
+    - name: Generate Gerber, BOM, and CPL for GlyphMatrix
+      uses: INTI-CMNB/KiBot@v1.8.4
+      with:
+        config: .kibot.yaml
+        dir: glyphmatrix/gerber
+        board: glyphmatrix/glyphmatrix.kicad_pcb
+        schema: glyphmatrix/glyphmatrix.kicad_sch
+        outputs: gerber,bom,cpl
+
+    - name: Zip output files
+      run: |
+        zip -r --junk-paths glyphmatrix-gerber.zip glyphmatrix/gerber
+        zip -r --junk-paths glyphmatrix-bom.zip glyphmatrix/gerber/*bom*.csv
+        zip -r --junk-paths glyphmatrix-cpl.zip glyphmatrix/gerber/*cpl*.csv
+
+    - name: GH Release
+      uses: softprops/action-gh-release@v0.1.15
+      with:
+        files: "glyphmatrix-*.zip"
+        draft: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
