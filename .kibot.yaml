@@ -8,7 +8,6 @@ global:
 
 preflight:
   check_zone_fills: true
-  ignore_unconnected: true
   run_drc: false
   update_xml: false
 
@@ -27,6 +26,7 @@ outputs:
       plot_footprint_values: true
       force_plot_invisible_refs_vals: false
       tent_vias: true
+      ignore_unconnected: true  # Moved here per deprecation warning
 
       # gerber options
       line_width: 0.15
@@ -69,3 +69,16 @@ outputs:
       mirror_y_axis: false
       map:
         type: 'gerber'
+
+  - name: 'bom'
+    comment: "Bill of Materials"
+    type: 'bom'
+    dir: 'gerberdir'
+    options:
+      format: 'CSV'
+      columns:
+        - 'Description'
+        - 'Reference'
+        - 'Footprint'
+        - 'LCSC'
+        - 'Quantity Per PCB'
