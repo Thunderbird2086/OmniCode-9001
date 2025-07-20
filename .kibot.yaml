@@ -12,13 +12,18 @@ preflight:
   update_xml: false
 
 filters:
-  - name: exclude_pogo
-    comment: 'Exclude POGO pins'
-    type: generic
-    invert: true
-    exclude_any:
-      - column: Reference
-        regex: "^POGO"
+  - name: fix_offset
+    comment: 'Adjust offset for JLC'
+    type: rot_footprint
+    negative_bottom: false
+    mirror_bottom: true
+    offsets:
+      - ["^SW_MX_HS", "0,-1.27"]
+  - name: fix_rotation
+    comment: 'Adjust rotation for JLC'
+    type: rot_footprint
+    negative_bottom: false
+    mirror_bottom: true
 
 outputs:
   - name: 'gerbers'
@@ -35,7 +40,7 @@ outputs:
       plot_footprint_values: true
       force_plot_invisible_refs_vals: false
       tent_vias: true
-      ignore_unconnected: true  # Moved here per deprecation warning
+      # ignore_unconnected: true  # Moved here per deprecation warning
 
       # gerber options
       line_width: 0.15
@@ -84,13 +89,43 @@ outputs:
     type: 'bom'
     dir: 'misc'
     options:
-#      dnf_filter: exclude_pogo
-      format: 'CSV'
+      output: '%f_%i_jlc.%x'
+#      exclude_filter: 'only_jlc_parts'
+      ref_separator: ','
+      columns:
+        - field: Value
+          name: Comment
+        - field: References
+          name: Designator
+        - Footprint
+        - field: _field_lcsc_part
+          name: 'LCSC Part #'
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+        quote_all: true
 
   - name: 'position'
     comment: "Position file (CPL) for pick and place"
     type: 'position'
     dir: 'misc'
     options:
-#      dnf_filter: exclude_pogo
-      format: 'CSV'
+      pre_transform: fix_rotation
+      output: '%f_cpl_jlc.%x'
+      format: CSV
+      units: millimeters
+      separate_files_for_front_and_back: false
+      only_smd: true
+      columns:
+        - id: Ref
+          name: Designator
+        - Val
+        - Package
+        - id: PosX
+          name: "Mid X"
+        - id: PosY
+          name: "Mid Y"
+        - id: Rot
+          name: Rotation
+        - id: Side
+          name: Layer
