@@ -5,6 +5,10 @@ kiplot:
 global:
   resources_dir: '.resources'
   units: 'millimeters'
+  field_lcsc_part: LCSC
+
+import:
+  - file: JLCPCB
 
 preflight:
   check_zone_fills: true
@@ -87,7 +91,7 @@ outputs:
   - name: 'bom'
     comment: "Bill of Materials"
     type: 'bom'
-    dir: 'misc'
+    dir: 'pcba'
     options:
       output: '%f_%i_jlc.%x'
 #      exclude_filter: 'only_jlc_parts'
@@ -108,7 +112,7 @@ outputs:
   - name: 'position'
     comment: "Position file (CPL) for pick and place"
     type: 'position'
-    dir: 'misc'
+    dir: 'pcba'
     options:
       pre_transform: fix_rotation
       output: '%f_cpl_jlc.%x'

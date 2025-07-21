@@ -24,15 +24,10 @@ jobs:
         board: kicad/GlyphMatrix.kicad_pcb
         schema: kicad/GlyphMatrix.kicad_sch
 
-    - name: Run offset_midy_layer.py for GlyphMatrix_CPL.csv
-      run: |
-        find kicad -type f 
-#        python tools/offset_midy_layer.py --filter_value SW_MX_HS --offset -1.27 --new_layer bottom --input_file kicad/glyphmatrix/gerber/GlyphMatrix_CPL.csv
-
     - name: Zip output files
       run: |
-        zip -r --junk-paths glyphmatrix-gerber.zip kicad/production/glyphmatrix/gerber/*
-        zip -r --junk-paths glyphmatrix-pcba.zip kicad/production/glyphmatrix/misc/*
+        zip -r --junk-paths glyphyatrix-gerber.zip kicad/production/glyphmatrix/gerber/*
+        zip -r --junk-paths glyphyatrix-pcba.zip kicad/production/glyphmatrix/pcba/*
 
     - name: GH Release
       uses: softprops/action-gh-release@v0.1.15
