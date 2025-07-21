@@ -24,10 +24,26 @@ jobs:
         board: kicad/GlyphMatrix.kicad_pcb
         schema: kicad/GlyphMatrix.kicad_sch
 
+    - name: Generate Gerber, BOM, and Position (CPL) for GlyphMatrix Top
+      uses: INTI-CMNB/KiBot@v1.8.4
+      with:
+        config: .kibot.yaml
+        dir: kicad/production/glyphmatrix-top
+        board: kicad/GlyphMatrix_Top.kicad_pcb
+
+    - name: Generate Gerber, BOM, and Position (CPL) for GlyphMatrix Plate
+      uses: INTI-CMNB/KiBot@v1.8.4
+      with:
+        config: .kibot.yaml
+        dir: kicad/production/glyphmatrix-plate
+        board: kicad/GlyphMatrix_Plate.kicad_pcb
+
     - name: Zip output files
       run: |
         zip -r --junk-paths glyphyatrix-gerber.zip kicad/production/glyphmatrix/gerber/*
         # zip -r --junk-paths glyphyatrix-pcba.zip kicad/production/glyphmatrix/pcba/*
+        zip -r --junk-paths glyphyatrix-top-gerber.zip kicad/production/glyphmatrix-top/gerber/*
+        zip -r --junk-paths glyphyatrix-plate-gerber.zip kicad/production/glyphmatrix-plate/gerber/*
 
     - name: GH Release
       uses: softprops/action-gh-release@v0.1.15
