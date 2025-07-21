@@ -2668,7 +2668,7 @@
 			(net 28 "Net-(D21-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "321a0b05-c1bb-4632-931f-72f9d712e41f")
+			(uuid "302bfa5a-5b55-4b01-a9fa-5f2ae419eb8b")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -2689,7 +2689,7 @@
 			(net 35 "COL3")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "887cbb18-86c7-44e7-a12a-b9979c9b03e4")
+			(uuid "08cb284e-d73e-4d62-94cc-6a9a24992829")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -3326,7 +3326,7 @@
 			(net 7 "Net-(D4-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "1f4f68f9-e7af-4400-912d-25234ba381c0")
+			(uuid "695c7656-b985-4255-b7ab-2d7080f4d63b")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -3347,7 +3347,7 @@
 			(net 39 "COL4")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "d41f3e2c-f9de-4705-b3cb-565bc95f839d")
+			(uuid "bcc84d4a-c3d1-46b3-89c7-7697f05d9b11")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -3696,7 +3696,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/a9d3a962-f023-4efd-82af-055dd2480e82")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -3705,7 +3705,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "c57dd8c9-f6ed-4e6e-9a09-e822edf50481")
+			(uuid "3a0b4ddf-1952-4afa-98c8-68f2ab55a490")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -3715,7 +3715,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "6c349a3d-9976-4b23-9c49-0264c5e689b0")
+			(uuid "84954f65-5b92-43d6-9036-cfbea32276a6")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -3725,7 +3725,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "921cd6ef-3b26-4de0-8671-c13323e123ef")
+			(uuid "2f81c022-cce4-41f5-8e83-dbd014dd39e8")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -3735,7 +3735,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "7ddb9bee-6da8-4464-98b2-19dfc8a75bd5")
+			(uuid "78ec0617-b8f6-414c-a0c7-59fbf324f064")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -3745,7 +3745,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "deceda35-388f-4f8f-9ef5-01e16cb53000")
+			(uuid "79d30a49-07e9-45f4-93fc-ed34ed381949")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -3755,7 +3755,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "11cd1fed-61e7-473a-b4ae-6440bbeac4d0")
+			(uuid "e36f51cb-3a73-430e-8211-13a6986d8c6d")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -3765,7 +3765,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d9d524b1-6040-4244-aca5-5b8e5bbf4054")
+			(uuid "8c23046f-02d5-43e0-b4cb-a1b019af0cfd")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -3775,7 +3775,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7b0169e9-7adf-4780-82c8-b96d3fba12a9")
+			(uuid "8a414003-32b5-490c-b7e7-64bb255177fc")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -3785,7 +3785,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "509a8df2-185d-4434-9756-221d52f740d6")
+			(uuid "6d35a170-7a4f-4d87-98ea-e0671dcb1e7d")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -3815,7 +3815,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "dde244d5-6c22-4312-8478-1740560b43b5")
 		)
 		(pad "4" smd rect
@@ -3830,13 +3829,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -4862,7 +4861,7 @@
 			(net 24 "Net-(D18-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "de35c7b4-7d1a-4f26-aae3-fc25259615e7")
+			(uuid "b5f31483-3e0a-44c0-827e-3ef216df2b2b")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -4883,7 +4882,7 @@
 			(net 38 "COL5")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "ef10cb51-142d-4fba-b556-0164a03aaf6b")
+			(uuid "11200b9f-16bb-4cec-a0dd-e4f74dfb3152")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -5021,7 +5020,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/ff2f7bc1-ecc7-4745-b2ce-9df20db693fd")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -5030,7 +5029,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "1ac93dc1-f84a-4a6b-8f21-558213d99183")
+			(uuid "a011f164-e680-4ee9-8e78-602fb9fa1468")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -5040,7 +5039,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "4f571981-f89c-4d2c-bdbe-b659ab6a742d")
+			(uuid "118f80e2-a97c-478d-9d37-6db5587f5c97")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -5050,7 +5049,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "71e8efa6-4b81-4bd8-bc45-7a258706ae02")
+			(uuid "e0d30444-bad9-41f8-be3f-cba1f34fd91c")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -5060,7 +5059,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "2f2a7532-5500-4ae8-b033-0ee26414a0b5")
+			(uuid "de870445-1266-4bcc-9253-f0bd1e4e0c36")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -5070,7 +5069,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "aa5e1c0d-cdc4-420a-bae7-94bc27ab6eaa")
+			(uuid "5f937a9a-505b-47ba-b178-f6c775d63370")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -5080,7 +5079,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f4024092-b113-4029-a9bc-73c94721a53e")
+			(uuid "a1f1480a-0738-40d6-b75a-a7700da2da75")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -5090,7 +5089,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "076cccf6-a5ad-4b44-acd6-5805f52ad5cd")
+			(uuid "a6bbb12f-2223-40ca-8896-7da0224581af")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -5100,7 +5099,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "dc7cd63b-8900-4a75-b7c2-2ba5a9ab516a")
+			(uuid "58a71df0-afdd-4d6c-8dd1-f1fd548b6295")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -5110,7 +5109,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a758fca5-1acb-43ea-ab53-1a0ca6cafb1e")
+			(uuid "3b701a4d-3e5c-426d-a10d-45ecbf3870e3")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85)
@@ -5140,7 +5139,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "6caa87f5-1916-4aff-83e1-030b0febe3e8")
 		)
 		(pad "4" smd rect
@@ -5155,13 +5153,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -5266,7 +5264,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/9bc42a02-2515-4d53-86fe-f717456e2352")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -5275,7 +5273,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "9892412a-2304-4b0c-934e-778b8a9e13f9")
+			(uuid "1e59661b-bede-4bbb-82cf-d762c26e1ed3")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -5285,7 +5283,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "fcb5b941-fab4-4aad-803c-a154f8f3d9e0")
+			(uuid "a072b7da-0b17-41d8-ab29-d11c809bd92b")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -5295,7 +5293,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "0d1251c3-1d3b-441b-a99e-0543c4f6cd14")
+			(uuid "ad92bea9-cc9b-4c49-87af-cdad81ae318d")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -5305,7 +5303,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "feea5c43-4da6-4aa4-a4cb-cf830426930b")
+			(uuid "a06e7622-c10f-4fb7-b027-3e46568547a1")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -5315,7 +5313,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "da6168cb-08e2-450f-905a-b6f9ff67cece")
+			(uuid "b1d7d8a4-e4d3-4fe8-83e5-00882c14667c")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -5325,7 +5323,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "51c21913-271a-4471-a715-c42767895727")
+			(uuid "c99cd706-cd85-466f-a736-4152b8a4efc2")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -5335,7 +5333,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "03067995-f046-4f59-8a55-83be5383b11d")
+			(uuid "4f3a57fe-54a7-46f9-ac9e-9523d69d924d")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -5345,7 +5343,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "63c75a99-1341-40c3-aac2-197a887d7608")
+			(uuid "313d10d1-b993-488d-81bb-fe6ba9f27038")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -5355,7 +5353,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1946ce66-82f0-456b-95a8-e0ddc9e3a75d")
+			(uuid "1907c7f1-035e-428f-8d9d-bc5d5ba27014")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85)
@@ -5364,7 +5362,6 @@
 			(net 29 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "77b08ebc-1f51-4e71-a426-3981ff40eb31")
 		)
 		(pad "2" smd rect
@@ -5386,7 +5383,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "731ff1c7-8a7e-47ca-b240-a2c736002c6e")
 		)
 		(pad "4" smd rect
@@ -5401,13 +5397,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -5512,7 +5508,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/ff69acbc-aa7d-4b0e-8d38-1e7cab85cef2")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -5521,7 +5517,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "8f49a019-92e0-480b-bf52-ffbc4ba68d65")
+			(uuid "ae405808-49f7-457d-95a2-230dd448fecd")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -5531,7 +5527,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "4bb44366-bd9e-4ff9-a2c2-c512a65bce0b")
+			(uuid "f161ce9f-a0b7-4924-824b-61ca921b932f")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -5541,7 +5537,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "ebbacd08-b9df-4e93-984a-67af94bf27c1")
+			(uuid "a60b2824-4802-4d5d-a71a-5a7796c9027f")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -5551,7 +5547,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "e62312db-99c6-4de1-850d-37ae661f06d4")
+			(uuid "8fcb5d38-9e2d-4b8a-ad36-a45c9a62dc23")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -5561,7 +5557,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "bc40f8cb-22dd-4d97-a6f4-f0302fa317d2")
+			(uuid "8121d483-62fe-40b8-8462-6b9f480dd8fb")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -5571,7 +5567,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4bad6b93-8f61-45d8-90bb-cfa8a6e4d724")
+			(uuid "2e88ace8-aa4f-4b31-b5c9-45ce12225d1b")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -5581,7 +5577,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "82a056cb-7ec5-4a88-bb3b-f4849f75b6c6")
+			(uuid "11dd0134-50b0-4eb6-a82c-2a8111a8ea8a")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -5591,7 +5587,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "50f47844-7da0-4b12-a982-ada523ea21ed")
+			(uuid "0c33d3bd-a82f-4a24-ba91-0dbd15152283")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -5601,7 +5597,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "486d94c7-a65d-4338-8a98-454014cda936")
+			(uuid "f86e42fa-4241-4406-b7e0-17d0b95f6a95")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85)
@@ -5631,7 +5627,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "9d4f8b7d-eeb0-4ef6-be62-5f9b6cb82106")
 		)
 		(pad "4" smd rect
@@ -5646,13 +5641,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -6371,7 +6366,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/9fc0a644-da62-4412-8c33-025009643e85")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -6380,7 +6375,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "26108aec-e373-4219-bee1-5667ff99c814")
+			(uuid "bafc6f8a-9477-48fe-9426-e86464e140b3")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -6390,7 +6385,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "9c4106dc-fc5b-409f-a0c6-e526adc8efbb")
+			(uuid "1a93db32-358c-4dba-929a-9e5a9b4d5603")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -6400,7 +6395,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "eee1bd2a-3373-4d67-9d7f-a31b8b992191")
+			(uuid "cd203198-a07b-4f61-8149-11398835d8c9")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -6410,7 +6405,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "9de911d2-4c1f-4481-b1f9-62fb43913bc5")
+			(uuid "dafb97f6-8941-4927-b967-d24c72676273")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -6420,7 +6415,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "e7b129e2-74eb-408b-9c56-ca5eceb762e0")
+			(uuid "a5444d05-13be-475a-8ec2-48baa3297391")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -6430,7 +6425,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9fb58a91-0056-4c2b-9f75-642a6230d62f")
+			(uuid "041f957e-4976-485b-83a4-acb299fe6aaf")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -6440,7 +6435,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "26a1339c-be04-4232-a791-cdf12970765b")
+			(uuid "675a33bc-fa6d-40ba-9755-2767af2c5194")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -6450,7 +6445,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7e1b153f-e13f-46d2-99eb-d7b7eb411dad")
+			(uuid "1f2d1563-9b0f-4f0f-ae90-d2ed8c4c61e1")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -6460,7 +6455,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3b90d6d7-e247-40af-8b38-ee216c37379e")
+			(uuid "1e88f4b8-c8aa-4b7c-9cca-8b6022e2bf1a")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85)
@@ -6490,7 +6485,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "8142456b-c7d0-4233-bc8e-897cef96f6c7")
 		)
 		(pad "4" smd rect
@@ -6505,13 +6499,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -6616,7 +6610,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/de5e9a5a-7c7c-4047-aa35-5c1e653f6960")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -6625,7 +6619,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "079a916e-d805-43cd-9f59-dd6ba8a1c283")
+			(uuid "9cae5b19-eb00-475f-8b84-21b212651cca")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -6635,7 +6629,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "7b997bc4-10d4-4fa2-99d7-63f20a8effc8")
+			(uuid "8be58f61-6483-49f6-b9d5-89fe5472fc91")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -6645,7 +6639,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "2192d768-6354-4567-b1b8-a0b9601d4c96")
+			(uuid "f9372b5d-f545-4758-83bd-4dde3a862d8e")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -6655,7 +6649,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "87944157-0e7b-4b04-b5d4-909d05977e2a")
+			(uuid "bcd8f94d-7781-48ad-9cf5-d9b78ae0ffcb")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -6665,7 +6659,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "c7393d5f-18f4-425a-9a28-a549d015eece")
+			(uuid "2ee8d929-7978-4558-a945-e939cdc46e18")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -6675,7 +6669,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f1bc571a-86d8-4746-bf62-589c1ee249c7")
+			(uuid "cafdc7af-04f0-469f-a954-dff1f295ae03")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -6685,7 +6679,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "af6be56b-9868-4f48-ad29-376a9bffa3c1")
+			(uuid "0488924c-4da3-4a45-9a26-c484c3a4f1d5")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -6695,7 +6689,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b88590a2-50d5-43c6-b717-0d26e87c5614")
+			(uuid "fd141e7c-bd18-4b8a-bb10-53bfbd2dabb1")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -6705,7 +6699,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9d236359-e4b2-42d9-93d2-54e75fd94d89")
+			(uuid "3819bf6f-3679-4679-8887-6a6b7ee95827")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85)
@@ -6735,7 +6729,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "61901900-9260-4e4c-b7ed-8c0a486b76a8")
 		)
 		(pad "4" smd rect
@@ -6750,13 +6743,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -7571,7 +7564,7 @@
 			(net 26 "Net-(D19-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "67b24637-817c-4bb6-9d0b-d0bae72528d7")
+			(uuid "0631d7d8-468a-4f1a-a81f-b5e3fb2a7b41")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -7592,7 +7585,7 @@
 			(net 36 "COL6")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "9570479c-7429-45f5-abfd-e08598d923e1")
+			(uuid "c666561a-fa7b-429d-9f96-0ee16dabda3c")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -8218,7 +8211,7 @@
 			(net 27 "Net-(D20-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "982c5edf-07d2-4fbd-818c-da0edaaf6e54")
+			(uuid "75221ff6-654d-4220-be69-4979a030d96f")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -8239,7 +8232,7 @@
 			(net 36 "COL6")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "846cc1a3-20f5-4cc7-bd83-fa404d872423")
+			(uuid "31cb906b-2a17-443b-83a5-d14307a08a7d")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -8876,7 +8869,7 @@
 			(net 19 "Net-(D14-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "317a9e4e-7f50-4428-bc17-cc780a43d79c")
+			(uuid "22fa2983-e962-4796-835b-3a1f70cb1af6")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -8897,7 +8890,7 @@
 			(net 38 "COL5")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "8328df9e-526d-4c5d-bb5b-cdbbc3da0e20")
+			(uuid "5ea4de5f-2c8c-4636-bafb-7e158f14d1aa")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -10303,7 +10296,7 @@
 			(net 6 "Net-(D3-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "6d5f6166-1f90-4b80-82db-d993d8f0c0ea")
+			(uuid "c65888b9-a6a5-4c49-b0f3-4f6b124e05d0")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -10324,7 +10317,7 @@
 			(net 39 "COL4")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "0e42e298-6f58-4a6e-a978-c02eb019c780")
+			(uuid "211ca029-98b4-45d9-89af-a4a20ca35986")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -10961,7 +10954,7 @@
 			(net 18 "Net-(D13-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "b4c2094c-0649-4c3c-a37b-328eae25248f")
+			(uuid "0a171e8f-3d51-4428-9ed0-a64505fd281d")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -10982,7 +10975,7 @@
 			(net 39 "COL4")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "83ca16cd-ebd2-4540-be98-63e86f087f18")
+			(uuid "194bdfc6-993d-41ee-98f9-2fcd799b2488")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -11830,7 +11823,7 @@
 			(net 23 "Net-(D17-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "b29612dd-b5fa-48a0-b13f-4a5324840cd4")
+			(uuid "701c5457-b429-40d0-89d8-f604c61faa68")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -11851,7 +11844,7 @@
 			(net 38 "COL5")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "29baf60e-6362-447e-a1b6-edb41d090abd")
+			(uuid "7598ab64-e701-4226-81d1-1805583a8ea7")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -11989,7 +11982,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/e8614d18-ce17-472c-99b6-1b07d3f5125a")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -11998,7 +11991,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "ecca8b7c-6f7b-443f-bdb9-76988f5948d9")
+			(uuid "4bf47cea-5881-40c4-812c-b44659e87065")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -12008,7 +12001,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "f547da0f-b8e2-44e0-82e7-6046db1e8f2a")
+			(uuid "37e1332c-6bfe-4e55-98f7-26ffd43e7dc3")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -12018,7 +12011,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "ee47148a-e4d5-4ced-94fd-9ed8df16c833")
+			(uuid "b85fc492-b46c-49e9-8e4d-4d530d14d5bc")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -12028,7 +12021,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "51ddbcb9-6883-49b0-8ede-bcc94813abfb")
+			(uuid "10e01296-92f4-44bf-a0ee-1aab7aa09324")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -12038,7 +12031,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "8eb4ad27-f0e0-4ece-9534-45da79c21e3a")
+			(uuid "ca80744e-963e-4f1e-a345-3c73b84a61cb")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -12048,7 +12041,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b8cafafc-7a15-4ff0-bc42-db5209c14365")
+			(uuid "76511569-0797-418a-878e-4d2e61f47002")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -12058,7 +12051,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d2500add-ad59-44fc-be54-21dec6fb27fd")
+			(uuid "57792b71-443c-4ee4-ab7b-0b5cac9554ec")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -12068,7 +12061,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "23e5f822-482e-42a7-9b0b-8e4c67da6915")
+			(uuid "6a273c17-4d5f-401c-aae6-3296f7a8d505")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -12078,7 +12071,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a1ed8370-d97b-4716-889f-faf9ec871cb6")
+			(uuid "335bfc6d-6720-4d3d-bc3e-b835343d3d7e")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85)
@@ -12108,7 +12101,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "81c20efa-0a6e-4199-bfee-927b6af70460")
 		)
 		(pad "4" smd rect
@@ -12123,13 +12115,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -12426,7 +12418,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/906e680a-68fc-4ff8-87fb-bc9901e5d27a")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -12435,7 +12427,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "af086af6-61cf-487f-b31e-90d79ff75c54")
+			(uuid "c949ad88-5397-4186-835e-89fad8b110fd")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -12445,7 +12437,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "ce18f480-9aab-4b57-b70e-181d48d0fd54")
+			(uuid "bc47df9e-fa18-46ef-b386-6e3ef2ccf6a9")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -12455,7 +12447,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "bcbea1a3-0d33-4be2-82a4-f8315153cbf1")
+			(uuid "481b1c2e-7c20-424e-87ea-ace08edc21c1")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -12465,7 +12457,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "a3c07b35-6d3e-404b-b605-27c82948b2aa")
+			(uuid "e3637dbb-394c-4931-a6b3-4f99aeaa9628")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -12475,7 +12467,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "aee2a42d-8d63-4556-a853-b25f1ed1fd2a")
+			(uuid "6d7f6ed1-0f62-4661-8998-b34683223330")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -12485,7 +12477,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8f76f5f0-5242-442a-989b-767b5a31527f")
+			(uuid "2b021930-81dd-4736-bf66-bcb068f3d0ed")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -12495,7 +12487,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5ce62437-58ef-4c1f-a20e-3f2dea76fa48")
+			(uuid "23e454a9-caa6-465f-b2a4-2ef8429f0287")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -12505,7 +12497,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "75ec108a-ebfc-4644-9b54-158d9715f012")
+			(uuid "a4d0b4ca-c594-4267-9975-568023f63742")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -12515,7 +12507,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5e302f22-2d9b-4843-9a64-96e835d37619")
+			(uuid "659a2eba-24f3-4c05-8f13-5830af4a76f3")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -12545,7 +12537,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "2ea2c788-7539-41ae-8ce6-1bc397e15ee5")
 		)
 		(pad "4" smd rect
@@ -12560,13 +12551,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -12671,7 +12662,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/610a591e-860d-454a-95fb-8a6214a08e22")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -12680,7 +12671,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "0f9146ed-4739-4039-9530-39b925fbbd20")
+			(uuid "7438e82e-9dbe-4951-a7f3-b2b8d263cd34")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -12690,7 +12681,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "fcfae3f1-9837-4b4e-895d-36bfb02d80b2")
+			(uuid "fcc8f72d-3a2e-42be-94a4-bb359c676dec")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -12700,7 +12691,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "91c9ea54-872c-4691-a848-24fd1c1001e9")
+			(uuid "0113bf43-627c-475e-afaa-d3361293557f")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -12710,7 +12701,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "25c9dcbc-7dea-4c0a-b38c-672def016d28")
+			(uuid "ba4c441e-4ceb-4980-a29e-3e82b99d1849")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -12720,7 +12711,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "34249759-9f07-4198-ba6c-2c2a5b6ae94a")
+			(uuid "98817148-76ad-4300-bf8f-f105cec3c283")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -12730,7 +12721,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3bee0c75-5e6c-41f5-8122-e6bfd3178d1b")
+			(uuid "782fab9b-ed9d-4c88-80fc-a46e43f50fed")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -12740,7 +12731,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "435dec82-59b2-4328-858c-5cab29737c1a")
+			(uuid "59f3d392-8d3f-4fd4-8f24-259aa59ea0a7")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -12750,7 +12741,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "384a6b96-7929-4ec1-83c3-7dfabf3d8686")
+			(uuid "e6ca35e1-0114-41f6-83ef-fb719323b11f")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -12760,7 +12751,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5589f82d-b6fa-419e-94c3-644735752853")
+			(uuid "9c138ffd-1fbf-48fa-9db2-8804f3475385")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -12790,7 +12781,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "41fae170-09fa-4dbc-8019-7aa9b7441d2c")
 		)
 		(pad "4" smd rect
@@ -12805,13 +12795,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -13415,7 +13405,7 @@
 			(net 13 "Net-(D9-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "49950596-6530-42b9-9da6-fdc7f7396f30")
+			(uuid "33dd17ca-f74c-44c9-8829-1a65bc70dbd4")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -13436,7 +13426,7 @@
 			(net 35 "COL3")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "75705c9d-8ce2-415f-9918-a6e35fb912b9")
+			(uuid "fc5ba9ed-acc6-4935-ab3d-59a7f5ed42ec")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -13574,7 +13564,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/cddb86f6-e6d5-4a42-9c7c-27c0016c4c11")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -13583,7 +13573,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "7de050fb-e11f-4177-8fd7-7bbdfa54ad82")
+			(uuid "509e6eff-93f2-4894-9b72-43025a0b2a8c")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -13593,7 +13583,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "2b5bcbe5-f277-44ef-9343-5a9d7bf9f63d")
+			(uuid "bffe8bef-aa6d-4508-8f57-e638e85c1a42")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -13603,7 +13593,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "7e685f2a-bc28-48ed-b070-74f3f9b9e3ab")
+			(uuid "0addc2dd-71ff-4cb2-b8c1-f606860253f9")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -13613,7 +13603,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "8b61571e-3eeb-4763-8156-062071fa5caf")
+			(uuid "984c51b8-d62b-4728-a820-a803640bc035")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -13623,7 +13613,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "dd83a864-165d-4f40-8d27-2181c5f80911")
+			(uuid "ed41bfc1-c7bf-43af-94db-2cd3f02c510b")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -13633,7 +13623,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "badc98be-2ade-44d5-a6a5-65f556825e4a")
+			(uuid "6ad63794-ced9-4069-8d79-36b384aa433f")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -13643,7 +13633,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9ee738c9-b100-4d2c-a89b-5dfb3563c8cc")
+			(uuid "56211adc-65e8-4366-b93b-cc3418674532")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -13653,7 +13643,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "927e5e94-d648-4c21-b198-fc021047ab22")
+			(uuid "d9ed079d-67f7-44c8-93a0-b61e7f02c37e")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -13663,7 +13653,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "df324974-cfdd-4718-850e-f1d1adab1721")
+			(uuid "d3223d59-b928-4fe2-89fe-6e40c297b47b")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -13693,7 +13683,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "dfaae30b-d019-4940-b42b-7ee50618d02f")
 		)
 		(pad "4" smd rect
@@ -13708,13 +13697,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -13819,7 +13808,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/7846db2d-c664-48b2-93d2-ac2d0394ef7e")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -13828,7 +13817,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "ba31179c-21cf-4605-9f2a-c47dff71a6c5")
+			(uuid "41d480ee-aca8-4d99-bbb7-495d70ce91be")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -13838,7 +13827,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "0e129e58-79e5-4e4d-8416-f91b1041ba8e")
+			(uuid "db26d776-f94f-4efd-ab03-d43e6e7e8171")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -13848,7 +13837,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "8533b748-0fdd-41dd-8ea2-59d2a426d405")
+			(uuid "60e6aefc-378e-4fbc-8650-4964cc8572d1")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -13858,7 +13847,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "067e6ef3-fd4f-423d-9619-eb7b9d981541")
+			(uuid "fb70730c-3598-48ae-ba18-7c1ea8cad5f9")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -13868,7 +13857,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "74a12270-c658-4b66-be0d-818019a48e75")
+			(uuid "72e3ef86-2096-453f-8d8c-b906c5150bc9")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -13878,7 +13867,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c08ab898-063b-482f-8536-e7df14224514")
+			(uuid "a4ec0328-215d-400c-b84a-e51587f17d61")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -13888,7 +13877,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "869df1a0-0318-42bf-ba14-faf9d6359803")
+			(uuid "36c07cec-16a1-42f6-bb69-07ee32f7925d")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -13898,7 +13887,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ea5bfa5f-d30f-4fe6-80df-246e60901670")
+			(uuid "a611cf02-8335-4efc-ba9e-52eb5491a9bb")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -13908,7 +13897,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1621442b-b1fe-46fa-8a6d-93152fdbc14b")
+			(uuid "28d7ffe5-f65b-4c2c-b012-23561fe61992")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -13938,7 +13927,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "224d21a1-b7c8-4477-9d23-074bac4adb8a")
 		)
 		(pad "4" smd rect
@@ -13953,13 +13941,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -14064,7 +14052,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/96fcf6c3-dba4-40cc-8378-6a1edc05d8e9")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -14073,7 +14061,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "190f5d6c-ad1c-4f8f-8102-d1bf1183dbb0")
+			(uuid "2178bf56-bc7e-4181-b2a4-41fc47c4216d")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -14083,7 +14071,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "be6134ee-b312-43b2-8570-516586c38ed1")
+			(uuid "1013c2b0-d8c5-4dd8-9d3d-8be267776345")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -14093,7 +14081,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "b7813156-f856-4bde-9b94-bfb2cecce110")
+			(uuid "63af404e-7950-4471-85cd-386641403cb5")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -14103,7 +14091,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "031c3324-6e67-4a9e-b104-af554213cadb")
+			(uuid "cd31f976-18d3-4d85-8188-a2b918fe03d8")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -14113,7 +14101,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "92de832e-0083-405f-bc84-602d2471bee0")
+			(uuid "836643b5-a795-42fc-a323-684b477fa197")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -14123,7 +14111,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d92534b4-d1dc-4481-89f3-c62ea762df9b")
+			(uuid "4992b3e5-0330-4bf9-8985-8f19df8ff0bc")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -14133,7 +14121,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "751fe4bd-2c18-4104-9a14-7086d792dc91")
+			(uuid "9ef603f5-acac-4bbc-ad04-3cdf8e8bada2")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -14143,7 +14131,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "fef53ca6-dd83-4bfb-8bac-1baaef559a0c")
+			(uuid "043cdf89-ecd8-4c86-8f8c-2cbbe21a418c")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -14153,7 +14141,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4d48431f-d776-40e1-92ec-2d2bf93d71d1")
+			(uuid "a647ee08-7c4d-4cbe-88ad-746f8e447901")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -14183,7 +14171,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "2ba78258-d3b1-4457-b444-b14016b4d046")
 		)
 		(pad "4" smd rect
@@ -14198,13 +14185,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -14808,7 +14795,7 @@
 			(net 4 "Net-(D2-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "4fd4eb32-bdbe-4893-ba19-300e0887beda")
+			(uuid "6d5d3d22-65b1-49c2-b16d-ece2819a3fc3")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -14829,7 +14816,7 @@
 			(net 35 "COL3")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "8d0cdcec-9cc5-412a-a92d-5a10a9995d23")
+			(uuid "4e1ae944-a1cb-4198-8dce-f1d8818b4be6")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -15820,7 +15807,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/f23158df-138e-41ba-9db5-01dcd450cca6")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -15829,7 +15816,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "a4609746-f3fe-494a-b2be-83c0a7036f4b")
+			(uuid "a623b606-47a7-40ff-9e46-40081848875c")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -15839,7 +15826,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "fe14a41d-f6a3-4666-b5ed-0f22a3f63360")
+			(uuid "5f4d501f-db73-46bf-b760-439167b545c8")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -15849,7 +15836,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "24485c1f-c6dc-4328-9563-56c389f7a7d2")
+			(uuid "75a73e77-b40c-4003-aef1-373265fe877c")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -15859,7 +15846,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "b2f38bab-e7ba-431e-9919-4a03177ef3ba")
+			(uuid "bab893a2-fb16-477a-bba5-58a29bb397ee")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -15869,7 +15856,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "499bbd56-7928-4700-bf35-edf61586e439")
+			(uuid "0e6c65c5-2a98-4317-9003-8a538b53d72f")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -15879,7 +15866,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b8cc8d71-fc7e-491e-a321-9b814287fd8f")
+			(uuid "49ef4a98-b5fb-45e3-a47b-17ca56875388")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -15889,7 +15876,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "72754660-da22-44e0-b950-3ea976f50fb4")
+			(uuid "c5570ce8-b58b-4578-9261-e3e275cb4c83")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -15899,7 +15886,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c7f610aa-a22f-4791-81ee-8fc917a0996f")
+			(uuid "3b2b168f-84b2-426a-8bb0-b931b51e94eb")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -15909,7 +15896,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0c7d3a5e-23e5-425e-8f48-75b121c6a712")
+			(uuid "f12340c8-68c4-4bbb-9991-4a1b5bcaf79c")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -15939,7 +15926,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "de1cab43-3858-4d99-8385-249a2a85e3be")
 		)
 		(pad "4" smd rect
@@ -15954,13 +15940,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -16775,7 +16761,7 @@
 			(net 14 "Net-(D10-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "c6e26a83-b94b-4c87-9348-1e6809c66c3d")
+			(uuid "a0c468b4-df0b-440f-bb4f-e2a1f9d32798")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -16796,7 +16782,7 @@
 			(net 39 "COL4")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "0f5ca3c5-231c-4b4a-bb57-8c968a9ae203")
+			(uuid "df8d8e27-3b9e-45e8-8aed-9e0cd5568f3c")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -18250,7 +18236,7 @@
 			(net 11 "Net-(D8-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "fe0fe9ae-7295-4614-9646-14f2549a83b5")
+			(uuid "c693763e-65c1-4cdd-ac4c-c324af02e281")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -18271,7 +18257,7 @@
 			(net 36 "COL6")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "f62a183d-b549-4851-a02f-f7a854d564f1")
+			(uuid "6a8f7d58-c9d0-45ef-8d2f-764a2ceff124")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -18908,7 +18894,7 @@
 			(net 9 "Net-(D6-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "e9981008-6413-4f7c-9fa5-c68d86a06ebe")
+			(uuid "655c8678-2e1a-44fc-804e-f047faa75150")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -18929,7 +18915,7 @@
 			(net 38 "COL5")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "e8b0b302-6521-4581-b588-adab6af1de74")
+			(uuid "82156977-2bab-42c8-bfb9-44c93734a746")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -19566,7 +19552,7 @@
 			(net 3 "Net-(D1-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "0a15f769-e053-4337-8b34-d3f666146071")
+			(uuid "28cfb85e-e7e5-42dd-9e32-058a59534935")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -19587,7 +19573,7 @@
 			(net 35 "COL3")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "5d646c6c-d172-4c27-ba1d-8232f362584a")
+			(uuid "818f78f5-37bf-46d1-9605-7f2fc8a7c2c8")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -20224,7 +20210,7 @@
 			(net 22 "Net-(D16-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "cc097c98-8908-4037-9b0d-3a82f041d50a")
+			(uuid "a045aea7-b909-4e17-b35c-858d341fd91a")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -20245,7 +20231,7 @@
 			(net 39 "COL4")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "eea8bdb6-1ad2-4431-bf15-98b64631dcd9")
+			(uuid "a849b333-4c87-41fa-a784-7792dbda4441")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -21835,7 +21821,7 @@
 			(net 17 "Net-(D12-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "d5d28852-b51f-4ba9-89b5-84b62be83589")
+			(uuid "821a56c5-e1a3-4a2b-9574-2b6b0db52875")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -21856,7 +21842,7 @@
 			(net 35 "COL3")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "30c7a520-e745-4340-a8f3-eccdea7efa46")
+			(uuid "e1046af7-a5ab-49d4-ae43-f4971cf38f6d")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -21994,7 +21980,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/500e9f36-683d-45e2-8b4d-c0e8e2438f54")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -22003,7 +21989,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "72a83165-ee56-487f-89fd-781ef06335cb")
+			(uuid "d6828f37-e7c0-4f5a-9f83-7660563e7021")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -22013,7 +21999,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "65e7af18-e90c-4aba-add3-fc82ece9206b")
+			(uuid "bef17c63-5b6a-45a2-80f9-dcdc3a69d9b1")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -22023,7 +22009,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "543e5a3d-00ea-4d46-b87f-20b525eb8eb3")
+			(uuid "9c07544d-83d5-4d27-b3b2-c1235e337457")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -22033,7 +22019,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "721b99c3-3224-49e9-b52a-1522dcf4993c")
+			(uuid "4d85850d-5e43-4d9e-a8fd-671fbd7af42b")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -22043,7 +22029,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "a56bf1cf-0f0a-4ac0-9480-292a2a313001")
+			(uuid "317e2e17-8266-4fc1-bcdc-de8bbc7f6993")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -22053,7 +22039,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "72703457-ce24-41eb-85fb-e9aa9f73ff7e")
+			(uuid "8454d85a-2496-4c1c-9070-11800de71c39")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -22063,7 +22049,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5438f946-e73a-4b52-a7a3-dc05ae931d63")
+			(uuid "dbef971d-8d3f-47a3-b4f3-c3ac1e2511d5")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -22073,7 +22059,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "20792020-a810-4664-9111-79f822aea552")
+			(uuid "d8348da8-f48d-4268-8677-70718ee22ef0")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -22083,7 +22069,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "08ea6eea-83fb-4450-90ee-2acbd1b6e280")
+			(uuid "a3b5a6d2-69fa-41d0-8a34-992d747561ab")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85)
@@ -22113,7 +22099,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "d46219ac-b11d-49c8-a8e2-80a2ff1f8db1")
 		)
 		(pad "4" smd rect
@@ -22128,13 +22113,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -22239,7 +22224,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/1e2f4a68-e0ab-4e69-95ff-54a4adc9d41b")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -22248,7 +22233,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "d5a3d29e-b306-4e6d-80e0-5fe72472169d")
+			(uuid "a6b8c7e9-c086-4439-b3e5-4cd248c8384c")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -22258,7 +22243,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "10d104ca-80be-4362-9459-738d1896c3b9")
+			(uuid "313cb24e-1d7c-4ac4-be22-73a49a5418af")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -22268,7 +22253,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "ea4ead25-0647-4e8d-881d-0c6185503a91")
+			(uuid "c1558918-677e-4df6-ba50-61d7777eba25")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -22278,7 +22263,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "c2fdb221-7a7e-4149-ac9a-01d340001d5d")
+			(uuid "429d50f1-8e2d-4e90-8273-b6e209e964c5")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -22288,7 +22273,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "898bea92-c13d-4430-9c18-5c927b36c2f3")
+			(uuid "431599c8-897b-43b1-966f-23ec27bda8c4")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -22298,7 +22283,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4b4f9126-b864-41ce-b03b-63de3033e44c")
+			(uuid "0f1555e1-6ab8-4954-b3fe-08f54c5f1dde")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -22308,7 +22293,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ea219cde-2b40-437e-895c-ce9bd550ade6")
+			(uuid "34c96f13-9218-46ea-9e71-faaf0a4bd707")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -22318,7 +22303,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "77834860-ed17-4cd2-a4db-1bec1e2ac043")
+			(uuid "e38574ca-1004-4d7e-b88e-0d5f1c1bdec5")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -22328,7 +22313,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9f6acad0-020c-4e98-ac69-c0df592db527")
+			(uuid "684a1b03-bb1b-4ef0-ab4f-fe34b6ea47c1")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -22358,7 +22343,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "a0ef0e54-fe55-4c41-a6cc-3f7a159bcf51")
 		)
 		(pad "4" smd rect
@@ -22373,13 +22357,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -22484,7 +22468,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/ebb850c6-a68a-4302-a373-2542c37c31e0")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -22493,7 +22477,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "61842295-9370-4836-9535-ae79bc1d8569")
+			(uuid "b6437a77-fe2f-4f04-a144-7d3eebcdd390")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -22503,7 +22487,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "64b4143f-c86a-49c0-ae7c-0e641a47425d")
+			(uuid "5a58d551-d46d-47ee-96d3-9108b09c5bc0")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -22513,7 +22497,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "0fd66010-c43e-4e13-8248-03a307aa4ad1")
+			(uuid "e7fc4453-baec-40ce-bdb3-88029915ad8c")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -22523,7 +22507,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "f6416db6-735f-44b7-9149-2b40d49d0ec4")
+			(uuid "d6da9933-d2d0-4b9b-b6df-67f44662d011")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -22533,7 +22517,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "69afd37d-6591-4566-9be4-5ef143911275")
+			(uuid "180dadee-7ca4-487e-ad4b-5547a502a0eb")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -22543,7 +22527,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "08fcbfad-4cde-4c0f-abcf-f1819f9cbf29")
+			(uuid "39bf6693-9eef-4c6e-ab24-3adee4d60801")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -22553,7 +22537,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2a5b532e-b91f-4cad-997b-082d04d500aa")
+			(uuid "38618fd2-5ea0-4074-b46d-afad0bf0df0b")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -22563,7 +22547,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2e16b29b-efa7-4059-a45f-043ad167036d")
+			(uuid "f7bf2f1b-6903-4265-b65a-4535f9ad2a08")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -22573,7 +22557,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a330f0f6-663d-47d7-a17d-10b765b5a787")
+			(uuid "92627fe4-9d51-42fe-baa2-dca2b092388b")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -22603,7 +22587,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "c324d1ab-26d9-4bbc-acdd-db7e1b13d6bf")
 		)
 		(pad "4" smd rect
@@ -22618,13 +22601,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -23439,7 +23422,7 @@
 			(net 15 "Net-(D11-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "166eec84-274a-4a39-994c-7f175667466c")
+			(uuid "75f4c610-e046-45bc-8603-807b11df4478")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -23460,7 +23443,7 @@
 			(net 38 "COL5")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "0da0ca12-a020-41fe-9092-883e76ca5988")
+			(uuid "3e24cd9a-8ec2-4177-b538-bfd0acd41dc4")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -24097,7 +24080,7 @@
 			(net 10 "Net-(D7-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "5eedca5c-0508-407e-9717-9b9b9ded9dcb")
+			(uuid "b2d5e1eb-ec30-41db-a016-7f9f404c7915")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -24118,7 +24101,7 @@
 			(net 36 "COL6")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "104ca28b-1512-4a60-91f3-7f29c25d2c71")
+			(uuid "c3659f14-ef73-42d4-b815-de940723cc30")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -24256,7 +24239,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/6e071f4e-932c-42ee-8435-3d259dac9f19")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -24265,7 +24248,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "cdf2c5f1-2a79-49b7-85f7-528be110f6d2")
+			(uuid "f939418a-1821-436f-9cef-e07d70c579cd")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -24275,7 +24258,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "e9487ecd-82a6-44c0-b3a7-3d2ef92b6e46")
+			(uuid "bfebf164-1065-4831-9741-8e7fda1c62e0")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -24285,7 +24268,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "46f5a407-550a-4695-9e95-1c849780ac54")
+			(uuid "32dd1dbd-4c4e-4b59-b697-d0667342cf54")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -24295,7 +24278,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "578b6d45-e1be-4267-8c8d-ec47ad7b491c")
+			(uuid "a0ea3e86-28ba-461e-b645-53a445123ef5")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -24305,7 +24288,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "de101aeb-c17a-4007-8762-8635b2c21d89")
+			(uuid "7940aeac-4349-4b26-b41d-d49c85cd463b")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -24315,7 +24298,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6b3f507d-7d50-423f-b98e-241d488070b1")
+			(uuid "0dbb90b9-9f1f-4735-886c-eed7fdcd9618")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -24325,7 +24308,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e5bd9523-d110-4b1f-b351-1cc794fe0a8a")
+			(uuid "6957a82a-94f1-4d79-a966-8e9fb553e5bc")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -24335,7 +24318,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "42de580d-852f-4245-afc9-9aeabbd2e1cc")
+			(uuid "e70c9176-ad98-4dd9-baf9-b71b66f293f7")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -24345,7 +24328,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4cb8a7ae-e5a0-40e7-be93-6f57133ae6ac")
+			(uuid "d1e51845-2a2b-4220-8c15-fc5b6051eb6f")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85)
@@ -24375,7 +24358,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "175588ff-ca36-429c-b0f3-3d41adb0f751")
 		)
 		(pad "4" smd rect
@@ -24390,13 +24372,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -25000,7 +24982,7 @@
 			(net 8 "Net-(D5-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "7f61507d-faac-483c-949e-40ec8147bb5f")
+			(uuid "96323a19-9a6b-417e-bcb9-2eab0a066aee")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -25021,7 +25003,7 @@
 			(net 38 "COL5")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "39aecbcc-516e-4b08-912b-8bd3b12d543f")
+			(uuid "fb17dc97-14ee-4438-b6d9-37cd1e6e82e4")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -25159,7 +25141,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/4309814d-e50c-41a7-9591-82fb32fe7f2a")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -25168,7 +25150,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "fed2e12e-5dcc-4572-94fd-aabfe0d862ce")
+			(uuid "c77d2a24-d266-41c2-ac16-ae3d7b4213b4")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -25178,7 +25160,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "a529df75-0955-4463-b0c3-abfb287ba644")
+			(uuid "00c8bea6-a121-47d0-a7fa-9cd18f0439c8")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -25188,7 +25170,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "cbdc9e61-1c56-46d8-b6e5-56494761d3c3")
+			(uuid "a2859884-28bd-4da7-b105-331ba5ca656b")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -25198,7 +25180,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "f10f079f-a67c-452b-965b-bbd94b229460")
+			(uuid "8c80a8c8-f5dd-4c3e-bf66-cd078012cc3c")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -25208,7 +25190,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "07af21d6-bbf1-4c3c-aa25-d97c031fc8ea")
+			(uuid "9c00306a-d8e1-469e-b77b-fff82dc52dde")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -25218,7 +25200,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "601f7393-e380-4a09-a0fa-6e06f47e3a01")
+			(uuid "e8d45491-45d2-440e-b94c-91be5996c69f")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -25228,7 +25210,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "cd549a97-11db-4f68-a220-d88ce8b1f191")
+			(uuid "ce918f6f-6357-435f-aa78-0368cfdbda0e")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -25238,7 +25220,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ae3c6e26-9aa0-48f4-a612-035c3ac42a21")
+			(uuid "224e3db6-c04b-40e0-892d-5a4609e9755e")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -25248,7 +25230,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1e0d3c20-e46f-48ac-809a-5302b87f828e")
+			(uuid "eb046ec4-e45c-4584-b176-459fa9befb23")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -25278,7 +25260,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "59147990-6daa-40bd-98ce-12782e294d7d")
 		)
 		(pad "4" smd rect
@@ -25293,13 +25274,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -25903,7 +25884,7 @@
 			(net 20 "Net-(D15-A)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "5503b580-10ef-483a-b12b-a422dc884d50")
+			(uuid "c82de8b3-6d48-450b-a64c-ef828b9ff109")
 		)
 		(pad "2" thru_hole circle
 			(at 3.759824 2.52978 180)
@@ -25924,7 +25905,7 @@
 			(net 35 "COL3")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "e957acce-20a2-4817-b8e0-9bf46b067adc")
+			(uuid "71dde3fd-c230-4cb3-a61a-badadbb12e12")
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/Hot Swap/mx.step"
@@ -26062,7 +26043,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/d0982535-480e-4beb-b5fe-9e20ed47cf78")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -26071,7 +26052,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "7c26690f-d72c-47d0-b1ec-ee3da1b9b1d4")
+			(uuid "7f48d0ee-b564-45af-ad8b-23c23d4774ae")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -26081,7 +26062,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "5446ac71-5636-4166-b78e-5f88771fc61d")
+			(uuid "221d69a2-4669-4938-b5a6-5eb291572502")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -26091,7 +26072,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "46fe5a77-defd-499f-bda8-cfb2373ceb7a")
+			(uuid "ee960181-3f17-4d5a-bc6b-fae8f84e6909")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -26101,7 +26082,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "cee3f468-7fbe-45bc-9ddf-24ff149bf555")
+			(uuid "48e795c9-3557-4bd6-bfb7-d4c4abfb6e55")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -26111,7 +26092,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "9e4161a6-8f65-499c-ade1-fd2324a2c78f")
+			(uuid "7a250408-cfad-4645-b774-88f405721abb")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -26121,7 +26102,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a65088d0-b7d3-4b33-b90d-d729055e7071")
+			(uuid "8a669197-4d7a-4d84-a36c-90b073a6e121")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -26131,7 +26112,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b059bfc4-5027-4971-a892-903f4ac48b72")
+			(uuid "c77d1a0a-0795-48e9-91f6-097f80d9998d")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -26141,7 +26122,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "14241e48-33b4-47eb-aaa5-51ef359187ed")
+			(uuid "2695a3cc-c6a9-4311-9ce8-727318235f9a")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -26151,7 +26132,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "358ecd08-e789-4698-ac04-b2ba313b7359")
+			(uuid "978591e3-f641-4185-a844-5e3510c88edf")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -26181,7 +26162,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "eaad73b7-af9e-4f0d-b774-92289d277359")
 		)
 		(pad "4" smd rect
@@ -26196,13 +26176,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -26307,7 +26287,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/0b828fa5-52a2-4ee7-879e-7166db95c5a3")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -26316,7 +26296,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "fa57ea74-6e62-444a-9c24-47e5b703921d")
+			(uuid "7ba1a9bd-6965-4cd5-9237-cf368aaef90c")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -26326,7 +26306,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "1f9ec439-a7a5-456f-870f-54b883affd33")
+			(uuid "c81a5fc5-edc5-47d2-8b0a-7b485af17465")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -26336,7 +26316,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "eea1950c-4996-4c2a-9ff9-be50913529b8")
+			(uuid "edfe2b7c-6462-41a5-83dd-18e526e8bc08")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -26346,7 +26326,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "46ffd9c7-b682-4937-8dd3-e3cf555f3322")
+			(uuid "ac9d7190-07a6-45c0-930e-2c00ddbb2d4b")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -26356,7 +26336,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "5b32b4d3-fcf5-42b5-8fcc-d24d45517678")
+			(uuid "d5ce4d8f-8968-4ad6-908e-a404e658ac33")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -26366,7 +26346,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0494f0c7-f702-4a55-a5c3-504313201c55")
+			(uuid "a1c55980-3839-4583-b09d-709799a77f8a")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -26376,7 +26356,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "39cfff01-8cf0-4725-8b18-00e48a5635e1")
+			(uuid "e5700bde-e884-45fc-93ce-7e7e74baede4")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -26386,7 +26366,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9e4c1d46-39ce-4247-8247-824a6099153e")
+			(uuid "80221135-2b54-4d0b-8e70-ddff9b55026d")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -26396,7 +26376,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "99644a62-fa60-469f-b480-8d9594838ba5")
+			(uuid "30e66801-2a8a-4db9-959f-45c85353dc78")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85)
@@ -26426,7 +26406,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "b171074c-dba8-4fad-8dd1-a80395d5b649")
 		)
 		(pad "4" smd rect
@@ -26441,13 +26420,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
@@ -26552,7 +26531,7 @@
 		(path "/5cc1758f-8c3a-4c8d-9768-40833fbebdc2/f48d426e-bcae-4fc6-b647-aa6d765d0331")
 		(sheetname "/RGB/")
 		(sheetfile "DeltaForm-RGB.kicad_sch")
-		(attr through_hole)
+		(attr smd)
 		(fp_line
 			(start 3.9 1.325)
 			(end 3.9 0.425)
@@ -26561,7 +26540,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "c40aebae-b8a1-4dfc-9afe-e87d61c60e39")
+			(uuid "d0daea80-324a-41b4-bdb6-fc61f70d7ce3")
 		)
 		(fp_line
 			(start 1.6 1.4)
@@ -26571,7 +26550,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "5766eaf9-8d33-4402-865c-9d70669c0b84")
+			(uuid "e4335c8b-a80b-45af-baa8-08d8181169d5")
 		)
 		(fp_line
 			(start 1.6 -1.4)
@@ -26581,7 +26560,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "f7744d40-3ddf-459f-91e2-41f57af387c3")
+			(uuid "0d46107d-a5b0-4839-a36c-8b766c0816ee")
 		)
 		(fp_line
 			(start -1.6 1.4)
@@ -26591,7 +26570,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "d44311e1-1e80-4871-bc36-6ca830202745")
+			(uuid "2aa9c87b-d0eb-4e49-a19a-2662a876e61b")
 		)
 		(fp_line
 			(start -1.6 -1.4)
@@ -26601,7 +26580,7 @@
 				(type solid)
 			)
 			(layer "Cmts.User")
-			(uuid "a10695e8-825b-40c0-986e-5c778ef31a09")
+			(uuid "9b9d93af-2de2-4d08-bd2f-faadadf5564e")
 		)
 		(fp_line
 			(start 1.7 1.5)
@@ -26611,7 +26590,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4698b64e-aa91-40c1-98b4-e9eec43fea8c")
+			(uuid "46b741ff-0074-4663-88f1-a735b6ce8928")
 		)
 		(fp_line
 			(start 1.7 -1.5)
@@ -26621,7 +26600,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f58506ea-fd9a-4a9d-beca-0f2454d11d9a")
+			(uuid "dbc907bc-32b6-473d-ac6a-a5ee8b7ec887")
 		)
 		(fp_line
 			(start -1.7 1.5)
@@ -26631,7 +26610,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b675ab24-06b0-448a-97de-1468dfc34512")
+			(uuid "de8beb03-37d1-40b5-a1ba-e58bbaeb887a")
 		)
 		(fp_line
 			(start -1.7 -1.5)
@@ -26641,7 +26620,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f46f8b59-4c15-4d37-b624-0e7dad598216")
+			(uuid "db51471c-c457-4353-a5e7-2c29c56ee40c")
 		)
 		(pad "1" smd rect
 			(at -2.75 -0.85 180)
@@ -26671,7 +26650,6 @@
 			(net 1 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(zone_connect 2)
 			(uuid "f7edb5b3-1ae4-4fda-b68c-6708e91dee52")
 		)
 		(pad "4" smd rect
@@ -26686,13 +26664,13 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/tb2086-kicad/packages3D/SK6812MINI-E.wrl"
 			(offset
-				(xyz 0 0 -1.8)
+				(xyz 0 0 0.1)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -180 -180)
 			)
 		)
 	)
