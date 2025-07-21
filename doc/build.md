@@ -4,16 +4,17 @@
 
 ## Parts
 ### Required
-| Part                | Quantity | Notes                |
-|---------------------|----------|----------------------|
-| MX key switches     | 74       |                      |
-| Hot swap sockets    | 74       |                      |
-| Keycaps             | 74       |                      |
-| M3x8 screws         | 6        |                      |
-| Spacers (3mm)       | 6        |                      |
-| M3 gaskets (0.5mm)  | 6        |                      |
-| M3x4 screws         | 6        |                      |
-| M3 Standoffs (5mm)  | 6        |                      |
+| Part                   | Quantity | Notes                |
+|------------------------|----------|----------------------|
+| MX key switches        | 74       |                      |
+| Hot swap sockets       | 74       |                      |
+| Keycaps                | 74       |                      |
+| M3x8 screws            | 6        |                      |
+| Spacers (3mm)          | 6        |                      |
+| M3 gaskets (0.5mm)     | 6        |                      |
+| M3x4 screws            | 6        |                      |
+| M3 Standoffs (5mm)     | 6        |                      |
+| D2 Light guide (3.2mm) | 2        |                      |
 
 ### Optonal
 | Part                | Quantity | Notes                |
@@ -48,6 +49,9 @@
    - Add 6 standoff (5mm) at the bottom side of the PCB.
    - Insert 6 M3x8mm screws through the top plate, spacers, gaskets and PCB, then loosely fasten them with 5mm standoffs.
    - **Do not fully tighten the screws yet. This is a pre-assembly step.** Final tightening should be done after all key switches are installed to ensure proper fit and alignment.
+
+1. **Install Light Guide**
+   ![](../img/light-guide.png)
 
 1. **Install Key Switches**
    ![](../img/keyswitch.png)
