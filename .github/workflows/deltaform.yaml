@@ -1,0 +1,57 @@
+name: DeltaForm PCB
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+*'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  KiBot-Generation:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Generate Gerber, BOM, and Position (CPL) for DeltaForm
+      uses: INTI-CMNB/KiBot@v1.8.4
+      with:
+        config: .kibot.yaml
+        dir: kicad/production/deltaform
+        board: kicad/DeltaForm.kicad_pcb
+        schema: kicad/DeltaForm.kicad_sch
+
+    - name: Generate Gerber, BOM, and Position (CPL) for DeltaForm Top
+      uses: INTI-CMNB/KiBot@v1.8.4
+      with:
+        config: .kibot.yaml
+        dir: kicad/production/deltaform-top
+        board: kicad/DeltaForm_Top.kicad_pcb
+
+    - name: Generate Gerber, BOM, and Position (CPL) for DeltaForm Plate
+      uses: INTI-CMNB/KiBot@v1.8.4
+      with:
+        config: .kibot.yaml
+        dir: kicad/production/deltaform-plate
+        board: kicad/DeltaForm_Plate.kicad_pcb
+
+    - name: Zip output files
+      run: |
+        zip -r --junk-paths deltaform-gerber.zip kicad/production/deltaform/gerber/*
+        # zip -r --junk-paths deltaform-pcba.zip kicad/production/deltaform/pcba/*
+        zip -r --junk-paths deltaform-top-gerber.zip kicad/production/deltaform-top/gerber/*
+        zip -r --junk-paths deltaform-plate-gerber.zip kicad/production/deltaform-plate/gerber/*
+
+    - name: GH Release
+      uses: softprops/action-gh-release@v0.1.15
+      with:
+        files: |
+          deltaform-gerber.zip
+          deltaform-top-gerber.zip
+          deltaform-plate-gerber.zip
+        draft: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
