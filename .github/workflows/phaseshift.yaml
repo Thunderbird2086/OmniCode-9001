@@ -1,0 +1,57 @@
+name: PhaseShift PCB
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+*'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  KiBot-Generation:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Generate Gerber, BOM, and Position (CPL) for PhaseShift
+      uses: INTI-CMNB/KiBot@v1.8.4
+      with:
+        config: .kibot.yaml
+        dir: kicad/production/phaseshift
+        board: kicad/PhaseShift.kicad_pcb
+        schema: kicad/PhaseShift.kicad_sch
+
+    - name: Generate Gerber, BOM, and Position (CPL) for PhaseShift Top
+      uses: INTI-CMNB/KiBot@v1.8.4
+      with:
+        config: .kibot.yaml
+        dir: kicad/production/phaseshift-top
+        board: kicad/PhaseShift_Top.kicad_pcb
+
+    - name: Generate Gerber, BOM, and Position (CPL) for PhaseShift Plate
+      uses: INTI-CMNB/KiBot@v1.8.4
+      with:
+        config: .kibot.yaml
+        dir: kicad/production/phaseshift-plate
+        board: kicad/PhaseShift_Plate.kicad_pcb
+
+    - name: Zip output files
+      run: |
+        zip -r --junk-paths phaseshift-gerber.zip kicad/production/phaseshift/gerber/*
+        # zip -r --junk-paths phaseshift-pcba.zip kicad/production/phaseshift/pcba/*
+        zip -r --junk-paths phaseshift-top-gerber.zip kicad/production/phaseshift-top/gerber/*
+        zip -r --junk-paths phaseshift-plate-gerber.zip kicad/production/phaseshift-plate/gerber/*
+
+    - name: GH Release
+      uses: softprops/action-gh-release@v0.1.15
+      with:
+        files: |
+          phaseshift-gerber.zip
+          phaseshift-top-gerber.zip
+          phaseshift-plate-gerber.zip
+        draft: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
