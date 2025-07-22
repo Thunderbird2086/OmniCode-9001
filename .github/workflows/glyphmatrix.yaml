@@ -40,16 +40,18 @@ jobs:
 
     - name: Zip output files
       run: |
-        zip -r --junk-paths glyphyatrix-gerber.zip kicad/production/glyphmatrix/gerber/*
-        # zip -r --junk-paths glyphyatrix-pcba.zip kicad/production/glyphmatrix/pcba/*
-        zip -r --junk-paths glyphyatrix-top-gerber.zip kicad/production/glyphmatrix-top/gerber/*
-        zip -r --junk-paths glyphyatrix-plate-gerber.zip kicad/production/glyphmatrix-plate/gerber/*
+        zip -r --junk-paths glyphmatrix-gerber.zip kicad/production/glyphmatrix/gerber/*
+        # zip -r --junk-paths glyphmatrix-pcba.zip kicad/production/glyphmatrix/pcba/*
+        zip -r --junk-paths glyphmatrix-top-gerber.zip kicad/production/glyphmatrix-top/gerber/*
+        zip -r --junk-paths glyphmatrix-plate-gerber.zip kicad/production/glyphmatrix-plate/gerber/*
 
     - name: GH Release
       uses: softprops/action-gh-release@v0.1.15
       with:
         files: |
-          glyphmatrix-*.zip
+          glyphmatrix-gerber.zip
+          glyphmatrix-top-gerber.zip
+          glyphmatrix-plate-gerber.zip
         draft: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
