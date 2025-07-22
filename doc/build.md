@@ -27,12 +27,18 @@
 
 1. **Soldering Hot Swap Sockets and LEDs**
    - **Hot Swap Sockets:** Solder all 74 hot swap sockets onto the PCB, making sure each socket is aligned with the footprint.
+
+
      ![](../img/hotswap-socket-orientation.png)
    - **Per-key LED (optional):** Solder per-key LEDs onto the PCB, making sure their orientation matches the footprint.
+
      ![](../img/led-footprint.png)
+
      ![](../img/led.png)
    - **POGO Pin (optional):**
      - Insert the POGO pins from the bottom side of the PCB, ensuring the correct orientation (male part on the left side, female part on the right for instance).
+
+     ![](../img/pogopin-connectors.png)
      - Hold the pins firmly in place and solder from the top side.
      - Double-check alignment before soldering all pins, as POGO pins must be straight for reliable contact.
      - After soldering, inspect for excess solder and clean up any bridges or cold joints.
