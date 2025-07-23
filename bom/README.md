@@ -47,8 +47,8 @@ GlyphMatrix taps into the visual power of language—glyphs as symbols, matrix a
 | Parts             | Package     | Designator(s)                                                                                                         | Quantity |
 |-------------------|-------------|-----------------------------------------------------------------------------------------------------------------------|----------|
 | SK6812MINI-E      | SK6812MINI-E| L1-L74                                                                                                                | 74       |
-| POGO 5 pin-male   | Curved      | POGO1                                                                                                                 | 2        |
-| POGO 5 pin-female | Curved      | POGO2                                                                                                                 | 2        |
+| POGO 5 pin-male   | Curved      | POGO1                                                                                                                 | 1        |
+| POGO 5 pin-female | Curved      | POGO2                                                                                                                 | 1        |
 | POGO 7 pin-male   | Curved      | POGO3, POGO5                                                                                                          | 2        |
 | POGO 7 pin-female | Curved      | POGO4, POGO6                                                                                                          | 2        |
 
