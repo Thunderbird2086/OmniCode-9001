@@ -4,9 +4,5831 @@
 	(generator_version "9.0")
 	(uuid "c7177d09-71a2-4de7-9a3e-bfc16a7f2797")
 	(paper "A4")
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x05"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x05"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x05_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x07"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x07"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x07_1_1"
+				(rectangle
+					(start -1.27 8.89)
+					(end 1.27 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 7.747)
+					(end 0 7.493)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 7.62 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148W"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "TB2086_KEYSWITCH:SW_MX_HS"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "MX"
+				(at 3.048 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_MX_HS"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u_reversible"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_MX_HS_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 149.86 41.402)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d5a17c1-9f07-404a-8f3a-d732f185b521")
+	)
+	(junction
+		(at 118.11 64.008)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "108be5e1-35ec-4aee-baae-969216de1208")
+	)
+	(junction
+		(at 123.19 98.806)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2082d7e1-3f29-426d-9661-4c65e7e9cadc")
+	)
+	(junction
+		(at 134.62 41.402)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29eeb3d8-1b72-4366-a5e5-d3e7985efb0d")
+	)
+	(junction
+		(at 134.62 64.008)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3eccddb4-5097-4e7f-9ea3-059e96545513")
+	)
+	(junction
+		(at 123.19 54.102)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42cd4f3d-1ca6-4cbd-9049-54f0bf335f1b")
+	)
+	(junction
+		(at 149.86 64.008)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46151b9a-9434-491e-b395-d830d6cabfcf")
+	)
+	(junction
+		(at 118.11 41.402)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "538a3fa8-5173-4cb8-bef8-271a38a6a823")
+	)
+	(junction
+		(at 123.19 76.708)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5454e106-9bac-45e9-9d25-56760c83dac5")
+	)
+	(junction
+		(at 139.7 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86c1fe6a-3e92-4d30-9ff3-03f26870c2ef")
+	)
+	(junction
+		(at 134.62 86.106)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d7e4dfb-3529-438a-a40f-dc85e41487ca")
+	)
+	(junction
+		(at 123.19 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8dd3aee7-61fe-4648-b7e8-4951d514d4fa")
+	)
+	(junction
+		(at 149.86 86.106)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5294f26-dcec-4a6e-bb95-9af227b246cc")
+	)
+	(junction
+		(at 139.7 54.102)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d98628a8-8cb2-4ea0-b374-a4b18640b960")
+	)
+	(junction
+		(at 118.11 86.106)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9ad6520-16de-4ae8-9c5f-2ca4ff8d4031")
+	)
+	(junction
+		(at 139.7 76.708)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e208a756-c34b-4067-817e-b1c292bf3634")
+	)
+	(junction
+		(at 139.7 98.806)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa7157b0-5a20-4e5b-b349-0d6dc572edd3")
+	)
+	(junction
+		(at 134.62 118.364)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff8e5c0d-f47d-4838-82a3-0ca83718ab26")
+	)
+	(wire
+		(pts
+			(xy 218.948 137.414) (xy 215.392 137.414)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0115c072-fcea-440b-9f4b-4a912ffd9576")
+	)
+	(wire
+		(pts
+			(xy 134.62 28.194) (xy 134.62 41.402)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "067845f1-a705-4c89-b915-1216237789a7")
+	)
+	(wire
+		(pts
+			(xy 57.15 51.562) (xy 60.706 51.562)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0df34018-ca30-4d19-849f-1536116d46f9")
+	)
+	(wire
+		(pts
+			(xy 57.404 149.86) (xy 60.96 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ed20d46-6ab2-4504-99f9-9c54108d50ea")
+	)
+	(wire
+		(pts
+			(xy 92.964 40.64) (xy 92.964 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ff48927-108a-4d27-ac67-4f21a48963bf")
+	)
+	(wire
+		(pts
+			(xy 149.86 28.194) (xy 149.86 41.402)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1427a8d7-728e-47af-b6c6-b59779eb378c")
+	)
+	(wire
+		(pts
+			(xy 219.202 49.276) (xy 215.646 49.276)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1438c690-7342-450f-ac1d-0eb43cf89fcb")
+	)
+	(wire
+		(pts
+			(xy 219.202 56.896) (xy 215.646 56.896)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2044aacd-a628-4791-a196-ec04ff9de5b9")
+	)
+	(wire
+		(pts
+			(xy 92.964 22.86) (xy 92.964 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22c9c385-e500-43c0-9097-960e85af7ca0")
+	)
+	(wire
+		(pts
+			(xy 57.15 59.182) (xy 60.706 59.182)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2736193a-31fe-4747-8ae5-a60d1be8e4f7")
+	)
+	(wire
+		(pts
+			(xy 89.154 22.606) (xy 89.154 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27ff6513-dbbd-4a4e-b4db-295042504321")
+	)
+	(wire
+		(pts
+			(xy 219.202 86.614) (xy 215.646 86.614)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28e3d297-5177-4672-9b1a-7ca27f20c9bd")
+	)
+	(wire
+		(pts
+			(xy 89.154 22.86) (xy 92.964 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29c4c190-8ea2-43d7-9249-aaad05dedf35")
+	)
+	(wire
+		(pts
+			(xy 118.11 64.008) (xy 118.11 86.106)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29f12c1c-ce0b-4bbc-9f9f-9d5e02cc208f")
+	)
+	(wire
+		(pts
+			(xy 134.62 64.008) (xy 134.62 86.106)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b90dcff-d145-4697-ba7b-1dde346f8409")
+	)
+	(wire
+		(pts
+			(xy 57.15 61.722) (xy 60.706 61.722)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c7c5cdb-ca38-4af6-9f0e-c7fdda05fa05")
+	)
+	(wire
+		(pts
+			(xy 57.404 139.7) (xy 60.96 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e137895-f0e3-48b0-8790-5e28d9ca65c7")
+	)
+	(wire
+		(pts
+			(xy 139.7 54.102) (xy 154.94 54.102)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a235153-17c2-4402-ace3-1916da72febf")
+	)
+	(wire
+		(pts
+			(xy 57.15 56.642) (xy 60.706 56.642)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b29709c-e979-46b2-9542-1cd688478aa0")
+	)
+	(wire
+		(pts
+			(xy 219.202 91.694) (xy 215.646 91.694)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c868c3c-13dd-4a0d-a0d2-df3ad4ff9331")
+	)
+	(wire
+		(pts
+			(xy 57.404 137.16) (xy 60.96 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dd3a7e5-f5f7-405f-a216-2576e06e4025")
+	)
+	(wire
+		(pts
+			(xy 57.15 93.98) (xy 60.706 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "419a3ffa-dba1-4812-a36f-d9ce0eaab157")
+	)
+	(wire
+		(pts
+			(xy 57.15 91.44) (xy 60.706 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4337fa49-60c1-4349-a38d-75f9a249caeb")
+	)
+	(wire
+		(pts
+			(xy 118.11 86.106) (xy 118.11 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44794cd7-c13e-4a0f-979f-b2298f212a17")
+	)
+	(wire
+		(pts
+			(xy 57.15 54.102) (xy 60.706 54.102)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a13d188-a75f-4298-bd41-e5d39339d2e0")
+	)
+	(wire
+		(pts
+			(xy 149.86 64.008) (xy 149.86 86.106)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f1fc2cd-b2e4-4e55-938b-f564ecc69d60")
+	)
+	(wire
+		(pts
+			(xy 57.404 142.24) (xy 60.96 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dfa41c1-0d2b-4f5b-b14e-31b2f0992f52")
+	)
+	(wire
+		(pts
+			(xy 105.664 131.064) (xy 139.7 131.064)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6138678e-3c99-4935-97a0-d6e9c0153bf2")
+	)
+	(wire
+		(pts
+			(xy 149.86 86.106) (xy 149.86 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6943e4ad-1cb1-4cf7-ba51-845caac40840")
+	)
+	(wire
+		(pts
+			(xy 219.202 59.436) (xy 215.646 59.436)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69857832-17ee-4130-a80f-ec40510f53e9")
+	)
+	(wire
+		(pts
+			(xy 123.19 76.708) (xy 139.7 76.708)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69b14baa-f624-4ce7-ad2c-a966cfd7f6bf")
+	)
+	(wire
+		(pts
+			(xy 218.948 134.874) (xy 215.392 134.874)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6baf06ba-3e44-40dc-9e93-f2208c36bd61")
+	)
+	(wire
+		(pts
+			(xy 134.62 86.106) (xy 134.62 118.364)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79de0f23-5bbf-4d7e-9a8b-268d92893f86")
+	)
+	(wire
+		(pts
+			(xy 139.7 76.708) (xy 154.94 76.708)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c82a3eb-30f5-4913-b6a0-dc7ea897620a")
+	)
+	(wire
+		(pts
+			(xy 57.404 152.4) (xy 60.96 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d26ad9f-ccce-4640-93c1-a1b83174d80e")
+	)
+	(wire
+		(pts
+			(xy 57.15 99.06) (xy 60.706 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a5ee1b8-c526-412a-89c3-863f1b79cf07")
+	)
+	(wire
+		(pts
+			(xy 104.14 98.806) (xy 123.19 98.806)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c6a8e22-1c2e-4a04-830a-941fe8c07fa1")
+	)
+	(wire
+		(pts
+			(xy 219.202 101.854) (xy 215.646 101.854)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cdd8173-4052-4c89-822a-02280e6717a0")
+	)
+	(wire
+		(pts
+			(xy 57.15 88.9) (xy 60.706 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fa6c8e0-1f29-41de-a50a-da578b120c49")
+	)
+	(wire
+		(pts
+			(xy 57.15 104.14) (xy 60.706 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90b1f15f-badb-478c-a381-95b458b02232")
+	)
+	(wire
+		(pts
+			(xy 123.19 152.4) (xy 139.7 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9125565c-90b6-4733-911f-756cea89623b")
+	)
+	(wire
+		(pts
+			(xy 219.202 99.314) (xy 215.646 99.314)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9164c90e-4e37-403e-8f7d-5583e6f8e026")
+	)
+	(wire
+		(pts
+			(xy 149.86 41.402) (xy 149.86 64.008)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9322fa21-1726-493e-95f3-75995f5accaa")
+	)
+	(wire
+		(pts
+			(xy 218.948 139.954) (xy 215.392 139.954)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5cc0d8f-778f-4e12-9da2-1a6722710131")
+	)
+	(wire
+		(pts
+			(xy 57.15 101.6) (xy 60.706 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a608c2cc-7786-43d6-8c73-403699b0d4e7")
+	)
+	(wire
+		(pts
+			(xy 123.19 98.806) (xy 139.7 98.806)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a63d59de-9c18-41d0-88ca-a35da5e089d6")
+	)
+	(wire
+		(pts
+			(xy 218.948 142.494) (xy 215.392 142.494)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa867b65-2eb2-482d-be11-c1a933cc84a8")
+	)
+	(wire
+		(pts
+			(xy 219.202 51.816) (xy 215.646 51.816)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afe6bf68-7fa2-4cf3-ab87-db6f9324d04f")
+	)
+	(wire
+		(pts
+			(xy 218.948 145.034) (xy 215.392 145.034)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5a46a67-9e92-48fb-beec-855d6267f1c6")
+	)
+	(wire
+		(pts
+			(xy 218.948 147.574) (xy 215.392 147.574)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1139095-56b4-407f-bc70-189a2b365cfa")
+	)
+	(wire
+		(pts
+			(xy 219.202 89.154) (xy 215.646 89.154)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2088340-fe7f-4be9-806a-bac7ed8279be")
+	)
+	(wire
+		(pts
+			(xy 57.15 96.52) (xy 60.706 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3a6bd5d-abb9-45f7-a32b-729c171970cb")
+	)
+	(wire
+		(pts
+			(xy 219.202 94.234) (xy 215.646 94.234)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c67ec3d2-dc8f-41ed-b6a5-c622265c2eab")
+	)
+	(wire
+		(pts
+			(xy 118.11 41.402) (xy 118.11 64.008)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7e5a9d3-9932-4c2e-870c-cdfaf9b1a9bf")
+	)
+	(wire
+		(pts
+			(xy 104.14 54.102) (xy 123.19 54.102)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9e50a7e-6fa5-4360-8689-30223c3d9092")
+	)
+	(wire
+		(pts
+			(xy 57.404 144.78) (xy 60.96 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3f1a3de-53dd-4501-a69e-c94ac58ec8cc")
+	)
+	(wire
+		(pts
+			(xy 134.62 118.364) (xy 134.62 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3f56203-a8f2-44b0-805a-551e9672a87c")
+	)
+	(wire
+		(pts
+			(xy 139.7 152.4) (xy 154.94 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4653508-1278-4ed6-9265-745d981abaf1")
+	)
+	(wire
+		(pts
+			(xy 123.19 54.102) (xy 139.7 54.102)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dabd6c6e-13be-46d3-b80b-7f413db66929")
+	)
+	(wire
+		(pts
+			(xy 57.404 147.32) (xy 60.96 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc8a47fb-c821-497e-9206-d6fee0b01fc4")
+	)
+	(wire
+		(pts
+			(xy 134.62 41.402) (xy 134.62 64.008)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd3969a2-708d-490e-8dd8-abed3cf7dfe6")
+	)
+	(wire
+		(pts
+			(xy 219.202 54.356) (xy 215.646 54.356)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6444ec8-eb0b-4225-a60d-8327cbd20d75")
+	)
+	(wire
+		(pts
+			(xy 118.11 28.194) (xy 118.11 41.402)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6571098-94ee-4310-b21f-c36adfcfa818")
+	)
+	(wire
+		(pts
+			(xy 104.14 76.708) (xy 123.19 76.708)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef98f4e2-2406-461b-aeaa-4a32456f2031")
+	)
+	(wire
+		(pts
+			(xy 218.948 150.114) (xy 215.392 150.114)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efb92650-109e-4935-9bad-97357fb48e2d")
+	)
+	(wire
+		(pts
+			(xy 219.202 96.774) (xy 215.646 96.774)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f34867c5-4413-4f07-8b39-508b5847b51d")
+	)
+	(wire
+		(pts
+			(xy 105.41 152.4) (xy 123.19 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5e4f8d5-4c25-48c3-a7d5-a032268b9d1e")
+	)
+	(wire
+		(pts
+			(xy 139.7 98.806) (xy 154.94 98.806)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faee2c8e-0fcd-49b6-843b-96cbd22f9fbd")
+	)
+	(global_label "ROW14"
+		(shape input)
+		(at 57.404 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0c0a8342-eda4-40de-8585-1706ed9100de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.9479 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 219.202 59.436 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0cf25c7a-ed24-416a-9cde-ee9eae8d4cf9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 226.0577 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCR"
+		(shape input)
+		(at 57.15 54.102 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1434d02d-f21e-4a15-b630-636e51b7630a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.4153 54.102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW17"
+		(shape input)
+		(at 218.948 147.574 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "192274e7-a341-4d60-b453-fb3db9239e74")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.4041 147.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW16"
+		(shape input)
+		(at 105.664 131.064 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "249a2c61-9ff3-4d36-ab84-c03c3a774586")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.2079 131.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NUM"
+		(shape input)
+		(at 219.202 54.356 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "27014071-d9b2-4170-96b0-280ca99ef469")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 226.2996 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL1"
+		(shape input)
+		(at 57.15 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "27039cc4-2699-4ef1-b047-ce28eece3e49")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.3267 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCR"
+		(shape input)
+		(at 89.154 22.606 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "27eb0df0-1f88-44d2-8492-07be0fc5c9a6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.4193 22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL0"
+		(shape input)
+		(at 118.11 28.194 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2ac7e2b9-bea1-46bd-a682-9644aa61cfad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.11 20.3707 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW15"
+		(shape input)
+		(at 57.404 144.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "356b2de9-af44-478a-8476-4b5d4bd71312")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.9479 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW12"
+		(shape input)
+		(at 218.948 134.874 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "36f95ae5-584f-4677-b027-2baab062e2c7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.4041 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RGB_TO_LEFT"
+		(shape input)
+		(at 57.404 152.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "38c222dc-4456-4071-a81b-61afbcfff364")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 42.1422 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW15"
+		(shape input)
+		(at 218.948 142.494 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "39335de1-e2c2-4591-a714-61b510a1790e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.4041 142.494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW14"
+		(shape input)
+		(at 104.14 98.806 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4d63fb09-1ef2-4c87-8680-e34399c9157f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 94.6839 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL4"
+		(shape input)
+		(at 57.15 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4e3509e8-e637-4b2b-855c-5b19dc9c6ab0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.3267 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL3"
+		(shape input)
+		(at 57.15 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "54788f98-1a97-4a6a-ac5d-152058d2bd82")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.3267 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW16"
+		(shape input)
+		(at 218.948 145.034 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5bb860ba-8b0a-4052-a7e8-b72379e22af5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.4041 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL4"
+		(shape input)
+		(at 219.202 96.774 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "644d0f18-462e-49e3-a265-2237c98e5a42")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.0253 96.774 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V"
+		(shape input)
+		(at 57.15 59.182 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "684c3b54-ecb8-4dbb-a600-9e5281826828")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.2943 59.182 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL0"
+		(shape input)
+		(at 57.15 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "710e5d28-174b-4c99-b7b1-31ccb6c437fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.3267 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL6"
+		(shape input)
+		(at 219.202 101.854 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "733ca3cb-9132-41f6-835d-f011a88a6375")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.0253 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RGB_FOM_LEFT"
+		(shape input)
+		(at 57.15 51.562 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "756e8206-e219-4af3-ad34-f2df423db282")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.3158 51.562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RGB_FOM_RIGHT"
+		(shape input)
+		(at 218.948 150.114 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c1f43c8-9bd0-41a9-88cc-13146b271193")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.9918 150.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW13"
+		(shape input)
+		(at 104.14 76.708 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7f65bce0-2f6c-42f1-b66f-42867e735bbc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 94.6839 76.708 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL6"
+		(shape input)
+		(at 57.15 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7ff12d49-afe0-4948-8f8d-ec514ae597ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.3267 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW17"
+		(shape input)
+		(at 57.404 149.86 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "877749b7-8093-4e17-aefe-5474fa3f4008")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.9479 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V"
+		(shape input)
+		(at 219.202 56.896 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "87913b7b-071a-42b4-a84a-2634f3d9403c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 226.0577 56.896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RGB_TO_RIGHT"
+		(shape input)
+		(at 219.202 49.276 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "892d709f-2f62-4885-aa68-223901ae5b1b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 235.6734 49.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW13"
+		(shape input)
+		(at 57.404 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c76ede9-f9c8-4d96-8faa-e0bbe76b74d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.9479 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW16"
+		(shape input)
+		(at 57.404 147.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8d6ae486-6640-49e3-bb54-52736f51120c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.9479 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NUM"
+		(shape input)
+		(at 57.15 56.642 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9484efb7-c6b7-428a-b3ba-3b8bd5a3d239")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.0524 56.642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL3"
+		(shape input)
+		(at 219.202 94.234 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "94bd9d05-e9a1-493d-b2b7-b981803b55be")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.0253 94.234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL0"
+		(shape input)
+		(at 219.202 86.614 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "95d057d3-9daa-4f1a-892a-94a31150cce6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.0253 86.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape input)
+		(at 149.86 28.194 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a6d9593f-2b5f-4961-bf3b-9974354c066a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.86 20.3707 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW12"
+		(shape input)
+		(at 57.404 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b2369ef2-d622-4521-bbc6-4d0851fe54b6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.9479 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 57.15 61.722 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "be8ec694-7c24-4d9a-8bf4-567d99844ef9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.2943 61.722 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL5"
+		(shape input)
+		(at 219.202 99.314 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1a6eb64-9dd5-493f-8c0b-4e7fa55c2ce0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.0253 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL1"
+		(shape input)
+		(at 219.202 89.154 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c59ad3e5-2f0a-4a1f-9a0d-47ee10b999bb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.0253 89.154 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW17"
+		(shape input)
+		(at 105.41 152.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c8031a5d-3702-4ec1-b648-99df1e7e261f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.9539 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCR"
+		(shape input)
+		(at 219.202 51.816 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cbf7b1f0-1be7-4a96-8161-65e984123be9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 225.9367 51.816 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW14"
+		(shape input)
+		(at 218.948 139.954 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dad93be2-a2c0-4a10-94b3-45c73c8c5a60")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.4041 139.954 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape input)
+		(at 219.202 91.694 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df1c9190-31a3-4a94-b029-4d271ed6592a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.0253 91.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW12"
+		(shape input)
+		(at 104.14 54.102 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e204e2f1-1410-4de0-8f19-5f85078099c4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 94.6839 54.102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL1"
+		(shape input)
+		(at 134.62 28.194 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e82cf323-12bf-4712-8de2-45629c2d95ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 134.62 20.3707 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ROW13"
+		(shape input)
+		(at 218.948 137.414 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e884288c-e301-4f20-ac4d-86a6d2d1b35e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.4041 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL2"
+		(shape input)
+		(at 57.15 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f242d21e-15fc-483c-aab7-8f4e8cf0f042")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.3267 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "COL5"
+		(shape input)
+		(at 57.15 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f3095271-742a-42aa-acbc-906981d96826")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.3267 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 154.94 50.292 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "009a0982-3189-4825-b2e0-8fbd869c1545")
+		(property "Reference" "D7"
+			(at 157.988 49.0219 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 157.988 51.5619 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 154.94 50.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 50.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 50.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 157.988 49.0219 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7cf7c101-e2ee-4ad7-a72a-92dbae82ac49")
+		)
+		(pin "2"
+			(uuid "953b5de9-9e4f-4e44-8c03-1d9fceadb1d3")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 152.4 43.942 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00ccaca3-449f-441c-bff3-332dd7168b2d")
+		(property "Reference" "S7"
+			(at 159.258 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 156.718 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 152.4 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 159.258 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "deb176d6-82c0-4fc7-be37-982e9426a9de")
+		)
+		(pin "2"
+			(uuid "224e03d6-db2f-4e6d-b168-3ef2d3f868b1")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 65.786 56.642 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01fd5506-a19d-482d-8444-bde57eabd071")
+		(property "Reference" "POGO1"
+			(at 68.58 55.3719 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 68.58 57.9119 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TB2086_MISC:Pogopin_1x05_P2.54mm_Curved"
+			(at 65.786 56.642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 65.786 56.642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 65.786 56.642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "5710339d-96a8-47d9-ad08-e16c6659e871")
+		)
+		(pin "5"
+			(uuid "f6841f49-d076-4396-88b1-6035b7ca4aac")
+		)
+		(pin "1"
+			(uuid "4c30c531-440a-4769-87a7-d3907a1804ce")
+		)
+		(pin "2"
+			(uuid "ebd6fa0a-d721-4fda-b4ad-f5fa7cb91c8e")
+		)
+		(pin "3"
+			(uuid "a292621b-c489-47cb-84df-903b72881114")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "POGO1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 154.94 94.996 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09ddefd8-4db4-4c23-8fdf-e6c0eed17c51")
+		(property "Reference" "D9"
+			(at 157.988 93.7259 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 157.988 96.2659 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 154.94 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 157.988 93.7259 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad8ea008-3327-4cff-9698-adfcace84ae7")
+		)
+		(pin "2"
+			(uuid "670ea11e-ee53-4d96-a0f4-fa8039fbfa3f")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 120.65 43.942 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fec0017-4f3a-4737-bc76-838f8e4bed1f")
+		(property "Reference" "S1"
+			(at 127.508 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 124.968 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 120.65 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 127.508 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6181f024-ce5e-4271-9056-6286ca70f8cd")
+		)
+		(pin "2"
+			(uuid "44e9ca4c-aa44-435c-a99b-2064ab506b5f")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 152.4 88.646 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "20430cd8-68ba-4f4c-94d8-94fb1d324141")
+		(property "Reference" "S9"
+			(at 159.258 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 156.718 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 152.4 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 159.258 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "123d6660-b868-4c74-b348-344a3ead75c4")
+		)
+		(pin "2"
+			(uuid "ade0f118-2d06-4eee-b5e4-993e3539cdef")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 137.16 142.24 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2283b5f9-0a14-42f3-8f66-4d135d9ca68e")
+		(property "Reference" "S12"
+			(at 144.018 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 141.478 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 137.16 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 144.018 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7349fd12-4bf8-48a5-b022-2f65b3ea5953")
+		)
+		(pin "2"
+			(uuid "e2be88d8-41a5-468f-9c17-b9ea9b7cf80f")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 139.7 127.254 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24d24acc-9a6a-4fa7-94e8-7cde0bfc1b69")
+		(property "Reference" "D10"
+			(at 142.748 125.9839 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 142.748 128.5239 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 139.7 127.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 127.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 127.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 142.748 125.9839 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7738497d-6c4b-4cdf-8b9d-36a7af7f875c")
+		)
+		(pin "2"
+			(uuid "ee8e7e67-7fdc-48f2-92e9-193075488c2b")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 123.19 94.996 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d9e8ded-8c3e-4f77-89fa-b0b305772d6d")
+		(property "Reference" "D3"
+			(at 126.238 93.7259 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 126.238 96.2659 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 123.19 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 126.238 93.7259 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc07c4f5-651c-4f0c-9fa6-385a63f61393")
+		)
+		(pin "2"
+			(uuid "1f07826c-929d-4f64-83eb-f70c7fcf1a74")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 152.4 142.24 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2e97cb21-cf1f-4c43-bf1a-f13468f14866")
+		(property "Reference" "S13"
+			(at 159.258 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS_1u"
+			(at 156.718 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 152.4 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 159.258 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "049bba47-e5d7-4d92-95e1-bf3398db9f4f")
+		)
+		(pin "2"
+			(uuid "e120863b-7195-4569-848e-03e589b7ee0f")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x07")
+		(at 65.786 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b674dee-54b3-4e4b-9bea-f73066ae0710")
+		(property "Reference" "POGO3"
+			(at 68.58 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x07"
+			(at 68.58 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TB2086_MISC:Pogopin_1x07_P2.54mm_Curved"
+			(at 65.786 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 65.786 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 65.786 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "8fc9eb94-b1d2-4eae-a271-277db51c85c0")
+		)
+		(pin "3"
+			(uuid "1bacb8aa-d21e-41e6-8903-144f6029b78d")
+		)
+		(pin "2"
+			(uuid "04cd35ea-2ac4-456e-a430-099cc605016d")
+		)
+		(pin "5"
+			(uuid "81000699-48ec-4789-a639-5c1eb45e53dd")
+		)
+		(pin "6"
+			(uuid "d638ca9a-ae73-4d01-bd1e-c8a8d6067a8c")
+		)
+		(pin "7"
+			(uuid "371d4fd7-bafc-4aac-a8ae-fbf06c181df9")
+		)
+		(pin "1"
+			(uuid "ab769799-6d40-432a-8be2-5e5779acf18e")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "POGO3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 137.16 88.646 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3da20d07-0bff-407e-bae7-29a77c8423bd")
+		(property "Reference" "S6"
+			(at 144.018 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 141.478 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 137.16 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 144.018 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65f2a11c-910c-4a0c-a5b5-22cb64bffc7e")
+		)
+		(pin "2"
+			(uuid "e73ea977-3e2e-4312-b378-909059a43fcd")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 92.964 35.56 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e97ded5-7e04-47c9-b7aa-635375c9fb16")
+		(property "Reference" "R1"
+			(at 90.424 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 95.504 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 92.964 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.964 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 92.964 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 92.964 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "141f581e-d264-4af7-913e-1c05a74adfd7")
+		)
+		(pin "2"
+			(uuid "1b0ccea5-2886-4e9e-979e-44e1f6aa7384")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x07")
+		(at 66.04 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51bf06e4-8d9a-4457-a62b-e35989fe3cb3")
+		(property "Reference" "POGO5"
+			(at 68.834 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x07"
+			(at 68.834 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TB2086_MISC:Pogopin_1x07_P2.54mm_Curved"
+			(at 66.04 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 66.04 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "9367a75e-1922-405c-aee9-43093a90fc0c")
+		)
+		(pin "3"
+			(uuid "1c7a6f25-974a-4dd1-8fdd-749839c74711")
+		)
+		(pin "2"
+			(uuid "01a8a90e-916d-4749-acd8-f70d45e4dc62")
+		)
+		(pin "5"
+			(uuid "66c31afc-b507-43e6-b0a3-0383e9b34e69")
+		)
+		(pin "6"
+			(uuid "d649f3c8-32d3-4323-b071-94f911653157")
+		)
+		(pin "7"
+			(uuid "8a5064eb-7e70-4eb9-bf8a-eff49f421710")
+		)
+		(pin "1"
+			(uuid "74eec69d-acfd-4a0b-9c30-fe3dd2f484a4")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "POGO5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 123.19 72.898 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52f0486a-f53c-4897-85a4-d66f24da2595")
+		(property "Reference" "D2"
+			(at 126.238 71.6279 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 126.238 74.1679 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 123.19 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 126.238 71.6279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "05bbe7e4-0b3a-4e65-8acf-e529f0e62cd6")
+		)
+		(pin "2"
+			(uuid "a73c2ec1-42fa-442f-a874-c77579495e07")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 120.65 142.24 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e8c3d57-2253-4459-beb9-46c2ee687ec1")
+		(property "Reference" "S11"
+			(at 127.508 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 124.968 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 120.65 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 127.508 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9fab5c38-6e2d-4d3d-b8e6-856d500d58f8")
+		)
+		(pin "2"
+			(uuid "a493ed49-7235-4f16-b006-fb20c5444462")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 123.19 50.292 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66b97f36-b0f3-4f44-bd55-05058fd255df")
+		(property "Reference" "D1"
+			(at 126.238 49.0219 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 126.238 51.5619 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 123.19 50.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 50.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 50.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 126.238 49.0219 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed255b96-1701-4e76-8cea-16cea587e0ab")
+		)
+		(pin "2"
+			(uuid "3f6e93b7-033b-4657-b077-1a7c67205e1f")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 137.16 43.942 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68374103-a4e7-45b8-a6d8-6fb5013b1897")
+		(property "Reference" "S4"
+			(at 144.018 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 141.478 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 137.16 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 144.018 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b78840e-3886-4a19-a916-209899b3a78c")
+		)
+		(pin "2"
+			(uuid "1c91cb27-1eae-4127-aea7-a39d80883ca2")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x07")
+		(at 210.312 142.494 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a47bcca-c725-4309-a621-b47726e63517")
+		(property "Reference" "POGO6"
+			(at 207.518 143.7641 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x07"
+			(at 207.518 141.2241 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TB2086_MISC:Pogopin_1x07_P2.54mm_Curved"
+			(at 210.312 142.494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.312 142.494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 210.312 142.494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "280b465f-824e-4494-aac3-2966dd069fb3")
+		)
+		(pin "3"
+			(uuid "f5c821d3-bcd3-4a40-9067-efc9a9da3ae3")
+		)
+		(pin "2"
+			(uuid "5732aba8-a8bc-453b-b4d3-06ad89c35d3e")
+		)
+		(pin "5"
+			(uuid "6c6f0688-0a11-405a-ab16-c0d11ce6401d")
+		)
+		(pin "6"
+			(uuid "e88b3f0e-4ca0-4e13-8b9f-6510dfb0140d")
+		)
+		(pin "7"
+			(uuid "c2f86540-cb3c-478c-8332-671ae5be2b0b")
+		)
+		(pin "1"
+			(uuid "bb4929a6-0205-4e2e-bbaa-723a79a17ec4")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "POGO6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 152.4 66.548 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6d69c250-5e8f-4538-95a5-f48c1ba59814")
+		(property "Reference" "S8"
+			(at 159.258 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 156.718 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 152.4 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 159.258 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e4c65958-04fd-489b-a5f2-36e993ff9d6b")
+		)
+		(pin "2"
+			(uuid "fe9efa20-b22f-43fc-9a79-53231ece1b2c")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 154.94 72.898 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74d3412b-8b2b-4872-9ff2-c51731f37f44")
+		(property "Reference" "D8"
+			(at 157.988 71.6279 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 157.988 74.1679 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 154.94 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 157.988 71.6279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06276157-f826-4024-a95f-2bbdc9473c7a")
+		)
+		(pin "2"
+			(uuid "27f24da7-3dee-41e3-95b5-3566a18f8158")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x07")
+		(at 210.566 94.234 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78d4e427-7efe-41f5-84d2-d14dc7223059")
+		(property "Reference" "POGO4"
+			(at 207.772 95.5041 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x07"
+			(at 207.772 92.9641 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TB2086_MISC:Pogopin_1x07_P2.54mm_Curved"
+			(at 210.566 94.234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.566 94.234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 210.566 94.234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "74c37e92-2616-4622-a57c-ce3d7cf146d6")
+		)
+		(pin "3"
+			(uuid "cccdfff5-e14f-45c4-bbe5-83edd1b561a4")
+		)
+		(pin "2"
+			(uuid "60c78571-315f-49a2-8645-9e54ef163b9d")
+		)
+		(pin "5"
+			(uuid "8f278527-77a4-46e1-a297-4545f7933bf0")
+		)
+		(pin "6"
+			(uuid "f136238a-5ab8-46bd-9983-b9de148bd3dd")
+		)
+		(pin "7"
+			(uuid "71dc1de3-5872-41d9-9695-c681023cae09")
+		)
+		(pin "1"
+			(uuid "98fa6d2c-877b-4574-a2c7-eabd519052f4")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "POGO4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 139.7 94.996 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8927813d-d7d4-4137-a010-8ca7d920c3ee")
+		(property "Reference" "D6"
+			(at 142.748 93.7259 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 142.748 96.2659 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 139.7 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 94.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 142.748 93.7259 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2be92282-19b4-41bd-8c5c-ddbace4fb104")
+		)
+		(pin "2"
+			(uuid "f74b4d01-f127-446a-bd92-3f84775eb388")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 120.65 66.548 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a84119e-1f38-4574-85f3-3a2ead15c2ca")
+		(property "Reference" "S2"
+			(at 127.508 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 124.968 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 120.65 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 127.508 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3744951-697e-4a74-b92a-f68211be59bb")
+		)
+		(pin "2"
+			(uuid "7c942fa6-53d1-47c8-9901-749c19d53758")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 137.16 120.904 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93f8138c-7919-430c-ab92-9a15d52a5221")
+		(property "Reference" "S10"
+			(at 144.018 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 141.478 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 137.16 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 144.018 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d1edb1b-f357-42d2-82b4-42077d02e696")
+		)
+		(pin "2"
+			(uuid "c2212f04-5a1d-4f4d-819f-fcb3369f04e4")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 92.964 29.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "976b6a8e-e203-4fe4-9be0-9c85c21e5eb4")
+		(property "Reference" "LED1"
+			(at 95.504 27.305 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 95.504 29.845 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 92.964 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.964 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 92.964 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C84264"
+			(at 95.504 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d54917d-5007-47c3-848c-4b3c78bbe6ee")
+		)
+		(pin "2"
+			(uuid "a60ae70e-33e7-478f-8035-3b9fee52b15f")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "LED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 139.7 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98ea78e6-d235-4a0c-b26c-dd67f6829ff8")
+		(property "Reference" "D12"
+			(at 142.748 147.3199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 142.748 149.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 139.7 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 142.748 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ce64b90-70c0-4446-8c0f-e88b22b8a408")
+		)
+		(pin "2"
+			(uuid "46bcf829-c5df-42fc-bfa9-54ea5e626699")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 120.65 88.646 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a14e5c04-02ce-483d-8293-e429876bc647")
+		(property "Reference" "S3"
+			(at 127.508 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 124.968 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 120.65 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 127.508 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "30210ef3-c5cc-4886-863e-cdf0c7f34719")
+		)
+		(pin "2"
+			(uuid "ed5b038b-097b-48b1-8c8c-7ba060312540")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 154.94 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acde027a-e14f-47cc-8dac-8d6715ae1002")
+		(property "Reference" "D13"
+			(at 157.988 147.3199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 157.988 149.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 154.94 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 157.988 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bbd9bd4-c582-46e2-92de-fa9aabadca0c")
+		)
+		(pin "2"
+			(uuid "23b5dacf-2e98-428b-b45c-1d06358019ef")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x05")
+		(at 210.566 54.356 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b25b229b-bf0f-47b6-912e-31b9f1553f17")
+		(property "Reference" "POGO2"
+			(at 207.772 55.6261 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 207.772 53.0861 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TB2086_MISC:Pogopin_1x05_P2.54mm_Curved"
+			(at 210.566 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.566 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 210.566 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "b8b81482-8e72-4b0a-8235-d6c99bff652a")
+		)
+		(pin "5"
+			(uuid "a8611684-0621-4548-a66e-d3c2974a2bf7")
+		)
+		(pin "1"
+			(uuid "8fa708f8-495b-4620-bceb-11c48a9907da")
+		)
+		(pin "2"
+			(uuid "e33abc47-0fd3-4921-a3e3-b4101467bf86")
+		)
+		(pin "3"
+			(uuid "647d12a3-9b61-4977-b700-30039e57baef")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "POGO2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TB2086_KEYSWITCH:SW_MX_HS")
+		(at 137.16 66.548 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc5af4e3-e6fe-42b0-b453-c50501cd62d6")
+		(property "Reference" "S5"
+			(at 144.018 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MX_HS"
+			(at 141.478 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TB2086_KEYSWITCH:SW_MX_HS_1u"
+			(at 137.16 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900021274"
+			(at 144.018 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d121405-db4d-42fa-bd64-917e509d533b")
+		)
+		(pin "2"
+			(uuid "b6b3c745-4006-43d1-a32c-ee581ac9c74a")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "S5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92.964 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd2e7b97-14a0-4ec3-b4c1-9febbb298c61")
+		(property "Reference" "#PWR029"
+			(at 92.964 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.964 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.964 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.964 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 92.964 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c9b4147-806c-4f8f-9b15-7683a3455f49")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 139.7 72.898 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd9efda2-7a7f-43dc-975b-c298b118d98e")
+		(property "Reference" "D5"
+			(at 142.748 71.6279 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 142.748 74.1679 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 139.7 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 72.898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 142.748 71.6279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0cded6b3-ea98-44e2-b3c3-d1ea42fe09eb")
+		)
+		(pin "2"
+			(uuid "0ef5b0e4-a9cb-42d3-aa5e-b6074a491db7")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 123.19 148.59 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dda9a4f6-eb66-439b-bd36-b7ed5dde813f")
+		(property "Reference" "D11"
+			(at 126.238 147.3199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 126.238 149.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 123.19 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 126.238 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8816dd4-e1fd-4d56-a89d-ebaf1b8d6a3c")
+		)
+		(pin "2"
+			(uuid "b33cb62f-e449-4b30-ab4d-7592f2cd476f")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 139.7 50.292 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecae4677-ce74-4431-8bfd-6c585a0eee5d")
+		(property "Reference" "D4"
+			(at 142.748 49.0219 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 142.748 51.5619 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TB2086_SMD:D3_SMD"
+			(at 139.7 50.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 50.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 50.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420318"
+			(at 142.748 49.0219 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc0145e1-f222-4ef5-a6ab-8d58991bbc98")
+		)
+		(pin "2"
+			(uuid "b9c02ecd-faa7-49fc-b822-a117edc5a605")
+		)
+		(instances
+			(project "PhaseShift"
+				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
-		(at 87.884 165.354)
+		(at 26.162 167.386)
 		(size 35.814 22.352)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22,7 +5844,7 @@
 		)
 		(uuid "1db9d0a3-92fe-44f8-9d65-add93d49c030")
 		(property "Sheetname" "RGB"
-			(at 87.884 164.6424 0)
+			(at 26.162 166.6744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31,7 +5853,7 @@
 			)
 		)
 		(property "Sheetfile" "PhaseShift-RGB.kicad_sch"
-			(at 87.884 188.2906 0)
+			(at 26.162 190.3226 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43,48 +5865,6 @@
 			(project "PhaseShift"
 				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
 					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 26.924 165.354)
-		(size 35.814 22.352)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "b6e5122b-19a7-4e32-83dd-aae5ee669f5d")
-		(property "Sheetname" "PhaseShift"
-			(at 26.924 164.6424 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "PhaseShift-keymatrix.kicad_sch"
-			(at 26.924 188.2906 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "PhaseShift"
-				(path "/c7177d09-71a2-4de7-9a3e-bfc16a7f2797"
-					(page "3")
 				)
 			)
 		)
