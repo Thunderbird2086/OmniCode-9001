@@ -29,25 +29,25 @@
    - **Hot Swap Sockets:** Solder all 74 hot swap sockets onto the PCB, making sure each socket is aligned with the footprint.
 
 
-     ![](../img/hotswap-socket-orientation.png)
+     ![](../img/build/hotswap-socket-orientation.png)
    - **Per-key LED (optional):** Solder per-key LEDs onto the PCB, making sure their orientation matches the footprint.
 
-     ![](../img/led-footprint.png)
+     ![](../img/build/led-footprint.png)
 
-     ![](../img/led.png)
+     ![](../img/build/led.png)
    - **POGO Pin (optional):**
      - Insert the POGO pins from the bottom side of the PCB, ensuring the correct orientation (male part on the left side, female part on the right for instance).
 
-       ![](../img/pogopin-connectors.png)
+       ![](../img/build/pogopin-connectors.png)
      - Hold the pins firmly in place and solder from the top side.
      - Double-check alignment before soldering all pins, as POGO pins must be straight for reliable contact.
      - After soldering, inspect for excess solder and clean up any bridges or cold joints.
 
 1. **Install Stabilizers**
-     ![](../img/stabilizers.png)
+     ![](../img/build/stabilizers.png)
 
 1. **Prepare Top Plate and Mounting Hardware**
-   ![](../img/assemble-top-plate.png)
+   ![](../img/build/assemble-top-plate.png)
 
    - Place the top plate onto the PCB.
    - Position the 6 spacers (3mm) at the designated mounting points.
@@ -57,10 +57,10 @@
    - **Do not fully tighten the screws yet. This is a pre-assembly step.** Final tightening should be done after all key switches are installed to ensure proper fit and alignment.
 
 1. **Install Light Guide**
-   ![](../img/light-guide.png)
+   ![](../img/build/light-guide.png)
 
 1. **Install Key Switches**
-   ![](../img/keyswitch.png)
+   ![](../img/build/keyswitch.png)
    - Carefully align each MX key switch with the hot swap socket and plate cutout.
    - Gently press the switch straight down into the socket. **Be careful:** The switch pins are easy to bend, so make sure that they are straight and enter the socket holes cleanly.
    - Double-check that each switch is fully seated and flush with the plate.
@@ -68,13 +68,14 @@
    - Once all switches are installed, you can flash the firmware and test each key to confirm proper installation and electrical contact.
 
 1. **Secure with Screws**
-   ![](../img/assemble-bottom-plate.png)
+   ![](../img/build/assemble-bottom-plate.png)
    - Place the bottom plate onto the assembled stack.
    - Use 6 M3x4mm screws for any additional mounting points as needed.
    - Tighten all screws evenly, but do not overtighten—just enough to hold everything securely and avoid damaging the PCB or plates.
 
 1. **Add Keycaps**
    - Press the keycaps onto each switch stem. Double-check orientation and fit.
+     ![](../img/build/omnicode-9001-key-cap-size.png)
 
 1. **Final Check**
    - Inspect all keys for proper fit and alignment.
@@ -87,4 +88,4 @@ Enjoy your custom GlyphMatrix build!
     
 ## One more thing!
 - If you seek to unlock the true potential of your GlyphMatrix, legends speak of two mysterious modules: [**PhaseShift**](./build_phaseshift.md) and [**DeltaForm**](./build_deltaform.md).
-- When all three blocks are combined, the GlyphMatrix transcends its limits and evolves into **OmniCode:9001**, the ultimate keyboard fusion, worthy of the most legendary coders. Unleash your final form!
+- When all three blocks are combined, the GlyphMatrix transcends its limits and evolves into **OmniCode:9001**, the ultimate keyboard fusion, worthy of the most legendary coders. Unleash your final form!:w
