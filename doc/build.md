@@ -75,6 +75,7 @@
 
 1. **Add Keycaps**
    - Press the keycaps onto each switch stem. Double-check orientation and fit.
+     ![](../img/build/omnicode-9001-key-cap-size.png)
 
 1. **Final Check**
    - Inspect all keys for proper fit and alignment.
@@ -87,4 +88,4 @@ Enjoy your custom GlyphMatrix build!
     
 ## One more thing!
 - If you seek to unlock the true potential of your GlyphMatrix, legends speak of two mysterious modules: [**PhaseShift**](./build_phaseshift.md) and [**DeltaForm**](./build_deltaform.md).
-- When all three blocks are combined, the GlyphMatrix transcends its limits and evolves into **OmniCode:9001**, the ultimate keyboard fusion, worthy of the most legendary coders. Unleash your final form!
+- When all three blocks are combined, the GlyphMatrix transcends its limits and evolves into **OmniCode:9001**, the ultimate keyboard fusion, worthy of the most legendary coders. Unleash your final form!:w
