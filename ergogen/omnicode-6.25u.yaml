@@ -1,6 +1,6 @@
 meta:
   author: Allen Choi
-  version: 0.6.2
+  version: 0.6.3
   engine: 4.1.0
   project: "OmniCode:9001"
 
@@ -17,7 +17,7 @@ text_common:
 
   version_text: &version_text
     <<: *text_base
-    params.text: "OminCode:9001 202507.22"
+    params.text: "OminCode:9001 202508.04"
 
   text_bbg: &text_bbg
     what: utility_text
@@ -74,7 +74,7 @@ units:
   py: u1_00 + dy      # Vertical spacing
 
   # Pogopin placement
-  pogo_x: bx - 4.125
+  pogo_x: bx - 3.8
   pogo_y1: 15.8
   pogo_y3: 18.3
   cover_width: 1.7
