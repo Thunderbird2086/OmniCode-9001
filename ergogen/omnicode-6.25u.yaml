@@ -17,7 +17,7 @@ text_common:
 
   version_text: &version_text
     <<: *text_base
-    params.text: "OminCode:9001 202507.22"
+    params.text: "OminCode:9001 202508.04"
 
   text_bbg: &text_bbg
     what: utility_text
