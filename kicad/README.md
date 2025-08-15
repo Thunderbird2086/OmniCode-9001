@@ -7,9 +7,9 @@ This directory contains all KiCad PCB design files for the OmniCode:9001 keyboar
 ### GlyphMatrix (Alpha Block)
 The main typing module with a full ANSI layout.
 
-![GlyphMatrix PCB Top View](../img/pcb/Glyphmatrix_Top.png)
-![GlyphMatrix PCB](../img/pcb/Glyphmatrix.png)
-![GlyphMatrix PCB Bottom View](../img/pcb/Glyphmatrix_Plate.png)
+![GlyphMatrix PCB Top View](../img/pcb/GlyphMatrix_Top.png)
+![GlyphMatrix PCB](../img/pcb/GlyphMatrix.png)
+![GlyphMatrix PCB Bottom View](../img/pcb/GlyphMatrix_Plate.png)
 
 **Features:**
 - RP2040 microcontroller
