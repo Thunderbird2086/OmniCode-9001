@@ -1,6 +1,6 @@
 meta:
   author: Allen Choi
-  version: 0.6.3
+  version: 0.6.4
   engine: 4.1.0
   project: "OmniCode:9001"
 
@@ -74,9 +74,10 @@ units:
   py: u1_00 + dy      # Vertical spacing
 
   # Pogopin placement
+  pogo_w: 2.5 # 0.5 Width of the pogo pin area
   pogo_x: bx - 3.8
-  pogo_y1: 15.8
-  pogo_y3: 18.3
+  pogo_y1: 15.3
+  pogo_y3: 17.8
   cover_width: 1.7
   case_width: 5.5
   
@@ -400,7 +401,6 @@ screw_holes:
       adjust: { shift: [0.5px+bx-hole_offset, -0.5py-by+hole_offset] }
     hole4:
       where: [nav_block3_c14_thumb]
-      
       adjust: { shift: [-0.5px-bx+hole_offset, -0.5py-by+hole_offset] }
 
   phase_shift_top: &screw_holes_phase_shift_top
@@ -732,6 +732,30 @@ outlines:
          shift: [0.5px+bx, -0.5py-by]
        - ref: nav_block3_c14_thumb
          shift: [-0.5px-bx, -0.5py-by]
+      fillet: corner
+    - what: polygon
+      operation: stack
+      points:
+       - ref: nav_block_c14_func
+         shift: [-0.5px-bx-mb, 0.5py+by]
+       - ref: nav_block_c14_func
+         shift: [-0.5px-bx-mb-2pogo_w, 0.5py+by]
+       - ref: nav_block3_c14_thumb
+         shift: [-0.5px-bx-mb-2pogo_w, -0.5py-by]
+       - ref: nav_block3_c14_thumb
+         shift: [-0.5px-bx-mb, -0.5py-by]
+      fillet: corner
+    - what: polygon
+      operation: stack
+      points:
+       - ref: nav_block_c16_func
+         shift: [0.5px+bx+mb, 0.5py+by]
+       - ref: nav_block_c16_func
+         shift: [0.5px+bx+mb+2pogo_w, 0.5py+by]
+       - ref: nav_block3_c16_thumb
+         shift: [0.5px+bx+mb+2pogo_w, -0.5py-by]
+       - ref: nav_block3_c16_thumb
+         shift: [0.5px+bx+mb, -0.5py-by]
       fillet: corner
 
   phase_shift_plate:
@@ -1070,6 +1094,119 @@ footprint_components:
         shift: [pogo_x+1.75px/2, pogo_y3-0.5py-by+hole_offset]
         rotate: -90
 
+  pogo_pins_side: &pogo_pins_side
+    pogo_s1:
+      what: "pogo_pin_1x05_P2.54mm"
+      params:
+        side: "F"
+      where: [nav_block_c14_func]
+      adjust:
+        shift: [-0.5px-bx-mb-pogo_w, -pogo_y1+0.5py+by-hole_offset]
+        rotate: -90
+    pogo_s2:
+      what: "pogo_pin_1x05_P2.54mm"
+      params:
+        side: "F"
+      where: [nav_block_c16_func]
+      adjust:
+        shift: [0.5px+bx+mb+pogo_w, -pogo_y1+0.5py+by-hole_offset]
+        rotate: 90
+    pogo_s3:
+      what: "pogo_pin_1x07_P2.54mm"
+      params:
+        side: "F"
+      where: [nav_block_c14_top]
+      adjust:
+        shift: [-0.5px-bx-mb-pogo_w, -0.5py]
+        rotate: -90
+    pogo_s4:
+      what: "pogo_pin_1x07_P2.54mm"
+      params:
+        side: "F"
+      where: [nav_block_c16_top]
+      adjust:
+        shift: [0.5px+bx+mb+pogo_w, -0.5py]
+        rotate: 90
+    pogo_s5:
+      what: "pogo_pin_1x07_P2.54mm"
+      params:
+        side: "F"
+      where: [nav_block3_c14_thumb]
+      adjust:
+        shift: [-0.5px-bx-mb-pogo_w, pogo_y3-0.5py-by+hole_offset]
+        rotate: -90
+    pogo_s6:
+      what: "pogo_pin_1x07_P2.54mm"
+      params:
+        side: "F"
+      where: [nav_block3_c16_thumb]
+      adjust:
+        shift: [0.5px+bx+mb+pogo_w, pogo_y3-0.5py-by+hole_offset]
+        rotate: 90
+
+  ps_mb: &ps_mb
+    ps_mb1: &ps_mb_common_1
+      what: "mousebites_5p5mm_easysnap"
+      params:
+        side: "F"
+      where: [nav_block_c14_func]
+      adjust:
+        shift: [-0.5px-bx, -pogo_y1+0.5py+by-hole_offset]
+    ps_mb2:
+      <<: *ps_mb_common_1
+      where: [nav_block_c16_func]
+      adjust:
+        shift: [0.5px+bx, -pogo_y1+0.5py+by-hole_offset]
+        rotate: 180
+    ps_mb3: &ps_mb_common_2
+      <<: *ps_mb_common_1
+      where: [nav_block_c14_top]
+      adjust:
+        shift: [-0.5px-bx, -0.5py]
+    ps_mb4:
+      <<: *ps_mb_common_2
+      where: [nav_block_c16_top]
+      adjust:
+        shift: [0.5px+bx, -0.5py]
+        rotate: 180
+    ps_mb5: &ps_mb_common_3
+      <<: *ps_mb_common_2
+      where: [nav_block3_c14_thumb]
+      adjust:
+        shift: [-0.5px-bx, pogo_y3-0.5py-by+hole_offset]
+    ps_mb6:
+      <<: *ps_mb_common_3
+      where: [nav_block3_c16_thumb]
+      adjust:
+        shift: [0.5px+bx, pogo_y3-0.5py-by+hole_offset]
+        rotate: 180
+
+  ps_holes: &ps_holes
+    ps_hole1: &ps_hole_common_1
+      what: "hole_3.2mm_pad"
+      params:
+        P1: GND
+      where: [nav_block_c14_func]
+      adjust:
+        shift: [-0.5px-bx-mb-pogo_w, 0.5py+by-hole_offset]
+    ps_hole2:
+      <<: *ps_hole_common_1
+      where: [nav_block_c16_func]
+      adjust:
+        shift: [0.5px+bx+mb+pogo_w, 0.5py+by-hole_offset]
+    ps_hole3: &ps_hole_common_3
+      what: "hole_3.2mm_pad"
+      params:
+        P1: GND
+      where: [nav_block3_c14_thumb]
+      adjust:
+        shift: [-0.5px-bx-mb-pogo_w, -0.5py-by+hole_offset]
+    ps_hole4:
+      <<: *ps_hole_common_3
+      where: [nav_block3_c16_thumb]
+      adjust:
+        shift: [0.5px+bx+mb+pogo_w, -0.5py-by+hole_offset]
+
 pcbs:
   GlyphMatrix:
     template: kicad8
@@ -1295,6 +1432,10 @@ pcbs:
       pogo5.adjust.shift: [-pogo_x-.5px, pogo_y3-0.5py-by+hole_offset]
       pogo6.where: [nav_block3_c16_thumb]
       pogo6.adjust.shift: [pogo_x+.5px, pogo_y3-0.5py-by+hole_offset]
+
+      <<: *pogo_pins_side
+      <<: *ps_mb
+      <<: *ps_holes
 
   PhaseShift_Top:
     template: kicad8
