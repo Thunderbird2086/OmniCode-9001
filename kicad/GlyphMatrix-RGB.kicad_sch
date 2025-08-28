@@ -4525,7 +4525,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TB2086_MISC:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
 			(at 50.546 196.342 0)
 			(effects
 				(font
@@ -7481,7 +7481,8 @@
 	)
 	(symbol
 		(lib_id "TB2086_LED:SK6812MINI-E")
-		(at 110.744 268.732 180)
+		(at 110.744 268.732 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7489,7 +7490,7 @@
 		(dnp no)
 		(uuid "672c9f5d-331a-4e39-b597-22df04fc25ef")
 		(property "Reference" "L60"
-			(at 107.3959 257.556 90)
+			(at 107.3959 279.908 90)
 			(effects
 				(font
 					(size 0.7366 0.7366)
@@ -7497,7 +7498,7 @@
 			)
 		)
 		(property "Value" "SK6812MINI-E"
-			(at 108.6659 257.556 90)
+			(at 108.6659 279.908 90)
 			(effects
 				(font
 					(size 0.7366 0.7366)
@@ -7505,7 +7506,7 @@
 			)
 		)
 		(property "Footprint" "TB2086_LED_G:LED_SK6812MINI-E"
-			(at 108.204 262.382 0)
+			(at 108.204 275.082 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7514,7 +7515,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 108.204 262.382 0)
+			(at 108.204 275.082 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7532,7 +7533,7 @@
 			)
 		)
 		(property "LCSC" "C5149201"
-			(at 107.3959 257.556 0)
+			(at 107.3959 279.908 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10595,7 +10596,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TB2086_MISC:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
 			(at 547.116 193.04 0)
 			(effects
 				(font
