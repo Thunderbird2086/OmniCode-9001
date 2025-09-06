@@ -4,17 +4,17 @@
 
 ## Parts
 ### Required
-| Part                   | Quantity | Notes                |
-|------------------------|----------|----------------------|
-| MX key switches        | 74       |                      |
-| Hot swap sockets       | 74       |                      |
-| Keycaps                | 74       |                      |
-| M3x8 screws            | 8        |                      |
-| Spacers (3mm)          | 8        |                      |
-| M3 gaskets (0.5mm)     | 8        |                      |
-| M3x4 screws            | 4        |                      |
-| M3 Standoffs (5mm)     | 8        |                      |
-| D2 Light guide (3.2mm) | 2        |                      |
+| Part                                | Quantity | Notes                |
+|-------------------------------------|----------|----------------------|
+| MX key switches                     | 74       |                      |
+| Hot swap sockets                    | 74       |                      |
+| Keycaps                             | 74       |                      |
+| M3x8 screws                         | 8        |                      |
+| Spacers (3mm) or M3 Standoffs (3mm) | 8        | Choose one           |
+| M3 gaskets (0.5mm)                  | 8        |                      |
+| M3x4 screws                         | 6        |                      |
+| M3 Standoffs (5mm)                  | 8        |                      |
+| D2 Light guide (3.2mm)              | 2        |                      |
 
 ### Optonal
 | Part                | Quantity | Notes                |
