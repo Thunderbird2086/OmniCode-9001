@@ -79,7 +79,7 @@
    ![](../img/build/assemble-bottom-plate.png)
    - Place the bottom plate onto the assembled stack.
    - Use 8 M3x4mm screws for any additional mounting points as needed.
-   - Tighten all screws evenly, but do not overtighten—just enough to hold everything securely and avoid damaging the PCB or plates.
+   - Tighten all screws evenly, but do not overtighten. It's just enough to hold everything securely and avoid damaging the PCB or plates.
 
 1. **Add Keycaps**
    - Press the keycaps onto each switch stem. Double-check orientation and fit.
