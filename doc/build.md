@@ -4,17 +4,17 @@
 
 ## Parts
 ### Required
-| Part                   | Quantity | Notes                |
-|------------------------|----------|----------------------|
-| MX key switches        | 74       |                      |
-| Hot swap sockets       | 74       |                      |
-| Keycaps                | 74       |                      |
-| M3x8 screws            | 8        |                      |
-| Spacers (3mm)          | 8        |                      |
-| M3 gaskets (0.5mm)     | 8        |                      |
-| M3x4 screws            | 8        |                      |
-| M3 Standoffs (5mm)     | 8        |                      |
-| D2 Light guide (3.2mm) | 2        |                      |
+| Part                                | Quantity | Notes                |
+|-------------------------------------|----------|----------------------|
+| MX key switches                     | 74       |                      |
+| Hot swap sockets                    | 74       |                      |
+| Keycaps                             | 74       |                      |
+| M3x8 screws                         | 8        |                      |
+| Spacers (3mm) or M3 Standoffs (3mm) | 8        | Choose one           |
+| M3 gaskets (0.5mm)                  | 8        |                      |
+| M3x4 screws                         | 6        |                      |
+| M3 Standoffs (5mm)                  | 8        |                      |
+| D2 Light guide (3.2mm)              | 2        |                      |
 
 ### Optonal
 | Part                | Quantity | Notes                |
@@ -44,17 +44,25 @@
      - After soldering, inspect for excess solder and clean up any bridges or cold joints.
 
 1. **Install Stabilizers**
+   > **Note:** Stabilizers may require assembly before installation.
      ![](../img/build/stabilizers.png)
 
 1. **Prepare Top Plate and Mounting Hardware**
+   > **Note:** There are two options for mounting hardware. Choose one of the following methods:
+   ### Option A: Using 3mm Spacers
+   1. Place the top plate onto the PCB
+   1. Position the 8 spacers (3mm) at the designated mounting points
+   1. Add 8 standoffs (5mm) at the bottom side of the PCB
+   1. Insert 8 M3x8mm screws through the top plate, spacers, gaskets and PCB, then loosely fasten them with 5mm standoffs
+
+   ### Option B: Using M3x3mm Standoffs
+   1. Insert 8 M3x8mm screws through the top plate and M3x3mm standoffs
+   1. Place the top plate assembly onto the PCB
+   1. Add 8 standoffs (5mm) at the bottom side of the PCB
+
    ![](../img/build/assemble-top-plate.png)
 
-   - Place the top plate onto the PCB.
-   - Position the 8 spacers (3mm) at the designated mounting points.
-   - Add M3 gaskets (0.5mm thick) between the PCB and spacers.
-   - Add 8 standoff (5mm) at the bottom side of the PCB.
-   - Insert 8 M3x8mm screws through the top plate, spacers, gaskets and PCB, then loosely fasten them with 5mm standoffs.
-   - **Do not fully tighten the screws yet. This is a pre-assembly step.** Final tightening should be done after all key switches are installed to ensure proper fit and alignment.
+   > **Important:** Do not fully tighten the screws yet. This is a pre-assembly step. Final tightening should be done after all key switches are installed to ensure proper fit and alignment.
 
 1. **Install Light Guide**
    ![](../img/build/light-guide.png)
@@ -71,7 +79,7 @@
    ![](../img/build/assemble-bottom-plate.png)
    - Place the bottom plate onto the assembled stack.
    - Use 8 M3x4mm screws for any additional mounting points as needed.
-   - Tighten all screws evenly, but do not overtighten—just enough to hold everything securely and avoid damaging the PCB or plates.
+   - Tighten all screws evenly, but do not overtighten. It's just enough to hold everything securely and avoid damaging the PCB or plates.
 
 1. **Add Keycaps**
    - Press the keycaps onto each switch stem. Double-check orientation and fit.

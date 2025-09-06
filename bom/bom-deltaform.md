@@ -1,6 +1,6 @@
 # DeltaForm (Num Block) BOM
 
-DeltaForm Already perfect. This name suggests modular transformation. Zoom, macros, data entry—all reborn in a shapeshifting format.
+DeltaForm Already perfect. This name suggests modular transformation. Zoom, macros, data entry and it's all reborn in a shapeshifting format.
 
 ![](../img/DeltaForm-side-view.png)
 

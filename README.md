@@ -14,7 +14,7 @@ OmniCode:9001 is the modular keyboards born in Hong Kong, engineered for control
 
 - **Nav Block:** PhaseShift suggests rapid movement, shifting through modes or layers like teleportation. It’s your tactical array for traversing digital dimensions.
 
-- **Num Block:** DeltaForm Already perfect. This name suggests modular transformation. Zoom, macros, data entry—all reborn in a shapeshifting format.
+- **Num Block:** DeltaForm Already perfect. This name suggests modular transformation. Zoom, macros, data entry and it's all reborn in a shapeshifting format.
 
 ## Builds
 * [BOM](bom/README.md)
