@@ -2541,7 +2541,7 @@
 			)
 		)
 	)
-	(global_label "COL4"
+	(global_label "COL6"
 		(shape input)
 		(at 126.746 27.178 90)
 		(fields_autoplaced yes)
@@ -2585,7 +2585,7 @@
 			)
 		)
 	)
-	(global_label "COL4"
+	(global_label "COL6"
 		(shape input)
 		(at 216.662 89.662 0)
 		(fields_autoplaced yes)
@@ -3025,7 +3025,7 @@
 			)
 		)
 	)
-	(global_label "COL6"
+	(global_label "COL4"
 		(shape input)
 		(at 54.61 97.028 180)
 		(fields_autoplaced yes)
@@ -3267,7 +3267,7 @@
 			)
 		)
 	)
-	(global_label "COL6"
+	(global_label "COL4"
 		(shape input)
 		(at 158.496 27.178 90)
 		(fields_autoplaced yes)
@@ -3289,7 +3289,7 @@
 			)
 		)
 	)
-	(global_label "COL6"
+	(global_label "COL4"
 		(shape input)
 		(at 216.662 94.742 0)
 		(fields_autoplaced yes)
@@ -3531,7 +3531,7 @@
 			)
 		)
 	)
-	(global_label "COL4"
+	(global_label "COL6"
 		(shape input)
 		(at 54.61 91.948 180)
 		(fields_autoplaced yes)
