@@ -1,6 +1,6 @@
 meta:
   author: Allen Choi
-  version: 0.6.4
+  version: 0.6.5
   engine: 4.1.0
   project: "OmniCode:9001"
 
@@ -86,6 +86,7 @@ units:
 
   # Layout specific measurements
   corner: 2         # Corner radius
+  corner1: 1
   distance: 2 bx + mb
 
 points:
@@ -295,7 +296,7 @@ points:
         number:  { row_net: "number", shift: [0, -u2_25]}
       columns:
         c17: { key: { width: u1_00,    column_net: "col_1"}}
-        c18: { key: { width: u1_00,    column_net: "col_1"}}
+        c18: { key: { width: u1_00,    column_net: "col_2"}}
         c19: { key: { width: u1_00,    column_net: "col_4"}}
         c20: { key: { width: u1_00,    column_net: "col_3"}}
 
@@ -311,7 +312,7 @@ points:
         top:     { row_net: "top" }
       columns:
         c17: { key: { width: u1_00,  column_net: "col_1"}}
-        c18: { key: { width: u1_00,  column_net: "col_1"}}
+        c18: { key: { width: u1_00,  column_net: "col_2"}}
         c19: { key: { width: u1_00,  column_net: "col_4"}}
         c20: { key: { width: u1_00,  column_net: "col_3", height: u2_00, shift:[0, -u1_00/2], tags:[dfv2_00]}}
 
@@ -429,7 +430,7 @@ outlines:
     - &rect_base
       what: rectangle
       bound: false
-      joints: corner
+      joints: corner1
     - <<: *rect_base
       where: [gmu1_00]
       size: [px, py]
@@ -454,13 +455,13 @@ outlines:
     - <<: *rect_base
       where: [gmu6_25]
       size: [6.25px, py]
-      fillet: corner
+      fillet: corner1
 
   raw_ps: &raw_ps
     - <<: *rect_base
       where: [psu1_00]
       size: [px, py]
-      fillet: corner
+      fillet: corner1
 
   raw_df: &raw_df
     - <<: *rect_base
@@ -472,7 +473,7 @@ outlines:
     - <<: *rect_base
       where: [dfv2_00]
       size: [px, 2py]
-      fillet: corner
+      fillet: corner1
 
   keys:
     - what: rectangle
@@ -507,34 +508,62 @@ outlines:
         shift: [-6.75, 6.75]
       fillet: .4
 
-  stab_2_00u_gm_plate:
+  keys_ps:
     - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [6.75, 12.35]
-      adjust:
-        shift: [-11.9, -0.62]
+      where: [psu1_00]
+      size: [14, 14]
+  
+  keys_ps_mouse_ear:
     - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [6.75, 12.35]
+      where: [psu1_00]
+      size: [1.5, 1.5]
       adjust:
-        shift: [11.9, -0.62]
+        shift: [-6.75, -6.75]
     - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [3.1, 13.65]
+      where: [psu1_00]
+      size: [1.5, 1.5]
       adjust:
-        shift: [11.9, -1.27]
+        shift: [6.75, -6.75]
     - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [3.1, 13.65]
+      where: [psu1_00]
+      size: [1.5, 1.5]
       adjust:
-        shift: [-11.9, -1.27]
+        shift: [6.75, 6.75]
     - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [23.8+4.3*2, 3]
+      where: [psu1_00]
+      size: [1.5, 1.5]
       adjust:
-        shift: [0, .9]
-      fillet: .3
+        shift: [-6.75, 6.75]
+      fillet: .4
 
+  keys_df:
+    - what: rectangle
+      where: [dfu1_00,dfu2_00,dfv2_00]
+      size: [14, 14]
+  
+  keys_df_mouse_ear:
+    - what: rectangle
+      where: [dfu1_00,dfu2_00,dfv2_00]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [-6.75, -6.75]
+    - what: rectangle
+      where: [dfu1_00,dfu2_00,dfv2_00]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [6.75, -6.75]
+    - what: rectangle
+      where: [dfu1_00,dfu2_00,dfv2_00]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [6.75, 6.75]
+    - what: rectangle
+      where: [dfu1_00,dfu2_00,dfv2_00]
+      size: [1.5, 1.5]
+      adjust:
+        shift: [-6.75, 6.75]
+      fillet: .4
+ 
   stab_2_00u_gm: # This creates the stabilizer, you just need to use its name in a `where` clause of another outline
     - operation: stack
       where: [gmu2_00,gmu2_25,gmu2_75]
@@ -551,29 +580,6 @@ outlines:
         shift: [-stabilizer_spacing_u2_00, stabilizer_offset]
       fillet: .3
 
-  stab_2_00u_mouse_ear:
-    - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [1.5, 1.5]
-      adjust:
-        shift: [3.25+stabilizer_spacing_u2_00, -6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [1.5, 1.5]
-      adjust:
-        shift: [3.25+stabilizer_spacing_u2_00, 6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [1.5, 1.5]
-      adjust:
-        shift: [-3.25-stabilizer_spacing_u2_00, -6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu2_00,gmu2_25,gmu2_75]
-      size: [1.5, 1.5]
-      adjust:
-        shift: [-3.25-stabilizer_spacing_u2_00, 6.75+stabilizer_offset]
-      fillet: .4
-
   stab_6_25u_gm:
     - operation: stack
       where: gmu6_25
@@ -587,49 +593,41 @@ outlines:
       size: [stabilizer_width, stabilizer_height]
       adjust:
         shift: [-stabilizer_spacing_u6_25, stabilizer_offset]
+      fillet: .3
 
-  stab_6_00u_mouse_ear:
-    - what: rectangle
-      where: [gmu6_25]
-      size: [1.5, 1.5]
+  stab_2_00u_df: # This creates the stabilizer, you just need to use its name in a `where` clause of another outline
+    - operation: stack
+      where: [dfu2_00]
+      what: rectangle
+      size: [stabilizer_width, stabilizer_height]
       adjust:
-        shift: [-3.25+stabilizer_spacing_u6_25, -6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu6_25]
-      size: [1.5, 1.5]
+        shift: [stabilizer_spacing_u2_00, stabilizer_offset]
+      fillet: .3
+    - operation: stack
+      where: [dfu2_00]
+      what: rectangle
+      size: [stabilizer_width, stabilizer_height]
       adjust:
-        shift: [3.25+stabilizer_spacing_u6_25, -6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu6_25]
-      size: [1.5, 1.5]
+        shift: [-stabilizer_spacing_u2_00, stabilizer_offset]
+      fillet: .3
+
+  stab_2_00v_df: # This creates the stabilizer, you just need to use its name in a `where` clause of another outline
+    - operation: stack
+      where: [dfv2_00]
+      what: rectangle
+      size: [stabilizer_width, stabilizer_height]
       adjust:
-        shift: [3.25+stabilizer_spacing_u6_25, 6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu6_25]
-      size: [1.5, 1.5]
+        shift: [stabilizer_offset, stabilizer_spacing_u2_00]
+        rotate: 90
+      fillet: .3
+    - operation: stack
+      where: [dfv2_00]
+      what: rectangle
+      size: [stabilizer_width, stabilizer_height]
       adjust:
-        shift: [-3.25+stabilizer_spacing_u6_25, 6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu6_25]
-      size: [1.5, 1.5]
-      adjust:
-        shift: [-3.25-stabilizer_spacing_u6_25, -6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu6_25]
-      size: [1.5, 1.5]
-      adjust:
-        shift: [3.25-stabilizer_spacing_u6_25, -6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu6_25]
-      size: [1.5, 1.5]
-      adjust:
-        shift: [3.25-stabilizer_spacing_u6_25, 6.75+stabilizer_offset]
-    - what: rectangle
-      where: [gmu6_25]
-      size: [1.5, 1.5]
-      adjust:
-        shift: [-3.25-stabilizer_spacing_u6_25, 6.75+stabilizer_offset]
-      fillet: .4
+        shift: [stabilizer_offset, -stabilizer_spacing_u2_00]
+        rotate: 90
+      fillet: .3
 
   glyph_matrix_raw:
     - what: polygon
@@ -927,9 +925,7 @@ outlines:
     - "-glyph_screw_holes_top"
     - "-gm_led_hole"
     - "-stab_2_00u_gm"
-    - "-stab_2_00u_mouse_ear"
     - "-stab_6_25u_gm"
-    - "-stab_6_00u_mouse_ear"
 
   gm_button:
     - what: circle
@@ -987,9 +983,6 @@ outlines:
     - "-stab_2_00u_gm"
     - "-stab_6_25u_gm"
     - "-keys_gm_mouse_ear"
-#    - "-stab_2_00u_mouse_ear"
-    - "-stab_6_00u_mouse_ear"
-#    - "-stab_2_00u_gm_plate"
 
   gm_screw_holes:
     - "glyph_matrix"
@@ -1000,9 +993,33 @@ outlines:
     - "phase_shift"
     - "-raw_ps"
 
+  ps_screw_holes:
+    - "phase_shift"
+    - "-ps_led_hole"
+    - "-screw_holes_phase_shift_top"
+    - "-screw_holes_phase_shift"
+    
+  ps_keyholes:
+    - "phase_shift"
+    - "-keys_ps"
+    - "-keys_ps_mouse_ear"
+
   df_case:
     - "delta_form"
     - "-raw_df"
+
+  df_keyholes:
+    - "delta_form"
+    - "-keys_df"
+    - "-keys_df_mouse_ear"
+    - "-stab_2_00u_df"
+    - "-stab_2_00v_df"
+
+  df_screw_holes:
+    - "delta_form"
+    - "-df_led_hole"
+    - "-screw_holes_delta_form"
+    - "-screw_holes_delta_form_top"
 
 filled_zone: &filled_zone
   filled_zones:
@@ -1609,4 +1626,3 @@ pcbs:
         adjust:
           shift: [0.5px, 0]
         params.text: "DeltaForm"
-        
