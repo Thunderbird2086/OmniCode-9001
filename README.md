@@ -17,6 +17,6 @@ OmniCode:9001 is the modular keyboards born in Hong Kong, engineered for control
 - **Num Block:** DeltaForm Already perfect. This name suggests modular transformation. Zoom, macros, data entry and it's all reborn in a shapeshifting format.
 
 ## Builds
-* [BOM](bom/README.md)
+* [BOM](bom/)
 * [Build guides](doc/build.md)
-* [Cases](case/README.md)
+* [Cases](cases/)
